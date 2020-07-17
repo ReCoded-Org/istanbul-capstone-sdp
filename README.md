@@ -1,6 +1,6 @@
 # istanbul-capstone-sdp
 
-Suicide Detection and Prevention Project
+Suicide Detection and Prevention Project<br/>
 This site provides a quick and simple platform for suicide prevention and mental health promotion.<hr/>
 
 # Outline & Objective
