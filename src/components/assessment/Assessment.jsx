@@ -1,5 +1,5 @@
 import React from "react";
 
-export const About = () => {
+export const Assessment = () => {
   return <div></div>;
 };

@@ -1,0 +1,73 @@
+.navbar {
+  width: 100%;
+  height: 60px;
+
+  background: linear-gradient(
+    90deg,
+    rgba(0, 72, 145, 1) 0%,
+    rgba(38, 120, 204, 1) 100%
+  ) !important;
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(0, 72, 145, 1) 0%,
+    rgba(38, 120, 204, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(0, 72, 145, 1) 0%,
+    rgba(38, 120, 204, 1) 100%
+  );
+  overflow: auto;
+  box-shadow: 0 2.8px 2.2px rgba(23, 28, 83, 0.034),
+    0 6.7px 5.3px rgba(18, 13, 87, 0.048), 0 12.5px 10px rgba(25, 11, 104, 0.06),
+    0 22.3px 17.9px rgba(33, 16, 109, 0.072),
+    0 41.8px 33.4px rgba(40, 17, 126, 0.086), 0 100px 80px rgba(29, 7, 88, 0.12);
+}
+
+.navbar .nav-link {
+  color: #fff !important;
+  float: right;
+  font-family: "Myriad Pro", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+.navbar .nav-link:hover {
+  color: #b0faff !important;
+  font-family: "Myriad Pro", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+.nav-link .special-color {
+  color: #b0faff !important;
+}
+
+.nav-spaces {
+  margin-right: 15px;
+}
+
+.brand-spaces {
+  width: 80%;
+  margin-left: 50%;
+}
+
+.login-spaces {
+  width: 60%;
+  margin-top: -10px;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.lang-spaces {
+  width: 65%;
+  margin-top: -9px;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.right-margin {
+  margin-right: 40px;
+}
