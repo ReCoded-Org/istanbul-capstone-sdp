@@ -1,5 +1,5 @@
 import React from "react";
 
 export const NoMatch = () => {
-  return <div>Hello World</div>;
+  return <div>404 Page</div>;
 };

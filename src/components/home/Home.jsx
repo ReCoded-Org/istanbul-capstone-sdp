@@ -5,9 +5,6 @@ export const Home = () => {
   return (
     <div>
       <Header />
-      <br />
-      <br />
-      <br />
     </div>
   );
 };

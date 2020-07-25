@@ -1,10 +1,11 @@
 import React from "react";
+import "./Header.css";
 
 export const Header = () => {
   return (
     <div>
       <img
-        style={{ width: "100%", textAlign: "center", marginTop: "-32px" }}
+        className="header"
         src={"https://i.ibb.co/XzwWH50/Header-HP1.png"}
         alt=""
       />
