@@ -6,8 +6,8 @@ export const Header = () => {
     <div>
       <img
         className="header"
-        src={"https://i.ibb.co/XzwWH50/Header-HP1.png"}
-        alt=""
+        src={"https://i.ibb.co/86fYzkM/HP1.png"}
+        alt="Home Page Header"
       />
     </div>
   );

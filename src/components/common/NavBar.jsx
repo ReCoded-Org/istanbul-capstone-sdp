@@ -46,12 +46,14 @@ export const NavBar = () => {
           <img
             className="loginSpaces"
             src="https://i.ibb.co/s5Xh2d2/Login-Signup-Icon.png"
+            alt="Login Icon"
           />
         </div>
         <div className="rightMargin">
           <img
             className="langSpaces"
             src="https://i.ibb.co/jG2mkVJ/Language-icon.png"
+            alt="Change Language"
           />
         </div>
       </Navbar>
