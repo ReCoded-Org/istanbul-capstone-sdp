@@ -1,0 +1,22 @@
+/* cards style */
+.cards-container {
+    background-color: rgb(221, 225, 235);
+  
+    padding: 10% 100px 10% 100px;
+    height: 100%;
+  
+  }
+  
+  .card {
+    transition: 0.5 ease;
+    cursor: pointer;
+    color: gray;
+  }
+  
+  .card:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+  }/* cards style ends */
+
+  
+  
