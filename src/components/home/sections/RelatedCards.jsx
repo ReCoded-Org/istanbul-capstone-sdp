@@ -3,7 +3,7 @@ import { CardDeck, Card, Button } from 'react-bootstrap';
 
 const RelatedCards = (props) => {
     return (
-        <div className="cards-container">
+        <div className="cardsContainer">
             <CardDeck>
                 <Card className="card">
                     <Card.Img variant="top" src="../300px-Let_Me_In.jpg" />
