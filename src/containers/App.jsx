@@ -12,6 +12,7 @@ import { NoMatch } from "../components/noMatch/NoMatch";
 import { NavBar } from "../components/common/NavBar";
 
 function App() {
+  const { t, i18n } = useTranslation();
   return (
     <React.Fragment>
       <NavBar />
