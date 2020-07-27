@@ -1,11 +1,11 @@
-import React from "react";
-import { useTranslation } from "react-i18next";
-import "../index.css";
+// import React from "react";
+// import { useTranslation } from "react-i18next";
+// import "../index.css";
 
-function WhoAreWe() {
-    const { t, i18n } = useTranslation();
-    return (
-    );
-}
+// function WhoAreWe() {
+//     const { t, i18n } = useTranslation();
+//     return (
+//     );
+// }
 
-export default WhoAreWe;
+// export default WhoAreWe;
