@@ -1,61 +1,58 @@
 .header {
-    width: 100%;
-    padding-top: 30px;
-    text-align: center;
-    margin-top: -32px;
-  }
+  width: 100%;
+  padding-top: 30px;
+  text-align: center;
+  margin-top: -32px;
+}
 
 .pageMarings {
-    margin: 100px 200px;
-    font-family: "Aktiv Grotesk Corp";
-    color: #454545;
+  margin: 100px 200px;
+  font-family: "Aktiv Grotesk Corp";
+  color: #454545;
 }
 
 .address {
-    font-size: 50px;
-    font-weight: bold;
-    line-height: 60px;
-    margin-bottom: 50px;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 60px;
+  margin-bottom: 50px;
 }
 
 .subAddress {
-    font-size: 30px;
-    font-weight: bolder;
-    line-height: 40px;
-    margin-bottom: 25px;
-    text-align: justify;
+  font-size: 30px;
+  font-weight: bolder;
+  line-height: 40px;
+  margin-bottom: 25px;
+  text-align: justify;
 }
 
 .textBody1 {
-    font-size: 18px;
-    font-weight: light;
-    line-height: normal;
-    color: #666666;
-    text-align: justify;
+  font-size: 18px;
+  font-weight: light;
+  line-height: normal;
+  color: #666666;
+  text-align: justify;
 }
 
 .textBody2 {
-    font-weight: bolder;
-    text-align: justify;
+  font-weight: bolder;
+  text-align: justify;
 }
 
-
 .quotes {
-    display: block !important;
-    margin: 0 auto;
-    padding-top: 0px;
-
+  display: block !important;
+  margin: 0 auto;
+  padding-top: 0px;
 }
 
 .mm {
-    background-image: URL("https://i.ibb.co/tB6C6Bv/more-survivors-everyday.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 60%;
-    height: 500px;
-    margin: -30px auto;
-    padding: 200px 0;
-    
+  background-image: URL("https://i.ibb.co/tB6C6Bv/more-survivors-everyday.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 60%;
+  height: 500px;
+  margin: -30px auto;
+  padding: 200px 0;
 }
 
 /* .carousel-indicators li {
@@ -67,10 +64,10 @@
   } */
 
 .carousel {
-    width:650px;
-    height:250px;
-    margin: 0 auto;
-  }
+  width: 650px;
+  height: 250px;
+  margin: 0 auto;
+}
 
 /* .carousel-control-next,
 .carousel-control-prev {
@@ -78,7 +75,6 @@
     padding: 0 50px 40px;
 
 } */
-
 
 /* .carousel-control-next-icon:after
 {
@@ -93,7 +89,8 @@
   color: black;
 } */
 
-.right.carousel-control, .left.carousel-control {
-    opacity: 0;
-    filter:alpha(opacity=0); /* IE support */
+.right.carousel-control,
+.left.carousel-control {
+  opacity: 0;
+  filter: alpha(opacity=0); /* IE support */
 }
