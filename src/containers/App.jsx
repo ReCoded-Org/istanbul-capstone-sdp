@@ -11,11 +11,17 @@ import { Donation } from "../containers/donation/Donation";
 import { NoMatch } from "../components/noMatch/NoMatch";
 import { NavBar } from "../components/common/NavBar";
 import { useTranslation } from "react-i18next";
+import LangDropdown from "../components/LangDropdown";
 
 function App() {
   const { t, i18n } = useTranslation();
   return (
     <React.Fragment>
+      <div className="App">
+      {t('Welcome.1')}
+      <LangDropdown/>
+      </div>
+      
       <NavBar />
       <Router>
         <Switch>
