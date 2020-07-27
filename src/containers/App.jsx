@@ -1,5 +1,6 @@
-import React from "react";
-import "./index.css";
+import React from 'react';
+import './index.css';
+import LangDropdown from "../components/LangDropdown";
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 import { Home } from "../components/home/Home";
 import { About } from "../components/about/About";
@@ -11,7 +12,7 @@ import { Donation } from "../containers/donation/Donation";
 import { NoMatch } from "../components/noMatch/NoMatch";
 import { NavBar } from "../components/common/NavBar";
 import { useTranslation } from "react-i18next";
-import LangDropdown from "../components/LangDropdown";
+
 
 function App() {
   const { t, i18n } = useTranslation();
