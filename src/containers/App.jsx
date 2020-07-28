@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.css';
-import LangDropdown from "../components/LangDropdown";
+// import LangDropdown from "../components/LangDropdown";
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 import { Home } from "../components/home/Home";
 import { About } from "../components/about/About";
@@ -18,11 +18,6 @@ function App() {
   const { t, i18n } = useTranslation();
   return (
     <React.Fragment>
-      <div className="App">
-      {t('Welcome.1')}
-      <LangDropdown/>
-      </div>
-      
       <NavBar />
       <Router>
         <Switch>
@@ -37,6 +32,7 @@ function App() {
         </Switch>
       </Router>
     </React.Fragment>
+     
   );
 }
 
