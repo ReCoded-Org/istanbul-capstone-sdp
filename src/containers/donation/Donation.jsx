@@ -1,6 +1,7 @@
 import React from "react";
 import { Header } from "./sections/Header";
 import { Carousel } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export const Donation = () => {
   return (
@@ -49,7 +50,7 @@ export const Donation = () => {
         </p>
       </section>
 
-      <div className="mm">
+      <div className="wholeCarousel">
         <Carousel>
           <Carousel.Item class="carousel-indicators">
             <img
@@ -85,7 +86,35 @@ export const Donation = () => {
           donation to the Canada Suicide Prevention Service allows us to connect
           individuals in distress and individuals with suicidal thoughts with
           local Crisis Centres to receive immediate support.
+          <br />
+          Approximately 11 people iight services. A donation to the Canada
+          Suicide Prevention Service allows us to connect individuals in
+          distress and individuals with suicidal thoughts with local Crisis
+          Centres to receive immediate support.
         </p>
+
+        <div className="socialMedia">
+          <a href="http://www.facebook.com">
+            <img
+              src="https://i.ibb.co/Jp1M5vp/Facebook-button-in-donation-page.png"
+              alt="Facebook icon"
+            />
+          </a>
+
+          <a href="http://www.twitter.com">
+            <img
+              src="https://i.ibb.co/DMV3TM9/Twitter-for-donation-page.png"
+              alt="Twitter icon"
+            />
+          </a>
+
+          <a href="http://www.instgram.com">
+            <img
+              src="https://i.ibb.co/7zkfzL2/Instgram-for-donation-page.png"
+              alt="Instgram icon"
+            />
+          </a>
+        </div>
       </section>
     </div>
   );
