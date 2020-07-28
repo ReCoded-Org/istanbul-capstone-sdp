@@ -1,17 +1,17 @@
 {
-    "Welcome": {
-        "1": "React'e Hoş Geldin"
-    },
-    "React": {
-        "1": "React"
-    },
-    "en": {
-        "1": "İngilizce"
-    },
-    "tr": {
-        "1": "Türkçe"
-    },
-    "ar": {
-        "1": "Arapça"
-    }
+  "welcome": {
+    "message": "React'e Hoş Geldin"
+  },
+  "React": {
+    "1": "React"
+  },
+  "en": {
+    "1": "İngilizce"
+  },
+  "tr": {
+    "1": "Türkçe"
+  },
+  "ar": {
+    "1": "Arapça"
+  }
 }

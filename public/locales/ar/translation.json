@@ -1,8 +1,8 @@
 {
-    "Welcome": {
-        "1": "Reactمرحبًا بك في "
-    },
-    "React": {
-        "1": "HEY GUUYS"
-    }
+  "welcome": {
+    "message": "Reactمرحبًا بك في "
+  },
+  "React": {
+    "message": "HEY GUUYS"
+  }
 }
