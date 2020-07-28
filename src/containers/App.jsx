@@ -8,6 +8,7 @@ function App() {
   const { t, i18n } = useTranslation();
   return (
     <div className="App">
+      learn react
       {t("welcome.message")}
       <LangDropdown />
       <Home />
