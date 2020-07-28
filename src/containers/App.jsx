@@ -1,5 +1,6 @@
 import React from "react";
 import "./index.css";
+// import LangDropdown from "../components/LangDropdown";
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 import { Home } from "../components/home/Home";
 import { About } from "../components/about/About";
