@@ -8,7 +8,7 @@ function App() {
   const { t, i18n } = useTranslation();
   return (
     <div className="App">
-      {t("Welcome.1")}
+      {t("welcome.message")}
       <LangDropdown />
       <Home />
     </div>
