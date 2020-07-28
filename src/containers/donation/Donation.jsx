@@ -78,14 +78,14 @@ export const Donation = () => {
       </div>
 
       <section className="pageMarings">
-      <p className="textBody1">
-        Approximately 11 people in Canada die by suicide every day. That’s over
-        4,000 people a year, making suicide a leading cause of death in Canada.
-        We can help prevent suicide with the right services. A donation to the
-        Canada Suicide Prevention Service allows us to connect individuals in
-        distress and individuals with suicidal thoughts with local Crisis
-        Centres to receive immediate support.
-      </p>
+        <p className="textBody1">
+          Approximately 11 people in Canada die by suicide every day. That’s
+          over 4,000 people a year, making suicide a leading cause of death in
+          Canada. We can help prevent suicide with the right services. A
+          donation to the Canada Suicide Prevention Service allows us to connect
+          individuals in distress and individuals with suicidal thoughts with
+          local Crisis Centres to receive immediate support.
+        </p>
       </section>
     </div>
   );
