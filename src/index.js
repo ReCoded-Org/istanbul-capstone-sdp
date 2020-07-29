@@ -4,6 +4,7 @@ import './index.css';
 import App from './containers/App';
 import * as serviceWorker from './serviceWorker';
 import "./i18n";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
   <Suspense fallback={<div>Loading...</div>}>
