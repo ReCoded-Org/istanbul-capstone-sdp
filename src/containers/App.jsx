@@ -1,14 +1,10 @@
-import React from 'react';
-import './index.css';
-import LangDropdown from "../components/LangDropdown"
-import { useTranslation } from "react-i18next";
-
+import React from "react";
+import "./index.css";
+import BlogsPage from "../components/blogs/BlogsPage";
 function App() {
-  const { t, i18n } = useTranslation();
   return (
     <div className="App">
-      {t('Welcome.1')}
-      <LangDropdown/>
+      <BlogsPage />
     </div>
   );
 }

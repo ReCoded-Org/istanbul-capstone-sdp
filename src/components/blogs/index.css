@@ -1,0 +1,44 @@
+.blogPhotoContainer img {
+  width: 440px;
+  text-align: center;
+}
+div.blogPhotoContainer {
+  text-align: center;
+}
+
+.blogDisplayContainer {
+  display: flex;
+}
+.blogPhotoTextContent {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.blogPhotoTextContent h4{
+    font-size: 37px;
+    margin-bottom: 20px;
+}
+.blogPhotoTextContent p {
+    font-size: 16px;
+}
+
+.blogsHeader {
+  height: 370px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 72, 145, 1) 0%,
+    rgba(38, 120, 204, 1) 100%
+  ) !important;
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(0, 72, 145, 1) 0%,
+    rgba(38, 120, 204, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(0, 72, 145, 1) 0%,
+    rgba(38, 120, 204, 1) 100%
+  );
+  width: 100vw;
+  margin-bottom: 50px;
+}
