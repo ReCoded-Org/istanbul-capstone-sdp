@@ -1,0 +1,11 @@
+# Ignore all tests:
+*.test.*
+
+# Ignore specific files such as:
+serviceWorker.js
+setupTests.js
+
+# Ignore all HTML, CSS, and JSON files:
+*.html
+*.css
+*.json
