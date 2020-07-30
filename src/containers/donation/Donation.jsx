@@ -1,7 +1,6 @@
 import React from "react";
 import { Header } from "./sections/Header";
 import { Carousel } from "react-bootstrap";
-import { Link } from "react-router-dom";
 
 export const Donation = () => {
   return (
@@ -50,6 +49,59 @@ export const Donation = () => {
         </p>
       </section>
 
+      <section>
+          <div className="tableSection">
+            <div className="tableBlueSection">
+              <p className="firstLineInsideTable">5</p>
+              <p className="secondLineInsideTable">years</p>
+            </div>
+
+            <div className="tableBlueSection">
+              <p className="firstLineInsideTable">3.1M</p>
+              <p className="secondLineInsideTable">dollars</p>
+            </div>
+
+            <div className="tableBlueSection">
+              <p className="firstLineInsideTable">20K</p>
+              <p className="secondLineInsideTable">donors</p>
+            </div>
+
+            <div className="tableBlueSection">
+              <p className="firstLineInsideTable">3000</p>
+              <p className="secondLineInsideTable">survivors</p>
+            </div>
+
+            <div className="tableBlueSection">
+              <p className="firstLineInsideTable">28</p>
+              <p className="secondLineInsideTable">countries</p>
+            </div>
+
+            <div className="tableBlueSection">
+              <p className="firstLineInsideTable">220</p>
+              <p className="secondLineInsideTable">employees</p>
+            </div>
+          </div>
+
+          <div className="tableSection">
+            <div className="tableGreySection1">
+              <img src="https://i.ibb.co/0M25Rzj/tick-mark.png" alt="Trick mark icon" />
+            </div>
+
+            <div className="tableGreySection2">
+              <img src="https://i.ibb.co/LDKPgmn/gift-icon.png" alt="Gift icon" />
+            </div>
+
+            <div className="tableGreySection1">
+              <img src="https://i.ibb.co/85qjgNG/heart-icon.png" alt="Heart icon" />
+            </div>
+
+            <div className="tableGreySection2">
+              <img src="https://i.ibb.co/34RCGp3/earth-icon.png" alt="Earth icon" />
+            </div>
+          </div>
+      </section>
+
+
       <div className="wholeCarousel">
         <Carousel>
           <Carousel.Item class="carousel-indicators">
@@ -92,30 +144,31 @@ export const Donation = () => {
           distress and individuals with suicidal thoughts with local Crisis
           Centres to receive immediate support.
         </p>
-
-        <div className="socialMedia">
-          <a href="http://www.facebook.com">
-            <img
-              src="https://i.ibb.co/Jp1M5vp/Facebook-button-in-donation-page.png"
-              alt="Facebook icon"
-            />
-          </a>
-
-          <a href="http://www.twitter.com">
-            <img
-              src="https://i.ibb.co/DMV3TM9/Twitter-for-donation-page.png"
-              alt="Twitter icon"
-            />
-          </a>
-
-          <a href="http://www.instgram.com">
-            <img
-              src="https://i.ibb.co/7zkfzL2/Instgram-for-donation-page.png"
-              alt="Instgram icon"
-            />
-          </a>
-        </div>
       </section>
     </div>
   );
 };
+
+
+// <div className="socialMedia">
+//           <a href="http://www.facebook.com">
+//             <img
+//               src="https://i.ibb.co/Jp1M5vp/Facebook-button-in-donation-page.png"
+//               alt="Facebook icon"
+//             />
+//           </a>
+
+//           <a href="http://www.twitter.com">
+//             <img
+//               src="https://i.ibb.co/DMV3TM9/Twitter-for-donation-page.png"
+//               alt="Twitter icon"
+//             />
+//           </a>
+
+//           <a href="http://www.instgram.com">
+//             <img
+//               src="https://i.ibb.co/7zkfzL2/Instgram-for-donation-page.png"
+//               alt="Instgram icon"
+//             />
+//           </a>
+//         </div>
