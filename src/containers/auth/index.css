@@ -1,0 +1,16 @@
+.link {
+    color: aliceblue;
+}
+
+.link:hover {
+    color: rgb(161, 161, 161);
+}
+
+.auth-icon {
+    width: 50px;
+    cursor: pointer;
+    border: 2px solid #bcbcbc;
+    padding: 2px;
+    border-radius: 30%;
+    margin-right: 30px;
+}
