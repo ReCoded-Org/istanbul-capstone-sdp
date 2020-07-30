@@ -18,6 +18,7 @@ function App() {
   const { t, i18n } = useTranslation();
   return (
     <React.Fragment>
+      learn react
       <NavBar />
       <Router>
         <Switch>
