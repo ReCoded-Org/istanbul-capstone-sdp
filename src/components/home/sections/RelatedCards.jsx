@@ -17,7 +17,7 @@ const RelatedCards = (props) => {
               additional content.
             </Card.Text>
             <a href="#!" className="readMoreCardBtn">
-              Read more >>
+              Read more {">>"}
             </a>
           </Card.Body>
         </Card>
@@ -30,7 +30,7 @@ const RelatedCards = (props) => {
               additional content.
             </Card.Text>
             <a href="#!" className="readMoreCardBtn">
-              Read more >>
+              Read more {">>"}
             </a>
           </Card.Body>
         </Card>
@@ -43,7 +43,7 @@ const RelatedCards = (props) => {
               additional content.
             </Card.Text>
             <a href="#!" className="readMoreCardBtn">
-              Read more >>
+              Read more {">>"}
             </a>
           </Card.Body>
         </Card>
@@ -55,7 +55,7 @@ const RelatedCards = (props) => {
               additional content.
             </Card.Text>
             <a href="#!" className="readMoreCardBtn">
-              Read more >>
+              Read more {">>"}
             </a>
           </Card.Body>
         </Card>
