@@ -1,8 +1,45 @@
+const splitFullName = (fullName, selection) => {
+  if (selection === "first") {
+    return fullName.substr(0, fullName.indexOf(" "));
+  } else if (selection === "last") {
+    return fullName.substr(fullName.indexOf(" ") + 1);
+  }
+  return (
+    splitFullName(fullName, "first")[0] +
+    " " +
+    splitFullName(fullName, "last")[0]
+  );
+};
+
+const addToFirebaseDB = (
+  firestore,
+  userID,
+  firstName,
+  lastName,
+  initials,
+  imageURL,
+  email,
+  provider
+) => {
+  const db = firestore.collection("profiles").doc(userID);
+  db.get().then((doc) => {
+    if (!doc.exists) {
+      return db.set({
+        firstName,
+        lastName,
+        initials,
+        imageURL,
+        email,
+        provider,
+        userType: "normal",
+      });
+    }
+  });
+};
+
 export const signIn = (credentials) => {
   return (dispatch, getState, { getFirebase }) => {
-    // make async call to database
     const firebase = getFirebase();
-
     firebase
       .auth()
       .signInWithEmailAndPassword(credentials.email, credentials.password)
@@ -17,9 +54,7 @@ export const signIn = (credentials) => {
 
 export const signOut = () => {
   return (dispatch, getState, { getFirebase }) => {
-    // make async call to database
     const firebase = getFirebase();
-
     firebase
       .auth()
       .signOut()
@@ -31,23 +66,22 @@ export const signOut = () => {
 
 export const signUp = (newProfile) => {
   return (dispatch, getState, { getFirebase, getFirestore }) => {
-    // make async call to database
-
     const firebase = getFirebase();
     const firestore = getFirestore();
-
     firebase
       .auth()
       .createUserWithEmailAndPassword(newProfile.email, newProfile.password)
       .then((resp) => {
-        return firestore.collection("profiles").doc(resp.user.uid).set({
-          firstName: newProfile.firstName,
-          lastName: newProfile.lastName,
-          initials: newProfile.initials,
-          imageURL: newProfile.imageURL,
-          email: newProfile.email,
-          provider: resp.user.providerData[0].providerId,
-        });
+        return addToFirebaseDB(
+          firestore,
+          resp.user.uid,
+          newProfile.firstName,
+          newProfile.lastName,
+          newProfile.initials,
+          newProfile.imageURL,
+          newProfile.email,
+          resp.user.providerData[0].providerId
+        );
       })
       .then(() => {
         dispatch({ type: "SIGN_UP_SUCCESS" });
@@ -60,43 +94,23 @@ export const signUp = (newProfile) => {
 
 export const facebookAuth = () => {
   return (dispatch, getState, { getFirebase, getFirestore }) => {
-    // make async call to database
-
     const firebase = getFirebase();
     const firestore = getFirestore();
-
     const facebookAuthProvider = new firebase.auth.FacebookAuthProvider();
-
     firebase
       .auth()
       .signInWithPopup(facebookAuthProvider)
       .then((resp) => {
-        const firstName = resp.user.displayName.substr(
-          0,
-          resp.user.displayName.indexOf(" ")
+        return addToFirebaseDB(
+          firestore,
+          resp.user.uid,
+          splitFullName(resp.user.displayName, "first"),
+          splitFullName(resp.user.displayName, "last"),
+          splitFullName(resp.user.displayName, "initials"),
+          resp.user.photoURL + "?type=large",
+          resp.user.email,
+          resp.user.providerData[0].providerId
         );
-        const lastName = resp.user.displayName.substr(
-          resp.user.displayName.indexOf(" ") + 1
-        );
-        const initials = firstName[0] + " " + lastName[0];
-        const imageURL = resp.user.photoURL + "?type=large";
-
-        const previousProfileChecker = firestore
-          .collection("profiles")
-          .doc(resp.user.uid);
-
-        previousProfileChecker.get().then((doc) => {
-          if (!doc.exists) {
-            return firestore.collection("profiles").doc(resp.user.uid).set({
-              firstName,
-              lastName,
-              initials,
-              imageURL,
-              email: resp.user.email,
-              provider: resp.user.providerData[0].providerId,
-            });
-          }
-        });
       })
       .then(() => {
         dispatch({ type: "FACEBOOK_AUTH_SUCCESS" });
@@ -109,42 +123,23 @@ export const facebookAuth = () => {
 
 export const googleAuth = () => {
   return (dispatch, getState, { getFirebase, getFirestore }) => {
-    // make async call to database
-
     const firebase = getFirebase();
     const firestore = getFirestore();
-
     const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
-
     firebase
       .auth()
       .signInWithPopup(googleAuthProvider)
       .then((resp) => {
-        const firstName = resp.user.displayName.substr(
-          0,
-          resp.user.displayName.indexOf(" ")
+        return addToFirebaseDB(
+          firestore,
+          resp.user.uid,
+          splitFullName(resp.user.displayName, "first"),
+          splitFullName(resp.user.displayName, "last"),
+          splitFullName(resp.user.displayName, "initials"),
+          resp.user.photoURL,
+          resp.user.email,
+          resp.user.providerData[0].providerId
         );
-        const lastName = resp.user.displayName.substr(
-          resp.user.displayName.indexOf(" ") + 1
-        );
-        const initials = firstName[0] + " " + lastName[0];
-
-        const previousProfileChecker = firestore
-          .collection("profiles")
-          .doc(resp.user.uid);
-
-        previousProfileChecker.get().then((doc) => {
-          if (!doc.exists) {
-            return firestore.collection("profiles").doc(resp.user.uid).set({
-              firstName,
-              lastName,
-              initials,
-              imageURL: resp.user.photoURL,
-              email: resp.user.email,
-              provider: resp.user.providerData[0].providerId,
-            });
-          }
-        });
       })
       .then(() => {
         dispatch({ type: "GOOGLE_AUTH_SUCCESS" });
