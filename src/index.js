@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./containers/App";
 import * as serviceWorker from "./serviceWorker";
-import "./i18n";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { createStore, applyMiddleware, compose } from "redux";
 import rootReducer from "./reducers/rootReducer";
@@ -31,22 +30,18 @@ const store = createStore(
   )
 );
 
-//construct required properties
+// Construct required properties
 const profileSpecificProps = {
+  ...firebaseConfig,
   userProfile: "profiles",
   useFirestoreForProfile: true,
   enableRedirectHandling: false,
   resetBeforeLogin: false,
 };
 
-//second config propery added
 const rrfProps = {
   firebase,
-
-  config: firebaseConfig,
-  //second config added here
   config: profileSpecificProps,
-
   dispatch: store.dispatch,
   createFirestoreInstance,
 };
@@ -54,6 +49,7 @@ const rrfProps = {
 const AuthIsLoaded = ({ children }) => {
   const auth = useSelector((state) => state.firebase.auth);
   if (!isLoaded(auth)) {
+    // Wait until the auth is done
     return (
       <Container>
         <h4>Loading...</h4>
@@ -68,6 +64,7 @@ ReactDOM.render(
     <Provider store={store}>
       <ReactReduxFirebaseProvider {...rrfProps}>
         <AuthIsLoaded>
+          {/* Wait until the translation is done */}
           <Suspense fallback={<div>Loading...</div>}>
             <App />
           </Suspense>
