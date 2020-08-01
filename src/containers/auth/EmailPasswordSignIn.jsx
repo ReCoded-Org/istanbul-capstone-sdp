@@ -48,18 +48,15 @@ const EmailPasswordSignIn = (props) => {
         </Button>
         <Container>
           {/* Show error message when fails to sign in */}
-          {authError && errKey === "login" ? (
-            <>
+          {authError && errKey === "login" && (
+            <div className="err-msg-container">
               <br />
               <p>
                 <b>{authError}</b>
               </p>
-              <p>
-                <b>Hint: </b>
-                {errMessage}
-              </p>
-            </>
-          ) : null}
+              <div className="err-msg">{errMessage}</div>
+            </div>
+          )}
         </Container>
       </Form>
     </Container>
