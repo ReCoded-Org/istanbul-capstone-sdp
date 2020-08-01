@@ -9,22 +9,28 @@ const CreateEmailPassword = (props) => {
   const [lastName, setLastName] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
-  const { auth, authError, errMessage } = props;
+  const [passwordRepeat, setPasswordRepeat] = React.useState("");
+  const [passwordMatch, setPasswordMatch] = React.useState(true);
+  const { auth, authError, errMessage, errKey } = props;
   // Redirect to home page after it's signed up and logged in
   if (auth.uid) {
     return <Redirect to="/" />;
   }
   // Create a new account with "Email & Password" method
   const handleSubmit = (e) => {
-    const initials = firstName[0] + " " + lastName[0];
-    props.signUp({
-      firstName,
-      lastName,
-      email,
-      password,
-      initials,
-      imageURL: null,
-    });
+    if (password === passwordRepeat) {
+      setPasswordMatch(true);
+      props.signUp({
+        firstName,
+        lastName,
+        fullName: firstName + " " + lastName,
+        email,
+        password,
+        imageURL: null,
+      });
+    } else {
+      setPasswordMatch(false);
+    }
     e.preventDefault();
   };
   return (
@@ -36,7 +42,7 @@ const CreateEmailPassword = (props) => {
             <Form.Label>First Name:</Form.Label>
             <Form.Control
               type="text"
-              placeholder="first name..."
+              placeholder="First name"
               onInput={(e) => {
                 setFirstName(e.target.value);
               }}
@@ -46,7 +52,7 @@ const CreateEmailPassword = (props) => {
             <Form.Label>Last Name:</Form.Label>
             <Form.Control
               type="text"
-              placeholder="last name..."
+              placeholder="Last name"
               onInput={(e) => {
                 setLastName(e.target.value);
               }}
@@ -68,18 +74,35 @@ const CreateEmailPassword = (props) => {
             <Form.Label>Password:</Form.Label>
             <Form.Control
               type="password"
-              placeholder="password..."
+              placeholder="Password"
               onInput={(e) => {
                 setPassword(e.target.value);
+                setPasswordMatch(true);
               }}
             />
           </Form.Group>
+          <Form.Group as={Col} controlId="passwordRepeat">
+            <Form.Label>Re-type password:</Form.Label>
+            <Form.Control
+              type="password"
+              placeholder="Re-type password"
+              onInput={(e) => {
+                setPasswordRepeat(e.target.value);
+                setPasswordMatch(true);
+              }}
+            />
+          </Form.Group>
+          {!passwordMatch && (
+            <p>
+              <b>Hint: </b>Those passwords don't match. Try again
+            </p>
+          )}
         </Form.Row>
         <Button variant="primary" type="submit" onClick={handleSubmit}>
           Sign Up
         </Button>
         <Container>
-          {authError ? (
+          {authError && errKey ? (
             <>
               <br />
               <p>
@@ -93,7 +116,6 @@ const CreateEmailPassword = (props) => {
           ) : null}
         </Container>
       </Form>
-      <hr style={{ marginTop: "30px", marginBottom: "30px" }} />
     </Container>
   );
 };
@@ -102,6 +124,7 @@ const mapStateToProps = (state) => {
   return {
     authError: state.auth.authError,
     errMessage: state.auth.errMessage,
+    errKey: state.auth.errKey,
     auth: state.firebase.auth,
   };
 };
