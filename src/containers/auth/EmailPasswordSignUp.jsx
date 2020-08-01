@@ -4,7 +4,7 @@ import { Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 import { signUp } from "../../actions/authActions";
 
-const CreateEmailPassword = (props) => {
+const EmailPasswordSignUp = (props) => {
   const [firstName, setFirstName] = React.useState("");
   const [lastName, setLastName] = React.useState("");
   const [email, setEmail] = React.useState("");
@@ -125,7 +125,7 @@ const mapStateToProps = (state) => {
     authError: state.auth.authError,
     errMessage: state.auth.errMessage,
     errKey: state.auth.errKey,
-    auth: state.firebase.auth,
+    auth: state.firebase.auth
   };
 };
 
@@ -138,4 +138,4 @@ const mapDispatchToProps = (dispatch) => {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(CreateEmailPassword);
+)(EmailPasswordSignUp);
