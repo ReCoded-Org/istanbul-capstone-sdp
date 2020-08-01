@@ -38,7 +38,7 @@ const EmailPasswordSignUp = (props) => {
       <h3>Creating a new account</h3>
       <Form>
         <Form.Row>
-          <Form.Group as={Col} controlId="fisrtName">
+          <Form.Group as={Col} controlId="firstName">
             <Form.Label>First Name:</Form.Label>
             <Form.Control
               type="text"
@@ -93,27 +93,20 @@ const EmailPasswordSignUp = (props) => {
             />
           </Form.Group>
           {!passwordMatch && (
-            <p>
-              <b>Hint: </b>Those passwords don't match. Try again
-            </p>
+            <div className="password-match">Your passwords must match</div>
           )}
         </Form.Row>
         <Button variant="primary" type="submit" onClick={handleSubmit}>
           Sign Up
         </Button>
         <Container>
-          {authError && errKey === "signup" ? (
-            <>
-              <br />
-              <p>
-                <b>{authError}</b>
-              </p>
-              <p>
-                <b>Hint: </b>
-                {errMessage}
-              </p>
-            </>
-          ) : null}
+          {/* Show error message when fails to sign up */}
+          {authError && errKey === "signup" && (
+            <div className="err-msg-container">
+              <b>{authError}</b>
+              <div className="err-msg">{errMessage}</div>
+            </div>
+          )}
         </Container>
       </Form>
     </Container>
