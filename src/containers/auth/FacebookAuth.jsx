@@ -6,7 +6,7 @@ import { Redirect } from "react-router-dom";
 import "./index.css";
 
 const FacebookAuth = (props) => {
-  const { authError, errMessage, auth } = props;
+  const { authError, errMessage, auth, errKey } = props;
   // Redirect to home page after the auth is done and signed in
   if (auth.uid) {
     return <Redirect to="/" />;
@@ -19,7 +19,7 @@ const FacebookAuth = (props) => {
         src={facebookIcon}
         onClick={props.facebookAuth}
       />
-      {authError ? (
+      {authError && errKey ? (
         <>
           <br />
           <p>
@@ -39,7 +39,8 @@ const mapStateToProps = (state) => {
   return {
     authError: state.auth.authError,
     errMessage: state.auth.errMessage,
-    auth: state.firebase.auth,
+    errKey: state.auth.errKey,
+    auth: state.firebase.auth
   };
 };
 
