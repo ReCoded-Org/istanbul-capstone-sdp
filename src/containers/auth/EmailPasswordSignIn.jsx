@@ -13,7 +13,7 @@ const EmailPasswordAuth = (props) => {
     props.signIn({ email, password });
   };
   // Redirect to home page after it's logged in
-  const { auth, authError, errMessage } = props;
+  const { auth, authError, errMessage, errKey } = props;
   if (auth.uid) {
     return <Redirect to="/" />;
   }
@@ -48,7 +48,7 @@ const EmailPasswordAuth = (props) => {
         </Button>
         <Container>
           {/* Show error message when fails to sign in */}
-          {authError ? (
+          {authError && errKey ? (
             <>
               <br />
               <p>
@@ -70,7 +70,8 @@ const mapStateToProps = (state) => {
   return {
     authError: state.auth.authError,
     errMessage: state.auth.errMessage,
-    auth: state.firebase.auth,
+    errKey: state.auth.errKey,
+    auth: state.firebase.auth
   };
 };
 
