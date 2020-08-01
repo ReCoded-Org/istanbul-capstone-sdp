@@ -4,7 +4,7 @@ import { Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 import { signIn } from "../../actions/authActions";
 
-const EmailPasswordAuth = (props) => {
+const EmailPasswordSignIn = (props) => {
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
   // Sign in to an existing account with "Email & Password" method
@@ -81,4 +81,4 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(EmailPasswordAuth);
+export default connect(mapStateToProps, mapDispatchToProps)(EmailPasswordSignIn);
