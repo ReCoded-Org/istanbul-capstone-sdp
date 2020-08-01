@@ -71,7 +71,7 @@ const mapStateToProps = (state) => {
     authError: state.auth.authError,
     errMessage: state.auth.errMessage,
     errKey: state.auth.errKey,
-    auth: state.firebase.auth
+    auth: state.firebase.auth,
   };
 };
 
