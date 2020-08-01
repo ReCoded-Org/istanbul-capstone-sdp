@@ -102,7 +102,7 @@ const EmailPasswordSignUp = (props) => {
           Sign Up
         </Button>
         <Container>
-          {authError && errKey ? (
+          {authError && errKey === "signup" ? (
             <>
               <br />
               <p>
@@ -125,7 +125,7 @@ const mapStateToProps = (state) => {
     authError: state.auth.authError,
     errMessage: state.auth.errMessage,
     errKey: state.auth.errKey,
-    auth: state.firebase.auth
+    auth: state.firebase.auth,
   };
 };
 
