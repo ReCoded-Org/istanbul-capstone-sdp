@@ -19,18 +19,13 @@ const GoogleAuth = (props) => {
         src={googleIcon}
         onClick={props.googleAuth}
       />
-      {authError && errKey === "google" ? (
-        <>
-          <br />
-          <p>
-            <b>{authError}</b>
-          </p>
-          <p>
-            <b>Hint: </b>
-            {errMessage}
-          </p>
-        </>
-      ) : null}
+      {/* Show error message when fails to auth with google */}
+      {authError && errKey === "google" && (
+        <div className="err-msg-container">
+          <b>{authError}</b>
+          <div className="err-msg">{errMessage}</div>
+        </div>
+      )}
     </div>
   );
 };
