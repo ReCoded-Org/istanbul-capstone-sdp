@@ -36,7 +36,7 @@ const EmailPasswordAuth = (props) => {
             <Form.Label>Password:</Form.Label>
             <Form.Control
               type="password"
-              placeholder="password..."
+              placeholder="Password"
               onInput={(e) => {
                 setPassword(e.target.value);
               }}
@@ -62,7 +62,6 @@ const EmailPasswordAuth = (props) => {
           ) : null}
         </Container>
       </Form>
-      <hr style={{ marginTop: "30px", marginBottom: "30px" }} />
     </Container>
   );
 };
