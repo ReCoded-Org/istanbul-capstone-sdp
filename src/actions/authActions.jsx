@@ -1,22 +1,9 @@
-const splitFullName = (fullName, selection) => {
-  if (selection === "first") {
-    return fullName.substr(0, fullName.indexOf(" "));
-  } else if (selection === "last") {
-    return fullName.substr(fullName.indexOf(" ") + 1);
-  }
-  return (
-    splitFullName(fullName, "first")[0] +
-    " " +
-    splitFullName(fullName, "last")[0]
-  );
-};
-
 const addToFirebaseDB = (
   firestore,
   userID,
   firstName,
   lastName,
-  initials,
+  fullName,
   imageURL,
   email,
   provider
@@ -27,7 +14,7 @@ const addToFirebaseDB = (
       return db.set({
         firstName,
         lastName,
-        initials,
+        fullName,
         imageURL,
         email,
         provider,
@@ -77,7 +64,7 @@ export const signUp = (newProfile) => {
           resp.user.uid,
           newProfile.firstName,
           newProfile.lastName,
-          newProfile.initials,
+          newProfile.fullName,
           newProfile.imageURL,
           newProfile.email,
           resp.user.providerData[0].providerId
@@ -104,9 +91,9 @@ export const facebookAuth = () => {
         return addToFirebaseDB(
           firestore,
           resp.user.uid,
-          splitFullName(resp.user.displayName, "first"),
-          splitFullName(resp.user.displayName, "last"),
-          splitFullName(resp.user.displayName, "initials"),
+          null,
+          null,
+          resp.user.displayName,
           resp.user.photoURL + "?type=large",
           resp.user.email,
           resp.user.providerData[0].providerId
@@ -133,9 +120,9 @@ export const googleAuth = () => {
         return addToFirebaseDB(
           firestore,
           resp.user.uid,
-          splitFullName(resp.user.displayName, "first"),
-          splitFullName(resp.user.displayName, "last"),
-          splitFullName(resp.user.displayName, "initials"),
+          null,
+          null,
+          resp.user.displayName,
           resp.user.photoURL,
           resp.user.email,
           resp.user.providerData[0].providerId
