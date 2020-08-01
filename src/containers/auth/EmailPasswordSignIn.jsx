@@ -48,7 +48,7 @@ const EmailPasswordAuth = (props) => {
         </Button>
         <Container>
           {/* Show error message when fails to sign in */}
-          {authError && errKey ? (
+          {authError && errKey === "login" ? (
             <>
               <br />
               <p>
