@@ -19,7 +19,7 @@ const FacebookAuth = (props) => {
         src={facebookIcon}
         onClick={props.facebookAuth}
       />
-      {authError && errKey ? (
+      {authError && errKey === "facebook" ? (
         <>
           <br />
           <p>
@@ -40,7 +40,7 @@ const mapStateToProps = (state) => {
     authError: state.auth.authError,
     errMessage: state.auth.errMessage,
     errKey: state.auth.errKey,
-    auth: state.firebase.auth
+    auth: state.firebase.auth,
   };
 };
 
