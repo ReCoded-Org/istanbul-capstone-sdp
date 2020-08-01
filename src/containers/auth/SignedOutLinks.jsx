@@ -5,9 +5,9 @@ import "./index.css";
 const SignedOutLinks = () => {
   return (
     <div className="link">
-      <Link to="/log-in">Sign In</Link>
+      <Link to="/login">Log In</Link>
       {" || "}
-      <Link to="/sign-up">Sign Up</Link>
+      <Link to="/signup">Sign Up</Link>
     </div>
   );
 };
