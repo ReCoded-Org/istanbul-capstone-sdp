@@ -19,18 +19,13 @@ const FacebookAuth = (props) => {
         src={facebookIcon}
         onClick={props.facebookAuth}
       />
-      {authError && errKey === "facebook" ? (
-        <>
-          <br />
-          <p>
-            <b>{authError}</b>
-          </p>
-          <p>
-            <b>Hint: </b>
-            {errMessage}
-          </p>
-        </>
-      ) : null}
+      {/* Show error message when fails to auth with facebook */}
+      {authError && errKey === "facebook" && (
+        <div className="err-msg-container">
+          <b>{authError}</b>
+          <div className="err-msg">{errMessage}</div>
+        </div>
+      )}
     </div>
   );
 };
