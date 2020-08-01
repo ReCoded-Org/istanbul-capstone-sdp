@@ -19,7 +19,7 @@ const GoogleAuth = (props) => {
         src={googleIcon}
         onClick={props.googleAuth}
       />
-      {authError && errKey ? (
+      {authError && errKey === "google" ? (
         <>
           <br />
           <p>
