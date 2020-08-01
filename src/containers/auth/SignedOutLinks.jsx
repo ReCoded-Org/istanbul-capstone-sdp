@@ -4,7 +4,7 @@ import "./index.css";
 
 const SignedOutLinks = () => {
   return (
-    <div className="link">
+    <div className="link signed-out-links">
       <Link to="/login">Log In</Link>
       <Link to="/signup">Sign Up</Link>
     </div>
