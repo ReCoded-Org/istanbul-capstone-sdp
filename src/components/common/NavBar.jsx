@@ -1,44 +1,51 @@
 import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import "./index.css";
+import {Link} from "react-router-dom";
 
 export const NavBar = () => {
   return (
     <div>
       <Navbar className="navBar">
-        <Navbar.Brand href="/">
+      <Link to="/">
+        <Navbar.Brand>
           <img
             className="brandSpaces"
             src="https://i.ibb.co/L9GcrMY/LLogo-2.png"
             alt="Suljak Logo"
           />
         </Navbar.Brand>
+        </Link>
 
         <Nav className="collapse navbar-collapse justify-content-end">
           <Nav.Item className="navSpaces">
-            <Nav.Link className="navLink" href="/Contact">
+          <Link to="/Contact" className="navLink">
               CONTACT US
-            </Nav.Link>
+          </Link>
           </Nav.Item>
+
           <Nav.Item className="navSpaces">
-            <Nav.Link className="navLink" href="/About">
+          <Link to="/About" className="navLink">
               ABOUT
-            </Nav.Link>
+            </Link>
           </Nav.Item>
+
           <Nav.Item className="navSpaces">
-            <Nav.Link className="navLink" href="/Assessment">
+          <Link to="/Assessment" className="navLink">
               ASSESSMENT
-            </Nav.Link>
+          </Link>
           </Nav.Item>
+
           <Nav.Item className="navSpaces">
-            <Nav.Link className="navLink" href="/Donation">
+          <Link to="/Donation" className="navLink">
               DONATE
-            </Nav.Link>
+          </Link>
           </Nav.Item>
+
           <Nav.Item className="navSpaces">
-            <Nav.Link className="navLink" href="/Blogs">
+          <Link to="/Blogs" className="navLink">
               BLOG
-            </Nav.Link>
+          </Link>
           </Nav.Item>
         </Nav>
 

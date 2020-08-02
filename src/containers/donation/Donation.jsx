@@ -13,8 +13,7 @@ export const Donation = () => {
         </p>
 
         <p className="subAddress">
-          Together with your support and your help, we can raise awareness of
-          suicide prevention to save lives
+          Together with your support and your help, we will be able to raise awareness of suicide prevention to save lives
         </p>
 
         <p className="textBody1">
@@ -52,53 +51,67 @@ export const Donation = () => {
       <section>
           <div className="tableSection">
             <div className="tableBlueSection">
-              <p className="firstLineInsideTable">5</p>
-              <p className="secondLineInsideTable">years</p>
+              <p className="firstLineInsideTable">5<br/><span className="bottomLine">years</span></p>
             </div>
 
             <div className="tableBlueSection">
-              <p className="firstLineInsideTable">3.1M</p>
-              <p className="secondLineInsideTable">dollars</p>
+              <p className="firstLineInsideTable">3.1M<br/><span className="bottomLine">dollars</span></p>
             </div>
 
             <div className="tableBlueSection">
-              <p className="firstLineInsideTable">20K</p>
-              <p className="secondLineInsideTable">donors</p>
+              <p className="firstLineInsideTable">20K<br/><span className="bottomLine">donors</span></p>
             </div>
 
             <div className="tableBlueSection">
-              <p className="firstLineInsideTable">3000</p>
-              <p className="secondLineInsideTable">survivors</p>
+              <p className="firstLineInsideTable">3000<br/><span className="bottomLine">survivors</span></p>
             </div>
 
             <div className="tableBlueSection">
-              <p className="firstLineInsideTable">28</p>
-              <p className="secondLineInsideTable">countries</p>
+              <p className="firstLineInsideTable">28<br/><span className="bottomLine">countries</span></p>
             </div>
 
             <div className="tableBlueSection">
-              <p className="firstLineInsideTable">220</p>
-              <p className="secondLineInsideTable">employees</p>
+              <p className="firstLineInsideTable">220<br/><span className="bottomLine">employees</span></p>
             </div>
           </div>
 
           <div className="tableSection">
             <div className="tableGreySection1">
               <img src="https://i.ibb.co/0M25Rzj/tick-mark.png" alt="Trick mark icon" />
+              <p className= "textInsidetable1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
             </div>
 
             <div className="tableGreySection2">
               <img src="https://i.ibb.co/LDKPgmn/gift-icon.png" alt="Gift icon" />
+              <p className= "textInsidetable2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
             </div>
 
             <div className="tableGreySection1">
               <img src="https://i.ibb.co/85qjgNG/heart-icon.png" alt="Heart icon" />
+              <p className= "textInsidetable1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
             </div>
 
             <div className="tableGreySection2">
               <img src="https://i.ibb.co/34RCGp3/earth-icon.png" alt="Earth icon" />
+              <p className= "textInsidetable2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
             </div>
           </div>
+      </section>
+
+      <section className="pageMarings">
+        <p className="textBody1">
+          Approximately 11 people in Canada die by suicide every day. That’s
+          over 4,000 people a year, making suicide a leading cause of death in
+          Canada. We can help prevent suicide with the right services. A
+          donation to the Canada Suicide Prevention Service allows us to connect
+          individuals in distress and individuals with suicidal thoughts with
+          local Crisis Centres to receive immediate support.
+          <br />
+          Approximately 11 people iight services. A donation to the Canada
+          Suicide Prevention Service allows us to connect individuals in
+          distress and individuals with suicidal thoughts with local Crisis
+          Centres to receive immediate support.
+        </p>
       </section>
 
 
@@ -145,6 +158,30 @@ export const Donation = () => {
           Centres to receive immediate support.
         </p>
       </section>
+
+      <div className="socialMedia">
+          <a href="http://www.facebook.com">
+            <img
+              src="https://i.ibb.co/Jp1M5vp/Facebook-button-in-donation-page.png"
+              alt="Facebook icon"
+            />
+          </a>
+
+          <a href="http://www.twitter.com">
+            <img
+              src="https://i.ibb.co/DMV3TM9/Twitter-for-donation-page.png"
+              alt="Twitter icon"
+            />
+          </a>
+
+          <a href="http://www.instgram.com">
+            <img
+              src="https://i.ibb.co/7zkfzL2/Instgram-for-donation-page.png"
+              alt="Instgram icon"
+            />
+          </a>
+        </div>
+
     </div>
   );
 };
@@ -172,3 +209,9 @@ export const Donation = () => {
 //             />
 //           </a>
 //         </div>
+
+
+// <div className="tableBlueSection">
+// <p className="firstLineInsideTable">3.1M</p>
+// <p className="secondLineInsideTable">dollars</p>
+// </div>
