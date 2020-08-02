@@ -16,7 +16,7 @@ function App() {
   return (
     <React.Fragment>
       <Router>
-      <NavBar />
+        <NavBar />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/contact" component={Contact} />

@@ -1,0 +1,17 @@
+{
+  "welcome": {
+    "message": "Welcome to React"
+  },
+  "React": {
+    "1": "HEY GUUYS"
+  },
+  "en": {
+    "1": "English"
+  },
+  "tr": {
+    "1": "Turkish"
+  },
+  "ar": {
+    "1": "Arabic"
+  }
+}

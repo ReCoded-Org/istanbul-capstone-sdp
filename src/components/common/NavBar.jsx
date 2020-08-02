@@ -1,51 +1,51 @@
 import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import "./index.css";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export const NavBar = () => {
   return (
     <div>
       <Navbar className="navBar">
-      <Link to="/">
-        <Navbar.Brand>
-          <img
-            className="brandSpaces"
-            src="https://i.ibb.co/L9GcrMY/LLogo-2.png"
-            alt="Suljak Logo"
-          />
-        </Navbar.Brand>
+        <Link to="/">
+          <Navbar.Brand>
+            <img
+              className="brandSpaces"
+              src="https://i.ibb.co/L9GcrMY/LLogo-2.png"
+              alt="Suljak Logo"
+            />
+          </Navbar.Brand>
         </Link>
 
         <Nav className="collapse navbar-collapse justify-content-end">
           <Nav.Item className="navSpaces">
-          <Link to="/Contact" className="navLink">
+            <Link to="/Contact" className="navLink">
               CONTACT US
-          </Link>
+            </Link>
           </Nav.Item>
 
           <Nav.Item className="navSpaces">
-          <Link to="/About" className="navLink">
+            <Link to="/About" className="navLink">
               ABOUT
             </Link>
           </Nav.Item>
 
           <Nav.Item className="navSpaces">
-          <Link to="/Assessment" className="navLink">
+            <Link to="/Assessment" className="navLink">
               ASSESSMENT
-          </Link>
+            </Link>
           </Nav.Item>
 
           <Nav.Item className="navSpaces">
-          <Link to="/Donation" className="navLink">
+            <Link to="/Donation" className="navLink">
               DONATE
-          </Link>
+            </Link>
           </Nav.Item>
 
           <Nav.Item className="navSpaces">
-          <Link to="/Blogs" className="navLink">
+            <Link to="/Blogs" className="navLink">
               BLOG
-          </Link>
+            </Link>
           </Nav.Item>
         </Nav>
 

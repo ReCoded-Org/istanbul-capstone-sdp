@@ -3,7 +3,7 @@
   padding-top: 30px;
   text-align: center;
   margin-top: -32px;
-  font-family: aktiv-grotesk,Sans-serif;
+  font-family: aktiv-grotesk, Sans-serif;
 }
 
 .pageMarings {
@@ -16,7 +16,7 @@
   font-weight: bold;
   line-height: 60px;
   margin-bottom: 50px;
-  font-family: aktiv-grotesk,Sans-serif;
+  font-family: aktiv-grotesk, Sans-serif;
 }
 
 .subAddress {
@@ -25,7 +25,7 @@
   line-height: 40px;
   margin-bottom: 25px;
   text-align: justify;
-  font-family: aktiv-grotesk,Sans-serif;
+  font-family: aktiv-grotesk, Sans-serif;
 }
 
 .textBody1 {
@@ -34,7 +34,7 @@
   line-height: 25px;
   color: #5c6771;
   text-align: justify;
-  font-family: aktiv-grotesk,Sans-serif;
+  font-family: aktiv-grotesk, Sans-serif;
 }
 
 .textBody2 {
@@ -43,7 +43,7 @@
   text-align: justify;
   line-height: 25px;
   color: #363636;
-  font-family: aktiv-grotesk,Sans-serif;
+  font-family: aktiv-grotesk, Sans-serif;
 }
 
 .quotes {
@@ -115,7 +115,6 @@
   background-color: #135ba5;
 }
 
-
 .tableBlueSection {
   background-color: #135ba5;
   /* width: 11%; */
@@ -132,7 +131,7 @@
 
 .firstLineInsideTable {
   font-size: 45px;
-  font-family: aktiv-grotesk,Sans-serif;
+  font-family: aktiv-grotesk, Sans-serif;
   /* text-align: center; */
   /* align-items: center; */
   /* align-content: center; */
@@ -168,15 +167,15 @@
 }
 
 .textInsidetable1 {
-  color:white;
+  color: white;
   padding: 20px 20px;
   font-size: 14px;
-  font-family: aktiv-grotesk,Sans-serif;
+  font-family: aktiv-grotesk, Sans-serif;
 }
 
 .textInsidetable2 {
-  color:#a8a8a8;
+  color: #a8a8a8;
   padding: 20px 20px;
   font-size: 14px;
-  font-family: aktiv-grotesk,Sans-serif;
+  font-family: aktiv-grotesk, Sans-serif;
 }

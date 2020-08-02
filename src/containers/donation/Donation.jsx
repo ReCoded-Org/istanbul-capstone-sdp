@@ -13,7 +13,8 @@ export const Donation = () => {
         </p>
 
         <p className="subAddress">
-          Together with your support and your help, we will be able to raise awareness of suicide prevention to save lives
+          Together with your support and your help, we will be able to raise
+          awareness of suicide prevention to save lives
         </p>
 
         <p className="textBody1">
@@ -49,53 +50,109 @@ export const Donation = () => {
       </section>
 
       <section>
-          <div className="tableSection">
-            <div className="tableBlueSection">
-              <p className="firstLineInsideTable">5<br/><span className="bottomLine">years</span></p>
-            </div>
-
-            <div className="tableBlueSection">
-              <p className="firstLineInsideTable">3.1M<br/><span className="bottomLine">dollars</span></p>
-            </div>
-
-            <div className="tableBlueSection">
-              <p className="firstLineInsideTable">20K<br/><span className="bottomLine">donors</span></p>
-            </div>
-
-            <div className="tableBlueSection">
-              <p className="firstLineInsideTable">3000<br/><span className="bottomLine">survivors</span></p>
-            </div>
-
-            <div className="tableBlueSection">
-              <p className="firstLineInsideTable">28<br/><span className="bottomLine">countries</span></p>
-            </div>
-
-            <div className="tableBlueSection">
-              <p className="firstLineInsideTable">220<br/><span className="bottomLine">employees</span></p>
-            </div>
+        <div className="tableSection">
+          <div className="tableBlueSection">
+            <p className="firstLineInsideTable">
+              5<br />
+              <span className="bottomLine">years</span>
+            </p>
           </div>
 
-          <div className="tableSection">
-            <div className="tableGreySection1">
-              <img src="https://i.ibb.co/0M25Rzj/tick-mark.png" alt="Trick mark icon" />
-              <p className= "textInsidetable1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-            </div>
-
-            <div className="tableGreySection2">
-              <img src="https://i.ibb.co/LDKPgmn/gift-icon.png" alt="Gift icon" />
-              <p className= "textInsidetable2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-            </div>
-
-            <div className="tableGreySection1">
-              <img src="https://i.ibb.co/85qjgNG/heart-icon.png" alt="Heart icon" />
-              <p className= "textInsidetable1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-            </div>
-
-            <div className="tableGreySection2">
-              <img src="https://i.ibb.co/34RCGp3/earth-icon.png" alt="Earth icon" />
-              <p className= "textInsidetable2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-            </div>
+          <div className="tableBlueSection">
+            <p className="firstLineInsideTable">
+              3.1M
+              <br />
+              <span className="bottomLine">dollars</span>
+            </p>
           </div>
+
+          <div className="tableBlueSection">
+            <p className="firstLineInsideTable">
+              20K
+              <br />
+              <span className="bottomLine">donors</span>
+            </p>
+          </div>
+
+          <div className="tableBlueSection">
+            <p className="firstLineInsideTable">
+              3000
+              <br />
+              <span className="bottomLine">survivors</span>
+            </p>
+          </div>
+
+          <div className="tableBlueSection">
+            <p className="firstLineInsideTable">
+              28
+              <br />
+              <span className="bottomLine">countries</span>
+            </p>
+          </div>
+
+          <div className="tableBlueSection">
+            <p className="firstLineInsideTable">
+              220
+              <br />
+              <span className="bottomLine">employees</span>
+            </p>
+          </div>
+        </div>
+
+        <div className="tableSection">
+          <div className="tableGreySection1">
+            <img
+              src="https://i.ibb.co/0M25Rzj/tick-mark.png"
+              alt="Trick mark icon"
+            />
+            <p className="textInsidetable1">
+              {" "}
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+              ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
+              accumsan lacus vel facilisis.{" "}
+            </p>
+          </div>
+
+          <div className="tableGreySection2">
+            <img src="https://i.ibb.co/LDKPgmn/gift-icon.png" alt="Gift icon" />
+            <p className="textInsidetable2">
+              {" "}
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+              ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
+              accumsan lacus vel facilisis.{" "}
+            </p>
+          </div>
+
+          <div className="tableGreySection1">
+            <img
+              src="https://i.ibb.co/85qjgNG/heart-icon.png"
+              alt="Heart icon"
+            />
+            <p className="textInsidetable1">
+              {" "}
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+              ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
+              accumsan lacus vel facilisis.{" "}
+            </p>
+          </div>
+
+          <div className="tableGreySection2">
+            <img
+              src="https://i.ibb.co/34RCGp3/earth-icon.png"
+              alt="Earth icon"
+            />
+            <p className="textInsidetable2">
+              {" "}
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+              ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
+              accumsan lacus vel facilisis.{" "}
+            </p>
+          </div>
+        </div>
       </section>
 
       <section className="pageMarings">
@@ -113,7 +170,6 @@ export const Donation = () => {
           Centres to receive immediate support.
         </p>
       </section>
-
 
       <div className="wholeCarousel">
         <Carousel>
@@ -160,32 +216,30 @@ export const Donation = () => {
       </section>
 
       <div className="socialMedia">
-          <a href="http://www.facebook.com">
-            <img
-              src="https://i.ibb.co/Jp1M5vp/Facebook-button-in-donation-page.png"
-              alt="Facebook icon"
-            />
-          </a>
+        <a href="http://www.facebook.com">
+          <img
+            src="https://i.ibb.co/Jp1M5vp/Facebook-button-in-donation-page.png"
+            alt="Facebook icon"
+          />
+        </a>
 
-          <a href="http://www.twitter.com">
-            <img
-              src="https://i.ibb.co/DMV3TM9/Twitter-for-donation-page.png"
-              alt="Twitter icon"
-            />
-          </a>
+        <a href="http://www.twitter.com">
+          <img
+            src="https://i.ibb.co/DMV3TM9/Twitter-for-donation-page.png"
+            alt="Twitter icon"
+          />
+        </a>
 
-          <a href="http://www.instgram.com">
-            <img
-              src="https://i.ibb.co/7zkfzL2/Instgram-for-donation-page.png"
-              alt="Instgram icon"
-            />
-          </a>
-        </div>
-
+        <a href="http://www.instgram.com">
+          <img
+            src="https://i.ibb.co/7zkfzL2/Instgram-for-donation-page.png"
+            alt="Instgram icon"
+          />
+        </a>
+      </div>
     </div>
   );
 };
-
 
 // <div className="socialMedia">
 //           <a href="http://www.facebook.com">
@@ -209,7 +263,6 @@ export const Donation = () => {
 //             />
 //           </a>
 //         </div>
-
 
 // <div className="tableBlueSection">
 // <p className="firstLineInsideTable">3.1M</p>
