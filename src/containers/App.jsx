@@ -1,6 +1,5 @@
-import React from 'react';
-import './index.css';
-// import LangDropdown from "../components/LangDropdown";
+import React from "react";
+import "./index.css";
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 import { Home } from "../components/home/Home";
 import { About } from "../components/about/About";
@@ -13,14 +12,12 @@ import { NoMatch } from "../components/noMatch/NoMatch";
 import { NavBar } from "../components/common/NavBar";
 import { useTranslation } from "react-i18next";
 
-
 function App() {
   const { t, i18n } = useTranslation();
   return (
     <React.Fragment>
-      learn react
       <Router>
-      <NavBar />
+        <NavBar />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/contact" component={Contact} />
@@ -33,7 +30,6 @@ function App() {
         </Switch>
       </Router>
     </React.Fragment>
-     
   );
 }
 

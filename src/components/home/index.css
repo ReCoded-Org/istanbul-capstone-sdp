@@ -1,6 +1,36 @@
 .header {
-    width: 100%;
-    text-align: center;
-    margin-top: -32px;
-  }
-  
+  width: 100%;
+  text-align: center;
+  margin-top: -32px;
+}
+
+.relatedCardsContainer {
+  background-color: rgba(200, 204, 214, 0.5);
+  padding: 5rem 10% 5rem 10%;
+}
+
+.relatedCard {
+  transition: 0.5 ease;
+  cursor: pointer;
+  color: gray;
+  box-shadow: 1px 1px 30px 1px #999;
+}
+
+.relatedCard:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 1px 30px 1px #999;
+}
+
+.cardLogo {
+  width: auto !important;
+  margin-bottom: 50px;
+}
+
+.relatedCard a {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: justify;
+  color: #ed2a7a;
+}
