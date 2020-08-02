@@ -30,20 +30,18 @@
   font-family: "Myriad Pro", sans-serif;
   font-weight: 400;
   font-size: 17px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  text-decoration: none;
 }
 
-.navBar .navSpaces:hover {
+.navBar .navLink:hover {
   color: #b0faff !important;
   font-family: "Myriad Pro", sans-serif;
   font-weight: 400;
   font-size: 17px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
-.navSpaces {
-  color: #b0faff !important;
-}
 
 .navSpaces {
   margin-right: 15px;
