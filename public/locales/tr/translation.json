@@ -1,17 +1,20 @@
 {
-  "welcome": {
-    "message": "React'e Hoş Geldin"
+  "whoAreWe": {
+    "header": "WHO ARE WE?"
   },
-  "React": {
-    "1": "React"
+  "aboutPart": {
+    "1": "Biz",
+    "2": ".",
+    "3": ".",
+    "4": "."
   },
-  "en": {
-    "1": "İngilizce"
+  "gunsu": {
+    "name": "G. Bilge Dal",
+    "title": "Programlamacı"
   },
-  "tr": {
-    "1": "Türkçe"
-  },
-  "ar": {
-    "1": "Arapça"
+   "lang": {
+    "en": "İngilizce",
+    "tr": "Türkçe",
+    "ar": "Arapça"
   }
 }

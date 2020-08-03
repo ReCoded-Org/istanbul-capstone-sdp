@@ -1,8 +1,20 @@
 {
-  "welcome": {
-    "message": "Reactمرحبًا بك في "
+  "whoAreWe": {
+    "header": "WHO ARE WE?"
   },
-  "React": {
-    "message": "HEY GUUYS"
+  "aboutPart": {
+    "1": "We are",
+    "2": ".",
+    "3": ".",
+    "4": "."
+  },
+  "gunsu": {
+    "name": "G. Bilge Dal",
+    "title": "Programmer"
+  },
+  "lang": {
+    "en": "الإنجليزية",
+    "tr": "التركية",
+    "ar": "العربية"
   }
 }

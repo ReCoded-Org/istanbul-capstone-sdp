@@ -1,17 +1,20 @@
 {
-  "welcome": {
-    "message": "Welcome to React"
+  "whoAreWe": {
+    "header": "WHO ARE WE?"
   },
-  "React": {
-    "1": "HEY GUUYS"
+  "aboutPart": {
+    "1": "We are",
+    "2": ".",
+    "3": ".",
+    "4": "."
   },
-  "en": {
-    "1": "English"
+  "gunsu": {
+    "name": "G. Bilge Dal",
+    "title": "Programmer"
   },
-  "tr": {
-    "1": "Turkish"
-  },
-  "ar": {
-    "1": "Arabic"
+  "lang": {
+    "en": "English",
+    "tr": "Turkish",
+    "ar": "Arabic"
   }
 }
