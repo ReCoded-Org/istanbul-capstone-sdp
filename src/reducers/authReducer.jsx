@@ -8,7 +8,7 @@ const authReducer = (state = initState, action) => {
     case "LOGIN_ERROR":
       return {
         ...state,
-        authError: "Log in failed..!",
+        authError: "Log in failed!",
         errMessage: action.err.message,
         errKey: "login",
       };
@@ -27,7 +27,7 @@ const authReducer = (state = initState, action) => {
     case "SIGN_UP_ERROR":
       return {
         ...state,
-        authError: "Sign up failed..!",
+        authError: "Sign up failed!",
         errMessage: action.err.message,
         errKey: "signup",
       };
@@ -39,7 +39,7 @@ const authReducer = (state = initState, action) => {
     case "FACEBOOK_AUTH_ERROR":
       return {
         ...state,
-        authError: "Facebook authentication failed..!",
+        authError: "Facebook authentication failed!",
         errMessage: action.err.message,
         errKey: "facebook",
       };
@@ -51,7 +51,7 @@ const authReducer = (state = initState, action) => {
     case "GOOGLE_AUTH_ERROR":
       return {
         ...state,
-        authError: "Google authentication failed..!",
+        authError: "Google authentication failed!",
         errMessage: action.err.message,
         errKey: "google",
       };
