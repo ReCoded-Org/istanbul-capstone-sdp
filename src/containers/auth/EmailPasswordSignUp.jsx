@@ -93,7 +93,7 @@ const EmailPasswordSignUp = (props) => {
             />
           </Form.Group>
           {!doesPasswordMatch && (
-            <div className="password-match">Your passwords must match</div>
+            <div className="passwordMatch">Your passwords must match</div>
           )}
         </Form.Row>
         <Button variant="primary" type="submit" onClick={handleSubmit}>
@@ -102,9 +102,9 @@ const EmailPasswordSignUp = (props) => {
         <Container>
           {/* Show error message when fails to sign up */}
           {authError && errKey === "signup" && (
-            <div className="err-msg-container">
+            <div className="errMsgContainer">
               <b>{authError}</b>
-              <div className="err-msg">{errMessage}</div>
+              <div className="errMsg">{errMessage}</div>
             </div>
           )}
         </Container>
