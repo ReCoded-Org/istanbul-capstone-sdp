@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./containers/App";
 import * as serviceWorker from "./serviceWorker";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./i18n";
 import { createStore, applyMiddleware, compose } from "redux";
 import rootReducer from "./reducers/rootReducer";
 import { Provider, useSelector } from "react-redux";
