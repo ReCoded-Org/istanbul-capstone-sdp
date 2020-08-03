@@ -1,86 +1,112 @@
-.header {
+body {
   width: 100%;
-  padding-top: 30px;
-  text-align: center;
-  margin-top: -32px;
-  font-family: aktiv-grotesk, Sans-serif;
 }
 
-.pageMarings {
+.header {
+  /* width: 100%; */
+  padding-top: 1.8rem;
+  /* text-align: center; */
+  margin-bottom: 7rem;
+  /* font-family: aktiv-grotesk, Sans-serif; */
+}
+
+/* .pageMarings {
   margin: 100px 200px;
   color: #454545;
-}
+} */
 
 .address {
-  font-size: 50px;
+  font-size: 3.2rem;
   font-weight: bold;
   line-height: 60px;
-  margin-bottom: 50px;
   font-family: aktiv-grotesk, Sans-serif;
+  color: #3a3a3a;
 }
 
 .subAddress {
-  font-size: 30px;
-  font-weight: bolder;
-  line-height: 40px;
-  margin-bottom: 25px;
-  text-align: justify;
+  font-size: 1.5rem;
+  /* font-weight: bolder; */
+  /* line-height: 40px; */
+  margin: 3rem 0 0;
+  /* text-align: justify; */
   font-family: aktiv-grotesk, Sans-serif;
+  color: #4e4e4e;
 }
 
 .textBody1 {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 25px;
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  /* font-weight: 3rem; */
+  line-height: 1.5rem;
   color: #5c6771;
   text-align: justify;
   font-family: aktiv-grotesk, Sans-serif;
 }
 
 .textBody2 {
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 1.125rem;
+  /* font-weight: 400; */
   text-align: justify;
-  line-height: 25px;
+  line-height: 1.5rem;
   color: #363636;
   font-family: aktiv-grotesk, Sans-serif;
+  margin-bottom: 6rem;
+  margin-top: 4rem;
 }
 
-.quotes {
+.textBody2 h3 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.textBody3 {
+  font-size: 1.125rem;
+  /* font-weight: 500; */
+  line-height: 1.5rem;
+  color: #5c6771;
+  text-align: justify;
+  font-family: aktiv-grotesk, Sans-serif;
+  margin-top: 6rem;
+}
+
+.textBody3 h3 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #363636;
+}
+
+/* .quotes {
   display: block !important;
   margin: 0 auto;
   padding-top: 0px;
-  /* box-shadow: 15px 15px 15px 15px gray !important; */
-}
+  box-shadow: 15px 15px 15px 15px gray !important;
+} */
 
 .wholeCarousel {
-  /* background-image: URL("https://i.ibb.co/Z6vW0Zd/more-from-survivors.png");
-  background-repeat: no-repeat;
-  background-position: center; */
-  width: 100%;
-  /* height: 500px; */
-  margin: -400px auto;
-  padding: 415px 0;
+  margin: 6rem auto;
+  width: 70%;
+  
+  /* margin: -400px auto; */
+  /* padding: 415px 0; */
 }
 
-.carousel-indicators {
+/* .carousel-indicators {
   width: 100%;
   margin: 0 0 0 0;
-}
+} */
 
-/* .carousel-indicators li {
+/* .carousel-indicators ul li{
   width: 8px;
   height: 8px;
-  margin: 10px 30px 0px 10px;
+  margin-top: 10px;
   border-radius: 100%;
   background-color: #07519c; 
 } */
 
 .carousel {
-  width: 50%;
-  /* height: 250px; */
+  width: 100%;
   margin: 0 auto;
-  box-shadow: 0px 0px 25px 0px rgba(91, 91, 91, 0.3);
+  box-shadow: 0px 0px 25px 0px #9797974d;
 }
 
 .carousel-control-prev-icon {
@@ -108,9 +134,9 @@
 
 .tableSection {
   display: flex;
-  width: 70%;
-  margin: 0 auto -30px;
-  padding: 25px 35px 35px 35px;
+  /* width: 70%; */
+  /* margin: 20px 0 0; */
+  padding: 1.2rem 1.5rem 2.2rem 1.5rem;
   text-align: center;
   background-color: #135ba5;
 }
@@ -118,31 +144,24 @@
 .tableBlueSection {
   background-color: #135ba5;
   /* width: 11%; */
-  height: 155px;
+  height: 6.5rem;
   margin: 0 auto;
-  padding: 24px;
+  padding: 1rem 0;
 }
 
 .bottomLine {
   font-size: 21px;
   color: #dfdfdf;
-  /* font-weight: light; */
 }
 
 .firstLineInsideTable {
-  font-size: 45px;
+  font-size: 2.8rem;
   font-family: aktiv-grotesk, Sans-serif;
-  /* text-align: center; */
-  /* align-items: center; */
-  /* align-content: center; */
   color: white;
-  padding: 20px 0 0 0;
-  margin: -10px auto;
+  padding: .5rem 0 0 0;
+  /* margin: -0.5rem 0 3rem; */
   display: block;
   line-height: 45px;
-  /* align-content: flex-start;
-  text-rendering: optimizespeed; */
-  /* vertical-align: middle; */
 }
 
 /* .secondLineInsideTable {
@@ -155,8 +174,8 @@
 .tableGreySection1 {
   background-color: #c4c4c4;
   width: 25%;
-  height: 320px;
-  padding-top: 4%;
+  height: 20rem;
+  padding: 2.3rem 0 2.3rem;
 }
 
 .tableGreySection2 {

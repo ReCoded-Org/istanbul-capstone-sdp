@@ -1,17 +1,23 @@
 import React from "react";
 import { Header } from "./sections/Header";
-import { Carousel } from "react-bootstrap";
+import { Carousel, Container, Row, Col } from "react-bootstrap";
 
 export const Donation = () => {
   return (
     <div>
       <Header />
 
-      <section className="pageMarings">
-        <p className="address">
-          Support SULJAK Suicide Prevention Organization
-        </p>
+        <Container className="w-75">
 
+          <Row className="address">
+            <Col xs={12} md={8} lg={12} >
+            <p>Donate for Suljak Suicide Prevention Organization</p>
+            </Col>
+          </Row>
+      
+
+        <Row className="pageMarings">
+        <Col xs={12} sm={12} md={12} lg={12} >
         <p className="subAddress">
           Together with your support and your help, we will be able to raise
           awareness of suicide prevention to save lives
@@ -35,6 +41,8 @@ export const Donation = () => {
         </p>
 
         <p className="textBody2">
+
+          <h3>How to donate</h3>
           please write your check to Suljak Suicide Prevention Organization and
           mail it to: 43 Foundry Avenue, Basaksehir Istotc, Istanbul, Turkey..
           For further questions, please contact the Development team at
@@ -47,8 +55,11 @@ export const Donation = () => {
           <br />
           Hnfdrhorkdentb grnunurh
         </p>
-      </section>
+        </Col>
+      </Row>
 
+      <Row>
+      <Col xs={12} sm={12} md={12} lg={12} >
       <section>
         <div className="tableSection">
           <div className="tableBlueSection">
@@ -154,9 +165,15 @@ export const Donation = () => {
           </div>
         </div>
       </section>
+      </Col>
+      </Row>
 
-      <section className="pageMarings">
-        <p className="textBody1">
+
+      <Row>
+      <Col xs={12} sm={12} md={12} lg={12} >
+      <section className="textBody3">
+          <h3>How can you help us?</h3>
+          <p>
           Approximately 11 people in Canada die by suicide every day. That’s
           over 4,000 people a year, making suicide a leading cause of death in
           Canada. We can help prevent suicide with the right services. A
@@ -170,7 +187,11 @@ export const Donation = () => {
           Centres to receive immediate support.
         </p>
       </section>
+      </Col>
+      </Row>
 
+      <Row>
+      <Col xs={12} sm={12} md={12} lg={12} >
       <div className="wholeCarousel">
         <Carousel>
           <Carousel.Item class="carousel-indicators">
@@ -198,7 +219,10 @@ export const Donation = () => {
           </Carousel.Item>
         </Carousel>
       </div>
+      </Col>
+      </Row>
 
+      <Row>
       <section className="pageMarings">
         <p className="textBody1">
           Approximately 11 people in Canada die by suicide every day. That’s
@@ -214,7 +238,9 @@ export const Donation = () => {
           Centres to receive immediate support.
         </p>
       </section>
+      </Row>
 
+      <Row>
       <div className="socialMedia">
         <a href="http://www.facebook.com">
           <img
@@ -237,34 +263,9 @@ export const Donation = () => {
           />
         </a>
       </div>
+      </Row>
+      </Container>
     </div>
+    
   );
 };
-
-// <div className="socialMedia">
-//           <a href="http://www.facebook.com">
-//             <img
-//               src="https://i.ibb.co/Jp1M5vp/Facebook-button-in-donation-page.png"
-//               alt="Facebook icon"
-//             />
-//           </a>
-
-//           <a href="http://www.twitter.com">
-//             <img
-//               src="https://i.ibb.co/DMV3TM9/Twitter-for-donation-page.png"
-//               alt="Twitter icon"
-//             />
-//           </a>
-
-//           <a href="http://www.instgram.com">
-//             <img
-//               src="https://i.ibb.co/7zkfzL2/Instgram-for-donation-page.png"
-//               alt="Instgram icon"
-//             />
-//           </a>
-//         </div>
-
-// <div className="tableBlueSection">
-// <p className="firstLineInsideTable">3.1M</p>
-// <p className="secondLineInsideTable">dollars</p>
-// </div>
