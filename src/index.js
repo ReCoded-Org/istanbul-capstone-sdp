@@ -30,7 +30,7 @@ const store = createStore(
   )
 );
 
-// Construct required properties
+// Construct required properties for rrf
 const profileSpecificProps = {
   ...firebaseConfig,
   userProfile: "profiles",
