@@ -1,6 +1,7 @@
 import React from "react";
 import { Header } from "./sections/Header";
 import { Carousel, Container, Row, Col } from "react-bootstrap";
+import "./index.css";
 
 export const Donation = () => {
   return (
