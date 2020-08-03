@@ -1,0 +1,62 @@
+.navBar {
+  width: 100%;
+  height: 60px;
+
+  background: linear-gradient(
+    90deg,
+    rgba(0, 72, 145, 1) 0%,
+    rgba(38, 120, 204, 1) 100%
+  ) !important;
+  overflow: auto;
+  box-shadow: 0 0px 5px rgba(151, 153, 182, 0.034),
+    0 5px 13px rgba(127, 124, 161, 0.048),
+    0 12.5px 10px rgba(101, 92, 156, 0.06), 0 8px 12px rgba(59, 49, 92, 0.072),
+    0 30px 22px rgba(40, 17, 126, 0.086), 0 100px 80px rgba(92, 78, 129, 0.12);
+}
+
+.navBar .navLink {
+  color: #fff !important;
+  float: right;
+  font-family: "Myriad Pro", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navBar .navLink:hover {
+  color: #b0faff !important;
+  font-family: "Myriad Pro", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.navSpaces {
+  margin-right: 1.25rem;
+}
+
+.brandSpaces {
+  width: 80%;
+  margin-left: 50%;
+}
+
+.loginSpaces {
+  width: 60%;
+  margin-top: -0.6rem;
+  margin-left: 0.6rem;
+  display: inline-block;
+}
+
+.langSpaces {
+  width: 65%;
+  margin-top: -9px;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.rightMargin {
+  margin-right: 2.5rem;
+}

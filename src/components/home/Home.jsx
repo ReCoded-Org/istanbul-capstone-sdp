@@ -1,13 +1,13 @@
 import React from "react";
-import RelatedCards from "./sections/RelatedCards";
+import { Header } from "./sections/Header";
 import "./index.css";
+import RelatedCards from "./sections/RelatedCards";
 
-const Home = () => {
+export const Home = () => {
   return (
-    <div className="home">
+    <div>
+      <Header />
       <RelatedCards />
     </div>
   );
 };
-
-export default Home;
