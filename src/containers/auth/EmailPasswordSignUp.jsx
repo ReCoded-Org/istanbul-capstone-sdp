@@ -10,7 +10,7 @@ const EmailPasswordSignUp = (props) => {
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
   const [passwordRepeat, setPasswordRepeat] = React.useState("");
-  const [passwordMatch, setPasswordMatch] = React.useState(true);
+  const [doesPasswordMatch, setDoesPasswordMatch] = React.useState(true);
   const { auth, authError, errMessage, errKey } = props;
   // Redirect to home page after it's signed up and logged in
   if (auth.uid) {
@@ -19,7 +19,7 @@ const EmailPasswordSignUp = (props) => {
   // Create a new account with "Email & Password" method
   const handleSubmit = (e) => {
     if (password === passwordRepeat) {
-      setPasswordMatch(true);
+      setDoesPasswordMatch(true);
       props.signUp({
         firstName,
         lastName,
@@ -29,7 +29,7 @@ const EmailPasswordSignUp = (props) => {
         imageURL: null,
       });
     } else {
-      setPasswordMatch(false);
+      setDoesPasswordMatch(false);
     }
     e.preventDefault();
   };
@@ -77,7 +77,7 @@ const EmailPasswordSignUp = (props) => {
               placeholder="Password"
               onInput={(e) => {
                 setPassword(e.target.value);
-                setPasswordMatch(true);
+                setDoesPasswordMatch(true);
               }}
             />
           </Form.Group>
@@ -88,11 +88,11 @@ const EmailPasswordSignUp = (props) => {
               placeholder="Re-type password"
               onInput={(e) => {
                 setPasswordRepeat(e.target.value);
-                setPasswordMatch(true);
+                setDoesPasswordMatch(true);
               }}
             />
           </Form.Group>
-          {!passwordMatch && (
+          {!doesPasswordMatch && (
             <div className="password-match">Your passwords must match</div>
           )}
         </Form.Row>
