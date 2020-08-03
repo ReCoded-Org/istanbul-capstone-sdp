@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import "./index.css";
 import { Form, Container, Row, Col, Button, Nav } from "react-bootstrap";
+
 const Footer = () => {
   const [email, setEmail] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
+    // TODO (basil-kawak): connect this to newsletter.
     alert(`you've submitted your Email wich is: ${email}`);
   };
   return (
@@ -19,7 +21,7 @@ const Footer = () => {
                   onChange={(e) => setEmail(e.target.value)}
                   value={email}
                   className="formControl"
-                  placeholder="Enter Your Email Address"
+                  placeholder="Your email address"
                 />
               </Col>
               <Col xs="auto">
@@ -41,13 +43,13 @@ const Footer = () => {
           <Col md={3}>
             <h4>Follow Us</h4>
             <Nav className="socialCircle">
-              <Nav.Link href="#" className="icoLinkedin" title="Linkedin">
+              <Nav.Link href="#" className="iconLinkedin" title="Linkedin">
                 <i className="fa fa-linkedin"></i>
               </Nav.Link>
-              <Nav.Link href="#" className="icoFacebook" title="Facebook">
+              <Nav.Link href="#" className="iconFacebook" title="Facebook">
                 <i className="fa fa-facebook"></i>
               </Nav.Link>
-              <Nav.Link href="#" className="icoTwiter" title="Facebook">
+              <Nav.Link href="#" className="iconTwitter" title="Twitter">
                 <i className="fa fa-twitter"></i>
               </Nav.Link>
             </Nav>
