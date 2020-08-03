@@ -40,26 +40,26 @@ form button {
   border-radius: 0 !important;
 }
 
-.icoFacebook:hover,
-.icoLinkedin:hover,
-.icoTwiter:hover {
+.iconFacebook:hover,
+.iconLinkedin:hover,
+.iconTwitter:hover {
   transform: rotate(360deg);
   transition: all 0.4s;
 }
-.icoFacebook:hover {
+.iconFacebook:hover {
   background-color: #3b5998;
 }
 
-.icoLinkedin:hover {
+.iconLinkedin:hover {
   background-color: #007bb7;
 }
-.icoTwiter:hover {
+.iconTwitter:hover {
   background-color: #1da1f2;
 }
 
-.icoFacebook:hover i,
-.icoLinkedin:hover i,
-.icoTwiter:hover i {
+.iconFacebook:hover i,
+.iconLinkedin:hover i,
+.iconTwitter:hover i {
   color: #fff;
 }
 
