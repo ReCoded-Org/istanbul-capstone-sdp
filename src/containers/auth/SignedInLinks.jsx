@@ -7,7 +7,7 @@ import "./index.css";
 const SignedInLinks = (props) => {
   const { auth } = props;
   return (
-    <div className="link signed-in-links">
+    <div className="link signedInLinks">
       <Link to={"/" + auth.uid + "/profile"}>Profile</Link>
       <Link to="/" onClick={props.signOut}>
         Sign Out
