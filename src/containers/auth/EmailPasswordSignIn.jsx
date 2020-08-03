@@ -75,4 +75,7 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(EmailPasswordSignIn);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(EmailPasswordSignIn);
