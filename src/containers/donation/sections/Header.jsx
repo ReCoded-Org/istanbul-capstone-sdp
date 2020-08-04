@@ -10,6 +10,7 @@ export const Header = () => {
           className="header"
           src={"https://i.ibb.co/hRfR5Mr/Donation-Header.png"}
           alt="Donation page header"
+          
         />
       </Row>
     </Container>
