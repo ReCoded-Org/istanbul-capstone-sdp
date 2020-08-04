@@ -75,10 +75,11 @@ form button {
 
 .socialCircle i {
   color: #595959;
+}
+
 .navBar {
   width: 100%;
   height: 60px;
-
   background: linear-gradient(
     90deg,
     rgba(0, 72, 145, 1) 0%,
