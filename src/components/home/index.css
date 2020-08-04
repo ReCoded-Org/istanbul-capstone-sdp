@@ -1,3 +1,9 @@
+.header {
+  width: 100%;
+  text-align: center;
+  margin-top: -32px;
+}
+
 .relatedCardsContainer {
   background-color: rgba(200, 204, 214, 0.5);
   padding: 5rem 10% 5rem 10%;
