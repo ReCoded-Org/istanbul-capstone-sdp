@@ -64,7 +64,7 @@ export const Donation = () => {
                 <div className="tableBlueSection">
                   <p className="firstLineInsideTable">
                     5<br />
-                    <span className="bottomLine">years</span>
+                    <span className="Line2">years</span>
                   </p>
                 </div>
 
@@ -72,7 +72,7 @@ export const Donation = () => {
                   <p className="firstLineInsideTable">
                     3.1M
                     <br />
-                    <span className="bottomLine">dollars</span>
+                    <span className="Line2">dollars</span>
                   </p>
                 </div>
 
@@ -80,7 +80,7 @@ export const Donation = () => {
                   <p className="firstLineInsideTable">
                     20K
                     <br />
-                    <span className="bottomLine">donors</span>
+                    <span className="Line2">donors</span>
                   </p>
                 </div>
 
@@ -88,7 +88,7 @@ export const Donation = () => {
                   <p className="firstLineInsideTable">
                     3000
                     <br />
-                    <span className="bottomLine">survivors</span>
+                    <span className="Line2">survivors</span>
                   </p>
                 </div>
 
@@ -96,7 +96,7 @@ export const Donation = () => {
                   <p className="firstLineInsideTable">
                     28
                     <br />
-                    <span className="bottomLine">countries</span>
+                    <span className="Line2">countries</span>
                   </p>
                 </div>
 
@@ -104,7 +104,7 @@ export const Donation = () => {
                   <p className="firstLineInsideTable">
                     220
                     <br />
-                    <span className="bottomLine">employees</span>
+                    <span className="Line2">employees</span>
                   </p>
                 </div>
               </div>
@@ -117,8 +117,8 @@ export const Donation = () => {
                   />
                   <p className="textInsidetable1">
                     {" "}
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
+                    LLorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Quis ipsum suspendisse ultrices gravida. Risus
                     commodo viverra maecenas accumsan lacus vel facilisis.{" "}
                   </p>
@@ -198,7 +198,7 @@ export const Donation = () => {
               <Carousel>
                 <Carousel.Item class="carousel-indicators">
                   <img
-                    className="d-block w-100 quotes"
+                    className="d-block w-100"
                     src="https://i.ibb.co/4p24Dd4/Quotes2-in-Donation-Page.png"
                     alt="First slide"
                   />
@@ -206,7 +206,7 @@ export const Donation = () => {
 
                 <Carousel.Item>
                   <img
-                    className="d-block w-100 quotes"
+                    className="d-block w-100"
                     src="https://i.ibb.co/4p24Dd4/Quotes2-in-Donation-Page.png"
                     alt="second slide"
                   />
