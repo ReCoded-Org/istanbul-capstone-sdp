@@ -15,8 +15,8 @@ import { NavBar } from "../components/common/NavBar";
 function App() {
   return (
     <React.Fragment>
+    learn react
       <Router>
-      learn react
         <NavBar />
         <Switch>
           <Route exact path="/" component={Home} />
