@@ -11,7 +11,7 @@ export const Donation = () => {
       <Container className="w-75">
         <Row className="address">
           <Col xs={12} md={8} lg={12}>
-            <p>Donate for Suljak Suicide Prevention Organization</p>
+            <p>Support Suljak Suicide Prevention Organization</p>
           </Col>
         </Row>
 
