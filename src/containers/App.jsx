@@ -15,7 +15,7 @@ import { NavBar } from "../components/common/NavBar";
 function App() {
   return (
     <React.Fragment>
-    learn react
+      learn react
       <Router>
         <NavBar />
         <Switch>
