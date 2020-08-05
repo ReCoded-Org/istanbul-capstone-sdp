@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { useTranslation } from "react-i18next";
 import { Col } from "react-bootstrap";
 import "../index.css";
 // i18n translations might still be loaded by the http backend
 // use react's Suspense
 export default function PersonDisplay(props) {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   let photo;
   // manual picture setting
   switch (props.name) {
@@ -24,7 +24,7 @@ export default function PersonDisplay(props) {
 
   return (
     <Col xs={12} md={6} lg={4} className="staffPhotoContainer">
-      <img className="staffPic" src={photo} />
+      <img className="staffPic" alt="our staff member" src={photo} />
       <br />
       <span>{t(props.name + ".name")}</span>
       <br />

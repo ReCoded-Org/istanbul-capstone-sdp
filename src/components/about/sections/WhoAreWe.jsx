@@ -1,10 +1,10 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { useTranslation } from "react-i18next";
 import "../index.css";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 
 export default function WhoAreWe() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <Row>
