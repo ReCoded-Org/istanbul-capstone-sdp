@@ -10,19 +10,19 @@ export const Donation = () => {
 
       <Container className="w-75">
         <Row className="address">
-          <Col xs={12} md={8} lg={12}>
-            <p>Support Suljak Suicide Prevention Organization</p>
+          <Col xs={12} md={12} lg={12}>
+            <h1>Support Suljak Suicide Prevention Organization</h1>
           </Col>
         </Row>
 
         <Row className="pageMarings">
           <Col xs={12} sm={12} md={12} lg={12}>
-            <p className="subAddress">
+            <h2 className="subAddress">
               Together with your support and your help, we will be able to raise
               awareness of suicide prevention to save lives
-            </p>
+            </h2>
 
-            <p className="textBody1">
+            <article className="textBody1">
               Try and keep things in perspective. Let's be positive, help each
               other out, and we will get through all of this. In this world,
               there has never been a storm that lasted. This too, shall pass,
@@ -38,9 +38,9 @@ export const Donation = () => {
               which don't look even slightly believable. If you are going to use
               a passage of Lorem Ipsum, you need to be sure there isn't anything
               embarrassing hidden in the middle of text.
-            </p>
+            </article>
 
-            <p className="textBody2">
+            <article className="textBody2">
               <h3>How to donate</h3>
               please write your check to Suljak Suicide Prevention Organization
               and mail it to: 43 Foundry Avenue, Basaksehir Istotc, Istanbul,
@@ -53,7 +53,7 @@ export const Donation = () => {
               Dvfd harguirug uaguherig
               <br />
               Hnfdrhorkdentb grnunurh
-            </p>
+            </article>
           </Col>
         </Row>
 
@@ -116,11 +116,10 @@ export const Donation = () => {
                     alt="Trick mark icon"
                   />
                   <p className="textInsidetable1">
-                    {" "}
                     LLorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Quis ipsum suspendisse ultrices gravida. Risus
-                    commodo viverra maecenas accumsan lacus vel facilisis.{" "}
+                    commodo viverra maecenas accumsan lacus vel facilisis.
                   </p>
                 </div>
 
@@ -130,11 +129,10 @@ export const Donation = () => {
                     alt="Gift icon"
                   />
                   <p className="textInsidetable2">
-                    {" "}
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Quis ipsum suspendisse ultrices gravida. Risus
-                    commodo viverra maecenas accumsan lacus vel facilisis.{" "}
+                    commodo viverra maecenas accumsan lacus vel facilisis.
                   </p>
                 </div>
 
@@ -144,11 +142,10 @@ export const Donation = () => {
                     alt="Heart icon"
                   />
                   <p className="textInsidetable1">
-                    {" "}
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Quis ipsum suspendisse ultrices gravida. Risus
-                    commodo viverra maecenas accumsan lacus vel facilisis.{" "}
+                    commodo viverra maecenas accumsan lacus vel facilisis.
                   </p>
                 </div>
 
@@ -158,11 +155,10 @@ export const Donation = () => {
                     alt="Earth icon"
                   />
                   <p className="textInsidetable2">
-                    {" "}
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Quis ipsum suspendisse ultrices gravida. Risus
-                    commodo viverra maecenas accumsan lacus vel facilisis.{" "}
+                    commodo viverra maecenas accumsan lacus vel facilisis.
                   </p>
                 </div>
               </div>
@@ -174,7 +170,7 @@ export const Donation = () => {
           <Col xs={12} sm={12} md={12} lg={12}>
             <section className="textBody3">
               <h3>How can you help us?</h3>
-              <p>
+              <article>
                 Approximately 11 people in Canada die by suicide every day.
                 That’s over 4,000 people a year, making suicide a leading cause
                 of death in Canada. We can help prevent suicide with the right
@@ -187,7 +183,7 @@ export const Donation = () => {
                 Suicide Prevention Service allows us to connect individuals in
                 distress and individuals with suicidal thoughts with local
                 Crisis Centres to receive immediate support.
-              </p>
+              </article>
             </section>
           </Col>
         </Row>
@@ -196,7 +192,7 @@ export const Donation = () => {
           <Col xs={12} sm={12} md={12} lg={12}>
             <div className="wholeCarousel">
               <Carousel>
-                <Carousel.Item class="carousel-indicators">
+                <Carousel.Item>
                   <img
                     className="d-block w-100"
                     src="https://i.ibb.co/4p24Dd4/Quotes2-in-Donation-Page.png"
@@ -226,7 +222,7 @@ export const Donation = () => {
 
         <Row>
           <section className="pageMarings">
-            <p className="textBody1">
+            <article className="textBody1">
               Approximately 11 people in Canada die by suicide every day. That’s
               over 4,000 people a year, making suicide a leading cause of death
               in Canada. We can help prevent suicide with the right services. A
@@ -238,7 +234,7 @@ export const Donation = () => {
               Suicide Prevention Service allows us to connect individuals in
               distress and individuals with suicidal thoughts with local Crisis
               Centres to receive immediate support.
-            </p>
+            </article>
           </section>
         </Row>
 
