@@ -9,7 +9,7 @@ export const Donation = () => {
       <Header />
 
       <Container className="w-75">
-        <Row className="address">
+        <Row className="title">
           <Col xs={12} md={12} lg={12}>
             <h1>Support Suljak Suicide Prevention Organization</h1>
           </Col>
@@ -17,12 +17,12 @@ export const Donation = () => {
 
         <Row className="pageMarings">
           <Col xs={12} sm={12} md={12} lg={12}>
-            <h2 className="subAddress">
+            <h2 className="subTitle">
               Together with your support and your help, we will be able to raise
               awareness of suicide prevention to save lives
             </h2>
 
-            <article className="textBody1">
+            <article className="firstParagraphStyle">
               Try and keep things in perspective. Let's be positive, help each
               other out, and we will get through all of this. In this world,
               there has never been a storm that lasted. This too, shall pass,
@@ -40,7 +40,7 @@ export const Donation = () => {
               embarrassing hidden in the middle of text.
             </article>
 
-            <article className="textBody2">
+            <article className="secondParagraphStyle">
               <h3>How to donate</h3>
               please write your check to Suljak Suicide Prevention Organization
               and mail it to: 43 Foundry Avenue, Basaksehir Istotc, Istanbul,
@@ -62,60 +62,60 @@ export const Donation = () => {
             <section>
               <div className="tableSection">
                 <div className="tableBlueSection">
-                  <p className="firstLineInsideTable">
+                  <p className="countNumbers">
                     5<br />
-                    <span className="Line2">years</span>
+                    <span className="activityType">years</span>
                   </p>
                 </div>
 
                 <div className="tableBlueSection">
-                  <p className="firstLineInsideTable">
+                  <p className="countNumbers">
                     3.1M
                     <br />
-                    <span className="Line2">dollars</span>
+                    <span className="activityType">dollars</span>
                   </p>
                 </div>
 
                 <div className="tableBlueSection">
-                  <p className="firstLineInsideTable">
+                  <p className="countNumbers">
                     20K
                     <br />
-                    <span className="Line2">donors</span>
+                    <span className="activityType">donors</span>
                   </p>
                 </div>
 
                 <div className="tableBlueSection">
-                  <p className="firstLineInsideTable">
+                  <p className="countNumbers">
                     3000
                     <br />
-                    <span className="Line2">survivors</span>
+                    <span className="activityType">survivors</span>
                   </p>
                 </div>
 
                 <div className="tableBlueSection">
-                  <p className="firstLineInsideTable">
+                  <p className="countNumbers">
                     28
                     <br />
-                    <span className="Line2">countries</span>
+                    <span className="activityType">countries</span>
                   </p>
                 </div>
 
                 <div className="tableBlueSection">
-                  <p className="firstLineInsideTable">
+                  <p className="countNumbers">
                     220
                     <br />
-                    <span className="Line2">employees</span>
+                    <span className="activityType">employees</span>
                   </p>
                 </div>
               </div>
 
               <div className="tableSection">
-                <div className="tableGreySection1">
+                <div className="darkGreySection">
                   <img
                     src="https://i.ibb.co/0M25Rzj/tick-mark.png"
                     alt="Trick mark icon"
                   />
-                  <p className="textInsidetable1">
+                  <p className="darkGreyColumn">
                     LLorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Quis ipsum suspendisse ultrices gravida. Risus
@@ -123,12 +123,12 @@ export const Donation = () => {
                   </p>
                 </div>
 
-                <div className="tableGreySection2">
+                <div className="lightGreySection">
                   <img
                     src="https://i.ibb.co/LDKPgmn/gift-icon.png"
                     alt="Gift icon"
                   />
-                  <p className="textInsidetable2">
+                  <p className="lightGreyColumn">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Quis ipsum suspendisse ultrices gravida. Risus
@@ -136,12 +136,12 @@ export const Donation = () => {
                   </p>
                 </div>
 
-                <div className="tableGreySection1">
+                <div className="darkGreySection">
                   <img
                     src="https://i.ibb.co/85qjgNG/heart-icon.png"
                     alt="Heart icon"
                   />
-                  <p className="textInsidetable1">
+                  <p className="darkGreyColumn">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Quis ipsum suspendisse ultrices gravida. Risus
@@ -149,12 +149,12 @@ export const Donation = () => {
                   </p>
                 </div>
 
-                <div className="tableGreySection2">
+                <div className="lightGreySection">
                   <img
                     src="https://i.ibb.co/34RCGp3/earth-icon.png"
                     alt="Earth icon"
                   />
-                  <p className="textInsidetable2">
+                  <p className="lightGreyColumn">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Quis ipsum suspendisse ultrices gravida. Risus
@@ -168,7 +168,7 @@ export const Donation = () => {
 
         <Row>
           <Col xs={12} sm={12} md={12} lg={12}>
-            <section className="textBody3">
+            <section className="thirdParagraphStyle">
               <h3>How can you help us?</h3>
               <article>
                 Approximately 11 people in Canada die by suicide every day.
@@ -222,7 +222,7 @@ export const Donation = () => {
 
         <Row>
           <section className="pageMarings">
-            <article className="textBody1">
+            <article className="firstParagraphStyle">
               Approximately 11 people in Canada die by suicide every day. That’s
               over 4,000 people a year, making suicide a leading cause of death
               in Canada. We can help prevent suicide with the right services. A

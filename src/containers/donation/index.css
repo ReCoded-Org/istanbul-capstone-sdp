@@ -2,73 +2,73 @@ body {
   width: 100%;
 }
 
+.subTitle,
+.firstParagraphStyle,
+.secondParagraphStyle,
+.thirdParagraphStyle,
+.countNumbers,
+.darkGreyColumn,
+.lightGreyColumn {
+  font-family: Roboto, Sans-serif;
+}
+
+.title,
+.secondParagraphStyle h3,
+.thirdParagraphStyle h3 {
+  font-family: "Noto Sans", Sans-serif;
+}
+
+.subTitle,
+.firstParagraphStyle,
+.secondParagraphStyle,
+.thirdParagraphStyle {
+  color: #4e4e4e;
+  text-align: justify;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
 .header {
   padding-top: 1.8rem;
   margin-bottom: 7rem;
 }
 
-.address {
+.title {
   font-size: 3rem;
   font-weight: bold;
   line-height: 60px;
-  font-family: "Noto Sans", Sans-serif;
   color: #3a3a3a;
 }
 
-.address h1 {
+.title h1 {
   font-size: 3.3rem;
 }
 
-.subAddress {
+.subTitle {
   font-size: 1.5rem;
   margin: 3rem 0 0.5rem;
   line-height: 2rem;
-  font-family: Roboto, Sans-serif;
-  color: #4e4e4e;
   font-weight: 500;
 }
 
-.textBody1 {
-  font-size: 1.125rem;
-  line-height: 1.5rem;
-  color: #5c6771;
-  text-align: justify;
-  font-family: Roboto, Sans-serif;
-  font-weight: 400;
-}
-
-.textBody2 {
-  font-size: 1.125rem;
-  text-align: justify;
-  line-height: 1.5rem;
-  color: #4e4e4e;
-  font-family: Roboto, Sans-serif;
+.secondParagraphStyle {
   margin-bottom: 6rem;
   margin-top: 4rem;
-  font-weight: 400;
 }
 
-.textBody2 h3 {
+.secondParagraphStyle h3 {
   font-weight: bold;
   margin-bottom: 0.6rem;
-  font-family: "Noto Sans", Sans-serif;
 }
 
-.textBody3 {
-  font-size: 1.125rem;
-  line-height: 1.5rem;
-  color: #4e4e4e;
-  text-align: justify;
-  font-family: Roboto, Sans-serif;
+.thirdParagraphStyle {
   margin-top: 6rem;
-  font-weight: 400;
 }
 
-.textBody3 h3 {
+.thirdParagraphStyle h3 {
   font-weight: bold;
   margin-bottom: 0.7rem;
-  color: #4e4e4e;
-  font-family: "Noto Sans", Sans-serif;
 }
 
 .wholeCarousel {
@@ -96,7 +96,6 @@ body {
 
 .tableSection {
   display: flex;
-
   padding: 1.2rem 1.5rem 2.2rem 1.5rem;
   text-align: center;
   background-color: #135ba5;
@@ -106,7 +105,6 @@ body {
   .tableSection {
     display: flex;
     width: 60%;
-
     padding: 1.2rem 1.5rem 2.2rem 1.5rem;
     text-align: center;
     background-color: #135ba5;
@@ -115,53 +113,50 @@ body {
 
 .tableBlueSection {
   background-color: #135ba5;
-
   height: 6.5rem;
   margin: 0 auto;
   padding: 1rem 0;
 }
 
-.Line2 {
+.activityType {
   font-size: 21px;
   color: #dfdfdf;
 }
 
-.firstLineInsideTable {
+.countNumbers {
   font-size: 2.8rem;
-  font-family: Roboto, Sans-serif;
   color: white;
   padding: 0.5rem 0 0 0;
-
   display: block;
-  line-height: 45px;
+  line-height: 2.8rem;
 }
 
-.tableGreySection1 {
+.darkGreySection {
   background-color: #c4c4c4;
   width: 25%;
   height: 20rem;
   padding: 2.3rem 0 2.3rem;
 }
 
-.tableGreySection2 {
+.lightGreySection {
   background-color: #f0f0f0;
   width: 25%;
-  height: 320px;
+  height: 20rem;
   padding-top: 4%;
 }
 
-.textInsidetable1 {
-  color: white;
-  padding: 20px 20px;
-  font-size: 14px;
-  font-family: Roboto, Sans-serif;
+.darkGreyColumn,
+.lightGreyColumn {
+  padding: 1.25rem 1.25rem;
+  font-size: 0.9rem;
 }
 
-.textInsidetable2 {
+.darkGreyColumn {
+  color: white;
+}
+
+.lightGreyColumn {
   color: #a8a8a8;
-  padding: 20px 20px;
-  font-size: 14px;
-  font-family: Roboto, Sans-serif;
 }
 
 .socialMedia {
@@ -171,6 +166,6 @@ body {
 }
 
 .socialMedia img {
-  padding: 0 20px;
-  margin: 50px auto 120px;
+  padding: 0 1.25rem;
+  margin: 3.2rem auto 7.5rem;
 }
