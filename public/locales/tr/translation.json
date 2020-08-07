@@ -1,18 +1,5 @@
 {
-  "whoAreWe": {
-    "header": "WHO ARE WE?"
-  },
-  "aboutPart": {
-    "1": "Biz",
-    "2": ".",
-    "3": ".",
-    "4": "."
-  },
-  "gunsu": {
-    "name": "G. Bilge Dal",
-    "title": "Programlamacı"
-  },
-   "lang": {
+  "lang": {
     "en": "İngilizce",
     "tr": "Türkçe",
     "ar": "Arapça"
