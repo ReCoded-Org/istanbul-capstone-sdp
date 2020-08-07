@@ -1,11 +1,13 @@
 import React from "react";
 import { Header } from "./sections/Header";
+import { BlogHeader } from "./sections/BlogHeader";
 
 export const SingleBolgPage = () => {
     return (
-        <Header />
-    )
+        <div>
+            <Header />
+            <BlogHeader />
+        </div>
+    );
 }
-
-// export SingleBolgPage;
   

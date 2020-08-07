@@ -2,8 +2,13 @@ body {
     width: 100%;
   }
   
-  .header {
+/* .header {
     padding-top: 1.8rem;
     margin-bottom: 7rem;
-  }
+  } */
   
+.blogHeader {
+    display: flex;
+    Width: 80%; 
+    margin: -8.75rem auto 1.8rem;
+  }

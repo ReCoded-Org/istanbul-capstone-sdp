@@ -6,14 +6,8 @@ export const Blogs = () => {
   return (
     <div>
     <Link to="/singleBolgPage">
-    Lorem ipsem
+    Lorem ipsem till Gunsu add her code
     </Link>
     </div>
   )
 };
-
-
-
-// <div>
-//       <Link to="../singleBolgPage/singleBolgPage"> Lorem ipsem </Link>
-//     </div>
