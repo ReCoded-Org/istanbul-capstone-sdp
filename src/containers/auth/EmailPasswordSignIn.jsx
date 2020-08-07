@@ -21,7 +21,7 @@ const EmailPasswordSignIn = (props) => {
     <Container>
       <h3>Enter your email and password to log in</h3>
       <Form>
-        <Form.Row>
+        
           <Form.Group as={Col} controlId="email">
             <Form.Label>Email:</Form.Label>
             <Form.Control
@@ -42,7 +42,7 @@ const EmailPasswordSignIn = (props) => {
               }}
             />
           </Form.Group>
-        </Form.Row>
+        
         <Button variant="primary" type="submit" onClick={handleSubmit}>
           Log In
         </Button>

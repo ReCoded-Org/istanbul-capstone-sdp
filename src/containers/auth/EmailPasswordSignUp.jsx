@@ -59,7 +59,7 @@ const EmailPasswordSignUp = (props) => {
             />
           </Form.Group>
         </Form.Row>
-        <Form.Row>
+        
           <Form.Group as={Col} controlId="email">
             <Form.Label>Email:</Form.Label>
             <Form.Control
@@ -95,7 +95,7 @@ const EmailPasswordSignUp = (props) => {
           {!doesPasswordMatch && (
             <div className="passwordMatch">Your passwords must match</div>
           )}
-        </Form.Row>
+        
         <Button variant="primary" type="submit" onClick={handleSubmit}>
           Sign Up
         </Button>
