@@ -1,0 +1,32 @@
+ul.lang {
+  display: none;
+  width: 10em;
+  padding: 0;
+  margin: 0;
+}
+div.langDropdown:hover > ul {
+  display: block;
+  position: absolute;
+}
+div.langDropdown {
+  width: 60px;
+}
+ul.lang:hover > li.lang {
+  float: none;
+}
+
+li.lang {
+  list-style: none;
+  padding: 5px;
+  cursor: pointer;
+  color: whitesmoke;
+  background-color: rgb(27, 16, 180);
+}
+li.lang:hover {
+  background-color: rgb(51, 38, 238);
+}
+img.lang {
+  width: 60px;
+}
+
+/*LANGUAGE SELECTOR*/

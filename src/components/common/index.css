@@ -60,3 +60,48 @@
 .rightMargin {
   margin-right: 2.5rem;
 }
+/*
+.langDropdown{
+  z-index: 42;
+} 
+.langDropdown ul {
+  display: none;
+  width: 10em;
+  padding: 0;
+  margin: 0;
+}
+
+div.langDropdown:hover > ul {
+  display: block;
+  position: absolute;
+}
+
+div.langDropdown {
+  width: 60px;
+}
+
+.langDropdown ul:hover > .langDropdown li {
+  float: none;
+}
+
+.langDropdown li {
+  list-style: none;
+  padding: 5px;
+  cursor: pointer;
+  color: whitesmoke;
+  background-color: rgb(27, 16, 180);
+}
+
+.langDropdown li:hover {
+  background-color: rgb(51, 38, 238);
+}
+
+*/
+.langPic {
+  width: 60px;
+}
+
+.langDropdown button {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}

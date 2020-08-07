@@ -2,10 +2,11 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import lang from "../images/lang.png";
 import "../index.css";
+import { Dropdown } from "react-bootstrap";
 
 function LangDropdown() {
-  const { t, i18n } = useTranslation();
-
+  const { t } = useTranslation();
+  /*
   const handleChange = (e) => {
     switch (e.target.innerText) {
       case "Turkish":
@@ -26,23 +27,22 @@ function LangDropdown() {
       default:
         return;
     }
-  };
+  };*/
 
   return (
-    <div className="langDropdown">
-      <img className="lang" alt="lang. selector" src={lang} />
-      <ul className="lang">
-        <li className="lang" onClick={(e) => handleChange(e)}>
+    <Dropdown>
+      <Dropdown.Toggle id="dropdown-basic" className="langDropdown">
+        <img className="langPic" alt="lang. selector" src={lang} />
+      </Dropdown.Toggle>
+
+      <Dropdown.Menu>
+        <Dropdown.Item value="en" onClick={(e) => console.log(e.target)}>
           {t("lang.en")}
-        </li>
-        <li className="lang" onClick={(e) => handleChange(e)}>
-          {t("lang.tr")}
-        </li>
-        <li className="lang" onClick={(e) => handleChange(e)}>
-          {t("lang.ar")}
-        </li>
-      </ul>
-    </div>
+        </Dropdown.Item>
+        <Dropdown.Item>{t("lang.tr")}</Dropdown.Item>
+        <Dropdown.Item>{t("lang.ar")}</Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
   );
 }
 
