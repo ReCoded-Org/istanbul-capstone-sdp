@@ -11,6 +11,7 @@ import { SignInUp } from "../components/signInUp/SignInUp";
 import { Donation } from "../containers/donation/Donation";
 import { NoMatch } from "../components/noMatch/NoMatch";
 import { NavBar } from "../components/common/NavBar";
+import {SingleBolgPage} from "../components/singleBolgPage/SingleBolgPage"
 // import { useTranslation } from "react-i18next";
 
 
@@ -28,6 +29,7 @@ function App() {
           <Route path="/donation" component={Donation} />
           <Route path="/blogs" component={Blogs} />
           <Route path="/signInUp" component={SignInUp} />
+          <Route path="/singleBolgPage" component={SingleBolgPage} />
           <Route component={NoMatch} />
         </Switch>
       </Router>
