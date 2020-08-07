@@ -3,9 +3,7 @@ import { Header } from "./sections/Header";
 
 export const SingleBolgPage = () => {
     return (
-        <div>
         <Header />
-        </div>
     )
 }
 
