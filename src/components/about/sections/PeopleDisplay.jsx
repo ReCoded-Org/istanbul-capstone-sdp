@@ -5,36 +5,29 @@ import { Row } from "react-bootstrap";
 
 const STAFF_SPECS = [
   {
-    name: "nasser",
     title: "managerAssistant",
     photo: require("././images/staff0.png"),
-    index: 0,
   },
   {
-    name: "jawdat",
     title: "generalManager",
     photo: require("././images/staff1.png"),
-    index: 1,
   },
   {
-    name: "turgut",
     title: "psychotherapist",
     photo: require("././images/staff2.png"),
-    index: 2,
   },
 ];
 
 export default function peopleDisplay() {
+  // we are assuming we won't hire the people that has same names, so using the name as key :D
   return (
     <Row>
-      {STAFF_SPECS.map((staff, i) => {
+      {STAFF_SPECS.map((staff) => {
         return (
           <PersonDisplay
-            name={staff.name}
             photo={staff.photo}
             translationKey={staff.title}
-            index={staff.index}
-            key={i}
+            key={staff.name}
           />
         );
       })}

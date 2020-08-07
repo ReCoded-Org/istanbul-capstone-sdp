@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import "./index.css";
 import { Container } from "react-bootstrap";
 import AboutParagraph from "./sections/AboutPageParags";
@@ -7,13 +7,13 @@ import PeopleDisplay from "./sections/PeopleDisplay";
 
 function About() {
   return (
-    <Fragment>
+    <>
       <Container>
         <WhoAreWe />
         <AboutParagraph />
         <PeopleDisplay />
       </Container>
-    </Fragment>
+    </>
   );
 }
 

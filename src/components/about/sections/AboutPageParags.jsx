@@ -11,12 +11,12 @@ export default function Paragraph() {
       <div className="aboutParagraphs">
         <p>
           <big>
-            <b>{t("aboutPart.0")}</b>
+            <b>{t("aboutPart.bigText")}</b>
           </big>{" "}
-          {t("aboutPart.1")}
+          {t("aboutPart.purpose")}
         </p>
-        <p>{t("aboutPart.2")}</p>
-        <p>{t("aboutPart.3")}</p>
+        <p>{t("aboutPart.goals")}</p>
+        <p>{t("aboutPart.noAdsPolicy")}</p>
       </div>
     </Row>
   );
