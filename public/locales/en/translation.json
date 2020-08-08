@@ -13,5 +13,23 @@
   },
   "ar": {
     "1": "Arabic"
+  },
+  "blogposts": {
+    "blog0": {
+      "title": "Let’s talk about our hard times, it will help!",
+      "desc": "Depression is debilitating. Some people understand it, some think it’s an attention call. For me, depression is like that pile of laundry that you don’t want to show in your Instagram pictures. I never want to show my pile of laundry to the world, I want my life to seem happy and put together, as if I folded and put away all my laundry right out of the dryer."
+    },
+    "blog1": {
+      "title": "Why Talking to Myself Makes Sense",
+      "desc": "I’ve tried to stop talking to myself, but I haven’t had much luck. I’m referring to the silent internal conversation that accompanies almost every waking moment when my attention is left on its own. I’ve often wondered why the talking has to keep going. "
+    },
+    "blog2": {
+      "title": "How To Cope With Social Anxiety",
+      "desc": "Learning about psychology plays an essential role in my personal growth. I’ve been interested in it ever since my teenage years, but started to dive deeper when I was 20 and my problems with social anxiety, general anxiety and depression started to go out of control."
+    },
+    "blog3": {
+      "title": "Why Anger Can Be So Destructive In a Relationship",
+      "desc": "Dealing with anger, can make it or break a relationship. Because anger can be so destructive in a relationship, anger management is sometimes a good idea."
+    }
   }
 }
