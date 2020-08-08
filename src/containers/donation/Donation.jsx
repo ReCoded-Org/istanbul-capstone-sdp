@@ -15,14 +15,14 @@ export const Donation = () => {
           </Col>
         </Row>
 
-        <Row className="pageMarings">
+        <Row>
           <Col xs={12} sm={12} md={12} lg={12}>
-            <h2 className="subTitle">
+            <h2 className="secondaryTitle">
               Together with your support and your help, we will be able to raise
               awareness of suicide prevention to save lives
             </h2>
 
-            <article className="firstParagraphStyle">
+            <article className="introParagraph">
               Try and keep things in perspective. Let's be positive, help each
               other out, and we will get through all of this. In this world,
               there has never been a storm that lasted. This too, shall pass,
@@ -40,7 +40,7 @@ export const Donation = () => {
               embarrassing hidden in the middle of text.
             </article>
 
-            <article className="secondParagraphStyle">
+            <article className="donateParagraph">
               <h3>How to donate</h3>
               please write your check to Suljak Suicide Prevention Organization
               and mail it to: 43 Foundry Avenue, Basaksehir Istotc, Istanbul,
@@ -168,7 +168,7 @@ export const Donation = () => {
 
         <Row>
           <Col xs={12} sm={12} md={12} lg={12}>
-            <section className="thirdParagraphStyle">
+            <section className="helpParagraph">
               <h3>How can you help us?</h3>
               <article>
                 Approximately 11 people in Canada die by suicide every day.
@@ -221,8 +221,8 @@ export const Donation = () => {
         </Row>
 
         <Row>
-          <section className="pageMarings">
-            <article className="firstParagraphStyle">
+          <section>
+            <article className="introParagraph">
               Approximately 11 people in Canada die by suicide every day. That’s
               over 4,000 people a year, making suicide a leading cause of death
               in Canada. We can help prevent suicide with the right services. A
