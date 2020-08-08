@@ -5,4 +5,4 @@ import "./index.css";
 export const About = () => {
   //   const { t, i18n } = useTranslation();
   return <div></div>;
-}
+};

@@ -1,14 +1,130 @@
-body {
-    width: 100%;
-  }
-  
-/* .header {
-    padding-top: 1.8rem;
-    margin-bottom: 7rem;
-  } */
-  
-.blogHeader {
-    display: flex;
-    Width: 80%; 
-    margin: -8.75rem auto 1.8rem;
-  }
+.articleHeader {
+  display: flex;
+  z-index: 1;
+  width: 100%;
+  margin: -8.75rem auto 1.8rem;
+}
+
+.autherImage {
+  position: relative;
+  display: flex;
+  width: 15%;
+  z-index: 2;
+  margin: -7rem auto 1rem;
+  letter-spacing: 2px;
+}
+
+.autherTitle {
+  margin: 0 auto;
+  text-align: center;
+  font-family: Roboto, Sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #55595d;
+}
+
+.article {
+  text-align: justify;
+  margin: 0 auto 12rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: #55595d;
+}
+
+.article h1 {
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: #555658;
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 3rem;
+  font-family: Noto Sans, sans-serif;
+}
+
+.articleImage {
+  float: right;
+  width: 50%;
+  margin: 1.5rem 0 0.6rem 1.8rem;
+}
+
+.commentsSection {
+  margin: 0 auto 2rem;
+  line-height: 2rem;
+}
+
+.commentsTitle {
+  border-bottom: 1px solid rgb(184, 183, 183);
+}
+
+.visitorsComments img {
+  float: left;
+  margin: 0 1rem 0 0;
+}
+
+.visitorsComments h6 {
+  float: none;
+  margin: 2rem 0 0 0;
+}
+
+.visitorsComments p {
+  float: left;
+  line-height: 1.6rem;
+}
+
+.commentsFields {
+  display: inline-block;
+  margin: 6.6rem 0;
+}
+
+.commentsFields h5 {
+  color: #fe305e;
+  font-weight: 500;
+  font-family: Roboto, Sans-serif;
+}
+
+.commentsField {
+  margin-bottom: 1rem;
+}
+
+.commentButton {
+  background-color: #db3157 !important;
+  border: none !important;
+  margin: 1rem 0;
+}
+
+
+.recommendedSection {
+  margin: 0 auto;
+  width: 100%;
+  /* float: left;
+  /* display: inline; */
+}
+
+/* .right {
+  margin: 0 auto;
+  width: 100%;
+  height: 300px;
+  float: none; 
+} */
+
+.left {
+  float: left;
+  /* margin-right: 10%; */
+}
+
+.left h4 {
+  font-family: Roboto, Sans-serif;
+  font-weight: 500;
+  color: #55595d;
+  margin-bottom: 5rem;
+}
+
+.recommendedInfo {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.recommendedInfo p {
+  font-family: Roboto, Sans-serif;
+}

@@ -1,5 +1,5 @@
-import React from 'react';
-import './index.css';
+import React from "react";
+import "./index.css";
 // import LangDropdown from "../components/LangDropdown";
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 import { Home } from "../components/home/Home";
@@ -11,9 +11,8 @@ import { SignInUp } from "../components/signInUp/SignInUp";
 import { Donation } from "../containers/donation/Donation";
 import { NoMatch } from "../components/noMatch/NoMatch";
 import { NavBar } from "../components/common/NavBar";
-import {SingleBolgPage} from "../components/singleBolgPage/SingleBolgPage"
+import { SingleBolgPage } from "../components/singleBolgPage/SingleBolgPage";
 // import { useTranslation } from "react-i18next";
-
 
 function App() {
   // const { t, i18n } = useTranslation();
@@ -34,7 +33,6 @@ function App() {
         </Switch>
       </Router>
     </React.Fragment>
-     
   );
 }
 
