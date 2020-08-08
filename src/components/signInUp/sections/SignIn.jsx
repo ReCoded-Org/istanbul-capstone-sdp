@@ -27,7 +27,7 @@ const SignIn = (props) => {
 
                 </Col>
                 <Col lg="5" sm="5" className="rightSection">
-                    <p>Lorem ipsum</p>
+                    <h1>Welcome<br/>Back.</h1>
                     
                 </Col>
 

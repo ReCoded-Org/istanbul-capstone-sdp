@@ -19,7 +19,7 @@ const EmailPasswordSignIn = (props) => {
   }
   return (
     <Container>
-      <h3>Enter your email and password to log in</h3>
+        {/*<h3>Enter your email and password to log in</h3>*/}
       <Form>
         
           <Form.Group as={Col} controlId="email">
