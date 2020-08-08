@@ -1,6 +1,5 @@
 import React from "react";
 import "./index.css";
-// import LangDropdown from "../components/LangDropdown";
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 import { Home } from "../components/home/Home";
 import { About } from "../components/about/About";
@@ -12,13 +11,12 @@ import { Donation } from "../containers/donation/Donation";
 import { NoMatch } from "../components/noMatch/NoMatch";
 import { NavBar } from "../components/common/NavBar";
 import { SingleBolgPage } from "../components/singleBolgPage/SingleBolgPage";
-// import { useTranslation } from "react-i18next";
 
 function App() {
-  // const { t, i18n } = useTranslation();
   return (
     <React.Fragment>
       <NavBar />
+      learn react
       <Router>
         <Switch>
           <Route exact path="/" component={Home} />
