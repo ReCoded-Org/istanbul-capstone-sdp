@@ -13,5 +13,26 @@
   },
   "ar": {
     "1": "Arabic"
+  },
+  "whoAreWe": {
+    "header": "who are we?"
+  },
+  "aboutPart": {
+    "bigText": "We are",
+    "purpose": " an organization which has a main goal of bringing people happiness, helping them with their mental and other issues. We were found at 2012 by insert_name_here and insert_name_here. Since we are a non profit organization, our expenses are covered by our donators and maybe also you!",
+    "goals": " We are here for your empowerment, for you to have a better life.",
+    "noAdsPolicy": " We, as SULJAK, are providing a website which is not under the influence of any company. By this we mean, our website does not have any advertisements or any sponsored content."
+  },
+  "managerAssistant": {
+    "name": "Nasser Ahmed",
+    "title": "Manager Assistant"
+  },
+  "generalManager": {
+    "name": "Jawdat Yildiz",
+    "title": "General Manager"
+  },
+  "psychotherapist": {
+    "name": "Turgut Bamsi",
+    "title": "Psychotherapist"
   }
 }

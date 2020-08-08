@@ -2,7 +2,7 @@ import React from "react";
 import "./index.css";
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 import { Home } from "../components/home/Home";
-import { About } from "../components/about/About";
+import About from "../components/about/About";
 import { Contact } from "../components/contact/Contact";
 import { Blogs } from "../components/blogs/Blogs";
 import { PsychoAssess } from "../../src/containers/PsychoAssess/PsychoAssess";
@@ -14,8 +14,8 @@ import { NavBar } from "../components/common/NavBar";
 function App() {
   return (
     <React.Fragment>
-      learn react
       <Router>
+        learn react
         <NavBar />
         <Switch>
           <Route exact path="/" component={Home} />

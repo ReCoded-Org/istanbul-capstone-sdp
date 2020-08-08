@@ -20,31 +20,31 @@ export const NavBar = () => {
         <Nav className="collapse navbar-collapse justify-content-end">
           <Nav.Item className="navSpaces">
             <Link to="/Contact" className="navLink">
-              CONTACT US
+              Contact Us
             </Link>
           </Nav.Item>
 
           <Nav.Item className="navSpaces">
             <Link to="/About" className="navLink">
-              ABOUT
+              About
             </Link>
           </Nav.Item>
 
           <Nav.Item className="navSpaces">
             <Link to="/Assessment" className="navLink">
-              ASSESSMENT
+              Assessment
             </Link>
           </Nav.Item>
 
           <Nav.Item className="navSpaces">
             <Link to="/Donation" className="navLink">
-              DONATE
+              Donate
             </Link>
           </Nav.Item>
 
           <Nav.Item className="navSpaces">
             <Link to="/Blogs" className="navLink">
-              BLOG
+              Blog
             </Link>
           </Nav.Item>
         </Nav>
