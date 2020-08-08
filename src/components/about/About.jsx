@@ -1,8 +1,20 @@
 import React from "react";
-// import { useTranslation } from "react-i18next";
 import "./index.css";
+import { Container } from "react-bootstrap";
+import AboutParagraph from "./sections/AboutPageParags";
+import WhoAreWe from "./sections/WhoAreWe";
+import PeopleDisplay from "./sections/PeopleDisplay";
 
-export const About = () => {
-  //   const { t, i18n } = useTranslation();
-  return <div></div>;
-};
+function About() {
+  return (
+    <>
+      <Container>
+        <WhoAreWe />
+        <AboutParagraph />
+        <PeopleDisplay />
+      </Container>
+    </>
+  );
+}
+
+export default About;
