@@ -5,15 +5,6 @@
   "React": {
     "1": "HEY GUUYS"
   },
-  "en": {
-    "1": "English"
-  },
-  "tr": {
-    "1": "Turkish"
-  },
-  "ar": {
-    "1": "Arabic"
-  },
   "whoAreWe": {
     "header": "who are we?"
   },
@@ -34,5 +25,10 @@
   "psychotherapist": {
     "name": "Turgut Bamsi",
     "title": "Psychotherapist"
+  },
+  "lang": {
+    "en": "English",
+    "tr": "Turkish",
+    "ar": "Arabic"
   }
 }
