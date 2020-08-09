@@ -5,7 +5,7 @@ import { Row, Col, Container } from "react-bootstrap";
 export const Recommended = () => {
   return (
     <Container>
-    <Row className="right">
+      <Row className="right">
         <Col xs={10} md={10} lg={10} className="left">
           <section>
             <img
@@ -20,9 +20,9 @@ export const Recommended = () => {
             </div>
             <h4>How To Overcome Your Crises</h4>
           </section>
-          </Col>
+        </Col>
 
-          <Col xs={10} md={10} lg={10} className="left">
+        <Col xs={10} md={10} lg={10} className="left">
           <section>
             <img
               className="recommendedImage"
@@ -37,7 +37,7 @@ export const Recommended = () => {
             <h4>How Far You Enlarge Your Fears</h4>
           </section>
         </Col>
-        </Row>
+      </Row>
     </Container>
   );
 };

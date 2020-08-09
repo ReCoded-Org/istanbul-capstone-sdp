@@ -15,8 +15,8 @@ import { SingleBolgPage } from "../components/singleBolgPage/SingleBolgPage";
 function App() {
   return (
     <React.Fragment>
-      <NavBar />
       learn react
+      <NavBar />
       <Router>
         <Switch>
           <Route exact path="/" component={Home} />
