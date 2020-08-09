@@ -10,10 +10,8 @@ import { SignInUp } from "../components/signInUp/SignInUp";
 import { Donation } from "../containers/donation/Donation";
 import { NoMatch } from "../components/noMatch/NoMatch";
 import { NavBar } from "../components/common/NavBar";
-// import { useTranslation } from "react-i18next";
 
 function App() {
-  // const { t, i18n } = useTranslation();
   return (
     <React.Fragment>
       <Router>
