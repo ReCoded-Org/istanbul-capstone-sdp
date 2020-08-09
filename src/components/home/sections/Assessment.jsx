@@ -1,10 +1,10 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 const Assessment = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   return (
     <div className="assessment">
       <div>
@@ -16,9 +16,11 @@ const Assessment = () => {
         <p>{t("assessment.paragraph0")}</p>
         <br />
         <div>
-          <Button id="blue" size="lg" variant="primary">
-            {t("assessment.button0")}
-          </Button>{" "}
+          <Link to="psychoAssess">
+            <Button id="blue" size="lg" variant="primary">
+              {t("assessment.button0")}
+            </Button>{" "}
+          </Link>
         </div>
       </div>
 

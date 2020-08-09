@@ -1,9 +1,9 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 const Stories = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   return (
     <div className="stories">
       <div>
@@ -14,7 +14,9 @@ const Stories = () => {
         <p>{t("stories.paragraph0")}</p>
         <br />
         <div>
-          <span className="red">{t("stories.readmore0")}</span>
+          <Link to="/blogs">
+            <span className="red">{t("stories.readmore0")}</span>
+          </Link>
         </div>
       </div>
 
