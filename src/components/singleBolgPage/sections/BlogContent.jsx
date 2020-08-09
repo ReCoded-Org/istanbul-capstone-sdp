@@ -28,7 +28,7 @@ export const BlogContent = () => {
               from a line in section 1.10.32, Book is of the ewethicsthe of
               Renaissance.
               <img
-                className="articleImage"
+                className="articleWrappedImage"
                 src={"https://i.ibb.co/QJXF6Dd/wrapped-image3.png"}
                 alt=""
               />

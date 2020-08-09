@@ -42,13 +42,13 @@
   font-family: Noto Sans, sans-serif;
 }
 
-.articleImage {
+.articleWrappedImage {
   float: right;
   width: 50%;
   margin: 1.5rem 0 0.6rem 1.8rem;
 }
 
-.commentsSection {
+.commentSection {
   margin: 0 auto 2rem;
   line-height: 2rem;
 }
@@ -57,33 +57,33 @@
   border-bottom: 1px solid rgb(184, 183, 183);
 }
 
-.visitorsComments img {
+.visitorComment img {
   float: left;
   margin: 0 1rem 0 0;
 }
 
-.visitorsComments h6 {
+.visitorComment h6 {
   float: none;
   margin: 2rem 0 0 0;
 }
 
-.visitorsComments p {
+.visitorComment p {
   float: left;
   line-height: 1.6rem;
 }
 
-.commentsFields {
+.replyFields {
   display: inline-block;
   margin: 6.6rem 0;
 }
 
-.commentsFields h5 {
+.replyFields h5 {
   color: #fe305e;
   font-weight: 500;
   font-family: Roboto, Sans-serif;
 }
 
-.commentsField {
+.infoFields {
   margin-bottom: 1rem;
 }
 
@@ -96,34 +96,24 @@
 .recommendedSection {
   margin: 0 auto;
   width: 100%;
-  /* float: left;
-  /* display: inline; */
 }
 
-/* .right {
-  margin: 0 auto;
-  width: 100%;
-  height: 300px;
-  float: none; 
-} */
-
-.left {
+.recommendedPost {
   float: left;
-  /* margin-right: 10%; */
 }
 
-.left h4 {
+.recommendedPost h4 {
   font-family: Roboto, Sans-serif;
   font-weight: 500;
   color: #55595d;
   margin-bottom: 5rem;
 }
 
-.recommendedInfo {
+.postInfo {
   display: flex;
   margin-top: 1rem;
 }
 
-.recommendedInfo p {
+.postInfo p {
   font-family: Roboto, Sans-serif;
 }
