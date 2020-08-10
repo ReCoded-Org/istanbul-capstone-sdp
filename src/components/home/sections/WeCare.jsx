@@ -26,19 +26,15 @@ const WeCare = () => {
         <Link to="/contact">
           <Button id="pink" variant="primary" size="lg">
             {t("weCare.button0")}
-          </Button>{" "}
+          </Button>
         </Link>
         <br />
-        <a href="#">
-          <Link to="/psychoAssess">
-            <Button id="blue" size="lg" variant="primary">
-              {t("weCare.button1")}
-            </Button>{" "}
-          </Link>
-        </a>
+        <Link to="/psychoAssess">
+          <Button id="blue" size="lg" variant="primary">
+            {t("weCare.button1")}
+          </Button>
+        </Link>
       </div>
-
-      <br />
     </div>
   );
 };
