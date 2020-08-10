@@ -4,9 +4,9 @@ import { Row, Col, Container } from "react-bootstrap";
 
 export const Recommended = () => {
   return (
-    <Container>
+    <Container >
       <Row>
-        <Col xs={10} md={10} lg={10} className="recommendedPost">
+        <Col xs={10} md={4} lg={4} className="recommendedPost">
           <section>
             <img
               className="recommendedImage"
@@ -22,7 +22,7 @@ export const Recommended = () => {
           </section>
         </Col>
 
-        <Col xs={10} md={10} lg={10} className="recommendedPost">
+        <Col xs={10} md={4} lg={4} className="recommendedPost">
           <section>
             <img
               className="recommendedImage"
