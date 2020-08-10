@@ -1,44 +1,52 @@
 import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
-import "./index.css";
+// import "./index.css";
+import { Link } from "react-router-dom";
+import LangDropdown from "./LangDropdown";
 
 export const NavBar = () => {
   return (
-    <div>
+    <>
       <Navbar className="navBar">
-        <Navbar.Brand href="/">
-          <img
-            className="brandSpaces"
-            src="https://i.ibb.co/L9GcrMY/LLogo-2.png"
-            alt="Suljak Logo"
-          />
-        </Navbar.Brand>
+        <Link to="/">
+          <Navbar.Brand>
+            <img
+              className="brandSpaces"
+              src="https://i.ibb.co/L9GcrMY/LLogo-2.png"
+              alt="Suljak Logo"
+            />
+          </Navbar.Brand>
+        </Link>
 
         <Nav className="collapse navbar-collapse justify-content-end">
           <Nav.Item className="navSpaces">
-            <Nav.Link className="navLink" href="/Contact">
-              CONTACT US
-            </Nav.Link>
+            <Link to="/Contact" className="navLink">
+              Contact Us
+            </Link>
           </Nav.Item>
+
           <Nav.Item className="navSpaces">
-            <Nav.Link className="navLink" href="/About">
-              ABOUT
-            </Nav.Link>
+            <Link to="/About" className="navLink">
+              About
+            </Link>
           </Nav.Item>
+
           <Nav.Item className="navSpaces">
-            <Nav.Link className="navLink" href="/Assessment">
-              ASSESSMENT
-            </Nav.Link>
+            <Link to="/Assessment" className="navLink">
+              Assessment
+            </Link>
           </Nav.Item>
+
           <Nav.Item className="navSpaces">
-            <Nav.Link className="navLink" href="/Donation">
-              DONATE
-            </Nav.Link>
+            <Link to="/Donation" className="navLink">
+              Donate
+            </Link>
           </Nav.Item>
+
           <Nav.Item className="navSpaces">
-            <Nav.Link className="navLink" href="/Blogs">
-              BLOG
-            </Nav.Link>
+            <Link to="/Blogs" className="navLink">
+              Blog
+            </Link>
           </Nav.Item>
         </Nav>
 
@@ -49,14 +57,10 @@ export const NavBar = () => {
             alt="Login Icon"
           />
         </div>
-        <div className="rightMargin">
-          <img
-            className="langSpaces"
-            src="https://i.ibb.co/jG2mkVJ/Language-icon.png"
-            alt="Change Language"
-          />
-        </div>
+        <>
+          <LangDropdown />
+        </>
       </Navbar>
-    </div>
+    </>
   );
 };

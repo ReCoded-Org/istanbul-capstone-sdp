@@ -1,12 +1,124 @@
-.header {
+.homePageHeader {
   width: 100%;
   text-align: center;
-  margin-top: -32px;
+}
+
+.weCareSection {
+  margin: 11% 0 3%;
+}
+
+.weCareSection h1 {
+  text-transform: uppercase;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 3.5rem;
+  color: #161b50;
+  margin-bottom: 3.5%;
+}
+
+/* .initialWordStyle {
+  font-size: 2rem;
+} */
+
+.weCareSection article {
+  font-family: roboto, sans-serif;
+  text-align: justify;
+  font-size: 1.125rem;
+  margin-bottom: 1.5%;
+  font-weight: 400;
+  color: #686868;
+}
+
+.positiveWordStyle {
+  color: #6bb2ff;
+}
+
+.negativeWordStyle {
+  text-decoration-line: line-through;
+  color: #ed2a7a;
+}
+
+.talkToUsButton {
+  margin: 1.5% 0;
+  background-color: #ed2a7a !important;
+  border-radius: 10px !important;
+  border: none !important;
+  height: 2.3rem;
+  width: 8rem;
+}
+
+.testButton {
+  background-color: #6bb2ff !important;
+  border-radius: 10px !important;
+  border: none !important;
+  height: 2.3rem;
+  width: 17rem;
+  margin-bottom: 11%;
+}
+
+.storiesSection {
+  background-color: #f5f9fd;
+  height: 34rem;
+  padding: 6% 12.4%;
+  margin: 0 auto 8%;
+}
+
+
+.storiesTitle h1 {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 3.2rem;
+  color: #161b50;
+  line-height: 60px;
+}
+
+.storiesTitle p {
+  font-size: 1.125rem;
+  font-family: Roboto, sans-serif;
+  color: #686868;
+  text-align: justify;
+  width: 90%;
+  margin-top: 2rem;
+}
+
+.rediectLink {
+  margin-top: 2rem;
+  color: #ed2a7a;
+}
+
+
+.halfFullImage {
+  width: 100%;
+}
+
+.survivorSection {
+  width: 80%;
+  height: 28.5rem;
+}
+
+.survivorOne {
+  position:absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+}
+
+.survivorTwo {
+  position:absolute;
+  top: 0;
+  left: 5px;
+  z-index: 2;
+}
+
+.survivorThree {
+  position:absolute;
+  top: 0;
+  left: 6px;
+  z-index: 1;
 }
 
 .relatedCardsContainer {
   background-color: rgba(200, 204, 214, 0.5);
   padding: 5rem 10% 5rem 10%;
+  margin-bottom: 5rem;
 }
 
 .relatedCard {
@@ -33,4 +145,10 @@
   line-height: 15px;
   text-align: justify;
   color: #ed2a7a;
+}
+
+.assessmentSection {
+  height: 34rem;
+  padding: 6% 12.4%;
+  margin: 0 auto 8%;
 }

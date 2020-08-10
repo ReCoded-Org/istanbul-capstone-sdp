@@ -1,8 +1,7 @@
 {
-  "welcome": {
-    "message": "Reactمرحبًا بك في "
-  },
-  "React": {
-    "message": "HEY GUUYS"
+  "lang": {
+    "en": "الإنجليزية",
+    "tr": "التركية",
+    "ar": "العربية"
   }
 }

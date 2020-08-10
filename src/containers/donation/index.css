@@ -1,96 +1,166 @@
+.secondaryTitle,
+.introParagraph,
+.donateParagraph,
+.helpParagraph,
+.countNumbers,
+.darkGreyColumn,
+.lightGreyColumn {
+  font-family: Roboto, Sans-serif;
+}
+
+.title,
+.donateParagraph h3,
+.helpParagraph h3 {
+  font-family: "Noto Sans", Sans-serif;
+}
+
+.secondaryTitle,
+.introParagraph,
+.donateParagraph,
+.helpParagraph {
+  color: #4e4e4e;
+  text-align: justify;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
 .header {
-  width: 100%;
-  padding-top: 30px;
-  text-align: center;
-  margin-top: -32px;
+  margin-bottom: 7rem;
 }
 
-.pageMarings {
-  margin: 100px 200px;
-  font-family: "Aktiv Grotesk Corp";
-  color: #454545;
-}
-
-.address {
-  font-size: 50px;
+.title {
+  font-size: 3rem;
   font-weight: bold;
   line-height: 60px;
-  margin-bottom: 50px;
+  color: #3a3a3a;
 }
 
-.subAddress {
-  font-size: 30px;
-  font-weight: bolder;
-  line-height: 40px;
-  margin-bottom: 25px;
-  text-align: justify;
+.title h1 {
+  font-size: 3.3rem;
 }
 
-.textBody1 {
-  font-size: 18px;
-  font-weight: light;
-  line-height: normal;
-  color: #666666;
-  text-align: justify;
+.secondaryTitle {
+  font-size: 1.5rem;
+  margin: 3rem 0 0.5rem;
+  line-height: 2rem;
+  font-weight: 500;
 }
 
-.textBody2 {
-  font-weight: bolder;
-  text-align: justify;
+.donateParagraph {
+  margin-bottom: 6rem;
+  margin-top: 4rem;
 }
 
-.quotes {
-  display: block !important;
-  margin: 0 auto;
-  padding-top: 0px;
+.donateParagraph h3 {
+  font-weight: bold;
+  margin-bottom: 0.6rem;
 }
 
-.mm {
-  background-image: URL("https://i.ibb.co/tB6C6Bv/more-survivors-everyday.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 60%;
-  height: 500px;
-  margin: -30px auto;
-  padding: 200px 0;
+.helpParagraph {
+  margin-top: 6rem;
 }
 
-/* .carousel-indicators li {
-    width: 8px;
-    height: 8px;
-    margin: 10px 10px 20px 10px;
-    border-radius: 100%;
-    background-color: #fff;
-  } */
+.helpParagraph h3 {
+  font-weight: bold;
+  margin-bottom: 0.7rem;
+}
+
+.wholeCarousel {
+  margin: 6rem auto;
+  width: 70%;
+}
 
 .carousel {
-  width: 650px;
-  height: 250px;
+  width: 100%;
   margin: 0 auto;
+  box-shadow: 0px 0px 25px 0px #9797974d;
 }
 
-/* .carousel-control-next,
-.carousel-control-prev {
-    filter: invert(100%);
-    padding: 0 50px 40px;
-
-} */
-
-/* .carousel-control-next-icon:after
-{
-  content: '>';
-  font-size: 35px;
-  color: black;
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23454545' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+  margin-right: 30%;
+  margin-bottom: 10%;
 }
 
-.carousel-control-prev-icon:after {
-  content: '<';
-  font-size: 35px;
-  color: black;
-} */
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23454545' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+  margin-left: 30%;
+  margin-bottom: 10%;
+}
 
-.right.carousel-control,
-.left.carousel-control {
-  opacity: 0;
-  filter: alpha(opacity=0); /* IE support */
+.tableSection {
+  display: flex;
+  padding: 1.2rem 1.5rem 2.2rem 1.5rem;
+  text-align: center;
+  background-color: #135ba5;
+}
+
+@media only screen and (max-width: 800px) {
+  .tableSection {
+    display: flex;
+    width: 60%;
+    padding: 1.2rem 1.5rem 2.2rem 1.5rem;
+    text-align: center;
+    background-color: #135ba5;
+  }
+}
+
+.tableBlueSection {
+  background-color: #135ba5;
+  height: 6.5rem;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.activityType {
+  font-size: 21px;
+  color: #dfdfdf;
+}
+
+.countNumbers {
+  font-size: 2.8rem;
+  color: white;
+  padding: 0.5rem 0 0 0;
+  display: block;
+  line-height: 2.8rem;
+}
+
+.darkGreySection {
+  background-color: #c4c4c4;
+  width: 25%;
+  height: 20rem;
+  padding: 2.3rem 0 2.3rem;
+}
+
+.lightGreySection {
+  background-color: #f0f0f0;
+  width: 25%;
+  height: 20rem;
+  padding-top: 4%;
+}
+
+.darkGreyColumn,
+.lightGreyColumn {
+  padding: 1.25rem 1.25rem;
+  font-size: 0.9rem;
+}
+
+.darkGreyColumn {
+  color: white;
+}
+
+.lightGreyColumn {
+  color: #a8a8a8;
+}
+
+.socialMedia {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.socialMedia img {
+  padding: 0 1.25rem;
+  margin: 3.2rem auto 7.5rem;
 }
