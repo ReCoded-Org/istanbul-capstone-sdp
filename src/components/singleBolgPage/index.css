@@ -98,8 +98,15 @@
   width: 100%;
 }
 
+.three {
+  margin: 0 auto;
+  width: 100%;
+}
+
 .recommendedPost {
-  float: left;
+  margin: 0 auto;
+  width: 100%;
+
 }
 
 .recommendedPost h4 {
