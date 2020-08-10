@@ -13,5 +13,53 @@
   },
   "ar": {
     "1": "Arabic"
-  }
+  },
+  "whoAreWe": {
+    "header": "who are we?"
+  },
+  "aboutPart": {
+    "bigText": "We are",
+    "purpose": " an organization which has a main goal of bringing people happiness, helping them with their mental and other issues. We were found at 2012 by insert_name_here and insert_name_here. Since we are a non profit organization, our expenses are covered by our donators and maybe also you!",
+    "goals": " We are here for your empowerment, for you to have a better life.",
+    "noAdsPolicy": " We, as SULJAK, are providing a website which is not under the influence of any company. By this we mean, our website does not have any advertisements or any sponsored content."
+  },
+  "managerAssistant": {
+    "name": "Nasser Ahmed",
+    "title": "Manager Assistant"
+  },
+  "generalManager": {
+    "name": "Jawdat Yildiz",
+    "title": "General Manager"
+  },
+  "psychotherapist": {
+    "name": "Turgut Bamsi",
+    "title": "Psychotherapist"
+  },
+  "weCare":{
+    "heading0":"WE CARE AND CONCERN",
+    "heading1":"ABOUT YOU",
+    "firstword0":"Let's",
+    "paragraph0":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad",
+    "span0":"minim",
+    "paragraph1":"veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla",
+    "span1":"pariatur",
+    "paragraph2":".Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "button0":"TALK TO US",
+    "button1":"If you are not sure, take the test"
+},
+"stories":{
+    "heading0":"STORIES",
+    "heading1":"ABOUT HOPE",
+    "paragraph0":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    "readmore0":"read more >>",
+    "imagealt0":"image about hope"
+},
+"assessment":{
+    "heading0":"Psychological",
+    "heading1":"Assessment",
+    "paragraph0":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "button0":"Start Here",
+    "imagealt0":"an image about assessment"
+}
+
 }
