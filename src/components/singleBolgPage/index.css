@@ -93,20 +93,9 @@
   margin: 1rem 0;
 }
 
-.recommendedSection {
-  margin: 0 auto;
-  width: 100%;
-}
-
-.three {
-  margin: 0 auto;
-  width: 100%;
-}
-
 .recommendedPost {
-  margin: 0 auto;
-  width: 100%;
-
+  margin: 0 auto 50px;
+  /* width: 100%; */
 }
 
 .recommendedPost h4 {
@@ -124,3 +113,5 @@
 .postInfo p {
   font-family: Roboto, Sans-serif;
 }
+
+
