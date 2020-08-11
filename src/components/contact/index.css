@@ -35,6 +35,10 @@
   margin: 5%;
 }
 
+.formSide h3 {
+  text-transform: uppercase;
+}
+
 .formSide input {
   border: none;
   border-bottom: 1px solid #888;
