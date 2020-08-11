@@ -5,6 +5,7 @@ import FacebookAuth from "../../../containers/auth/FacebookAuth";
 import GoogleAuth from "../../../containers/auth/GoogleAuth";
 import { Row, Col } from "react-bootstrap";
 
+
 const SignUp = (props) => {
   return (
     <Row className="signinUpContainer justify-content-md-center">
@@ -15,7 +16,6 @@ const SignUp = (props) => {
             Welcome <br /> to our <br /> website.
           </h1>
         </Col>
-
         <Col lg="7" sm="7" className="leftSection">
           <h2>sign up</h2>
           <EmailPasswordSignUp />
@@ -24,7 +24,6 @@ const SignUp = (props) => {
             <FacebookAuth />
             <GoogleAuth />
           </Row>
-
           <h6>
             Already a member?{" "}
             <span onClick={props.handleLoggingSwitch}>Login</span>
@@ -34,5 +33,4 @@ const SignUp = (props) => {
     </Row>
   );
 };
-
 export default SignUp;

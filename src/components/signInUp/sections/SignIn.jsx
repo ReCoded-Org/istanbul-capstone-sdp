@@ -4,7 +4,6 @@ import EmailPasswordSignIn from "../../../containers/auth/EmailPasswordSignIn";
 import FacebookAuth from "../../../containers/auth/FacebookAuth";
 import GoogleAuth from "../../../containers/auth/GoogleAuth";
 import { Row, Col } from "react-bootstrap";
-
 const SignIn = (props) => {
   return (
     <Row className="justify-content-md-center signinUpContainer">
@@ -12,13 +11,11 @@ const SignIn = (props) => {
         <Col lg="7" sm="7" className="leftSection">
           <h2>login</h2>
           <EmailPasswordSignIn />
-
           <Row className="m-2 ">
             <h5>Or Login using </h5>
             <FacebookAuth />
             <GoogleAuth />
           </Row>
-
           <h6>
             Don't have an account?
             <span onClick={props.handleLoggingSwitch}>Sign up</span>
@@ -36,5 +33,4 @@ const SignIn = (props) => {
     </Row>
   );
 };
-
 export default SignIn;
