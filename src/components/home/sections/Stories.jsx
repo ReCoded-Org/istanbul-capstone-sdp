@@ -22,7 +22,7 @@ const Stories = () => {
 
       <div>
         <img
-          src="https://files.slack.com/files-pri/TRG8KC72A-F0174T21RH9/stories-about-hope.png"
+          src="https://i.ibb.co/HqmDtgk/Stories-Image.png"
           alt={t("stories.imagealt0")}
         />
       </div>

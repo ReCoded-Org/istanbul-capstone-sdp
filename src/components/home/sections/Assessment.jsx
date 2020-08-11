@@ -26,7 +26,7 @@ const Assessment = () => {
 
       <div>
         <img
-          src="https://files.slack.com/files-pri/TRG8KC72A-F017H9W00SV/assessment.png"
+          src="https://i.ibb.co/17fcbqD/assessment-image.png"
           alt={t("assessment.imagealt0")}
         />
       </div>
