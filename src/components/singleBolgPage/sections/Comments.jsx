@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import "../index.css";
 import { Row, Col, Container, Button } from "react-bootstrap";
 
-export const Comments = () => {
+export const Comments = (props) => {
+  const { comments } = props.blogTest;
   const commentState = {
     comment: "",
     name: "",
@@ -18,20 +19,50 @@ export const Comments = () => {
   };
   console.log(form);
 
+  // const AllComments = () => {
+  //   return (
+  //     <div>
+  //       <h6>{comments[0].person}</h6>
+  //       <p>{comments[0].comment}</p>
+
+  //       <h6>{comments[1].person}</h6>
+  //       <p>{comments[1].comment}</p>
+
+  //     </div>
+  //   )
+  //   // comments.map(item => {
+  //   //   console.log("item:");
+  //   //   console.log(item);
+  //   //   return (
+  //   //     <div>
+  //   //       <h6>{item.person}</h6>
+  //   //       <p>{item.comment}</p>
+  //   //     </div>
+  //   //   )
+  //   // })
+  // }
+
+  const allComments = comments.map((item) => {
+    console.log("item:");
+    console.log(item);
+    return (
+      <div>
+        <img
+          src="https://i.ibb.co/k0NNyLV/User-profile-image.png"
+          alt="Visitor profile"
+        />
+        <h6>{item.person}</h6>
+        <p>{item.comment}</p>
+      </div>
+    );
+  });
+
   return (
     <Container className="w-100">
       <Row>
         <Col xs={10} md={10} lg={10} className="commentSection">
           <p className="commentsTitle">Comments</p>
-
-          <section className="visitorComment">
-            <img
-              src="https://i.ibb.co/k0NNyLV/User-profile-image.png"
-              alt="Visitor profile image"
-            />
-            <h6>Ali Ahmed</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </section>
+          <section className="visitorComment">{allComments}</section>
 
           <form className="replyFields" onSubmit={handleSubmit}>
             <h5>Leave a Reply</h5>
