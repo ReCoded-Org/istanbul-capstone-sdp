@@ -1,7 +1,7 @@
 import React from "react";
 import { Header } from "./sections/Header";
-import RelatedCards from "./sections/RelatedCards";
 import "./index.css";
+import RelatedCards from "./sections/RelatedCards";
 
 export const Home = () => {
   return (
