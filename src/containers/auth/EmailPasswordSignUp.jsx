@@ -77,7 +77,7 @@ const EmailPasswordSignUp = (props) => {
             />
           </Form.Group>
           <Form.Group as={Col} controlId="passwordRepeat">
-            <Form.Label>Re-type password:</Form.Label>
+            <Form.Label>Re-type password</Form.Label>
             <Form.Control
               type="password"
               onInput={(e) => {

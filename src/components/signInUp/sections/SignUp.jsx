@@ -5,7 +5,6 @@ import FacebookAuth from "../../../containers/auth/FacebookAuth";
 import GoogleAuth from "../../../containers/auth/GoogleAuth";
 import { Row, Col } from "react-bootstrap";
 
-
 const SignUp = (props) => {
   return (
     <Row className="signinUpContainer justify-content-md-center">

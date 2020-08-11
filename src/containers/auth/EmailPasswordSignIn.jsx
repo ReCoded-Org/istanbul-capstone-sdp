@@ -20,25 +20,25 @@ const EmailPasswordSignIn = (props) => {
   return (
     <Container>
       <Form>
-          <Form.Group as={Col} controlId="email">
-            <Form.Label>Email</Form.Label>
-            <Form.Control
-              type="text"
-              onInput={(e) => {
-                setEmail(e.target.value);
-              }}
-            />
-          </Form.Group>
-          <Form.Group as={Col} controlId="password">
-            <Form.Label>Password</Form.Label>
-            <Form.Control
-              type="password"
-              onInput={(e) => {
-                setPassword(e.target.value);
-              }}
-            />
-          </Form.Group>
-          <a className="forgetPassword" href="#">
+        <Form.Group as={Col} controlId="email">
+          <Form.Label>Email</Form.Label>
+          <Form.Control
+            type="text"
+            onInput={(e) => {
+              setEmail(e.target.value);
+            }}
+          />
+        </Form.Group>
+        <Form.Group as={Col} controlId="password">
+          <Form.Label>Password</Form.Label>
+          <Form.Control
+            type="password"
+            onInput={(e) => {
+              setPassword(e.target.value);
+            }}
+          />
+        </Form.Group>
+        <a className="forgetPassword" href="#">
           Forget Your Password?
         </a>
         <Button variant="primary" type="submit" onClick={handleSubmit}>
