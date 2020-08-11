@@ -17,42 +17,22 @@ export const Comments = (props) => {
     alert(`your message have been submitted ${form}`);
     setForm(commentState);
   };
-  console.log(form);
-
-  // const AllComments = () => {
-  //   return (
-  //     <div>
-  //       <h6>{comments[0].person}</h6>
-  //       <p>{comments[0].comment}</p>
-
-  //       <h6>{comments[1].person}</h6>
-  //       <p>{comments[1].comment}</p>
-
-  //     </div>
-  //   )
-  //   // comments.map(item => {
-  //   //   console.log("item:");
-  //   //   console.log(item);
-  //   //   return (
-  //   //     <div>
-  //   //       <h6>{item.person}</h6>
-  //   //       <p>{item.comment}</p>
-  //   //     </div>
-  //   //   )
-  //   // })
-  // }
 
   const allComments = comments.map((item) => {
-    console.log("item:");
-    console.log(item);
     return (
       <div>
         <img
+          className="visitorImage"
           src="https://i.ibb.co/k0NNyLV/User-profile-image.png"
           alt="Visitor profile"
         />
-        <h6>{item.person}</h6>
-        <p>{item.comment}</p>
+        <div className="dispalyedComment">
+          <p className="visitorName">
+            {" "}
+            {item.person}{" "}
+            <span className="visitorComment"> {item.comment} </span>
+          </p>
+        </div>
       </div>
     );
   });
@@ -62,7 +42,8 @@ export const Comments = (props) => {
       <Row>
         <Col xs={10} md={10} lg={10} className="commentSection">
           <p className="commentsTitle">Comments</p>
-          <section className="visitorComment">{allComments}</section>
+
+          <section className="">{allComments}</section>
 
           <form className="replyFields" onSubmit={handleSubmit}>
             <h5>Leave a Reply</h5>

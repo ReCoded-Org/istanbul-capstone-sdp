@@ -1,17 +1,16 @@
 import React from "react";
-import "../index.css";
 import { Row, Col, Container } from "react-bootstrap";
 
-export const BlogHeader = () => {
+export const BlogHeader = (props) => {
+  const { blogTest } = props;
+
   return (
     <Container>
       <Row>
         <Col xs={12} md={12} lg={12}>
-          <img
-            className="articleHeader"
-            src={"https://i.ibb.co/2nDfNzp/Struggling-image.png"}
-            alt=""
-          />
+          <img className="articleHeader" src={blogTest.blogHeader} alt="" />
+          <img className="authorImage" src={blogTest.authorImage} alt="" />
+          <p className="autherTitle">{blogTest.autherName}</p>
         </Col>
       </Row>
     </Container>

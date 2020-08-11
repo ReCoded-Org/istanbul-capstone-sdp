@@ -1,5 +1,5 @@
 .articleHeader,
-.autherImage,
+.authorImage,
 .postInfo {
   display: flex;
 }
@@ -7,7 +7,8 @@
 .autherTitle,
 .replyFields h5,
 .recommendedPost h4,
-.postInfo p {
+.postInfo p,
+.publishingDate {
   font-family: Roboto, Sans-serif;
 }
 
@@ -17,12 +18,10 @@
   margin: -8.75rem auto 1.8rem;
 }
 
-.autherImage {
-  position: relative;
-  width: 15%;
+.authorImage {
+  width: 18%;
   z-index: 2;
   margin: -7rem auto 1rem;
-  letter-spacing: 2px;
 }
 
 .autherTitle {
@@ -52,6 +51,11 @@
   font-family: Noto Sans, sans-serif;
 }
 
+.publishingDate {
+  color: #afaeae;
+  margin-bottom: 2rem;
+}
+
 .articleWrappedImage {
   float: right;
   width: 50%;
@@ -67,23 +71,31 @@
   border-bottom: 1px solid rgb(184, 183, 183);
 }
 
-.visitorComment img {
-  float: left;
-  margin: 0 1rem 0 0;
+.dispalyedComment,
+.replyFields {
+  display: inline-block;
 }
 
-.visitorComment h6 {
-  float: none;
-  margin: 2rem 0 0 0;
+.dispalyedComment {
+  line-height: 20px;
+  margin-left: 1rem;
 }
 
-.visitorComment p {
-  float: left;
-  line-height: 1.6rem;
+.visitorName {
+  font-weight: 500;
+}
+
+.visitorComment {
+  display: block;
+  font-weight: 400;
+}
+
+.visitorImage {
+  display: inline;
+  margin: 0 0 1.7rem 0;
 }
 
 .replyFields {
-  display: inline-block;
   margin: 6.6rem 0;
 }
 
