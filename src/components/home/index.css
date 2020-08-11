@@ -78,9 +78,10 @@
   font-family: "Roboto";
   font-weight: 300;
   font-size: 24px;
+  padding-right: 70px;
 }
 
-.weCare p first-word {
+.firstWord {
   font-size: 36px;
   width: 400px;
 }
@@ -142,7 +143,6 @@
   float: right;
   margin-top: 100px;
   width: 459px;
-
   mix-blend-mode: multiply;
 }
 
@@ -153,7 +153,6 @@
 
 .assessment h1 {
   margin-top: 143px;
-
   font-family: "Noto Sans";
   font-style: normal;
   font-weight: bold;

@@ -8,17 +8,13 @@ const Assessment = () => {
   return (
     <div className="assessment">
       <div>
-        <h1>
-          {t("assessment.heading0")}
-          <br />
-          {t("assessment.heading1")}
-        </h1>
-        <p>{t("assessment.paragraph0")}</p>
+        <h1>{t("assessment.heading")}</h1>
+        <p>{t("assessment.paragraph")}</p>
         <br />
         <div>
           <Link to="psychoAssess">
             <Button className="blue" size="lg" variant="primary">
-              {t("assessment.button0")}
+              {t("assessment.button")}
             </Button>
           </Link>
         </div>
@@ -27,7 +23,7 @@ const Assessment = () => {
       <div>
         <img
           src="https://i.ibb.co/17fcbqD/assessment-image.png"
-          alt={t("assessment.imagealt0")}
+          alt={t("assessment.imagealt")}
         />
       </div>
     </div>

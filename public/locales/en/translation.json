@@ -36,9 +36,8 @@
     "title": "Psychotherapist"
   },
   "weCare":{
-    "heading0":"WE CARE AND CONCERN",
-    "heading1":"ABOUT YOU",
-    "firstword0":"Let's",
+    "heading":"WE CARE AND CONCERN ABOUT YOU",
+    "firstword":"Lets",
     "paragraph0":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad",
     "span0":"minim",
     "paragraph1":"veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla",
@@ -48,18 +47,16 @@
     "button1":"If you are not sure, take the test"
 },
 "stories":{
-    "heading0":"STORIES",
-    "heading1":"ABOUT HOPE",
-    "paragraph0":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-    "readmore0":"read more >>",
-    "imagealt0":"image about hope"
+    "heading":"STORIES ABOUT HOPE",
+    "paragraph":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    "readmore":"read more >>",
+    "imagealt":"image about hope"
 },
 "assessment":{
-    "heading0":"Psychological",
-    "heading1":"Assessment",
-    "paragraph0":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "button0":"Start Here",
-    "imagealt0":"an image about assessment"
+    "heading":"Psychological Assessment",
+    "paragraph":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "button":"Start Here",
+    "imagealt":"an image about assessment"
 }
 
 }

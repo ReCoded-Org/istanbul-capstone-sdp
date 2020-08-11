@@ -8,11 +8,9 @@ const WeCare = () => {
   return (
     <div className="weCare">
       <div>
-        <h1>
-          {t("weCare.heading0")} <br /> {t("weCare.heading1")}
-        </h1>
+        <h1>{t("weCare.heading")}</h1>
         <p>
-          <first-word> {t("weCare.firstword0")} </first-word>
+          <span className="firstWord"> {t("weCare.firstword")} </span>
           {t("weCare.paragraph0")}
           <span className="red"> {t("weCare.span0")}</span>
           {t("weCare.paragraph1")}
