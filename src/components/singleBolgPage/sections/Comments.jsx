@@ -10,11 +10,11 @@ export const Comments = () => {
     website: "",
   };
 
-  const [form, setform] = useState(commentState);
+  const [form, setForm] = useState(commentState);
   const handleSubmit = (event) => {
     event.preventDefault();
     alert(`your message have been submitted ${form}`);
-    setform(commentState);
+    setForm(commentState);
   };
   console.log(form);
 
@@ -41,7 +41,7 @@ export const Comments = () => {
             </p>
             Comment* <br />
             <textarea
-              onChange={(e) => setform({ ...form, comment: e.target.value })}
+              onChange={(e) => setForm({ ...form, comment: e.target.value })}
               value={form.comment}
               placeholder="Write your comment"
               cols="80"
@@ -52,7 +52,7 @@ export const Comments = () => {
             <br />
             Name* <br />
             <input
-              onChange={(e) => setform({ ...form, name: e.target.value })}
+              onChange={(e) => setForm({ ...form, name: e.target.value })}
               value={form.name}
               type="text"
               className="col-lg-12 col-md-10 col-sm-10 infoFields"
@@ -61,7 +61,7 @@ export const Comments = () => {
             <br />
             Email* <br />
             <input
-              onChange={(e) => setform({ ...form, email: e.target.value })}
+              onChange={(e) => setForm({ ...form, email: e.target.value })}
               value={form.email}
               type="email"
               className="col-lg-12 col-md-10 col-sm-10 infoFields"
@@ -71,7 +71,7 @@ export const Comments = () => {
             Website
             <br />
             <input
-              onChange={(e) => setform({ ...form, website: e.target.value })}
+              onChange={(e) => setForm({ ...form, website: e.target.value })}
               value={form.website}
               type="text"
               className="col-lg-12 col-md-10 col-sm-10 infoFields"
