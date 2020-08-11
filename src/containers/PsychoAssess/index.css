@@ -13,8 +13,8 @@
   font-weight: bold;
 }
 
-label,
-input {
+.questionAnswers label,
+.questionAnswers input {
   vertical-align: middle;
 }
 

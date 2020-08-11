@@ -54,7 +54,6 @@ export default function Questions() {
   return (
     <>
       <Col className="assesContainer">
-        <Row></Row>
         <div className="assesExplanation">
           <p>{t("assessExplanation.0")}</p>
           <p>{t("assessExplanation.1")}</p>
