@@ -43,7 +43,7 @@ export const NavBar = () => {
           </Nav.Item>
 
           <Nav.Item className="navSpaces">
-            <Link to="/Blogs" className="navLink">
+            <Link to="/blogs" className="navLink">
               Blog
             </Link>
           </Nav.Item>
