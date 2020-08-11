@@ -31,9 +31,7 @@ export const Comments = () => {
             />
             <h6>Ali Ahmed</h6>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            
           </section>
-          
 
           <form className="replyFields" onSubmit={handleSubmit}>
             <h5>Leave a Reply</h5>
