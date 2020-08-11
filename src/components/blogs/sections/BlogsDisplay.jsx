@@ -6,35 +6,25 @@ import "../index.css";
 export default function BlogsDisplay() {
   const BLOGPOST_SPECS = [
     {
-      translationKey: "blog0",
       photo: require("././images/blog0.jpg"),
     },
     {
-      translationKey: "blog1",
       photo: require("././images/blog1.jpg"),
     },
     {
-      translationKey: "blog2",
       photo: require("././images/blog2.jpg"),
     },
     {
-      translationKey: "blog3",
       photo: require("././images/blog3.jpg"),
     },
   ];
-  // assuming that each post will have different translation keys, assign it as key val.
+  // since we're using arrays in i18next, its index will be translation key
   return (
     <>
-      {BLOGPOST_SPECS.map((blogpost) => {
+      {BLOGPOST_SPECS.map((blogpost, i) => {
         return (
-          <Link
-            to={"/" + blogpost.translationKey}
-            key={blogpost.translationKey}
-          >
-            <BlogDisplay
-              translationKey={blogpost.translationKey}
-              photo={blogpost.photo}
-            />
+          <Link to={"/" + blogpost.translationKey} key={`blogPost${i}`}>
+            <BlogDisplay translationKey={i} photo={blogpost.photo} />
           </Link>
         );
       })}
