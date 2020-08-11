@@ -40,7 +40,7 @@
   margin-left: 150px;
 }
 
-#pink {
+.weCare .pink {
   color: white;
   border: none;
   background-color: deeppink;
@@ -50,7 +50,7 @@
   padding: 12px 28px;
 }
 
-#blue {
+.blue {
   color: white;
   border: none;
   background-color: rgb(59, 175, 241);
@@ -72,7 +72,7 @@
 }
 
 .weCare p {
-  width: 868px;
+  width: 100%;
   text-align: justify;
   color: #242424;
   font-family: "Roboto";
@@ -97,7 +97,6 @@
 
 .stories p {
   text-align: justify;
-
   float: left;
   width: 400px;
   margin-left: 150px;
@@ -110,7 +109,6 @@
 .stories h1 {
   margin-left: 150px;
   margin-top: 102px;
-
   width: 403px;
   height: 123px;
   left: 167px;
@@ -166,9 +164,7 @@
 }
 
 .assessment p {
-  /* float: left; */
   text-align: justify;
-
   width: 441px;
   font-family: "Roboto";
   font-style: normal;

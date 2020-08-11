@@ -9,7 +9,7 @@ const Stories = () => {
       <div>
         <h1>
           {t("stories.heading0")} <br />
-          {t("stories.heading1")}{" "}
+          {t("stories.heading1")}
         </h1>
         <p>{t("stories.paragraph0")}</p>
         <br />

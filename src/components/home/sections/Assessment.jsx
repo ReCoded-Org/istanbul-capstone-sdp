@@ -17,9 +17,9 @@ const Assessment = () => {
         <br />
         <div>
           <Link to="psychoAssess">
-            <Button id="blue" size="lg" variant="primary">
+            <Button className="blue" size="lg" variant="primary">
               {t("assessment.button0")}
-            </Button>{" "}
+            </Button>
           </Link>
         </div>
       </div>

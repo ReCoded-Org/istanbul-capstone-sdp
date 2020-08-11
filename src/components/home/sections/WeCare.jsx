@@ -12,25 +12,25 @@ const WeCare = () => {
           {t("weCare.heading0")} <br /> {t("weCare.heading1")}
         </h1>
         <p>
-          <first-word> {t("weCare.firstword0")} </first-word>{" "}
+          <first-word> {t("weCare.firstword0")} </first-word>
           {t("weCare.paragraph0")}
-          <span className="red"> {t("weCare.span0")}</span>{" "}
-          {t("weCare.paragraph1")}{" "}
-          <span className="red">{t("weCare.span1")}</span>.{" "}
-          {t("weCare.paragraph2")}{" "}
+          <span className="red"> {t("weCare.span0")}</span>
+          {t("weCare.paragraph1")}
+          <span className="red">{t("weCare.span1")}</span>.
+          {t("weCare.paragraph2")}
         </p>
         <br />
       </div>
 
       <div>
         <Link to="/contact">
-          <Button id="pink" variant="primary" size="lg">
+          <Button className="pink" variant="primary" size="lg">
             {t("weCare.button0")}
           </Button>
         </Link>
         <br />
         <Link to="/psychoAssess">
-          <Button id="blue" size="lg" variant="primary">
+          <Button className="blue" size="lg" variant="primary">
             {t("weCare.button1")}
           </Button>
         </Link>
