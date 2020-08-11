@@ -3,17 +3,17 @@ import { Container, Col, Form, Button, Nav } from "react-bootstrap";
 
 const ContactUs = () => {
   const initContactFormState = {
-    name: "",
-    surName: "",
+    firstName: "",
+    lastName: "",
     email: "",
     message: "",
   };
-  const [form, setform] = useState(initContactFormState);
+  const [form, setForm] = useState(initContactFormState);
   const handleSubmit = (event) => {
     event.preventDefault();
     // TODO (basil-kawak) : connect this to contact us
     alert(`you have submited youe message ${form}`);
-    setform(initContactFormState);
+    setForm(initContactFormState);
   };
   return (
     <Container>
@@ -38,7 +38,7 @@ const ContactUs = () => {
           </div>
         </div>
         <div className="formSide">
-          <h3>CONTACT US</h3>
+          <h3>Contact Us</h3>
           <Form onSubmit={handleSubmit}>
             <Form.Row>
               <Form.Group as={Col} controlId="formGridEmail">
@@ -46,8 +46,10 @@ const ContactUs = () => {
                   <span className="redStar">*</span> Name
                 </Form.Label>
                 <Form.Control
-                  onChange={(e) => setform({ ...form, name: e.target.value })}
-                  value={form.name}
+                  onChange={(e) =>
+                    setForm({ ...form, firstName: e.target.value })
+                  }
+                  value={form.firstName}
                   type="text"
                   required
                 />
@@ -59,9 +61,9 @@ const ContactUs = () => {
                 </Form.Label>
                 <Form.Control
                   onChange={(e) =>
-                    setform({ ...form, surName: e.target.value })
+                    setForm({ ...form, lastName: e.target.value })
                   }
-                  value={form.surName}
+                  value={form.lastName}
                   type="text"
                   required
                 />
@@ -73,7 +75,7 @@ const ContactUs = () => {
                 <span className="redStar">*</span> Email
               </Form.Label>
               <Form.Control
-                onChange={(e) => setform({ ...form, email: e.target.value })}
+                onChange={(e) => setForm({ ...form, email: e.target.value })}
                 value={form.email}
                 type="email"
                 required
@@ -87,7 +89,7 @@ const ContactUs = () => {
               <Form.Control
                 as="textarea"
                 rows="3"
-                onChange={(e) => setform({ ...form, message: e.target.value })}
+                onChange={(e) => setForm({ ...form, message: e.target.value })}
                 value={form.message}
                 placeholder="Write to us"
                 required
