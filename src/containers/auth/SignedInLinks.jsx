@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-import { signOut } from "../../../actions/authActions";
+import { signOut } from "../../actions/authActions";
 import "./index.css";
 
 const SignedInLinks = (props) => {
