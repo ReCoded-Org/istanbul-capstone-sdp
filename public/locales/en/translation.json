@@ -176,5 +176,24 @@
   "assessExplanation": [
     "This test is not a diagnosis, it simply helps you to understand the mental state that you are in. If you are feeling bad, just reach us out! We are here for you and believe me, this is not a lie and you will see when you talk to us.",
     "If you are not logged in, please kindly enter your email before submitting your test."
+  ],
+
+  "blogPosts": [
+    {
+      "title": "Let’s talk about our hard times, it will help!",
+      "excerpt": "Depression is debilitating. Some people understand it, some think it’s an attention call. For me, depression is like that pile of laundry that you don’t want to show in your Instagram pictures. I never want to show my pile of laundry to the world, I want my life to seem happy and put together, as if I folded and put away all my laundry right out of the dryer."
+    },
+    {
+      "title": "Why Talking to Myself Makes Sense",
+      "excerpt": "I’ve tried to stop talking to myself, but I haven’t had much luck. I’m referring to the silent internal conversation that accompanies almost every waking moment when my attention is left on its own. I’ve often wondered why the talking has to keep going. "
+    },
+    {
+      "title": "How To Cope With Social Anxiety",
+      "excerpt": "Learning about psychology plays an essential role in my personal growth. I’ve been interested in it ever since my teenage years, but started to dive deeper when I was 20 and my problems with social anxiety, general anxiety and depression started to go out of control."
+    },
+    {
+      "title": "Why Anger Can Be So Destructive In a Relationship",
+      "excerpt": "Dealing with anger, can make it or break a relationship. Because anger can be so destructive in a relationship, anger management is sometimes a good idea."
+    }
   ]
 }
