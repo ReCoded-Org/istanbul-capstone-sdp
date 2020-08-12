@@ -1,12 +1,122 @@
-.homeHeader {
-  height: 550px;
+.homePageHeader {
   width: 100%;
-  margin-bottom: 10rem;
+  text-align: center;
+}
+
+.weCareSection {
+  margin: 11% 0 3%;
+}
+
+.weCareSection h1 {
+  text-transform: uppercase;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 3.5rem;
+  color: #161b50;
+  margin-bottom: 3.5%;
+}
+
+/* .initialWordStyle {
+  font-size: 2rem;
+} */
+
+.weCareSection article {
+  font-family: roboto, sans-serif;
+  text-align: justify;
+  font-size: 1.125rem;
+  margin-bottom: 1.5%;
+  font-weight: 400;
+  color: #686868;
+}
+
+.positiveWordStyle {
+  color: #6bb2ff;
+}
+
+.negativeWordStyle {
+  text-decoration-line: line-through;
+  color: #ed2a7a;
+}
+
+.talkToUsButton {
+  margin: 1.5% 0;
+  background-color: #ed2a7a !important;
+  border-radius: 10px !important;
+  border: none !important;
+  height: 2.3rem;
+  width: 8rem;
+}
+
+.testButton {
+  background-color: #6bb2ff !important;
+  border-radius: 10px !important;
+  border: none !important;
+  height: 2.3rem;
+  width: 17rem;
+  margin-bottom: 11%;
+}
+
+.storiesSection {
+  background-color: #f5f9fd;
+  height: 34rem;
+  padding: 6% 12.4%;
+  margin: 0 auto 8%;
+}
+
+.storiesTitle h1 {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 3.2rem;
+  color: #161b50;
+  line-height: 60px;
+}
+
+.storiesTitle p {
+  font-size: 1.125rem;
+  font-family: Roboto, sans-serif;
+  color: #686868;
+  text-align: justify;
+  width: 90%;
+  margin-top: 2rem;
+}
+
+.rediectLink {
+  margin-top: 2rem;
+  color: #ed2a7a;
+}
+
+.halfFullImage {
+  width: 100%;
+}
+
+.survivorSection {
+  width: 80%;
+  height: 28.5rem;
+}
+
+.survivorOne {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+}
+
+.survivorTwo {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  z-index: 2;
+}
+
+.survivorThree {
+  position: absolute;
+  top: 0;
+  left: 6px;
+  z-index: 1;
 }
 
 .relatedCardsContainer {
   background-color: rgba(200, 204, 214, 0.5);
   padding: 5rem 10% 5rem 10%;
+  margin-bottom: 5rem;
 }
 
 .relatedCard {
@@ -35,151 +145,8 @@
   color: #ed2a7a;
 }
 
-.weCare {
-  color: black;
-  margin-left: 150px;
-}
-
-.weCare .pink {
-  color: white;
-  border: none;
-  background-color: deeppink;
-  border-radius: 10px;
-  display: block;
-  font-size: 16px;
-  padding: 12px 28px;
-}
-
-.blue {
-  color: white;
-  border: none;
-  background-color: rgb(59, 175, 241);
-  border-radius: 10px;
-  font-size: 16px;
-  padding: 12px 28px;
-  margin-bottom: 109px;
-}
-
-.weCare h1 {
-  font-family: "Noto Sans";
-  font-size: 46px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 62px;
-  line-height: 73px;
-  text-align: justify;
-  color: #161b50;
-}
-
-.weCare p {
-  width: 100%;
-  text-align: justify;
-  color: #242424;
-  font-family: "Roboto";
-  font-weight: 300;
-  font-size: 24px;
-  padding-right: 70px;
-}
-
-.firstWord {
-  font-size: 36px;
-  width: 400px;
-}
-
-.red {
-  color: deeppink;
-}
-
-.stories {
-  background-color: rgb(230, 245, 244);
-  display: flex;
-  padding-bottom: 100px;
-}
-
-.stories p {
-  text-align: justify;
-  float: left;
-  width: 400px;
-  margin-left: 150px;
-  margin-right: 38px;
-  font-family: "Roboto";
-  font-weight: 300;
-  font-size: 24px;
-}
-
-.stories h1 {
-  margin-left: 150px;
-  margin-top: 102px;
-  width: 403px;
-  height: 123px;
-  left: 167px;
-  top: 1498px;
-  font-family: "Noto Sans";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 50px;
-  line-height: 58px;
-  text-align: justify;
-  color: #161b50;
-}
-
-.stories span.red {
-  margin-left: 150px;
-  margin-bottom: 109px;
-  width: 108px;
-  height: 26px;
-  left: 166px;
-  top: 1827px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 26px;
-  text-align: justify;
-  color: #ed2a7a;
-}
-
-.stories img {
-  float: right;
-  margin-top: 100px;
-  width: 459px;
-  mix-blend-mode: multiply;
-}
-
-.assessment {
-  display: flex;
-  margin-left: 150px;
-}
-
-.assessment h1 {
-  margin-top: 143px;
-  font-family: "Noto Sans";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 56px;
-  text-align: justify;
-  color: #161b50;
-}
-
-.assessment p {
-  text-align: justify;
-  width: 441px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 28px;
-}
-
-.assessment img {
-  float: right;
-  margin-top: 143px;
-}
-
-.assessment #blue {
-  text-align: center;
-  width: 184px;
-  height: 40px;
-  margin-bottom: 157px;
+.assessmentSection {
+  height: 34rem;
+  padding: 6% 12.4%;
+  margin: 0 auto 8%;
 }

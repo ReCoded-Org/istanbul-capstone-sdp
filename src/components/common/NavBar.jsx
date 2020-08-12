@@ -1,6 +1,6 @@
 import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
-import "./index.css";
+// import "./index.css";
 import { Link } from "react-router-dom";
 import LangDropdown from "./LangDropdown";
 

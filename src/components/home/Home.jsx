@@ -1,10 +1,11 @@
 import React from "react";
 import { Header } from "./sections/Header";
-import WeCare from "./sections/WeCare";
-import Stories from "./sections/Stories";
-import Assessment from "./sections/Assessment";
 import "./index.css";
 import RelatedCards from "./sections/RelatedCards";
+import Assessment from "./sections/Assessment";
+import Stories from "./sections/Stories";
+import WeCare from "./sections/WeCare";
+import Survivor from "./sections/Survivor";
 import Footer from "../common/Footer";
 
 export const Home = () => {
@@ -13,8 +14,9 @@ export const Home = () => {
       <Header />
       <WeCare />
       <Stories />
-      <Assessment />
+      <Survivor />
       <RelatedCards />
+      <Assessment />
       <Footer />
     </div>
   );

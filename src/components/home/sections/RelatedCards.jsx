@@ -7,7 +7,7 @@ import logo4 from "../logos/logo3.png";
 
 const RelatedCards = (props) => {
   return (
-    <div className="relatedCardsContainer">
+    <div className="relatedCardsContainer w-100">
       <CardDeck>
         <Card className="relatedCard">
           <Card.Body>
