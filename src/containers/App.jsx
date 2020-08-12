@@ -10,6 +10,7 @@ import { SignInUp } from "../components/signInUp/SignInUp";
 import { Donation } from "../containers/donation/Donation";
 import { NoMatch } from "../components/noMatch/NoMatch";
 import { NavBar } from "../components/common/NavBar";
+import Profile from "../containers/Profile/Profile";
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
           <Route path="/donation" component={Donation} />
           <Route path="/blogs" component={Blogs} />
           <Route path="/signInUp" component={SignInUp} />
+          <Route path="/profiles/:id" component={Profile} />
+          <Route path="/:id/profile" component={Profile} />
           <Route component={NoMatch} />
         </Switch>
       </Router>
