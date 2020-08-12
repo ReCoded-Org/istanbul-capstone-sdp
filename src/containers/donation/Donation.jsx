@@ -2,6 +2,7 @@ import React from "react";
 import { Header } from "./sections/Header";
 import { Carousel, Container, Row, Col } from "react-bootstrap";
 import "./index.css";
+import Footer from "../../components/common/Footer";
 
 export const Donation = () => {
   return (
@@ -60,64 +61,70 @@ export const Donation = () => {
         <Row>
           <Col xs={12} sm={12} md={12} lg={12}>
             <section>
-              <div className="tableSection">
-                <div className="tableBlueSection">
-                  <p className="countNumbers">
-                    5<br />
-                    <span className="activityType">years</span>
-                  </p>
+              <div className="mainTable">
+                <div className="tableSection1">
+                  <div className="tableBlueSection">
+                    <p className="countNumbers1">
+                      5
+                      <br />
+                      <span className="activityType1">years</span>
+                    </p>
+                  </div>
+
+                  <div className="tableBlueSection">
+                    <p className="countNumbers1">
+                      3.1M
+                      <br />
+                      <span className="activityType1">dollars</span>
+                    </p>
+                  </div>
+
+                  <div className="tableBlueSection">
+                    <p className="countNumbers1">
+                      20K
+                      <br />
+                      <span className="activityType1">donors</span>
+                    </p>
+                  </div>
                 </div>
 
-                <div className="tableBlueSection">
-                  <p className="countNumbers">
-                    3.1M
-                    <br />
-                    <span className="activityType">dollars</span>
-                  </p>
-                </div>
+                <div className="tableSection2">
+                  <div className="tableBlueSection">
+                    <p className="countNumbers2">
+                      3000
+                      <br />
+                      <span className="activityType2">survivors</span>
+                    </p>
+                  </div>
 
-                <div className="tableBlueSection">
-                  <p className="countNumbers">
-                    20K
-                    <br />
-                    <span className="activityType">donors</span>
-                  </p>
-                </div>
+                  <div className="tableBlueSection">
+                    <p className="countNumbers2">
+                      28
+                      <br />
+                      <span className="activityType2">countries</span>
+                    </p>
+                  </div>
 
-                <div className="tableBlueSection">
-                  <p className="countNumbers">
-                    3000
-                    <br />
-                    <span className="activityType">survivors</span>
-                  </p>
-                </div>
-
-                <div className="tableBlueSection">
-                  <p className="countNumbers">
-                    28
-                    <br />
-                    <span className="activityType">countries</span>
-                  </p>
-                </div>
-
-                <div className="tableBlueSection">
-                  <p className="countNumbers">
-                    220
-                    <br />
-                    <span className="activityType">employees</span>
-                  </p>
+                  <div className="tableBlueSection">
+                    <p className="countNumbers2">
+                      220
+                      <br />
+                      <span className="activityType2">employees</span>
+                    </p>
+                  </div>
                 </div>
               </div>
 
               <div className="tableSection">
                 <div className="darkGreySection">
                   <img
+                    className="fff"
                     src="https://i.ibb.co/0M25Rzj/tick-mark.png"
                     alt="Trick mark icon"
                   />
                   <p className="darkGreyColumn">
-                    LLorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Quis ipsum suspendisse ultrices gravida. Risus
                     commodo viverra maecenas accumsan lacus vel facilisis.
                   </p>
@@ -135,9 +142,12 @@ export const Donation = () => {
                     commodo viverra maecenas accumsan lacus vel facilisis.
                   </p>
                 </div>
+              </div>
 
+              <div className="tableSection">
                 <div className="darkGreySection">
                   <img
+                    className="fff"
                     src="https://i.ibb.co/85qjgNG/heart-icon.png"
                     alt="Heart icon"
                   />
@@ -221,21 +231,24 @@ export const Donation = () => {
         </Row>
 
         <Row>
-          <section>
-            <article className="introParagraph">
-              Approximately 11 people in Canada die by suicide every day. That’s
-              over 4,000 people a year, making suicide a leading cause of death
-              in Canada. We can help prevent suicide with the right services. A
-              donation to the Canada Suicide Prevention Service allows us to
-              connect individuals in distress and individuals with suicidal
-              thoughts with local Crisis Centres to receive immediate support.
-              <br />
-              Approximately 11 people iight services. A donation to the Canada
-              Suicide Prevention Service allows us to connect individuals in
-              distress and individuals with suicidal thoughts with local Crisis
-              Centres to receive immediate support.
-            </article>
-          </section>
+          <Col xs={12} sm={12} md={12} lg={12}>
+            <section>
+              <article className="introParagraph">
+                Approximately 11 people in Canada die by suicide every day.
+                That’s over 4,000 people a year, making suicide a leading cause
+                of death in Canada. We can help prevent suicide with the right
+                services. A donation to the Canada Suicide Prevention Service
+                allows us to connect individuals in distress and individuals
+                with suicidal thoughts with local Crisis Centres to receive
+                immediate support.
+                <br />
+                Approximately 11 people iight services. A donation to the Canada
+                Suicide Prevention Service allows us to connect individuals in
+                distress and individuals with suicidal thoughts with local
+                Crisis Centres to receive immediate support.
+              </article>
+            </section>
+          </Col>
         </Row>
 
         <Row>
@@ -263,6 +276,8 @@ export const Donation = () => {
           </div>
         </Row>
       </Container>
+
+      <Footer />
     </div>
   );
 };

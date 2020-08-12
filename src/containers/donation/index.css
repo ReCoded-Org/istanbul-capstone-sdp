@@ -25,20 +25,54 @@
   font-weight: 400;
 }
 
+@media only screen and (max-width: 900px) {
+  .introParagraph,
+  .donateParagraph,
+  .helpParagraph {
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+  }
+}
+
 .donationHeader {
   margin-bottom: 7rem;
   width: 100%;
 }
 
-.title {
-  font-size: 3rem;
+@media only screen and (max-width: 900px) {
+  .donationHeader {
+    margin-bottom: 3.5rem;
+    width: 100%;
+  }
+}
+
+.title h1 {
+  font-size: 3.3rem;
   font-weight: bold;
   line-height: 60px;
   color: #3a3a3a;
 }
 
-.title h1 {
-  font-size: 3.3rem;
+@media only screen and (max-width: 900px) {
+  .title h1 {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .title h1 {
+    font-size: 2.5rem;
+    line-height: 50px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .title h1 {
+    font-size: 2rem;
+    line-height: 40px;
+  }
 }
 
 .secondaryTitle {
@@ -46,6 +80,15 @@
   margin: 3rem 0 0.5rem;
   line-height: 2rem;
   font-weight: 500;
+}
+
+@media only screen and (max-width: 900px) {
+  .secondaryTitle {
+    font-size: 1.3rem;
+    margin: 2rem 0 0.5rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+  }
 }
 
 .donateParagraph {
@@ -72,6 +115,33 @@
   width: 70%;
 }
 
+@media only screen and (max-width: 1100px) {
+  .wholeCarousel {
+    margin: 6rem auto;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .wholeCarousel {
+    margin: 6rem auto;
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .wholeCarousel {
+    margin: 4rem auto;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .wholeCarousel {
+    display: none;
+  }
+}
+
 .carousel {
   width: 100%;
   margin: 0 auto;
@@ -90,17 +160,21 @@
   margin-bottom: 10%;
 }
 
-.tableSection {
+.tableSection1,
+.tableSection2 {
   display: flex;
-  padding: 1.2rem 1.5rem 2.2rem 1.5rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.5rem 1.5rem 2.5rem 1.5rem;
   text-align: center;
   background-color: #135ba5;
 }
 
 @media only screen and (max-width: 1300px) {
-  .tableSection {
+  .tableSection1,
+  .tableSection2 {
     display: flex;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     padding: 1.2rem 1.5rem 2.2rem 1.5rem;
     text-align: center;
@@ -108,15 +182,34 @@
   }
 }
 
-@media only screen and (max-width: 1300px) {
-  
-  .darkGreyColumn,
-  .lightGreyColumn {
-    padding: 1.1rem 1.1rem;
-    font-size: 0.6rem;
+@media only screen and (max-width: 1100px) {
+  .tableSection1,
+  .tableSection2 {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.8rem 1rem 3rem 1rem;
+    text-align: center;
+    background-color: #135ba5;
   }
 }
 
+.mainTable {
+  display: flex;
+}
+
+@media only screen and (max-width: 1100px) {
+  .mainTable {
+    display: inline;
+  }
+}
+
+.tableSection {
+  display: inline;
+  margin: 0 auto;
+  padding: 1.2rem 0 2.2rem 0;
+  text-align: center;
+}
 
 .tableBlueSection {
   background-color: #135ba5;
@@ -125,12 +218,45 @@
   padding: 1rem 0;
 }
 
-.activityType {
-  font-size: 21px;
-  color: #dfdfdf;
+@media only screen and (max-width: 1100px) {
+  .tableBlueSection {
+    height: 6rem;
+  }
 }
 
-.countNumbers {
+@media only screen and (max-width: 650px) {
+  .tableBlueSection {
+    height: 3.5rem;
+  }
+}
+
+.activityType1,
+.activityType2 {
+  font-size: 21px;
+  color: #dfdfdf;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 530px) {
+  .activityType1,
+  .activityType2 {
+    font-size: 16px;
+    color: #dfdfdf;
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .activityType1,
+  .activityType2 {
+    font-size: 14px;
+    color: #dfdfdf;
+    display: inline-block;
+  }
+}
+
+.countNumbers1,
+.countNumbers2 {
   font-size: 2.8rem;
   color: white;
   padding: 0.5rem 0 0 0;
@@ -138,32 +264,126 @@
   line-height: 2.8rem;
 }
 
+@media only screen and (max-width: 650px) {
+  .countNumbers1,
+  .countNumbers2 {
+    font-size: 2rem;
+    color: white;
+    padding: 0.3rem 0 0 0;
+    display: block;
+    line-height: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .countNumbers1,
+  .countNumbers2 {
+    font-size: 1.6rem;
+    color: white;
+    padding: 0.2rem 0 0 0;
+    line-height: 1.6rem;
+  }
+}
+
+.darkGreySection,
+.lightGreySection {
+  display: inline-block;
+  justify-content: space-between;
+  text-align: center;
+  width: 25%;
+  padding: 2rem 0 1rem;
+}
+
+@media only screen and (max-width: 1100px) {
+  .darkGreySection,
+  .lightGreySection {
+    width: 50%;
+    height: 20rem;
+    padding: 2.5%;
+  }
+}
+
 .darkGreySection {
   background-color: #c4c4c4;
-  width: 25%;
-  height: 20rem;
-  padding: 2.3rem 0 2.3rem;
 }
 
 .lightGreySection {
   background-color: #f0f0f0;
-  width: 25%;
-  height: 20rem;
-  padding-top: 4%;
+}
+
+@media only screen and (max-width: 1100px) {
+  .lightGreySection {
+    background-color: #f0f0f0;
+    width: 50%;
+    height: 20rem;
+    padding-top: 2.5%;
+  }
 }
 
 .darkGreyColumn,
 .lightGreyColumn {
-  padding: 1.25rem 1.25rem;
-  font-size: 0.9rem;
+  margin-top: 10px;
+  padding: 1rem 1rem 0.8rem;
+  font-size: 1rem;
 }
 
-@media only screen and (max-width: 1300px) {
-  
+@media only screen and (max-width: 1270px) {
   .darkGreyColumn,
   .lightGreyColumn {
+    margin-top: 1.9rem;
     padding: 1.1rem 1.1rem;
+    font-size: 0.9rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .darkGreyColumn,
+  .lightGreyColumn {
+    margin-top: 0.7rem;
+    padding: 1.1rem 1.1rem;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .darkGreyColumn,
+  .lightGreyColumn {
+    margin-top: 0.7rem;
+    padding: 1.1rem 1.1rem;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .darkGreyColumn,
+  .lightGreyColumn {
+    margin-top: 0.6rem;
+    padding: 1.1rem 1rem;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .darkGreyColumn,
+  .lightGreyColumn {
+    margin-top: 0.5rem;
+    padding: 1.1rem 1rem;
+    font-size: 0.7rem;
+    line-height: 1.1rem;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .darkGreyColumn,
+  .lightGreyColumn {
+    margin-top: 0;
+    padding: 0.5rem 1rem;
     font-size: 0.6rem;
+    line-height: 1rem;
   }
 }
 
@@ -184,4 +404,20 @@
 .socialMedia img {
   padding: 0 1.25rem;
   margin: 3.2rem auto 7.5rem;
+}
+
+@media only screen and (max-width: 1100px) {
+  .socialMedia img {
+    width: 80px;
+    padding: 0 1.25rem;
+    margin: 3.2rem auto 7.5rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .socialMedia img {
+    width: 70px;
+    padding: 0 1.25rem;
+    margin: 3.2rem auto 7.5rem;
+  }
 }
