@@ -10,7 +10,7 @@ import { SignInUp } from "../components/signInUp/SignInUp";
 import { Donation } from "../containers/donation/Donation";
 import { NoMatch } from "../components/noMatch/NoMatch";
 import { NavBar } from "../components/common/NavBar";
-import Profile from "../containers/Profile/Profile";
+import Profile from "../containers/profile/Profile";
 
 function App() {
   return (
