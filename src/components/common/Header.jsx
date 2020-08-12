@@ -19,7 +19,7 @@ const Header = (props) => {
         ) : (
           <Image src={imagePath} className={headerPage + "Img"} />
         )}
-        <div class={headerPage + "Extra"}>{extraComponents}</div>
+        <div className={headerPage + "Extra"}>{extraComponents}</div>
       </Container>
     </div>
   );

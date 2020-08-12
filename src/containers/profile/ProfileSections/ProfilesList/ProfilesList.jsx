@@ -4,7 +4,7 @@ import { firestoreConnect } from "react-redux-firebase";
 import { compose } from "redux";
 import { Link } from "react-router-dom";
 import { Redirect } from "react-router-dom";
-import ProfileBox from "./ProfilesListSections/ProfileBox";
+// import ProfileBox from "./ProfilesListSections/ProfileBox";
 
 const ProfilesList = (props) => {
   const { profiles, auth } = props;
@@ -19,7 +19,7 @@ const ProfilesList = (props) => {
         profiles.map((profile) => {
           return (
             <Link to={"/profiles/" + profile.id} key={profile.id}>
-              <ProfileBox profile={profile} auth={auth} />
+              {/* <ProfileBox profile={profile} auth={auth} /> */}
             </Link>
           );
         })}
