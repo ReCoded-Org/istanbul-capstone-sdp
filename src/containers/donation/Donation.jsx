@@ -62,46 +62,46 @@ export const Donation = () => {
           <Col xs={12} sm={12} md={12} lg={12}>
             <section>
               <div className="mainTable">
-                <div className="tableSection1">
+                <div className="leftTableSection">
                   <div className="tableBlueSection">
                     <p className="countNumbers1">
                       5
                       <br />
-                      <span className="activityType1">years</span>
+                      <span className="leftActivityType">years</span>
                     </p>
                   </div>
 
                   <div className="tableBlueSection">
-                    <p className="countNumbers1">
+                    <p className="leftCountNumbers">
                       3.1M
                       <br />
-                      <span className="activityType1">dollars</span>
+                      <span className="leftActivityType">dollars</span>
                     </p>
                   </div>
 
                   <div className="tableBlueSection">
-                    <p className="countNumbers1">
+                    <p className="leftCountNumbers">
                       20K
                       <br />
-                      <span className="activityType1">donors</span>
+                      <span className="leftActivityType">donors</span>
                     </p>
                   </div>
                 </div>
 
-                <div className="tableSection2">
+                <div className="rightTableSection">
                   <div className="tableBlueSection">
-                    <p className="countNumbers2">
+                    <p className="rightCountNumbers">
                       3000
                       <br />
-                      <span className="activityType2">survivors</span>
+                      <span className="rightActivityType">survivors</span>
                     </p>
                   </div>
 
                   <div className="tableBlueSection">
-                    <p className="countNumbers2">
+                    <p className="rightCountNumbers">
                       28
                       <br />
-                      <span className="activityType2">countries</span>
+                      <span className="rightActivityType">countries</span>
                     </p>
                   </div>
 
@@ -109,7 +109,7 @@ export const Donation = () => {
                     <p className="countNumbers2">
                       220
                       <br />
-                      <span className="activityType2">employees</span>
+                      <span className="rightActivityType">employees</span>
                     </p>
                   </div>
                 </div>
@@ -118,7 +118,7 @@ export const Donation = () => {
               <div className="tableSection">
                 <div className="darkGreySection">
                   <img
-                    className="fff"
+                    className="tableSymbol"
                     src="https://i.ibb.co/0M25Rzj/tick-mark.png"
                     alt="Trick mark icon"
                   />
@@ -132,6 +132,7 @@ export const Donation = () => {
 
                 <div className="lightGreySection">
                   <img
+                    className="tableSymbol"
                     src="https://i.ibb.co/LDKPgmn/gift-icon.png"
                     alt="Gift icon"
                   />
@@ -147,7 +148,7 @@ export const Donation = () => {
               <div className="tableSection">
                 <div className="darkGreySection">
                   <img
-                    className="fff"
+                    className="tableSymbol"
                     src="https://i.ibb.co/85qjgNG/heart-icon.png"
                     alt="Heart icon"
                   />
@@ -161,6 +162,7 @@ export const Donation = () => {
 
                 <div className="lightGreySection">
                   <img
+                    className="tableSymbol"
                     src="https://i.ibb.co/34RCGp3/earth-icon.png"
                     alt="Earth icon"
                   />

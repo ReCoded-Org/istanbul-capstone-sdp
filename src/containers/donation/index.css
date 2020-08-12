@@ -87,7 +87,6 @@
     font-size: 1.3rem;
     margin: 2rem 0 0.5rem;
     line-height: 1.8rem;
-    font-weight: 500;
   }
 }
 
@@ -124,7 +123,6 @@
 
 @media only screen and (max-width: 900px) {
   .wholeCarousel {
-    margin: 6rem auto;
     width: 90%;
   }
 }
@@ -160,40 +158,6 @@
   margin-bottom: 10%;
 }
 
-.tableSection1,
-.tableSection2 {
-  display: flex;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0.5rem 1.5rem 2.5rem 1.5rem;
-  text-align: center;
-  background-color: #135ba5;
-}
-
-@media only screen and (max-width: 1300px) {
-  .tableSection1,
-  .tableSection2 {
-    display: flex;
-    width: 100%;
-    margin: 0 auto;
-    padding: 1.2rem 1.5rem 2.2rem 1.5rem;
-    text-align: center;
-    background-color: #135ba5;
-  }
-}
-
-@media only screen and (max-width: 1100px) {
-  .tableSection1,
-  .tableSection2 {
-    display: flex;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0.8rem 1rem 3rem 1rem;
-    text-align: center;
-    background-color: #135ba5;
-  }
-}
-
 .mainTable {
   display: flex;
 }
@@ -204,10 +168,33 @@
   }
 }
 
+.leftTableSection,
+.rightTableSection {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.5rem 1.5rem 2.5rem 1.5rem;
+  text-align: center;
+  background-color: #135ba5;
+}
+
+@media only screen and (max-width: 1300px) {
+  .leftTableSection,
+  .rightTableSection {
+    padding: 1.2rem 1.5rem 2.2rem 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .leftTableSection,
+  .rightTableSection {
+    padding: 0.8rem 1rem 3rem 1rem;
+  }
+}
+
 .tableSection {
   display: inline;
   margin: 0 auto;
-  padding: 1.2rem 0 2.2rem 0;
   text-align: center;
 }
 
@@ -215,7 +202,7 @@
   background-color: #135ba5;
   height: 6.5rem;
   margin: 0 auto;
-  padding: 1rem 0;
+  padding: 0.8rem 0;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -230,33 +217,29 @@
   }
 }
 
-.activityType1,
-.activityType2 {
+.leftActivityType,
+.rightActivityType {
   font-size: 21px;
   color: #dfdfdf;
   display: inline-block;
 }
 
 @media only screen and (max-width: 530px) {
-  .activityType1,
-  .activityType2 {
+  .leftActivityType,
+  .rightActivityType {
     font-size: 16px;
-    color: #dfdfdf;
-    display: inline-block;
   }
 }
 
 @media only screen and (max-width: 420px) {
-  .activityType1,
-  .activityType2 {
+  .leftActivityType,
+  .rightActivityType {
     font-size: 14px;
-    color: #dfdfdf;
-    display: inline-block;
   }
 }
 
-.countNumbers1,
-.countNumbers2 {
+.leftCountNumbers,
+.rightCountNumbers {
   font-size: 2.8rem;
   color: white;
   padding: 0.5rem 0 0 0;
@@ -265,21 +248,18 @@
 }
 
 @media only screen and (max-width: 650px) {
-  .countNumbers1,
-  .countNumbers2 {
+  .leftCountNumbers,
+  .rightCountNumbers {
     font-size: 2rem;
-    color: white;
     padding: 0.3rem 0 0 0;
-    display: block;
     line-height: 1.6rem;
   }
 }
 
 @media only screen and (max-width: 420px) {
-  .countNumbers1,
-  .countNumbers2 {
+  .leftCountNumbers,
+  .rightCountNumbers {
     font-size: 1.6rem;
-    color: white;
     padding: 0.2rem 0 0 0;
     line-height: 1.6rem;
   }
@@ -288,7 +268,6 @@
 .darkGreySection,
 .lightGreySection {
   display: inline-block;
-  justify-content: space-between;
   text-align: center;
   width: 25%;
   padding: 2rem 0 1rem;
@@ -303,6 +282,15 @@
   }
 }
 
+@media only screen and (max-width: 450px) {
+  .darkGreySection {
+    display: inline-block;
+    width: 100%;
+    height: 20rem;
+    padding: 2.5%;
+  }
+}
+
 .darkGreySection {
   background-color: #c4c4c4;
 }
@@ -312,11 +300,11 @@
 }
 
 @media only screen and (max-width: 1100px) {
-  .lightGreySection {
-    background-color: #f0f0f0;
+  .lightGreySection,
+  .darkGreySection {
     width: 50%;
     height: 20rem;
-    padding-top: 2.5%;
+    padding-top: 7%;
   }
 }
 
@@ -347,7 +335,7 @@
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 805px) {
   .darkGreyColumn,
   .lightGreyColumn {
     margin-top: 0.7rem;
@@ -377,13 +365,30 @@
   }
 }
 
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 450px) {
   .darkGreyColumn,
   .lightGreyColumn {
     margin-top: 0;
     padding: 0.5rem 1rem;
     font-size: 0.6rem;
     line-height: 1rem;
+  }
+}
+
+.tableSymbol {
+  width: 23%;
+}
+
+@media only screen and (max-width: 1100px) {
+  .tableSymbol {
+    margin-top: -20px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .tableSymbol {
+    margin-top: -10px;
+    width: 30%;
   }
 }
 
@@ -410,7 +415,6 @@
   .socialMedia img {
     width: 80px;
     padding: 0 1.25rem;
-    margin: 3.2rem auto 7.5rem;
   }
 }
 
@@ -418,6 +422,5 @@
   .socialMedia img {
     width: 70px;
     padding: 0 1.25rem;
-    margin: 3.2rem auto 7.5rem;
   }
 }
