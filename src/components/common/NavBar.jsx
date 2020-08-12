@@ -1,6 +1,6 @@
 import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
-import "./index.css";
+// import "./index.css";
 import { Link } from "react-router-dom";
 import LangDropdown from "./LangDropdown";
 
@@ -32,7 +32,7 @@ export const NavBar = () => {
           </Nav.Item>
 
           <Nav.Item className="navSpaces">
-            <Link to="/Assessment" className="navLink">
+            <Link to="/psycho-assess" className="navLink">
               Assessment
             </Link>
           </Nav.Item>
@@ -44,19 +44,20 @@ export const NavBar = () => {
           </Nav.Item>
 
           <Nav.Item className="navSpaces">
-            <Link to="/Blogs" className="navLink">
+            <Link to="/blogs" className="navLink">
               Blog
             </Link>
           </Nav.Item>
         </Nav>
-
-        <div className="navSpaces">
-          <img
-            className="loginSpaces"
-            src="https://i.ibb.co/s5Xh2d2/Login-Signup-Icon.png"
-            alt="Login Icon"
-          />
-        </div>
+        <Link to="/signInUp">
+          <div className="navSpaces">
+            <img
+              className="loginSpaces"
+              src="https://i.ibb.co/s5Xh2d2/Login-Signup-Icon.png"
+              alt="Login Icon"
+            />
+          </div>
+        </Link>
         <>
           <LangDropdown />
         </>

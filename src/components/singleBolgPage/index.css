@@ -1,0 +1,117 @@
+.articleHeader,
+.autherImage,
+.postInfo {
+  display: flex;
+}
+
+.autherTitle,
+.replyFields h5,
+.recommendedPost h4,
+.postInfo p {
+  font-family: Roboto, Sans-serif;
+}
+
+.articleHeader {
+  z-index: 1;
+  width: 100%;
+  margin: -8.75rem auto 1.8rem;
+}
+
+.autherImage {
+  position: relative;
+  width: 15%;
+  z-index: 2;
+  margin: -7rem auto 1rem;
+  letter-spacing: 2px;
+}
+
+.autherTitle {
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: #55595d;
+}
+
+.article {
+  text-align: justify;
+  margin: 0 auto 12rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: #55595d;
+}
+
+.article h1 {
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: #555658;
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 3rem;
+  font-family: Noto Sans, sans-serif;
+}
+
+.articleWrappedImage {
+  float: right;
+  width: 50%;
+  margin: 1.5rem 0 0.6rem 1.8rem;
+}
+
+.commentSection {
+  margin: 0 auto 2rem;
+  line-height: 2rem;
+}
+
+.commentsTitle {
+  border-bottom: 1px solid rgb(184, 183, 183);
+}
+
+.visitorComment img {
+  float: left;
+  margin: 0 1rem 0 0;
+}
+
+.visitorComment h6 {
+  float: none;
+  margin: 2rem 0 0 0;
+}
+
+.visitorComment p {
+  float: left;
+  line-height: 1.6rem;
+}
+
+.replyFields {
+  display: inline-block;
+  margin: 6.6rem 0;
+}
+
+.replyFields h5 {
+  color: #fe305e;
+  font-weight: 500;
+}
+
+.infoFields {
+  margin-bottom: 1rem;
+}
+
+.commentButton {
+  background-color: #db3157 !important;
+  border: none !important;
+  margin: 1rem 0;
+}
+
+.recommendedPost {
+  margin: 0 auto 50px;
+}
+
+.recommendedPost h4 {
+  font-weight: 500;
+  color: #55595d;
+  margin-bottom: 5rem;
+}
+
+.postInfo {
+  margin-top: 1rem;
+}

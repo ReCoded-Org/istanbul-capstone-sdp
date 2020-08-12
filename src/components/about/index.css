@@ -1,3 +1,9 @@
+.aboutHeader {
+  background-image: url(./sections/images/about-us-header.png);
+  height: 28rem;
+  margin-bottom: 10rem;
+  background-repeat: round;
+}
 .whoAreWe {
   color: #161b50;
   font-weight: bold;
@@ -23,7 +29,7 @@
 
 .staffPhotoContainer {
   text-align: center;
-  margin: 0 auto;
+  margin: 5rem auto 17rem auto;
   padding: 10px;
   padding-bottom: 20px;
 }
