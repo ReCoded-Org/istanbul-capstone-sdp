@@ -1,5 +1,17 @@
-.articleHeader {
+.articleHeader,
+.autherImage,
+.postInfo {
   display: flex;
+}
+
+.autherTitle,
+.replyFields h5,
+.recommendedPost h4,
+.postInfo p {
+  font-family: Roboto, Sans-serif;
+}
+
+.articleHeader {
   z-index: 1;
   width: 100%;
   margin: -8.75rem auto 1.8rem;
@@ -7,7 +19,6 @@
 
 .autherImage {
   position: relative;
-  display: flex;
   width: 15%;
   z-index: 2;
   margin: -7rem auto 1rem;
@@ -17,7 +28,6 @@
 .autherTitle {
   margin: 0 auto;
   text-align: center;
-  font-family: Roboto, Sans-serif;
   font-weight: bold;
   font-size: 20px;
   color: #55595d;
@@ -80,7 +90,6 @@
 .replyFields h5 {
   color: #fe305e;
   font-weight: 500;
-  font-family: Roboto, Sans-serif;
 }
 
 .infoFields {
@@ -93,27 +102,16 @@
   margin: 1rem 0;
 }
 
-.recommendedSection {
-  margin: 0 auto;
-  width: 100%;
-}
-
 .recommendedPost {
-  float: left;
+  margin: 0 auto 50px;
 }
 
 .recommendedPost h4 {
-  font-family: Roboto, Sans-serif;
   font-weight: 500;
   color: #55595d;
   margin-bottom: 5rem;
 }
 
 .postInfo {
-  display: flex;
   margin-top: 1rem;
-}
-
-.postInfo p {
-  font-family: Roboto, Sans-serif;
 }
