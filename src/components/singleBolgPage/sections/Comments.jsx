@@ -27,7 +27,7 @@ export const Comments = () => {
           <section className="visitorComment">
             <img
               src="https://i.ibb.co/k0NNyLV/User-profile-image.png"
-              alt="Visitor profile image"
+              alt="Visitor profile"
             />
             <h6>Ali Ahmed</h6>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
