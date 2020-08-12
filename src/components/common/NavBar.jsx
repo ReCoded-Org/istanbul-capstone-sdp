@@ -3,6 +3,7 @@ import { Nav, Navbar } from "react-bootstrap";
 import "./index.css";
 import { Link } from "react-router-dom";
 import LangDropdown from "./LangDropdown";
+import LoggingDropdownMenu from "../../containers/auth/LoggingDropdownMenu";
 
 export const NavBar = () => {
   return (
@@ -50,13 +51,8 @@ export const NavBar = () => {
           </Nav.Item>
         </Nav>
 
-        <div className="navSpaces">
-          <img
-            className="loginSpaces"
-            src="https://i.ibb.co/s5Xh2d2/Login-Signup-Icon.png"
-            alt="Login Icon"
-          />
-        </div>
+        <LoggingDropdownMenu />
+
         <>
           <LangDropdown />
         </>

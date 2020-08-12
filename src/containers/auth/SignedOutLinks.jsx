@@ -4,9 +4,10 @@ import "./index.css";
 
 const SignedOutLinks = () => {
   return (
-    <div className="link signedOutLinks">
-      <Link to="/login">Log In</Link>
-      <Link to="/signup">Sign Up</Link>
+    <div className="d-flex flex-column link signedOutLinks">
+      <Link to="/signInUp">Log In</Link>
+      <hr/>
+      <Link to="/signInUp">Sign Up</Link>
     </div>
   );
 };
