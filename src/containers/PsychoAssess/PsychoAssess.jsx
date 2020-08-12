@@ -1,17 +1,18 @@
 import React from "react";
+import { Container } from "react-bootstrap";
+import Questions from "./sections/Questions";
 import Footer from "../../components/common/Footer";
 import { Header } from "../donation/sections/Header";
 import "./index.css";
 
-export const PsychoAssess = () => {
+export default function PsychoAssess() {
   return (
-    <div className="assessContainar">
+    <>
       <Header />
-      <h1>
-        this is the assissment <br />
-        will be here soon!!{" "}
-      </h1>
+      <Container>
+        <Questions />
+      </Container>
       <Footer />
-    </div>
+    </>
   );
-};
+}
