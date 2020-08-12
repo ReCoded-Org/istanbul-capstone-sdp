@@ -1,5 +1,4 @@
 import React from "react";
-import "./index.css";
 import EmailPasswordSignIn from "../../../containers/auth/EmailPasswordSignIn";
 import FacebookAuth from "../../../containers/auth/FacebookAuth";
 import GoogleAuth from "../../../containers/auth/GoogleAuth";

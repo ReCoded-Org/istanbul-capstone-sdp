@@ -49,14 +49,15 @@ export const NavBar = () => {
             </Link>
           </Nav.Item>
         </Nav>
-
-        <div className="navSpaces">
-          <img
-            className="loginSpaces"
-            src="https://i.ibb.co/s5Xh2d2/Login-Signup-Icon.png"
-            alt="Login Icon"
-          />
-        </div>
+        <Link to="/signInUp">
+          <div className="navSpaces">
+            <img
+              className="loginSpaces"
+              src="https://i.ibb.co/s5Xh2d2/Login-Signup-Icon.png"
+              alt="Login Icon"
+            />
+          </div>
+        </Link>
         <>
           <LangDropdown />
         </>
