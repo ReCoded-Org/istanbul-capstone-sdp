@@ -5,6 +5,7 @@ import { BlogInfo } from "./sections/BlogInfo";
 import { BlogContent } from "./sections/BlogContent";
 import { Comments } from "./sections/Comments";
 import { Recommended } from "./sections/Recommended";
+import Footer from "../common/Footer";
 
 export const SingleBolgPage = () => {
   return (
@@ -15,6 +16,7 @@ export const SingleBolgPage = () => {
       <BlogContent />
       <Comments />
       <Recommended />
+      <Footer />
     </div>
   );
 };

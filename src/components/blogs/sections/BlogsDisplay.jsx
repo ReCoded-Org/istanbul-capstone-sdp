@@ -23,7 +23,7 @@ export default function BlogsDisplay() {
     <>
       {BLOGPOST_SPECS.map((blogpost, i) => {
         return (
-          <Link to={`/blogposts/${i}`} key={`blogPost${i}`}>
+          <Link to={`/singleBolgPage`}>
             <BlogDisplay translationKey={i} photo={blogpost.photo} />
           </Link>
         );
@@ -31,3 +31,20 @@ export default function BlogsDisplay() {
     </>
   );
 }
+{
+  /* <Link to={`/singleBolgPage`}>
+<BlogDisplay />
+</Link> */
+}
+
+// return (
+//   <>
+//     {BLOGPOST_SPECS.map((blogpost, i) => {
+//       return (
+//         <Link to={`/blogposts/${i}`} key={`blogPost${i}`}>
+//           <BlogDisplay translationKey={i} photo={blogpost.photo} />
+//         </Link>
+//       );
+//     })}
+//   </>
+// );
