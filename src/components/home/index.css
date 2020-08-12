@@ -1,6 +1,7 @@
 .homeHeader {
   height: 550px;
   width: 100%;
+  margin-bottom: 10rem;
 }
 
 .relatedCardsContainer {
@@ -32,4 +33,153 @@
   line-height: 15px;
   text-align: justify;
   color: #ed2a7a;
+}
+
+.weCare {
+  color: black;
+  margin-left: 150px;
+}
+
+.weCare .pink {
+  color: white;
+  border: none;
+  background-color: deeppink;
+  border-radius: 10px;
+  display: block;
+  font-size: 16px;
+  padding: 12px 28px;
+}
+
+.blue {
+  color: white;
+  border: none;
+  background-color: rgb(59, 175, 241);
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 12px 28px;
+  margin-bottom: 109px;
+}
+
+.weCare h1 {
+  font-family: "Noto Sans";
+  font-size: 46px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 62px;
+  line-height: 73px;
+  text-align: justify;
+  color: #161b50;
+}
+
+.weCare p {
+  width: 100%;
+  text-align: justify;
+  color: #242424;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 24px;
+  padding-right: 70px;
+}
+
+.firstWord {
+  font-size: 36px;
+  width: 400px;
+}
+
+.red {
+  color: deeppink;
+}
+
+.stories {
+  background-color: rgb(230, 245, 244);
+  display: flex;
+  padding-bottom: 100px;
+}
+
+.stories p {
+  text-align: justify;
+  float: left;
+  width: 400px;
+  margin-left: 150px;
+  margin-right: 38px;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.stories h1 {
+  margin-left: 150px;
+  margin-top: 102px;
+  width: 403px;
+  height: 123px;
+  left: 167px;
+  top: 1498px;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 58px;
+  text-align: justify;
+  color: #161b50;
+}
+
+.stories span.red {
+  margin-left: 150px;
+  margin-bottom: 109px;
+  width: 108px;
+  height: 26px;
+  left: 166px;
+  top: 1827px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: justify;
+  color: #ed2a7a;
+}
+
+.stories img {
+  float: right;
+  margin-top: 100px;
+  width: 459px;
+  mix-blend-mode: multiply;
+}
+
+.assessment {
+  display: flex;
+  margin-left: 150px;
+}
+
+.assessment h1 {
+  margin-top: 143px;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: justify;
+  color: #161b50;
+}
+
+.assessment p {
+  text-align: justify;
+  width: 441px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.assessment img {
+  float: right;
+  margin-top: 143px;
+}
+
+.assessment #blue {
+  text-align: center;
+  width: 184px;
+  height: 40px;
+  margin-bottom: 157px;
 }
