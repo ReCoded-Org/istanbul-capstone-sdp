@@ -150,3 +150,13 @@
   padding: 6% 12.4%;
   margin: 0 auto 8%;
 }
+
+.sticky {
+  position: fixed;
+  color: rgb(255, 0, 0);
+  font-size: 20px;
+  top: 80%;
+  left: 90%;
+  width: 100%;
+  z-index: 10;
+}

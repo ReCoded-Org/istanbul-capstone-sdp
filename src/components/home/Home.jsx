@@ -7,10 +7,12 @@ import Stories from "./sections/Stories";
 import WeCare from "./sections/WeCare";
 import Survivor from "./sections/Survivor";
 import Footer from "../common/Footer";
+import LiveSupport from "./sections/LiveSupport";
 
 export const Home = () => {
   return (
     <div>
+      <LiveSupport />
       <Header />
       <WeCare />
       <Stories />
