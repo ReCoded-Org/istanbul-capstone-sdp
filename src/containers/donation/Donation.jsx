@@ -64,7 +64,7 @@ export const Donation = () => {
               <div className="mainTable">
                 <div className="leftTableSection">
                   <div className="tableBlueSection">
-                    <p className="countNumbers1">
+                    <p className="leftCountNumbers">
                       5
                       <br />
                       <span className="leftActivityType">years</span>
@@ -106,7 +106,7 @@ export const Donation = () => {
                   </div>
 
                   <div className="tableBlueSection">
-                    <p className="countNumbers2">
+                    <p className="rightCountNumbers">
                       220
                       <br />
                       <span className="rightActivityType">employees</span>
