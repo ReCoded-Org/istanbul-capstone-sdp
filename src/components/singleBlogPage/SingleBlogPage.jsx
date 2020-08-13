@@ -85,7 +85,7 @@ export const SingleBlogPage = (props) => {
 
     publishingDate: "Jan 23, 2020",
   };
-  console.log(props.match.params.blogid);
+
   return (
     <div>
       <Header />

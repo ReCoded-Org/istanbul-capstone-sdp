@@ -26,7 +26,7 @@ export const Comments = (props) => {
           src="https://i.ibb.co/k0NNyLV/User-profile-image.png"
           alt="Visitor profile"
         />
-        <div className="dispalyedComment">
+        <div className="displayedComment">
           <p className="visitorName">
             {" "}
             {item.person}{" "}
