@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import "./index.css";
+import { useTranslation } from "react-i18next";
 import { Form, Container, Row, Col, Button, Nav } from "react-bootstrap";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   const [email, setEmail] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -13,7 +16,7 @@ const Footer = () => {
     <div className="footer">
       <Container>
         <div className="justify-content-center">
-          <h3>SUBSCRIBE TO STAY UP TO DATE</h3>
+          <h3>{t("footer.0")}</h3>
           <Form onSubmit={handleSubmit}>
             <Form.Row className="align-items-center">
               <Col>
@@ -21,11 +24,11 @@ const Footer = () => {
                   onChange={(e) => setEmail(e.target.value)}
                   value={email}
                   className="formControl"
-                  placeholder="Your email address"
+                  placeholder={t("footer.1")}
                 />
               </Col>
               <Col xs="auto">
-                <Button type="submit">Submit</Button>
+                <Button type="submit">{t("footer.2")}</Button>
               </Col>
             </Form.Row>
           </Form>
@@ -35,13 +38,15 @@ const Footer = () => {
             <p>
               (+90) 533-382-094 <br />
               suljak@suljak.com <br />
-              43 Foundry Avenue, Basaksehir,
-              <br /> Istotc, Istanbul, Turkey. <br />
-              © 2020 Suljak Suicide Prevention Organization <br />
+              {t("footer.3")}
+              <br /> {t("footer.4")}
+              <br />
+              {t("footer.5")}
+              <br />
             </p>
           </Col>
           <Col md={3}>
-            <h4>Follow Us</h4>
+            <h4>{t("footer.6")}</h4>
             <Nav className="socialCircle">
               <Nav.Link href="#" className="iconLinkedin" title="Linkedin">
                 <i className="fa fa-linkedin"></i>
@@ -56,11 +61,11 @@ const Footer = () => {
           </Col>
           <Col md={3} sm={6}>
             <Nav className="flex-column">
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/blog">Blog</Nav.Link>
-              <Nav.Link href="/about">About</Nav.Link>
-              <Nav.Link href="/contact">Contact Us</Nav.Link>
-              <Nav.Link href="/login">Login</Nav.Link>
+              <Nav.Link href="/">{t("footer.7")}</Nav.Link>
+              <Nav.Link href="/blogs">{t("footer.8")}</Nav.Link>
+              <Nav.Link href="/about">{t("footer.9")}</Nav.Link>
+              <Nav.Link href="/contact">{t("footer.10")}</Nav.Link>
+              <Nav.Link href="/login">{t("footer.11")}</Nav.Link>
             </Nav>
           </Col>
         </Row>

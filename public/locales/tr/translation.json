@@ -126,5 +126,20 @@
   "assessExplanation": [
     "Bu test bir tanı değeri taşımaz, basitçe bulunduğunuz mental durumun değerlendirmesini yapmanızda yardımcı olan bir araçtır. Eğer iyi hissetmiyorsanız, lütfen bize ulaşın! Sizin için buradayız.",
     "Giriş yapmadıysanız, testinizi bitirmeden önce e postanızı girdiğinize emin olun lütfen.."
+  ],
+  "navbar": ["İletişim", "Hakkımızda", "Test", "Bağış", "Blog"],
+  "footer": [
+    "GÜNCEL KALMAK İÇİN ABONE OLUN",
+    "E posta adresiniz",
+    "GÖNDER",
+    "43 Foundry Caddesi, Basaksehir,",
+    "Istotc, Istanbul, Türkiye.",
+    "© 2020 Suljak İntihar Önleme ve Öngörme Topluluğu",
+    "Bizi Takip Edin",
+    "Ana Sayfa",
+    "Blog",
+    "Hakkımızda",
+    "İletişim",
+    "Giriş Yap"
   ]
 }
