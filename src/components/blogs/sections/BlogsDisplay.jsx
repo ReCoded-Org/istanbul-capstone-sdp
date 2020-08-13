@@ -24,7 +24,7 @@ export default function BlogsDisplay() {
     <>
       {BLOG_POST_SPECS.map((blogpost, i) => {
         return (
-          <Link to={`/blogposts/${i}`} key={`blogPost${i}`}>
+          <Link to={`/blogs/${i}`} key={`blogPost${i}`}>
             <BlogDisplay translationKey={i} photo={blogpost.photo} />
           </Link>
         );
