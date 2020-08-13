@@ -5,7 +5,8 @@ import { BlogContent } from "./sections/BlogContent";
 import { Comments } from "./sections/Comments";
 import { Recommended } from "./sections/Recommended";
 
-export const SingleBlogPage = () => {
+export const SingleBlogPage = (props) => {
+  //This data is for testing only until we set the backend for blogs
   const blogTest = {
     blogTitle: `Why Shouldn't We Stop Struggling`,
 
@@ -84,7 +85,7 @@ export const SingleBlogPage = () => {
 
     publishingDate: "Jan 23, 2020",
   };
-
+  console.log(props.match.params.blogid)
   return (
     <div>
       <Header />

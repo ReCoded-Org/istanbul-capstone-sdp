@@ -1,5 +1,12 @@
 import React from "react";
+import { Container } from "react-bootstrap";
+import "./index.css";
+import Questions from "./sections/Questions";
 
-export const PsychoAssess = () => {
-  return <div>1111</div>;
-};
+export default function PsychoAssess() {
+  return (
+    <Container>
+      <Questions />
+    </Container>
+  );
+}

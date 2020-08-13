@@ -1,10 +1,14 @@
 import React from "react";
-// import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import "../index.css";
+import { Row } from "react-bootstrap";
 
-function WhoAreWe() {
-  //   const { t, i18n } = useTranslation();
-  return <div></div>;
+export default function WhoAreWe() {
+  const { t } = useTranslation();
+
+  return (
+    <Row>
+      <h1 className="whoAreWe">{t("whoAreWe.header")}</h1>
+    </Row>
+  );
 }
-
-export default WhoAreWe;

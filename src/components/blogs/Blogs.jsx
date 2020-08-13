@@ -1,10 +1,27 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import "./index.css";
+import { Container } from "react-bootstrap";
+import BlogsDisplay from "./sections/BlogsDisplay";
 
-export const Blogs = () => {
+function Blogs() {
   return (
-    <div>
-      <Link to="/singleblogpage">Lorem ipsem till Gunsu add her code</Link>
-    </div>
+    <Container>
+     <BlogsDisplay />
+    </Container>
   );
-};
+}
+
+export default Blogs;
+
+// import React from "react";
+// import { Link } from "react-router-dom";
+
+// const Blogs = () => {
+//   return (
+//     <div>
+//       <Link to="/singleblogpage">Lorem ipsem till Gunsu add her code</Link>
+//     </div>
+//   );
+// };
+
+// export default Blogs;

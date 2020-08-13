@@ -1,6 +1,7 @@
-import firebase from "firebase";
+import firebase from "firebase/app";
+import "firebase/firestore";
+import "firebase/auth";
 
-// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyDkskLw6jF_OUQdnT_qIjm9RMFv1UZsf90",
   authDomain: "istanbul-capstone-sdp.firebaseapp.com",
@@ -13,7 +14,6 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const firebaseApp = firebase.initializeApp(firebaseConfig);
-const db = firebaseApp.firestore();
+firebase.initializeApp(firebaseConfig);
 
-export default db;
+export default firebase;
