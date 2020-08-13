@@ -5,7 +5,7 @@ import { Home } from "../components/home/Home";
 import PsychoAssess from "../../src/containers/PsychoAssess/PsychoAssess";
 import About from "../components/about/About";
 import { Contact } from "../components/contact/Contact";
-import { Blogs } from "../components/blogs/Blogs";
+import Blogs from "../components/blogs/Blogs";
 import { SignInUp } from "../components/signInUp/SignInUp";
 import { Donation } from "../containers/donation/Donation";
 import { NoMatch } from "../components/noMatch/NoMatch";
