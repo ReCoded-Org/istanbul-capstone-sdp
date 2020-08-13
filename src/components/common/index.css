@@ -97,6 +97,10 @@ form button {
     0 30px 22px rgba(40, 17, 126, 0.086), 0 100px 80px rgba(92, 78, 129, 0.12);
 }
 
+nav.navBar {
+  overflow: hidden;
+}
+
 .navBar .navLink {
   color: #fff !important;
   float: right;
@@ -128,7 +132,6 @@ form button {
 
 .loginSpaces {
   width: 60%;
-  margin-top: -0.6rem;
   margin-left: 0.6rem;
   display: inline-block;
 }
@@ -142,4 +145,52 @@ form button {
 
 .rightMargin {
   margin-right: 2.5rem;
+}
+
+.navbar {
+  overflow: hidden;
+}
+
+.langPic {
+  width: 60px;
+}
+
+.header {
+  margin-top: 0px;
+}
+
+.langDropdown button {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+.dropdown-menu.show {
+  right: 20px !important;
+  left: auto;
+  position: absolute;
+  width: 100px;
+  margin: 0px;
+  top: 100px;
+  background-color: white;
+  z-index: 9999;
+  padding: 20px 0;
+}
+
+.langDropdown.dropdown,
+.navbar {
+  position: static !important;
+}
+
+button.langDropdown {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+button.langDropdown:hover {
+  background-color: transparent !important;
+  border-color: transparent !important;
 }

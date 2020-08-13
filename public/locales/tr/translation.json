@@ -136,5 +136,10 @@
   "assessExplanation": [
     "This test is not a diagnosis, it simply helps you to understand the mental state that you are in. If you are feeling bad, just reach us out! We are here for you and believe me, this is not a lie and you will see when you talk to us.",
     "If you are not logged in, please kindly enter your email before submitting your test."
-  ]
+  ],
+  "lang": {
+    "en": "İngilizce",
+    "tr": "Türkçe",
+    "ar": "Arapça"
+  }
 }
