@@ -6,22 +6,9 @@ import BlogsDisplay from "./sections/BlogsDisplay";
 function Blogs() {
   return (
     <Container>
-     <BlogsDisplay />
+      <BlogsDisplay />
     </Container>
   );
 }
 
 export default Blogs;
-
-// import React from "react";
-// import { Link } from "react-router-dom";
-
-// const Blogs = () => {
-//   return (
-//     <div>
-//       <Link to="/singleblogpage">Lorem ipsem till Gunsu add her code</Link>
-//     </div>
-//   );
-// };
-
-// export default Blogs;
