@@ -7,8 +7,9 @@ import "./index.css";
 const SignedInLinks = (props) => {
   const { auth } = props;
   return (
-    <div className="link signedInLinks">
+    <div className="d-flex flex-column link signedInLinks">
       <Link to={"/" + auth.uid + "/profile"}>Profile</Link>
+      <hr/>
       <Link to="/" onClick={props.signOut}>
         Sign Out
       </Link>

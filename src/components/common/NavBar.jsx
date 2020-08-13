@@ -3,6 +3,7 @@ import { Nav, Navbar } from "react-bootstrap";
 // import "./index.css";
 import { Link } from "react-router-dom";
 import LangDropdown from "./LangDropdown";
+import LoggingDropdownMenu from "../../containers/auth/LoggingDropdownMenu";
 
 export const NavBar = () => {
   return (
@@ -58,6 +59,9 @@ export const NavBar = () => {
             />
           </div>
         </Link>
+
+        <LoggingDropdownMenu />
+
         <>
           <LangDropdown />
         </>

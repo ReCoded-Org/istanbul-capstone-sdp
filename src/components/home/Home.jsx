@@ -8,9 +8,7 @@ import WeCare from "./sections/WeCare";
 import Survivor from "./sections/Survivor";
 import Footer from "../common/Footer";
 import LiveSupport from "./sections/LiveSupport";
-import SignedOutLinks from "../../containers/auth/SignedOutLinks";
-import SignedInLinks from "../../containers/auth/SignedInLinks";
-// welcom to home
+
 export const Home = () => {
   return (
     <div>
@@ -22,8 +20,6 @@ export const Home = () => {
       <RelatedCards />
       <Assessment />
       <Footer />
-      <SignedOutLinks />
-      <SignedInLinks />
     </div>
   );
 };
