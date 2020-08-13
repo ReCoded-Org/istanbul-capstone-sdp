@@ -1,7 +1,90 @@
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+
 .navBar {
   width: 100%;
   height: 60px;
+}
 
+.footer {
+  padding: 5rem 0;
+  background: #014992;
+  color: white;
+}
+
+.footer a {
+  color: #fff;
+  transition-duration: 0.2s;
+  padding: 0;
+}
+
+.footer a:hover {
+  color: #fa944b;
+  text-decoration: none;
+}
+
+.footer h3 {
+  text-align: center;
+}
+
+.footer h4 {
+  margin-top: 3rem;
+  letter-spacing: 1px;
+}
+
+.footer form {
+  margin: 0 auto 4rem auto;
+  width: 50%;
+}
+
+.formControl {
+  border-radius: 0 !important;
+}
+
+form button {
+  background: #6bb2ff !important;
+  border-radius: 0 !important;
+}
+
+.iconFacebook:hover,
+.iconLinkedin:hover,
+.iconTwitter:hover {
+  transform: rotate(360deg);
+  transition: all 0.4s;
+}
+.iconFacebook:hover {
+  background-color: #3b5998;
+}
+
+.iconLinkedin:hover {
+  background-color: #007bb7;
+}
+.iconTwitter:hover {
+  background-color: #1da1f2;
+}
+
+.iconFacebook:hover i,
+.iconLinkedin:hover i,
+.iconTwitter:hover i {
+  color: #fff;
+}
+
+.socialCircle a {
+  background-color: #f9f9f9;
+  margin: 0 2% 0 2%;
+  border-radius: 50%;
+  padding: 4px 10px;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.socialCircle i {
+  color: #595959;
+}
+
+.navBar {
+  width: 100%;
+  height: 60px;
   background: linear-gradient(
     90deg,
     rgba(0, 72, 145, 1) 0%,
@@ -12,6 +95,10 @@
     0 5px 13px rgba(127, 124, 161, 0.048),
     0 12.5px 10px rgba(101, 92, 156, 0.06), 0 8px 12px rgba(59, 49, 92, 0.072),
     0 30px 22px rgba(40, 17, 126, 0.086), 0 100px 80px rgba(92, 78, 129, 0.12);
+}
+
+nav.navBar {
+  overflow: hidden;
 }
 
 .navBar .navLink {
@@ -45,7 +132,6 @@
 
 .loginSpaces {
   width: 60%;
-  margin-top: -0.6rem;
   margin-left: 0.6rem;
   display: inline-block;
 }
@@ -59,4 +145,52 @@
 
 .rightMargin {
   margin-right: 2.5rem;
+}
+
+.navbar {
+  overflow: hidden;
+}
+
+.langPic {
+  width: 60px;
+}
+
+.header {
+  margin-top: 0px;
+}
+
+.langDropdown button {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+.dropdown-menu.show {
+  right: 20px !important;
+  left: auto;
+  position: absolute;
+  width: 100px;
+  margin: 0px;
+  top: 100px;
+  background-color: white;
+  z-index: 9999;
+  padding: 20px 0;
+}
+
+.langDropdown.dropdown,
+.navbar {
+  position: static !important;
+}
+
+button.langDropdown {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+button.langDropdown:hover {
+  background-color: transparent !important;
+  border-color: transparent !important;
 }

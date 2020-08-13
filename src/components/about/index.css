@@ -1,0 +1,29 @@
+.whoAreWe {
+  color: #161b50;
+  font-weight: bold;
+  font-size: 4rem;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.aboutParagraphs {
+  font-size: 1.35rem;
+  margin-bottom: 109px;
+}
+
+.aboutParagraphs p {
+  margin-bottom: 35px;
+}
+
+.staffPic {
+  width: 17.5vw;
+  height: 17.5vw;
+  border-radius: 100%;
+}
+
+.staffPhotoContainer {
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+  padding-bottom: 20px;
+}

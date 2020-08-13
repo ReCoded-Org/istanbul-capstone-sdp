@@ -2,10 +2,11 @@ import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import "./index.css";
 import { Link } from "react-router-dom";
+import LangDropdown from "./LangDropdown";
 
 export const NavBar = () => {
   return (
-    <div>
+    <>
       <Navbar className="navBar">
         <Link to="/">
           <Navbar.Brand>
@@ -31,7 +32,7 @@ export const NavBar = () => {
           </Nav.Item>
 
           <Nav.Item className="navSpaces">
-            <Link to="/Assessment" className="navLink">
+            <Link to="/psycho-assess" className="navLink">
               Assessment
             </Link>
           </Nav.Item>
@@ -56,14 +57,10 @@ export const NavBar = () => {
             alt="Login Icon"
           />
         </div>
-        <div className="rightMargin">
-          <img
-            className="langSpaces"
-            src="https://i.ibb.co/jG2mkVJ/Language-icon.png"
-            alt="Change Language"
-          />
-        </div>
+        <>
+          <LangDropdown />
+        </>
       </Navbar>
-    </div>
+    </>
   );
 };

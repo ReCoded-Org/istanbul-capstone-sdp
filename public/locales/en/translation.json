@@ -5,14 +5,14 @@
   "React": {
     "1": "HEY GUUYS"
   },
-  "en": {
-    "1": "English"
+  "whoAreWe": {
+    "header": "who are we?"
   },
-  "tr": {
-    "1": "Turkish"
-  },
-  "ar": {
-    "1": "Arabic"
+  "aboutPart": {
+    "bigText": "We are",
+    "purpose": " an organization which has a main goal of bringing people happiness, helping them with their mental and other issues. We were found at 2012 by insert_name_here and insert_name_here. Since we are a non profit organization, our expenses are covered by our donators and maybe also you!",
+    "goals": " We are here for your empowerment, for you to have a better life.",
+    "noAdsPolicy": " We, as SULJAK, are providing a website which is not under the influence of any company. By this we mean, our website does not have any advertisements or any sponsored content."
   },
   "blogPosts": [
     {
@@ -31,5 +31,150 @@
       "title": "Why Anger Can Be So Destructive In a Relationship",
       "excerpt": "Dealing with anger, can make it or break a relationship. Because anger can be so destructive in a relationship, anger management is sometimes a good idea."
     }
-  ]
+  ],
+  "managerAssistant": {
+    "name": "Nasser Ahmed",
+    "title": "Manager Assistant"
+  },
+  "generalManager": {
+    "name": "Jawdat Yildiz",
+    "title": "General Manager"
+  },
+  "psychotherapist": {
+    "name": "Turgut Bamsi",
+    "title": "Psychotherapist"
+  },
+  "questions": [
+    {
+      "title": "How do you sleep?",
+      "multiple": [
+        "I sleep less than 7-8 hours a night and I don't nap during the day.",
+        "I sleep no longer than 7-8 hours a night and I don't nap during the day",
+        "I sleep no longer than 12 hours in a 24-hour period including naps",
+        "I sleep longer than 12 hours in a 24-hour period including naps"
+      ]
+    },
+    {
+      "title": "How long does it usually take you to fall asleep?",
+      "multiple": [
+        "I never take longer than 30 minutes",
+        "I take at least 30 minutes, less than half of the time",
+        "I take at least 30 minutes, more than half of the time",
+        "I take more than 60 minutes, more than half of the time"
+      ]
+    },
+    {
+      "title": "How has your appetite been?",
+      "multiple": [
+        "There is no change in my usual appetite",
+        "I occasionally eat more or less than usual",
+        "I eat much more or much less than usual",
+        "I rarely eat within a 24-hour period or I feel the need to overeat at every meal"
+      ]
+    },
+    {
+      "title": "How is your ability to concentrate and make decisions?",
+      "multiple": [
+        "There is no change in my ability to concentrate or make decisions",
+        "I occasionally feel indecisive or find my attention wandering",
+        "I struggle to focus my attention or make decisions most of the time",
+        "I cannot concentrate well enough to read and/or I can't even make minor decisions"
+      ]
+    },
+    {
+      "title": "How do you view yourself?",
+      "multiple": [
+        "I see myself as equally worthwhile and deserving as other people",
+        "I am more self-blaming than usual",
+        "I largely believe that I cause problems for others",
+        "I think almost constantly about major and minor defects in myself"
+      ]
+    },
+    {
+      "title": "Your death and/or suicide. Do you think of them?",
+      "multiple": [
+        "I do not",
+        "I feel that life is empty",
+        "I think of suicide or my death several times a week for several minutes",
+        "I have made specific plans for suicide or I have actually attempted to take my life"
+      ]
+    },
+    {
+      "title": "When doing your favourite hobbies and activities, do you enjoy them as much as you used to?",
+      "multiple": [
+        "I enjoy them as much as I usually do",
+        "I try to enjoy them, but I don't as much as I used to",
+        "I enjoy them, if I'm drunk",
+        "I don't enjoy them at all"
+      ]
+    },
+    {
+      "title": "Do you enjoy the company of others as much as usual?",
+      "multiple": [
+        "I enjoy socialising as much as I usually do",
+        "I notice that I am less interested in socialising with other people",
+        "I find I have interest in being around only a select few people",
+        "I have virtually no interest in being around people"
+      ]
+    },
+    {
+      "title": "What do you think about sex?",
+      "multiple": [
+        "I enjoy it as much as I usually do",
+        "I enjoy it on occasion",
+        "I only do it when I'm in the mood, which is like once or twice a year",
+        "I am basically celibate"
+      ]
+    },
+    {
+      "title": "How easily are you angered?",
+      "multiple": [
+        "Not easily, I am able to control my temper",
+        "Some things make me angry, but my temper is generally under control",
+        "I don't always show my anger, but if I do - watch out",
+        "I fly off the handle easily"
+      ]
+    },
+    {
+      "title": "When angry, do you ever say things you regret?",
+      "multiple": [
+        "No, I don't say things I later regret when angry",
+        "On occasion, I say things I regret when angry, but I usually apologise immediately after",
+        "Yes, I often blurt out things I later regret",
+        "Yes, in fact, I get so angry I rarely remember what I've said"
+      ]
+    },
+    {
+      "title": "How often do you feel worried, anxious or stressed out?",
+      "multiple": [
+        "Not at all",
+        "1 or 2 times per week",
+        "3 or 4 times per week",
+        "Nearly every day"
+      ]
+    },
+    {
+      "title": "How much do you drink?",
+      "multiple": [
+        "I don't drink or have fewer than 1 or 2 drinks per night",
+        "3-4 drinks per night",
+        "5-6 drinks per night",
+        "6 or more drinks per night"
+      ]
+    }
+  ],
+  "assessExplanation": [
+    "This test is not a diagnosis, it simply helps you to understand the mental state that you are in. If you are feeling bad, just reach us out! We are here for you and believe me, this is not a lie and you will see when you talk to us.",
+    "If you are not logged in, please kindly enter your email before submitting your test."
+  ],
+  "testSubmit": {
+    "message": "Successfully submitted your test. Your results will be sent to your email!",
+    "email": "Email Address",
+    "emailMessage": "We'll never share your email with anyone else."
+  },
+  "lang": {
+    "en": "English",
+    "tr": "Turkish",
+    "ar": "Arabic"
+  }
 }
