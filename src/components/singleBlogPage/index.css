@@ -5,19 +5,17 @@
   margin: -8.75rem auto 1.8rem;
 }
 
-.autherImage {
-  position: relative;
+.authorImage {
   display: flex;
-  width: 15%;
+  width: 18%;
   z-index: 2;
   margin: -7rem auto 1rem;
-  letter-spacing: 2px;
 }
 
-.autherTitle {
+.authorTitle {
+  font-family: Roboto, Sans-serif;
   margin: 0 auto;
   text-align: center;
-  font-family: Roboto, Sans-serif;
   font-weight: bold;
   font-size: 20px;
   color: #55595d;
@@ -42,6 +40,12 @@
   font-family: Noto Sans, sans-serif;
 }
 
+.publishingDate {
+  font-family: Roboto, Sans-serif;
+  color: #afaeae;
+  margin-bottom: 2rem;
+}
+
 .articleWrappedImage {
   float: right;
   width: 50%;
@@ -57,30 +61,38 @@
   border-bottom: 1px solid rgb(184, 183, 183);
 }
 
-.visitorComment img {
-  float: left;
-  margin: 0 1rem 0 0;
+.displayedComment,
+.replyFields {
+  display: inline-block;
 }
 
-.visitorComment h6 {
-  float: none;
-  margin: 2rem 0 0 0;
+.displayedComment {
+  line-height: 20px;
+  margin-left: 1rem;
 }
 
-.visitorComment p {
-  float: left;
-  line-height: 1.6rem;
+.visitorName {
+  font-weight: 500;
+}
+
+.visitorComment {
+  display: block;
+  font-weight: 400;
+}
+
+.visitorImage {
+  display: inline;
+  margin: 0 0 1.7rem 0;
 }
 
 .replyFields {
-  display: inline-block;
   margin: 6.6rem 0;
 }
 
 .replyFields h5 {
+  font-family: Roboto, Sans-serif;
   color: #fe305e;
   font-weight: 500;
-  font-family: Roboto, Sans-serif;
 }
 
 .infoFields {
@@ -95,7 +107,6 @@
 
 .recommendedPost {
   margin: 0 auto 50px;
-  /* width: 100%; */
 }
 
 .recommendedPost h4 {
@@ -112,4 +123,5 @@
 
 .postInfo p {
   font-family: Roboto, Sans-serif;
+  margin-top: 1rem;
 }
