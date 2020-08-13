@@ -1,30 +1,19 @@
-.articleHeader,
-.authorImage,
-.postInfo {
-  display: flex;
-}
-
-.autherTitle,
-.replyFields h5,
-.recommendedPost h4,
-.postInfo p,
-.publishingDate {
-  font-family: Roboto, Sans-serif;
-}
-
 .articleHeader {
+  display: flex;
   z-index: 1;
   width: 100%;
   margin: -8.75rem auto 1.8rem;
 }
 
 .authorImage {
+  display: flex;
   width: 18%;
   z-index: 2;
   margin: -7rem auto 1rem;
 }
 
-.autherTitle {
+.authorTitle {
+  font-family: Roboto, Sans-serif;
   margin: 0 auto;
   text-align: center;
   font-weight: bold;
@@ -52,6 +41,7 @@
 }
 
 .publishingDate {
+  font-family: Roboto, Sans-serif;
   color: #afaeae;
   margin-bottom: 2rem;
 }
@@ -100,6 +90,7 @@
 }
 
 .replyFields h5 {
+  font-family: Roboto, Sans-serif;
   color: #fe305e;
   font-weight: 500;
 }
@@ -119,11 +110,19 @@
 }
 
 .recommendedPost h4 {
+  font-family: Roboto, Sans-serif;
   font-weight: 500;
   color: #55595d;
   margin-bottom: 5rem;
 }
 
 .postInfo {
+  display: flex;
   margin-top: 1rem;
 }
+
+.postInfo p {
+  font-family: Roboto, Sans-serif;
+  margin-top: 1rem;
+}
+

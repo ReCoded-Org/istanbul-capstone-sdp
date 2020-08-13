@@ -5,7 +5,7 @@ import { BlogContent } from "./sections/BlogContent";
 import { Comments } from "./sections/Comments";
 import { Recommended } from "./sections/Recommended";
 
-export const SingleBolgPage = () => {
+export const SingleBlogPage = () => {
   const blogTest = {
     blogTitle: `Why Shouldn't We Stop Struggling`,
 
@@ -80,7 +80,7 @@ export const SingleBolgPage = () => {
 
     authorImage: "https://i.ibb.co/XtwrSbq/Single-blog-post-writer.png",
 
-    autherName: "JAWDAT YILDIZ",
+    authorName: "JAWDAT YILDIZ",
 
     publishingDate: "Jan 23, 2020",
   };
