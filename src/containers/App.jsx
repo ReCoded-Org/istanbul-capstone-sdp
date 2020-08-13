@@ -6,7 +6,7 @@ import About from "../components/about/About";
 import { Contact } from "../components/contact/Contact";
 import { Blogs } from "../components/blogs/Blogs";
 import { PsychoAssess } from "../../src/containers/PsychoAssess/PsychoAssess";
-import { SignInUp } from "../components/signInUp/SignInUp";
+import { SignInUp } from "../components/signInUp/SigninUp";
 import { Donation } from "../containers/donation/Donation";
 import { NoMatch } from "../components/noMatch/NoMatch";
 import { NavBar } from "../components/common/NavBar";
@@ -24,8 +24,8 @@ function App() {
           <Route path="/psychoAssess" component={PsychoAssess} />
           <Route path="/donation" component={Donation} />
           <Route path="/blogs" component={Blogs} />
-          <Route path="/signInUp" component={SignInUp} />
-          <Route path="/singleBolgPage" component={SingleBolgPage} />
+          <Route path="/signinup" component={SignInUp} />
+          <Route path="/singlebolgpage" component={SingleBolgPage} />
           <Route component={NoMatch} />
         </Switch>
       </Router>
