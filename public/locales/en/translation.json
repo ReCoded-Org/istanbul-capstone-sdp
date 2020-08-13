@@ -196,6 +196,43 @@
       "excerpt": "Dealing with anger, can make it or break a relationship. Because anger can be so destructive in a relationship, anger management is sometimes a good idea."
     }
   ],
-  "navbar":["Contact Us", "About", "Assessment","Donate","Blogs"],
-  "footer":["SUBSCRIBE TO STAY UP TO DATE","Your email address" , "SUBMIT", "43 Foundry Avenue, Basaksehir,","Istotc, Istanbul, Turkey.","© 2020 Suljak Suicide Prevention Organization","Follow Us","Home","Blog","About","Contact Us", "Login"]
+  "navbar": ["Contact Us", "About", "Assessment", "Donate", "Blogs"],
+  "footer": [
+    "SUBSCRIBE TO STAY UP TO DATE",
+    "Your email address",
+    "SUBMIT",
+    "43 Foundry Avenue, Basaksehir,",
+    "Istotc, Istanbul, Turkey.",
+    "© 2020 Suljak Suicide Prevention Organization",
+    "Follow Us",
+    "Home",
+    "Blog",
+    "About",
+    "Contact Us",
+    "Login"
+  ],
+  "contact": {
+    "contactUs": [
+      "Follow Us",
+      "on social media",
+      "Contact Us",
+      "Name",
+      "Surname",
+      "Email",
+      "indicates required fields",
+      "Write to us",
+      "Your privacy is protected",
+      "Submit"
+    ],
+    "info": [
+      "CONTACTS:",
+      "43 Foundry Avenue, Basaksehir, istotc, Istanbul, Turkey",
+      "BUSINESS HOURS:",
+      "Our support hotline is available 24 hours a day: 11401",
+      "Monday-Friday: 5pm to 9pm",
+      "Saturday: 10am to 2pm",
+      "Sunday: Closed"
+    ],
+    "alertMessage": "You have submitted succesfully."
+  }
 }

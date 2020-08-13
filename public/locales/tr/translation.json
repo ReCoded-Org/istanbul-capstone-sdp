@@ -141,5 +141,28 @@
     "Hakkımızda",
     "İletişim",
     "Giriş Yap"
-  ]
+  ],"contact": {
+    "contactUs": [
+      "Sosyal Medyada",
+      "Bizi Takip Edin",
+      "İletişim",
+      "İsim",
+      "Soyisim",
+      "E-posta",
+      "doldurulması zorunlu yerler",
+      "Bize yazın",
+      "Gizliliğiniz güvende!",
+      "Gönder"
+    ],
+    "info": [
+      "İLETİŞİM:",
+      "43 Foundry Caddesi, Basaksehir, istotc, Istanbul, Türkiye",
+      "İŞ SAATLERİ:",
+      "Destek hattımız her gün her saat açık: 11401",
+      "Pazartesi-Cuma: 5pm to 9pm",
+      "Cumartesi: 10am to 2pm",
+      "Pazar: Kapalı"
+    ],
+    "alertMessage": "Mesajınız gönderildi."
+  }
 }
