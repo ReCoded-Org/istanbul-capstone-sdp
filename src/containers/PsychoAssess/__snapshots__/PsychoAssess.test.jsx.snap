@@ -9,10 +9,10 @@ Object {
         class="container"
       >
         <div
-          class="assesContainer col"
+          class="assessContainer col"
         >
           <div
-            class="assesExplanation"
+            class="assessExplanation"
           >
             <p>
               assessExplanation.0
@@ -1119,7 +1119,7 @@ Object {
             <label
               class="form-label"
             >
-              Email address
+              testSubmit.email
             </label>
             <input
               class="form-control"
@@ -1129,7 +1129,7 @@ Object {
             <small
               class="text-muted form-text"
             >
-              We'll never share your email with anyone else.
+              testSubmit.email
             </small>
             <button
               class="testSubmitButton btn btn-primary"
@@ -1147,10 +1147,10 @@ Object {
       class="container"
     >
       <div
-        class="assesContainer col"
+        class="assessContainer col"
       >
         <div
-          class="assesExplanation"
+          class="assessExplanation"
         >
           <p>
             assessExplanation.0
@@ -2257,7 +2257,7 @@ Object {
           <label
             class="form-label"
           >
-            Email address
+            testSubmit.email
           </label>
           <input
             class="form-control"
@@ -2267,7 +2267,7 @@ Object {
           <small
             class="text-muted form-text"
           >
-            We'll never share your email with anyone else.
+            testSubmit.email
           </small>
           <button
             class="testSubmitButton btn btn-primary"

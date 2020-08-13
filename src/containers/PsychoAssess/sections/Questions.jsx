@@ -53,18 +53,16 @@ export default function Questions() {
 
   return (
     <>
-      <Col className="assesContainer">
-        <div className="assesExplanation">
+      <Col className="assessContainer">
+        <div className="assessExplanation">
           <p>{t("assessExplanation.0")}</p>
           <p>{t("assessExplanation.1")}</p>
         </div>
         {renderQuestions()}
         <Row className="testSubmitButtonRow">
-          <Form.Label>Email address</Form.Label>
+          <Form.Label>{t("testSubmit.email")}</Form.Label>
           <Form.Control type="email" placeholder="Enter email" />
-          <Form.Text className="text-muted">
-            We'll never share your email with anyone else.
-          </Form.Text>
+          <Form.Text className="text-muted">{t("testSubmit.email")}</Form.Text>
           <Button
             variant="primary"
             className="testSubmitButton"
@@ -80,8 +78,7 @@ export default function Questions() {
         </Row>
         {isSubmitted && (
           <div class="alert alert-primary submitAlert" role="alert">
-            Successfully submitted your test. Your results will be sent to your
-            email!
+            {t("testSubmit.message")}
           </div>
         )}
       </Col>
