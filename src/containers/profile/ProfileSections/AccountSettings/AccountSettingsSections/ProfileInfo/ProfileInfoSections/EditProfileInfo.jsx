@@ -2,6 +2,7 @@ import React from "react";
 import "./ProfileInfoSections.css";
 import { connect } from "react-redux";
 import { firestoreConnect } from "react-redux-firebase";
+import { useTranslation } from "react-i18next";
 import { compose } from "redux";
 import { updateProfile } from "../../../../../../../actions/authActions";
 import { Redirect } from "react-router-dom";
@@ -9,6 +10,7 @@ import { Form, Col, Button, OverlayTrigger, Tooltip } from "react-bootstrap";
 import infoSign from "../../../../../../../images/infoSign.png";
 
 const EditProfileInfo = (props) => {
+  const { t } = useTranslation();
   const {
     id,
     profile,
@@ -76,7 +78,7 @@ const EditProfileInfo = (props) => {
       <Form className="d-flex flex-column infoContainer">
         <Form.Row>
           <Form.Group as={Col} controlId="firstName">
-            <Form.Label>First Name</Form.Label>
+            <Form.Label>{t("accountSettings.editProfile.fName")}</Form.Label>
             <Form.Control
               type="text"
               value={newFirstName}
@@ -88,7 +90,7 @@ const EditProfileInfo = (props) => {
             />
           </Form.Group>
           <Form.Group as={Col} controlId="lastName">
-            <Form.Label>Last Name</Form.Label>
+            <Form.Label>{t("accountSettings.editProfile.lName")}</Form.Label>
             <Form.Control
               type="text"
               value={newLastName}
@@ -103,11 +105,11 @@ const EditProfileInfo = (props) => {
         <Form.Row className="justify-content-between">
           <Col>
             <p className="w-75 m-0 pb-1 border-bottom">
-              Display name
+              {t("accountSettings.editProfile.displayName")}
               <OverlayTrigger
                 overlay={
                   <Tooltip id="tooltip-disabled">
-                    This name will be displayed when you comment or post a blog
+                    {t("accountSettings.editProfile.displayWarning")}
                   </Tooltip>
                 }
               >
@@ -122,7 +124,9 @@ const EditProfileInfo = (props) => {
         </Form.Row>
         <Form.Row>
           <Form.Group as={Col} controlId="jobTitle">
-            <Form.Label>Job title</Form.Label>
+            <Form.Label>
+              {t("accountSettings.editProfile.userInfoTitles.1")}
+            </Form.Label>
             <Form.Control
               type="text"
               value={newJobTitle}
@@ -134,12 +138,11 @@ const EditProfileInfo = (props) => {
           </Form.Group>
           <Col>
             <p className="w-75 m-0 pb-1 border-bottom">
-              User account type
+              {t("accountSettings.editProfile.accountType")}
               <OverlayTrigger
                 overlay={
                   <Tooltip id="tooltip-disabled">
-                    You can contact with the website admins to upgrade your
-                    account
+                    {t("accountSettings.editProfile.accountTypeMessage")}
                   </Tooltip>
                 }
               >
@@ -153,7 +156,9 @@ const EditProfileInfo = (props) => {
         </Form.Row>
         <Form.Row>
           <Form.Group as={Col} controlId="city">
-            <Form.Label>City</Form.Label>
+            <Form.Label>
+              {t("accountSettings.editProfile.userInfoTitles.2")}
+            </Form.Label>
             <Form.Control
               type="text"
               value={newCity}
@@ -164,7 +169,9 @@ const EditProfileInfo = (props) => {
             />
           </Form.Group>
           <Form.Group as={Col} controlId="country">
-            <Form.Label>Country</Form.Label>
+            <Form.Label>
+              {t("accountSettings.editProfile.userInfoTitles.0")}
+            </Form.Label>
             <Form.Control
               type="text"
               value={newCountry}
@@ -177,7 +184,9 @@ const EditProfileInfo = (props) => {
         </Form.Row>
         <Form.Row>
           <Form.Group as={Col} controlId="brief">
-            <Form.Label>Brief</Form.Label>
+            <Form.Label>
+              {t("accountSettings.editProfile.userInfoTitles.3")}
+            </Form.Label>
             <Form.Control
               as="textarea"
               rows="3"
@@ -195,20 +204,22 @@ const EditProfileInfo = (props) => {
             onClick={handleSubmit}
             className="mr-3"
           >
-            Save Changes
+            {t("accountSettings.editProfile.saveButton")}
           </Button>
           <Button
             variant="danger"
             type="button"
             onClick={() => props.handleEditingStatus(false)}
           >
-            Cancel
+            {t("accountSettings.editProfile.cancelButton")}
           </Button>
         </Form.Row>
       </Form>
     );
   } else {
-    return <h4 className="container">loading profile...</h4>;
+    return (
+      <h4 className="container">{t("accountSettings.editProfile.loading")}</h4>
+    );
   }
 };
 

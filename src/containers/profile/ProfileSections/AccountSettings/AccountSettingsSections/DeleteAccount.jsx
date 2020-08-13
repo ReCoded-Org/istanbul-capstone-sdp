@@ -4,10 +4,12 @@ import "./AccountSettingsSections.css";
 import { Button, Modal, Form } from "react-bootstrap";
 import { deleteProfileAuth } from "../../../../../actions/authActions";
 import { deleteProfileData } from "../../../../../actions/authActions";
+import { useTranslation } from "react-i18next";
 
 const DeleteAccount = (props) => {
   const [confirmModalShow, setConfirmModalShow] = React.useState(false);
   const { id } = props;
+  const { t } = useTranslation();
 
   const handleAccountDeletion = () => {
     props.deleteProfileAuth();
@@ -25,16 +27,12 @@ const DeleteAccount = (props) => {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            Deleting your account
+            {t("accountSettings.deleteAccount.0")}
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <h4>Are you sure?</h4>
-          <p>
-            Do you really want to delete your account? This process will delete
-            all your data on this website and you will not be able to recover
-            them.
-          </p>
+          <h4>{t("accountSettings.deleteAccount.1")}</h4>
+          <p>{t("accountSettings.deleteAccount.2")}</p>
           <Form.Check
             type="checkbox"
             label="I agree"
@@ -44,14 +42,14 @@ const DeleteAccount = (props) => {
         </Modal.Body>
         <Modal.Footer>
           <Button variant="primary" onClick={props.onHide}>
-            Cancel
+            {t("accountSettings.deleteAccount.3")}
           </Button>
           <Button
             variant="danger"
             disabled={!isConfirmed}
             onClick={handleAccountDeletion}
           >
-            Delete My Account
+            {t("accountSettings.deleteAccount.4")}
           </Button>
         </Modal.Footer>
       </Modal>
@@ -60,13 +58,10 @@ const DeleteAccount = (props) => {
 
   return (
     <div className="mt-5 mb-5 deleteAccount">
-      <h4 className="title">Delete Account</h4>
-      <p>
-        Please note that this process will delete all your information
-        permanently, and you will not be able to restore them.
-      </p>
+      <h4 className="title">{t("accountSettings.deleteAccount.5")}</h4>
+      <p>{t("accountSettings.deleteAccount.6")}</p>
       <Button variant="danger" onClick={() => setConfirmModalShow(true)}>
-        Delete Account
+        {t("accountSettings.deleteAccount.5")}
       </Button>
 
       <ConfirmModal

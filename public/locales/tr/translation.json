@@ -160,7 +160,7 @@
       "43 Foundry Caddesi, Basaksehir, istotc, Istanbul, Türkiye",
       "İŞ SAATLERİ:",
       "Destek hattımız her gün her saat açık: 11401",
-      "Pazartesi-Cuma: 17.00-21.00pm",
+      "Pazartesi-Cuma: 17.00-21.00",
       "Cumartesi: 10.00-14.00",
       "Pazar: Kapalı"
     ],
@@ -197,5 +197,88 @@
     "passNotMatch": "Parolalar eşleşmiyor."
   },
   "signedOut": ["Giriş Yap", "Kayıt Ol"],
-  "signedIn": ["Profil", "Çıkış Yap"]
+  "signedIn": ["Profil", "Çıkış Yap"],
+  "profilePage": {
+    "accountSettings": "Hesap Ayarları",
+    "manageUsers": "Kullanıcıları Yönet",
+    "blockMessage": "Bu hesap kapatılmış!",
+    "loading": "Profil yükleniyor..."
+  },
+  "accountSettings": {
+    "passwordUpdate": {
+      "operations": [
+        "Parolanız Güncelleniyor",
+        "Parolanız başarıyla güncellendi.",
+        "Parolanız kurtarılıyor.",
+        "Sıfırlama e postası gönderildi, yeni parolanızı ayarlamak için e postanızı kontrol edebilirsinis"
+      ],
+      "updating": "Parolanız Güncelleniyor",
+      "passwordConfirmation": "Onaylamak için güncel parolanızı girin",
+      "updateButton": "Parolamı Güncelle",
+      "success": "Tamamlandı",
+      "changePasswordMsg": "Parolamı Değiştir",
+      "confirmNewMsg": [
+        "Yeni Parolanızı Girin",
+        "Yeni Parolanızı Tekrar Girin"
+      ],
+      "passwordMatchMsg": "Parolaların Eşleşmesi Gerek",
+      "characterMatchMsg": "Parolanız en az altı karakter olmalıdır",
+      "forgotPasswordMsg": "Parolamı Unuttum",
+      "resetPasswordMsg": ["Sıfırlama e postası için", "buraya tıklayın."],
+      "updatePasswordMsg": "Parolamı güncelle",
+      "newPasswordMsg": ["Yeni Parola", "Parola"],
+      "cancelButton": "İptal"
+    },
+    "emailUpdate": {
+      "updating": "E posta güncelleniyor",
+      "passwordConfirmation": "Onaylamak için parolanızı girin",
+      "cancelButton": "İptal",
+      "updateButton": "E postamı Güncelle",
+      "email": "E posta",
+      "password": "Parola",
+      "emailInfo": "E postanız: ",
+      "newEmail": "Yeni E posta",
+      "confirmEmail": "E postanı onayla",
+      "emailMatchMsg": "E postalar eşleşmeli",
+      "reType": "Parolanızı yeniden girin."
+    },
+    "editProfile": {
+      "fName": "Ad",
+      "lName": "Soyad",
+      "displayName": "Gösterilen İsim",
+      "displayWarning": "Bir gönderi oluşturduğunuzda ya da yorum yaptığınızda bu isim gözükecektir.",
+      "accountType": "Kullanıcı Türü",
+      "accountTypeMessage": "Kullanıcı türünüzü değiştirmek için site adminlerine ulaşın.",
+      "userInfoTitles": ["Ülke", "Meslek", "Şehir", "Özet"],
+      "saveButton": "Değişiklikleri kaydet",
+      "cancelButton": "İptal",
+      "loading": "Profil yükleniyor..."
+    },
+    "showProfileInfo": [
+      "Ad",
+      "Soyad",
+      "Gösterilen Ad",
+      "Bir gönderi oluşturduğunuzda ya da yorum yaptığınızda bu isim gözükecektir.",
+      "Meslek",
+      "Kullanıcı Türü",
+      "Şehir",
+      "Ülke",
+      "Profil yükleniyor..."
+    ],
+    "profileInfo": [
+      "Bilgileriniz güncelleniyor",
+      "Bilgileriniz başarıyla güncellendi.",
+      "Tamamlandı",
+      "Kişisel Bilgiler: "
+    ],
+    "deleteAccount": [
+      "Hesabın Siliniyor",
+      "Emin misin?",
+      "Hesabını cidden silmek istiyor musun? Bu işlem site içerisindeki tüm verilerini silecek ve bunlara tekrar ulaşamayacaksın.",
+      "İptal",
+      "Hesabımı Sil",
+      "Hesabı Sil",
+      " Bu işlem site içerisindeki tüm verilerini silecek ve bunlara tekrar ulaşamayacaksın."
+    ]
+  }
 }

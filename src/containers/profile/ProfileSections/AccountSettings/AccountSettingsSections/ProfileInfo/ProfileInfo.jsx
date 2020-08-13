@@ -4,8 +4,10 @@ import editButtonIcon from "../../../../../../images/editButton.png";
 import ShowProfileInfo from "./ProfileInfoSections/ShowProfileInfo";
 import EditProfileInfo from "./ProfileInfoSections/EditProfileInfo";
 import { Modal, Button } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 
 const UserInfo = (props) => {
+  const { t } = useTranslation();
   const { id, auth } = props;
   const isOwner = id === auth.uid ? true : false;
 
@@ -54,15 +56,15 @@ const UserInfo = (props) => {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            Updating your personal info
+            {t("accountSettings.profileInfo.0")}
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <p>Your personal info have been updated successfully</p>
+          <p>{t("accountSettings.profileInfo.1")}</p>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="success" onClick={props.onHide}>
-            Done
+            {t("accountSettings.profileInfo.2")}
           </Button>
         </Modal.Footer>
       </Modal>
@@ -72,7 +74,7 @@ const UserInfo = (props) => {
   return (
     <div>
       <div className="userInfoTitle">
-        <h5>Personal Info:</h5> {editButton()}
+        <h5>{t("accountSettings.profileInfo.3")}</h5> {editButton()}
       </div>
       {isOwner ? ownerDisplay : adminDisplay}
 

@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import "./AccountSettingsSections.css";
+import { useTranslation } from "react-i18next";
 import {
   updatePasswordAndEmail,
   resetPassword,
@@ -8,12 +9,16 @@ import {
 import { Form, Container, Button, Col, Modal } from "react-bootstrap";
 
 const UpdatePassword = (props) => {
+  const { t } = useTranslation();
   const { auth, authError, errMessage, errKey } = props;
   const operations = [
-    ["Updating your password", "Your password has been updated successfully"],
     [
-      "Recovering your password",
-      "A reset password email has been sent successfully, you can check your mailbox to set a new password",
+      t("accountSettings.passwordUpdate.operations.0"),
+      t("accountSettings.passwordUpdate.operations.1"),
+    ],
+    [
+      t("accountSettings.passwordUpdate.operations.2"),
+      t("accountSettings.passwordUpdate.operations.3"),
     ],
   ];
 
@@ -58,11 +63,11 @@ const UpdatePassword = (props) => {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            Updating your password
+            {t("accountSettings.passwordUpdate.updating")}
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <h6>Enter your current password to confirm</h6>
+          <h6>{t("accountSettings.passwordUpdate.passwordConfirmation")}</h6>
           <Form.Control
             type="password"
             placeholder="Password"
@@ -73,7 +78,7 @@ const UpdatePassword = (props) => {
         </Modal.Body>
         <Modal.Footer>
           <Button variant="danger" onClick={props.onHide}>
-            Cancel
+            {t("accountSettings.passwordUpdate.cancelButton")}
           </Button>
           <Button
             variant="primary"
@@ -87,7 +92,7 @@ const UpdatePassword = (props) => {
               setSuccessModalShow(true);
             }}
           >
-            Update Password
+            {t("accountSettings.passwordUpdate.updatePasswordMsg")}
           </Button>
         </Modal.Footer>
       </Modal>
@@ -112,7 +117,7 @@ const UpdatePassword = (props) => {
         </Modal.Body>
         <Modal.Footer>
           <Button variant="success" onClick={props.onHide}>
-            Done
+            {t("accountSettings.passwordUpdate.success")}
           </Button>
         </Modal.Footer>
       </Modal>
@@ -121,24 +126,30 @@ const UpdatePassword = (props) => {
 
   return (
     <div className="updatePassword">
-      <h4 className="title">Change Password</h4>
+      <h4 className="title">
+        {t("accountSettings.passwordUpdate.changePasswordMsg")}
+      </h4>
       <Form>
         <Form.Row>
           <Form.Group as={Col} controlId="email">
-            <Form.Label>New Password</Form.Label>
+            <Form.Label>
+              {t("accountSettings.passwordUpdate.newPasswordMsg.0")}
+            </Form.Label>
             <Form.Control
               type="password"
-              placeholder="Password"
+              placeholder={t("accountSettings.passwordUpdate.newPasswordMsg.1")}
               onInput={(e) => {
                 setNewPassword(e.target.value);
               }}
             />
           </Form.Group>
           <Form.Group as={Col} controlId="email">
-            <Form.Label>Confirm New Password</Form.Label>
+            <Form.Label>
+              {t("accountSettings.passwordUpdate.confirmNewMsg.0")}
+            </Form.Label>
             <Form.Control
               type="password"
-              placeholder="Re-type password"
+              placeholder={t("accountSettings.passwordUpdate.confirmNewMsg.1")}
               onInput={(e) => {
                 setPasswordRepeat(e.target.value);
                 setDoesPasswordMatch(true);
@@ -149,13 +160,15 @@ const UpdatePassword = (props) => {
         </Form.Row>
         <Form.Row>
           {!doesPasswordMatch && (
-            <div className="passwordMatch">Your passwords must match</div>
+            <div className="passwordMatch">
+              {t("accountSettings.passwordUpdate.passwordMatchMsg")}
+            </div>
           )}
         </Form.Row>
         <Form.Row>
           {!doesPasswordValid && (
             <div className="passwordValid">
-              Your password must be at least 6 characters
+              {t("accountSettings.passwordUpdate.characterMatchMsg")}
             </div>
           )}
         </Form.Row>
@@ -171,7 +184,7 @@ const UpdatePassword = (props) => {
       </Form>
       <div className="resetPassword">
         <p>
-          Forgot your password?{" "}
+          {t("accountSettings.passwordUpdate.forgotPasswordMsg")}{" "}
           <b
             onClick={() => {
               props.resetPassword(auth.email);
@@ -182,13 +195,13 @@ const UpdatePassword = (props) => {
               setSuccessModalShow(true);
             }}
           >
-            Click here
+            {t("accountSettings.passwordUpdate.resetPasswordMsg.0")}
           </b>{" "}
-          to send you a reset password email
+          {t("accountSettings.passwordUpdate.resetPasswordMsg.1")}
         </p>
       </div>
       <Button variant="primary" onClick={() => setConfirmModalShow(true)}>
-        Update Password
+        {t("accountSettings.passwordUpdate.updatePasswordMsg")}
       </Button>
       <ConfirmModal
         show={confirmModalShow}

@@ -4,7 +4,10 @@ import "./AccountSettingsSections.css";
 import { updatePasswordAndEmail } from "../../../../../actions/authActions";
 import { Form, Container, Button, Col, Modal } from "react-bootstrap";
 
+import { useTranslation } from "react-i18next";
+
 const UpdateEmail = (props) => {
+  const { t } = useTranslation();
   const { auth, authError, errMessage, errKey } = props;
 
   const [currentEmail, setCurrentEmail] = React.useState(auth.email);
@@ -41,14 +44,14 @@ const UpdateEmail = (props) => {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            Updating your email
+            {t("accountSettings.emailUpdate.updating")}
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <h6>Enter your password to confirm</h6>
+          <h6>{t("accountSettings.emailUpdate.passwordConfirmation")}</h6>
           <Form.Control
             type="password"
-            placeholder="Password"
+            placeholder={t("accountSettings.emailUpdate.password")}
             onInput={(e) => {
               setPassword(e.target.value);
             }}
@@ -65,7 +68,7 @@ const UpdateEmail = (props) => {
               handleUdpateEmail(password);
             }}
           >
-            Update Email
+            {t("accountSettings.emailUpdate.updateButton")}
           </Button>
         </Modal.Footer>
       </Modal>
@@ -74,14 +77,15 @@ const UpdateEmail = (props) => {
 
   return (
     <div className="updateEmail">
-      <h4 className="title">Email address</h4>
+      <h4 className="title">{t("accountSettings.emailUpdate.email")}</h4>
       <p>
-        Your email address is <b>{authError ? auth.email : currentEmail}</b>
+        {t("accountSettings.emailUpdate.emailInfo")}{" "}
+        <b>{authError ? auth.email : currentEmail}</b>
       </p>
       <Form>
         <Form.Row>
           <Form.Group as={Col} controlId="email">
-            <Form.Label>New Email Address</Form.Label>
+            <Form.Label>{t("accountSettings.emailUpdate.newEmail")}</Form.Label>
             <Form.Control
               type="text"
               placeholder="example@gmail.com"
@@ -91,10 +95,12 @@ const UpdateEmail = (props) => {
             />
           </Form.Group>
           <Form.Group as={Col} controlId="email">
-            <Form.Label>Confirm New Email</Form.Label>
+            <Form.Label>
+              {t("accountSettings.emailUpdate.confirmEmail")}
+            </Form.Label>
             <Form.Control
               type="text"
-              placeholder="Re-type your new email"
+              placeholder={t("accountSettings.emailUpdate.reType")}
               onInput={(e) => {
                 setEmailRepeat(e.target.value);
                 setDoesEmailMatch(true);
@@ -104,7 +110,9 @@ const UpdateEmail = (props) => {
         </Form.Row>
         <Form.Row>
           {!doesEmailMatch && (
-            <div className="emailMatch">Your emails must match</div>
+            <div className="emailMatch">
+              {t("accountSettings.emailUpdate.emailMatchMsg")}
+            </div>
           )}
         </Form.Row>
         <Container>
@@ -119,7 +127,7 @@ const UpdateEmail = (props) => {
       </Form>
 
       <Button variant="primary" onClick={() => setConfirmModalShow(true)}>
-        Update Email
+        {t("accountSettings.emailUpdate.updateButton")}
       </Button>
 
       <ConfirmModal

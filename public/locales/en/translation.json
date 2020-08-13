@@ -266,5 +266,85 @@
     "passNotMatch": "Password doesn't match"
   },
   "signedOut": ["Log In", "Sign Up"],
-  "signedIn": ["Profile", "Sign Out"]
+  "signedIn": ["Profile", "Sign Out"],
+  "profilePage": {
+    "accountSettings": "Account Settings",
+    "manageUsers": "Manage Users",
+    "blockMessage": "this account has been blocked!",
+    "loading": "loading profile..."
+  },
+  "accountSettings": {
+    "passwordUpdate": {
+      "operations": [
+        "Updating your password",
+        "Your password has been updated successfully",
+        "Recovering your password",
+        "A reset password email has been sent successfully, you can check your mailbox to set a new password"
+      ],
+      "updating": "Updating your password",
+      "passwordConfirmation": "Enter your current password to confirm",
+      "updateButton": "Update Password",
+      "success": "Done",
+      "changePasswordMsg": "Change Password",
+      "confirmNewMsg": ["Confirm New Password", "Re-type password"],
+      "passwordMatchMsg": "Your passwords must match",
+      "characterMatchMsg": "Your password must be at least 6 characters",
+      "forgotPasswordMsg": "Forgot your password?",
+      "resetPasswordMsg": ["Click here", "to send you a reset password email"],
+      "updatePasswordMsg": "Update Password",
+      "newPasswordMsg": ["New Password", "Password"],
+      "cancelButton": "Cancel"
+    },
+    "emailUpdate": {
+      "updating": "Updating your email",
+      "passwordConfirmation": "Enter your current password to confirm",
+      "cancelButton": "Cancel",
+      "updateButton": "Update Email",
+      "email": "Email address",
+      "password": "Password",
+      "emailInfo": "Your email address is ",
+      "newEmail": "New Email Address",
+      "confirmEmail": "Confirm New Email",
+      "emailMatchMsg": "Your email must match",
+      "reType": "Enter your password again"
+    },
+    "editProfile": {
+      "fName": "First Name",
+      "lName": "Last Name",
+      "displayName": "Display name",
+      "displayWarning": "This name will be displayed when you comment or post a blog",
+      "accountType": "User Account Type",
+      "accountTypeMessage": "You can contact with the website admins to upgrade your account",
+      "userInfoTitles": ["Country", "Job Title", "City", "Brief"],
+      "saveButton": "Save changes",
+      "cancelButton": "Cancel",
+      "loading": "loading profile..."
+    },
+    "showProfileInfo": [
+      "First Name",
+      "Last Name",
+      "Display Name",
+      "This name will be displayed when you comment or post a blog",
+      "Job Title",
+      "User Account Type",
+      "City",
+      "Country",
+      "Loading Profile..."
+    ],
+    "profileInfo": [
+      "Updating your personal info",
+      "Your personal info have been updated successfully",
+      "Done",
+      "Personal Info: "
+    ],
+    "deleteAccount": [
+      "Deleting your account",
+      "Are you sure?",
+      "Do you really want to delete your account? This process will delete all your data on this website and you will not be able to recover them.",
+      "Cancel",
+      "Delete My Account",
+      "Delete Account",
+      "Please note that this process will delete all your information permanently, and you will not be able to restore them."
+    ]
+  }
 }

@@ -1,9 +1,10 @@
 import React from "react";
 import { connect } from "react-redux";
+import { useTranslation } from "react-i18next";
 import { firestoreConnect } from "react-redux-firebase";
 import { compose } from "redux";
 import { Redirect } from "react-router-dom";
-import { Tabs, Tab, Container, Row, Col } from "react-bootstrap";
+import { Tabs, Tab } from "react-bootstrap";
 import anonymousImage from "../../images/anonymousImage.png";
 import profileHeaderBG from "../../images/profileHeaderBG.png";
 import Header from "../../components/common/Header";
@@ -12,6 +13,7 @@ import AccountSettings from "./ProfileSections/AccountSettings/AccountSettings";
 import ProfilesList from "./ProfileSections/ProfilesList/ProfilesList";
 
 const Profile = (props) => {
+  const { t } = useTranslation();
   const { profile, auth, id, isblocked } = props;
 
   const extraComponents = () => {
@@ -63,26 +65,26 @@ const Profile = (props) => {
           >
             <Tab
               eventKey="accountSettings"
-              title={<h4>Account Settings</h4>}
+              title={<h4>{t("profilePage.accountSettings")}</h4>}
               className="m-4"
             >
               <AccountSettings id={id} />
             </Tab>
             <Tab
               eventKey="manageUsers"
-              title={<h4>Manage Users</h4>}
+              title={<h4>{t("profilePage.managerUsers")}</h4>}
               className="m-4"
             >
               <ProfilesList />
             </Tab>
           </Tabs>
 
-          {isblocked && <h5>this account has been blocked!!</h5>}
+          {isblocked && <h5>{t("profilePage.blockMessage")}</h5>}
         </div>
       </div>
     );
   } else {
-    return <h4 className="container">loading profile...</h4>;
+    return <h4 className="container">{t("profilePage.loading")}</h4>;
   }
 };
 
