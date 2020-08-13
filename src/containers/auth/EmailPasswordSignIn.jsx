@@ -1,10 +1,12 @@
 import React from "react";
 import { Form, Button, Col, Container } from "react-bootstrap";
 import { Redirect } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { connect } from "react-redux";
 import { signIn } from "../../actions/authActions";
 
 const EmailPasswordSignIn = (props) => {
+  const { t } = useTranslation();
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
   // Sign in to an existing account with "Email & Password" method
@@ -21,7 +23,7 @@ const EmailPasswordSignIn = (props) => {
     <Container>
       <Form>
         <Form.Group as={Col} controlId="email">
-          <Form.Label>Email</Form.Label>
+          <Form.Label>{t("signInForm.email")}</Form.Label>
           <Form.Control
             type="text"
             onInput={(e) => {
@@ -30,7 +32,7 @@ const EmailPasswordSignIn = (props) => {
           />
         </Form.Group>
         <Form.Group as={Col} controlId="password">
-          <Form.Label>Password</Form.Label>
+          <Form.Label>{t("signInForm.password")}</Form.Label>
           <Form.Control
             type="password"
             onInput={(e) => {
@@ -39,10 +41,10 @@ const EmailPasswordSignIn = (props) => {
           />
         </Form.Group>
         <a className="forgetPassword" href="#">
-          Forget Your Password?
+          {t("signInForm.forgotPass")}
         </a>
         <Button variant="primary" type="submit" onClick={handleSubmit}>
-          Login
+          {t("signInForm.login")}
         </Button>
         <Container>
           {/* Show error message when fails to sign in */}

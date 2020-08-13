@@ -141,7 +141,8 @@
     "Hakkımızda",
     "İletişim",
     "Giriş Yap"
-  ],"contact": {
+  ],
+  "contact": {
     "contactUs": [
       "Sosyal Medyada",
       "Bizi Takip Edin",
@@ -159,10 +160,42 @@
       "43 Foundry Caddesi, Basaksehir, istotc, Istanbul, Türkiye",
       "İŞ SAATLERİ:",
       "Destek hattımız her gün her saat açık: 11401",
-      "Pazartesi-Cuma: 5pm to 9pm",
-      "Cumartesi: 10am to 2pm",
+      "Pazartesi-Cuma: 17.00-21.00pm",
+      "Cumartesi: 10.00-14.00",
       "Pazar: Kapalı"
     ],
     "alertMessage": "Mesajınız gönderildi."
-  }
+  },
+  "signIn": {
+    "login": "Giriş Yap",
+    "loginOr": " Veya bunları kullanarak giriş yap",
+    "noAccount": "Hesabın yok mu?",
+    "signUp": "Kayıt Ol",
+    "help": "Yardıma ihtiyacın var mı?",
+    "welcome": ["Tekrar", "hoş geldin!"]
+  },
+  "signInForm": {
+    "email": "E posta",
+    "password": "Parola",
+    "forgotPass": "Parolamı Unuttum",
+    "login": "Giriş Yap"
+  },
+  "signUp": {
+    "signUp": "Kayıt ol",
+    "signUpOr": "Bunları kullanarak kayıt ol",
+    "alreadyMember": "Hala üye misin?",
+    "login": "Giriş Yap",
+    "help": "Yardıma ihtiyacın var mı?",
+    "welcome": ["Websitemize", "hoş", "geldin!"]
+  },
+  "signUpForm": {
+    "fName": "Ad",
+    "lName": "Soyad",
+    "email": "E-posta",
+    "password": "Parola",
+    "rePassword": "Lütfen parolanı tekrar gir.",
+    "passNotMatch": "Parolalar eşleşmiyor."
+  },
+  "signedOut": ["Giriş Yap", "Kayıt Ol"],
+  "signedIn": ["Profil", "Çıkış Yap"]
 }

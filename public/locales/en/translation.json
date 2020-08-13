@@ -234,5 +234,37 @@
       "Sunday: Closed"
     ],
     "alertMessage": "You have submitted succesfully."
-  }
+  },
+  "signIn": {
+    "login": "Login",
+    "loginOr": " or login using",
+    "noAccount": " Don't have an account?",
+    "signUp": "signUp",
+    "help": "need help?",
+    "welcome": ["Welcome", "back!"]
+  },
+  "signInForm": {
+    "email": "Email",
+    "password": "Password",
+    "forgotPass": "Forget Your Password?",
+    "login": "Login"
+  },
+  "signUp": {
+    "signUp": "Sign Up",
+    "signUpOr": " Or sign up using",
+    "alreadyMember": "Already a member?",
+    "login": "Login",
+    "help": "Need help?",
+    "welcome": ["Welcome", " to our ", "website."]
+  },
+  "signUpForm": {
+    "fName": "First Name",
+    "lName": "Last Name",
+    "email": "Email",
+    "password": "Password",
+    "rePassword": "Enter your password again",
+    "passNotMatch": "Password doesn't match"
+  },
+  "signedOut": ["Log In", "Sign Up"],
+  "signedIn": ["Profile", "Sign Out"]
 }

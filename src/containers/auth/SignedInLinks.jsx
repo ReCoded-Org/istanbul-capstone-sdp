@@ -1,16 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
+import { useTranslation } from "react-i18next";
 import { signOut } from "../../../actions/authActions";
 import "./index.css";
 
 const SignedInLinks = (props) => {
+  const { t } = useTranslation();
   const { auth } = props;
   return (
     <div className="link signedInLinks">
-      <Link to={"/" + auth.uid + "/profile"}>Profile</Link>
+      <Link to={"/" + auth.uid + "/profile"}>{t("signedIn.0")}</Link>
       <Link to="/" onClick={props.signOut}>
-        Sign Out
+        {t("signedIn.1")}
       </Link>
     </div>
   );
