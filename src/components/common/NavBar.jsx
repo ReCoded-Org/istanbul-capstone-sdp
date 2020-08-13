@@ -2,10 +2,11 @@ import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import "./index.css";
 import { Link } from "react-router-dom";
+import LangDropdown from "./LangDropdown";
 
 export const NavBar = () => {
   return (
-    <div>
+    <>
       <Navbar className="navBar">
         <Link to="/">
           <Navbar.Brand>
@@ -19,31 +20,31 @@ export const NavBar = () => {
 
         <Nav className="collapse navbar-collapse justify-content-end">
           <Nav.Item className="navSpaces">
-            <Link to="/Contact" className="navLink">
+            <Link to="/contact" className="navLink">
               Contact Us
             </Link>
           </Nav.Item>
 
           <Nav.Item className="navSpaces">
-            <Link to="/About" className="navLink">
+            <Link to="/about" className="navLink">
               About
             </Link>
           </Nav.Item>
 
           <Nav.Item className="navSpaces">
-            <Link to="/Assessment" className="navLink">
+            <Link to="/psycho-assess" className="navLink">
               Assessment
             </Link>
           </Nav.Item>
 
           <Nav.Item className="navSpaces">
-            <Link to="/Donation" className="navLink">
+            <Link to="/donation" className="navLink">
               Donate
             </Link>
           </Nav.Item>
 
           <Nav.Item className="navSpaces">
-            <Link to="/Blogs" className="navLink">
+            <Link to="/blogs" className="navLink">
               Blog
             </Link>
           </Nav.Item>
@@ -56,14 +57,10 @@ export const NavBar = () => {
             alt="Login Icon"
           />
         </div>
-        <div className="rightMargin">
-          <img
-            className="langSpaces"
-            src="https://i.ibb.co/jG2mkVJ/Language-icon.png"
-            alt="Change Language"
-          />
-        </div>
+        <>
+          <LangDropdown />
+        </>
       </Navbar>
-    </div>
+    </>
   );
 };
