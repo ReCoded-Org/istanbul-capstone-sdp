@@ -32,40 +32,48 @@ const Footer = () => {
 
       <Row>
         <Col xs={12} sm={12} md={12} lg={12}>
-        <section classname="ss">
-          <p>
-            (+90) 533-382-094 <br />
-            suljak@suljak.com <br />
-            43 Foundry Avenue, Basaksehir,
-            <br /> Istotc, Istanbul, Turkey. <br />
-            © 2020 Suljak Suicide Prevention Organization <br />
-          </p>
-        </section>
+          <section classname="ss">
+            <p>
+              (+90) 533-382-094 <br />
+              suljak@suljak.com <br />
+              43 Foundry Avenue, Basaksehir,
+              <br /> Istotc, Istanbul, Turkey. <br />
+              © 2020 Suljak Suicide Prevention Organization <br />
+            </p>
+          </section>
 
-        <section classname="mm">
-        <p>Follow Us</p>
-          <div className="rr">
-            <img src="https://i.ibb.co/fGPWJ2F/Facebook.png" alt="" />
-          </div>
-          <div className="rr">
-            <img src="https://i.ibb.co/DC46Zrw/Twitter.png" alt="" />
-          </div>
-          <div className="rr">
-            <img src="https://i.ibb.co/3f30h9S/Instgram.png" alt="" />
-          </div>
-        </section>
+          <section classname="mm">
+            <p>Follow Us</p>
+            <div className="rr">
+              <img src="https://i.ibb.co/fGPWJ2F/Facebook.png" alt="" />
+            </div>
+            <div className="rr">
+              <img src="https://i.ibb.co/DC46Zrw/Twitter.png" alt="" />
+            </div>
+            <div className="rr">
+              <img src="https://i.ibb.co/3f30h9S/Instgram.png" alt="" />
+            </div>
+          </section>
 
-        <section classname="gg">
-        <Link to="/" classname="yy">Home</Link>
-        <Link to="/" classname="yy">Blog</Link>
-        <Link to="/" classname="yy">Contact Us </Link>
-        <Link to="/" classname="yy">About Us</Link>
-        <Link to="/" classname="yy">Login</Link>
-        </section>
+          <section classname="gg">
+            <Link to="/" classname="yy">
+              Home
+            </Link>
+            <Link to="/" classname="yy">
+              Blog
+            </Link>
+            <Link to="/" classname="yy">
+              Contact Us{" "}
+            </Link>
+            <Link to="/" classname="yy">
+              About Us
+            </Link>
+            <Link to="/" classname="yy">
+              Login
+            </Link>
+          </section>
         </Col>
       </Row>
-
-
     </Container>
   );
 };

@@ -1,14 +1,32 @@
 import React from "react";
-import { Nav, Navbar } from "react-bootstrap";
+import { Nav, Navbar, Button, Image } from "react-bootstrap";
 import "./index.css";
 import { Link } from "react-router-dom";
 import LangDropdown from "./LangDropdown";
 
 export const NavBar = () => {
+  const [navItemsPosition, setNavItemsPosition] = React.useState("-100%");
+
+  const handleHumburger = () => {
+    if (navItemsPosition === "-100%") {
+      setNavItemsPosition("0");
+    } else {
+      setNavItemsPosition("-100%");
+    }
+  };
+
   return (
     <div className="three">
       <Navbar className="navBar">
         <Link to="/">
+          <Image
+            width="50"
+            className="humButton"
+            src="https://i.ibb.co/0tZpqgT/kisspng-computer-icons-hamburger-button-menu-new-menu-5b34724c3cb0f7-1188475115301637882486.png"
+            alt=""
+            onClick={() => handleHumburger()}
+          />
+
           <Navbar.Brand>
             <img
               className="suljakLogo"
@@ -17,16 +35,19 @@ export const NavBar = () => {
             />
           </Navbar.Brand>
 
-          <Navbar.Brand>
+          {/* <Navbar.Brand>
             <img
               className="suljakBigLogo"
               src="https://i.ibb.co/bgTdQ3G/logo-responsive.png"
               alt="Suljak Logo"
             />
-          </Navbar.Brand>
+  </Navbar.Brand> */}
         </Link>
 
-        <Nav className="collapse navbar-collapse justify-content-end navbarItems">
+        <Nav
+          className="collapse navbar-collapse justify-content-end navbarItems"
+          style={{ left: navItemsPosition }}
+        >
           <Nav.Item className="navMargins">
             <Link to="/contact" className="navLink">
               Contact Us
