@@ -10,10 +10,11 @@ import Header from "../common/Header";
 import "./Profile.css";
 import AccountSettings from "./ProfileSections/AccountSettings/AccountSettings";
 import ProfilesList from "./ProfileSections/ProfilesList/ProfilesList";
+import ManageBlogs from "./ProfileSections/ManageBlogs/ManageBlogs";
 import { updateProfilePhoto } from "../../actions/authActions";
 
 const Profile = (props) => {
-  const { profile, auth, id, isBlocked } = props;
+  const { profile, auth, id, currentUserType } = props;
 
   const extraComponents = () => {
     // Add available address details
@@ -52,7 +53,7 @@ const Profile = (props) => {
   }
 
   if (profile) {
-    if (!isBlocked) {
+    if (!profile.isBlocked || currentUserType === "Admin") {
       const profileImage = profile.imageURL ? profile.imageURL : anonymousImage;
       return (
         <div className="d-flex justify-content-center position-relative">
@@ -70,20 +71,33 @@ const Profile = (props) => {
               defaultActiveKey="accountSettings"
               className="justify-content-center"
             >
-              <Tab
-                eventKey="accountSettings"
-                title={<h4>Account Settings</h4>}
-                className="m-4"
-              >
-                <AccountSettings id={id} />
-              </Tab>
-              {profile.userType === "admin" && (
+              {id === auth.uid && (
+                <Tab
+                  eventKey="accountSettings"
+                  title={<h4>Account Settings</h4>}
+                  className="m-4"
+                >
+                  <AccountSettings id={id} />
+                </Tab>
+              )}
+
+              {currentUserType === "Admin" && (
                 <Tab
                   eventKey="manageUsers"
                   title={<h4>Manage Users</h4>}
                   className="m-4"
                 >
                   <ProfilesList />
+                </Tab>
+              )}
+              {(profile.userType === "Author" ||
+                currentUserType === "Admin") && (
+                <Tab
+                  eventKey="manageBlogs"
+                  title={<h4>Manage Blogs</h4>}
+                  className="m-4"
+                >
+                  <ManageBlogs />
                 </Tab>
               )}
             </Tabs>
@@ -114,10 +128,14 @@ const mapStateToProps = (state, ownProps) => {
   const id = ownProps.match.params.id;
   const profiles = state.firestore.data.profiles;
   const profile = profiles ? profiles[id] : null;
+  const currentUserType = profiles
+    ? profiles[state.firebase.auth.uid].userType
+    : null;
   return {
     profile: profile,
     auth: state.firebase.auth,
     id,
+    currentUserType,
   };
 };
 
