@@ -60,7 +60,7 @@ const DeleteAccount = (props) => {
 
   return (
     <div className="mt-5 mb-5 deleteAccount">
-      <h4 className="title">Delete Account</h4>
+      <h4 className="editingTitle">Delete Account</h4>
       <p>
         Please note that this process will delete all your information
         permanently, and you will not be able to restore them.

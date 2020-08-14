@@ -9,13 +9,17 @@ import { Form, Container, Button, Col, Modal } from "react-bootstrap";
 
 const UpdatePassword = (props) => {
   const { auth, authError, errMessage, errKey } = props;
-  const operations = [
-    ["Updating your password", "Your password has been updated successfully"],
-    [
-      "Recovering your password",
-      "A reset password email has been sent successfully, you can check your mailbox to set a new password",
-    ],
-  ];
+  const operations = {
+    passwordUpdate: {
+      label: "Updating your password",
+      successMessage: "Your password has been updated successfully",
+    },
+    passwordReset: {
+      label: "Recovering your password",
+      successMessage:
+        "A reset password email has been sent successfully, you can check your mailbox to set a new password",
+    },
+  };
 
   const [newPassword, setNewPassword] = React.useState("");
   const [passwordRepeat, setPasswordRepeat] = React.useState("");
@@ -25,7 +29,7 @@ const UpdatePassword = (props) => {
   const [doesPasswordMatch, setDoesPasswordMatch] = React.useState(true);
   const [doesPasswordValid, setDoesPasswordValid] = React.useState(true);
 
-  const handleUdpatePassword = (password) => {
+  const udpatePassword = (password) => {
     const data = {
       currentEmail: auth.email,
       currentPassword: password,
@@ -79,10 +83,10 @@ const UpdatePassword = (props) => {
             variant="primary"
             onClick={() => {
               props.onHide();
-              handleUdpatePassword(currentPassword);
+              udpatePassword(currentPassword);
               setSuccessKeys({
-                operation: operations[0][0],
-                msg: operations[0][1],
+                operation: operations.passwordUpdate.label,
+                msg: operations.passwordUpdate.successMessage,
               });
               setSuccessModalShow(true);
             }}
@@ -121,7 +125,7 @@ const UpdatePassword = (props) => {
 
   return (
     <div className="updatePassword">
-      <h4 className="title">Change Password</h4>
+      <h4 className="editingTitle">Change Password</h4>
       <Form>
         <Form.Row>
           <Form.Group as={Col} controlId="email">
@@ -176,8 +180,8 @@ const UpdatePassword = (props) => {
             onClick={() => {
               props.resetPassword(auth.email);
               setSuccessKeys({
-                operation: operations[1][0],
-                msg: operations[1][1],
+                operation: operations.passwordReset.label,
+                msg: operations.passwordReset.successMessage,
               });
               setSuccessModalShow(true);
             }}

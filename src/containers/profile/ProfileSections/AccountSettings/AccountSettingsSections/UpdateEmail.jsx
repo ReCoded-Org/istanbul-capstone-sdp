@@ -74,7 +74,7 @@ const UpdateEmail = (props) => {
 
   return (
     <div className="updateEmail">
-      <h4 className="title">Email address</h4>
+      <h4 className="editingTitle">Email address</h4>
       <p>
         Your email address is <b>{authError ? auth.email : currentEmail}</b>
       </p>
