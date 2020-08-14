@@ -10,26 +10,26 @@ const WeCare = () => {
       <div>
         <h1>{t("weCare.heading")}</h1>
         <p>
-          <span className="firstWord"> {t("weCare.firstword")} </span>
-          {t("weCare.paragraph0")}
-          <span className="red"> {t("weCare.span0")}</span>
-          {t("weCare.paragraph1")}
-          <span className="red">{t("weCare.span1")}</span>.
-          {t("weCare.paragraph2")}
+          <span className="firstWord"> {t("weCare.firstWord")} </span>
+          {t("weCare.motivationalText")}
+          <span className="pinkText"> {t("weCare.pinkText")}</span>
+          {t("weCare.supportiveText")}
+          <span className="pinkText">{t("weCare.pinkTextWord")}</span>.
+          {t("weCare.hopefulText")}
         </p>
         <br />
       </div>
 
       <div>
         <Link to="/contact">
-          <Button className="pink" variant="primary" size="lg">
-            {t("weCare.button0")}
+          <Button className="pinkButtonWithWhiteText" variant="primary" size="lg">
+            {t("weCare.reachUsButton")}
           </Button>
         </Link>
         <br />
         <Link to="/psychoAssess">
-          <Button className="blue" size="lg" variant="primary">
-            {t("weCare.button1")}
+          <Button className="blueButtonWithWhiteText" size="lg" variant="primary">
+            {t("weCare.assessmentButton")}
           </Button>
         </Link>
       </div>

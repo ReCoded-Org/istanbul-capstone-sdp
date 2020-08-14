@@ -37,27 +37,30 @@
 
 .weCare {
   color: black;
-  margin-left: 150px;
+  margin-left: 12%;
+  
 }
 
-.weCare .pink {
+.pinkButtonWithWhiteText {
   color: white;
   border: none;
-  background-color: deeppink;
+  background-color: #ed2a7a !important;
   border-radius: 10px;
+  border: none !important;
   display: block;
   font-size: 16px;
   padding: 12px 28px;
+  margin: 1.5% 0;
 }
 
-.blue {
+.blueButtonWithWhiteText {
   color: white;
   border: none;
   background-color: rgb(59, 175, 241);
   border-radius: 10px;
   font-size: 16px;
   padding: 12px 28px;
-  margin-bottom: 109px;
+  margin-bottom: 11%;
 }
 
 .weCare h1 {
@@ -83,53 +86,39 @@
 
 .firstWord {
   font-size: 36px;
-  width: 400px;
 }
 
-.red {
+.pinkText {
   color: deeppink;
 }
 
 .stories {
-  background-color: rgb(230, 245, 244);
   display: flex;
-  padding-bottom: 100px;
+  padding-bottom: 10%;
+  background-color: #f5f9fd;
+  height: 45rem;
+  padding: 6% 12.4%;
+  margin: 0 auto 8%;
 }
 
 .stories p {
-  text-align: justify;
-  float: left;
-  width: 400px;
-  margin-left: 150px;
-  margin-right: 38px;
+  color: #242424;
   font-family: "Roboto";
+  font-size: 22px;
   font-weight: 300;
-  font-size: 24px;
+  text-align: justify;
+  width: 80%;
+  margin-top: 2rem;
 }
 
 .stories h1 {
-  margin-left: 150px;
-  margin-top: 102px;
-  width: 403px;
-  height: 123px;
-  left: 167px;
-  top: 1498px;
-  font-family: "Noto Sans";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 50px;
-  line-height: 58px;
-  text-align: justify;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 3.2rem;
   color: #161b50;
+  line-height: 60px;
 }
 
-.stories span.red {
-  margin-left: 150px;
-  margin-bottom: 109px;
-  width: 108px;
-  height: 26px;
-  left: 166px;
-  top: 1827px;
+.stories .readMore {
   font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
@@ -141,18 +130,24 @@
 
 .stories img {
   float: right;
-  margin-top: 100px;
-  width: 459px;
   mix-blend-mode: multiply;
+  width: 150%;
+  height:50%;
+  margin-top: 20%;
+  margin-left: 50%
+  
 }
 
 .assessment {
   display: flex;
-  margin-left: 150px;
+  margin-left: 12%;
+  height: 34rem;
+  padding: 0 12.4%;
+  margin: 0 auto 8%;
+  margin-bottom: 12%;
 }
 
 .assessment h1 {
-  margin-top: 143px;
   font-family: "Noto Sans";
   font-style: normal;
   font-weight: bold;
@@ -163,23 +158,19 @@
 }
 
 .assessment p {
-  text-align: justify;
-  width: 441px;
+  color: #242424;
   font-family: "Roboto";
-  font-style: normal;
+  font-size: 22px;
   font-weight: 300;
-  font-size: 24px;
-  line-height: 28px;
+  text-align: justify;
+  width: 75%;
+  margin-top: 2rem;
 }
 
 .assessment img {
   float: right;
   margin-top: 143px;
+  
 }
 
-.assessment #blue {
-  text-align: center;
-  width: 184px;
-  height: 40px;
-  margin-bottom: 157px;
-}
+

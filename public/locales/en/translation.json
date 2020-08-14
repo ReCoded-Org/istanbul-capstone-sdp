@@ -46,26 +46,28 @@
   },
   "weCare":{
     "heading":"WE CARE AND CONCERN ABOUT YOU",
-    "firstword":"Lets",
-    "paragraph0":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad",
-    "span0":"minim",
-    "paragraph1":"veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla",
-    "span1":"pariatur",
-    "paragraph2":".Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "button0":"TALK TO US",
-    "button1":"If you are not sure, take the test"
+    "firstWord":"Lets",
+    "motivationalText":"try and keep things in perspective. Let's be",
+    "pinkText":"positive",
+    "supportiveText":", help each other out and we will get through all of this. In this world there has never been a storm that lasted. This too, shall pass. Human Spirit is An Amazing thing, keep it pumped up with adequate ",
+    "pinkTextWord":"positivity",
+    "hopefulText":" and share positive energies. Replace thoughts of worry with thoughts of hope, faith and victory. Once you choose hope, anything is possible. Ending your life is not the answer, getting help is the answer. If you have thoughts of ending your life, or are a survivor, you will find help, hope, comfort, understanding, support, love, and extensive resources here. Our strength comes from our act to care with our hearts and the belief that every life matters. We care and concern about you. " ,
+    "reachUsButton":"TALK TO US",
+    "assessmentButton":"If you are not sure, take the test"
   },
   "stories":{
       "heading":"STORIES ABOUT HOPE",
-      "paragraph":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-      "readmore":"read more >>",
-      "imagealt":"image about hope"
+      "shareYourStory":"We understand that every struggle is different. Experience the stories of people like you, and how they overcame crisis to find hope and recovery or please let us hear your healing journey, share it with others, be a hope. You will never know to whom you will be the light for. ",
+      "quote":"Some days you will be the light for others and some days you will need some light from them. As long as there is light, there is hope and there is a way.",
+      "quoteOwner":" <Jennifer Gayle> ",
+      "readMore":"read more >>",
+      "imageAlt":"image about hope"
   },
   "assessment":{
       "heading":"Psychological Assessment",
-      "paragraph":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "button":"Start Here",
-      "imagealt":"an image about assessment"
+      "assessmentDetails":"For helping to determine whether you or someone you know has symptoms commonly associated with suicide or mental disorder, please fill out the following questionnaire truthfully. The results will only be helpful if you answer in an honest and complete manner. Please note: Our Assessment quiz is not meant to diagnose, but rather to help you understand whether a certain mental health issue may be of concern to you. It’s sort of like asking for a second opinion from an objective friend (as long as you’ve been truthful in your answers).",
+      "assessmentButton":"Start Here",
+      "imageAlt":"an image about assessment"
   },
   "questions": [
     {

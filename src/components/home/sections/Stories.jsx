@@ -8,11 +8,13 @@ const Stories = () => {
     <div className="stories">
       <div>
         <h1>{t("stories.heading")}</h1>
-        <p>{t("stories.paragraph")}</p>
+        <p>{t("stories.shareYourStory")}</p>
+        <p>{t("stories.quote")}</p>
+        <p>{t("stories.quoteOwner")}</p>
         <br />
         <div>
           <Link to="/blogs">
-            <span className="red">{t("stories.readmore")}</span>
+            <span className="readMore">{t("stories.readMore")}</span>
           </Link>
         </div>
       </div>
@@ -20,7 +22,7 @@ const Stories = () => {
       <div>
         <img
           src="https://i.ibb.co/HqmDtgk/Stories-Image.png"
-          alt={t("stories.imagealt")}
+          alt={t("stories.imageAlt")}
         />
       </div>
     </div>
