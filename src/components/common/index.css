@@ -194,3 +194,38 @@ button.langDropdown:hover {
   background-color: transparent !important;
   border-color: transparent !important;
 }
+
+.dynamicHeader {
+  padding-top: 1.5%;
+  width: 100%;
+  height: 345px;
+}
+
+.profilePhotoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.profileHeaderExtraComponents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 50px;
+}
+.photoBtn {
+  cursor: pointer;
+  width: 35px;
+  position: absolute;
+  bottom: 1%;
+  right: 5%;
+}
+
+.photoBtn > input {
+  display: none;
+}
+
+.photoBtn img {
+  cursor: pointer;
+}
