@@ -82,20 +82,31 @@ form button {
   color: #595959;
 }
 
-.three {
-  
+
+
+.line-1 {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #cdcdcd;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
 }
 
 .navBar {
   align-items: center;
   width: 100%;
-  /* height: 60px; */
   background: linear-gradient(
     90deg,
     rgba(0, 72, 145, 1) 0%,
     rgba(38, 120, 204, 1) 100%
   ) !important;
-  /* overflow: auto; */
   box-shadow: 0 0px 5px rgba(151, 153, 182, 0.034),
     0 5px 13px rgba(127, 124, 161, 0.048),
     0 12.5px 10px rgba(101, 92, 156, 0.06), 0 8px 12px rgba(59, 49, 92, 0.072),
@@ -103,7 +114,7 @@ form button {
 }
 
 nav .navBar {
-  overflow: hidden;
+  /* overflow: hidden; */
   align-items: center;
 }
 
@@ -138,34 +149,48 @@ nav .navBar {
 }
 
 .suljakLogo {
-  width: 80%;
+  width: 85%;
   margin-left: 50%;
   z-index: 4 !important;
 }
 
+.suljakBigLogo {
+  display: none;
+}
+
 .loginIcon {
-  margin: 5% 0 10% 25%;
+  margin: 5% 0 20% 0;
   width: 80%;
-  /* margin-left: 0.6rem; */
   display: inline-block;
 }
 
 .languageImage {
-  width: 60px;
+  width: 90%;
+  margin: 1px 2px 3px 3px;
+  padding: 5px;
+  border: none;
 }
 
 
 @media only screen and (max-width: 900px) {
 
-  .suljakLogo {
-    /* width: 80%;
-    margin-left: 50%; */
-    z-index: 4 !important;
-    display: block;
+  .four {
+    background-color: rgb(255, 255, 255);
+    width: 50px;
+    height: 30px;
+    z-index: 6;
+    position: absolute;
+    visibility: visible;
   }
+  
 
-  .Navbar-Brand {
-    z-index: 4 !important;
+  .suljakBigLogo {
+    display: flex;
+    height: 60px;
+    margin-top: 70px;
+    margin-left: -120px;
+    z-index: 4;
+    position: relative;
   }
 
   .navbar-collapse {
@@ -194,7 +219,6 @@ nav .navBar {
   }
 
   .navbarItems {
-    /* display: flex !important; */
     flex-flow: column !important;
     position: fixed !important;
     text-align: left !important;
@@ -203,7 +227,8 @@ nav .navBar {
     top: 0;
     left: 0;
     z-index: 2;
-    height: 100%;   
+    height: 100%;
+    transition: all 0.4sec ease;
   }
 
   .navMargins {

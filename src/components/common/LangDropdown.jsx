@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import lang from "../images/lang.png";
+import lang from "../images/language.png";
 import "./index.css";
 import { Dropdown } from "react-bootstrap";
 

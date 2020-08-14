@@ -8,11 +8,25 @@ export const NavBar = () => {
   return (
     <div className="three">
       <Navbar className="navBar">
+
+      <div className="humburgerMenu">
+          <div class="line-1"></div>
+          <div class="line-1"></div>
+          <div class="line-1"></div>
+      </div>
+
         <Link to="/">
           <Navbar.Brand>
             <img
               className="suljakLogo"
               src="https://i.ibb.co/L9GcrMY/LLogo-2.png"
+              alt="Suljak Logo"
+            />
+          </Navbar.Brand>
+          <Navbar.Brand>
+            <img
+              className="suljakBigLogo"
+              src="https://i.ibb.co/bgTdQ3G/logo-responsive.png"
               alt="Suljak Logo"
             />
           </Navbar.Brand>
