@@ -4,7 +4,8 @@ import { firestoreConnect } from "react-redux-firebase";
 import { compose } from "redux";
 import { Redirect } from "react-router-dom";
 import { ListGroup } from "react-bootstrap";
-import ProfileBox from "./ProfilesListSections/ProfileBox";
+import ProfileBox from "./ManageUsersSections/ProfileBox";
+import "./ManageUsers.css";
 
 const ManageUsers = (props) => {
   const { profiles, auth } = props;
