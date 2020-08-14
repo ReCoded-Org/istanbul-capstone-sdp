@@ -8,13 +8,6 @@ export const NavBar = () => {
   return (
     <div className="three">
       <Navbar className="navBar">
-
-      <div className="humburgerMenu">
-          <div class="line-1"></div>
-          <div class="line-1"></div>
-          <div class="line-1"></div>
-      </div>
-
         <Link to="/">
           <Navbar.Brand>
             <img
@@ -23,6 +16,7 @@ export const NavBar = () => {
               alt="Suljak Logo"
             />
           </Navbar.Brand>
+
           <Navbar.Brand>
             <img
               className="suljakBigLogo"

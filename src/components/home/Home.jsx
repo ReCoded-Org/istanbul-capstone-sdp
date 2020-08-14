@@ -3,6 +3,7 @@ import "./index.css";
 import { Header } from "./sections/Header";
 import RelatedCards from "./sections/RelatedCards";
 import LiveChat from "../../containers/liveChat/LiveChat";
+import Footer from "../common/Footer";
 
 export const Home = () => {
   return (
@@ -10,6 +11,7 @@ export const Home = () => {
       <LiveChat />
       <Header />
       <RelatedCards />
+      <Footer />
     </div>
   );
 };

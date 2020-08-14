@@ -6,9 +6,23 @@
 }
 
 .footer {
-  padding: 5rem 0;
+  padding: 4rem 0;
   background: #014992;
   color: white;
+  height: 500px;
+}
+
+.rr {
+  display: inline;
+}
+
+.mm {
+  float: right;
+}
+
+.yy {
+  display: flex;
+  flex-flow: column;
 }
 
 .footer a {
@@ -23,7 +37,21 @@
 }
 
 .footer h3 {
-  text-align: center;
+  margin-left: 25%;
+  letter-spacing: 1.9px;
+}
+
+@media only screen and (max-width: 991px) {
+  .footer h3 {
+    font-size: 19.5px;
+    letter-spacing: 2px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer h3 {
+    font-size: 13.5px;
+  }
 }
 
 .footer h4 {
@@ -32,7 +60,7 @@
 }
 
 .footer form {
-  margin: 0 auto 4rem auto;
+  margin: 0 auto 3rem auto;
   width: 50%;
 }
 
@@ -40,7 +68,7 @@
   border-radius: 0 !important;
 }
 
-form button {
+.form-button {
   background: #6bb2ff !important;
   border-radius: 0 !important;
 }
@@ -68,6 +96,9 @@ form button {
   color: #fff;
 }
 
+.socialCircle {
+}
+
 .socialCircle a {
   background-color: #f9f9f9;
   margin: 0 2% 0 2%;
@@ -82,9 +113,15 @@ form button {
   color: #595959;
 }
 
+.flex-column {
+  margin: 0 34%;
+}
 
+.orgAddress {
+  margin: 0 14%;
+}
 
-.line-1 {
+/* .line-1 {
   display: block;
   width: 33px;
   height: 4px;
@@ -97,7 +134,7 @@ form button {
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               opacity 0.55s ease;
-}
+} */
 
 .navBar {
   align-items: center;
@@ -134,7 +171,6 @@ nav .navBar {
   margin-right: 8px;
 }
 
-
 .navBar .navLink:hover {
   color: #b0faff !important;
   font-family: "Myriad Pro", sans-serif;
@@ -152,6 +188,7 @@ nav .navBar {
   width: 85%;
   margin-left: 50%;
   z-index: 4 !important;
+  visibility: visible;
 }
 
 .suljakBigLogo {
@@ -171,9 +208,7 @@ nav .navBar {
   border: none;
 }
 
-
-@media only screen and (max-width: 900px) {
-
+/* @media only screen and (max-width: 900px) {
   .four {
     background-color: rgb(255, 255, 255);
     width: 50px;
@@ -182,14 +217,17 @@ nav .navBar {
     position: absolute;
     visibility: visible;
   }
-  
+
+  .suljakLogo {
+    visibility: hidden;
+  }
 
   .suljakBigLogo {
     display: flex;
     height: 60px;
     margin-top: 70px;
     margin-left: -120px;
-    z-index: 4;
+    z-index: 8;
     position: relative;
   }
 
@@ -199,7 +237,7 @@ nav .navBar {
 
   .navBar .navLink {
     font-size: 17px;
-    float: left;  
+    float: left;
   }
 
   .loginIcon {
@@ -240,32 +278,7 @@ nav .navBar {
   .navLink {
     margin: 20px;
   }
-
-}
-
-/* .langSpaces {
-  width: 65%;
-  margin-top: -9px;
-  margin-left: 8px;
-  display: inline-block;
 } */
-
-/* .rightMargin {
-  margin-right: 2.5rem;
-} */
-
-/* .navbar {
-  align-items: center;
-  overflow: hidden;
-} */
-
-
-
-/* .header {
-  margin-top: 0px;
-} */
-
-
 
 .langDropdown button {
   background-color: transparent !important;
