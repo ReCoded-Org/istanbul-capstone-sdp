@@ -9,7 +9,7 @@ import profileHeaderBackground from "../../images/profileHeaderBackground.png";
 import Header from "../common/Header";
 import "./Profile.css";
 import AccountSettings from "./ProfileSections/AccountSettings/AccountSettings";
-import ProfilesList from "./ProfileSections/ProfilesList/ProfilesList";
+import ManageUsers from "./ProfileSections/ManageUsers/ManageUsers";
 import ManageBlogs from "./ProfileSections/ManageBlogs/ManageBlogs";
 import { updateProfilePhoto } from "../../actions/authActions";
 
@@ -87,7 +87,7 @@ const Profile = (props) => {
                   title={<h4>Manage Users</h4>}
                   className="m-4"
                 >
-                  <ProfilesList />
+                  <ManageUsers />
                 </Tab>
               )}
               {(profile.userType === "Author" ||
