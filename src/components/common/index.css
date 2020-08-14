@@ -214,7 +214,7 @@ button.langDropdown:hover {
   justify-content: center;
   margin-left: 50px;
 }
-.photoBtn {
+.profilePhotoBtn {
   cursor: pointer;
   width: 35px;
   position: absolute;
@@ -222,10 +222,10 @@ button.langDropdown:hover {
   right: 5%;
 }
 
-.photoBtn > input {
+.profilePhotoBtn > input {
   display: none;
 }
 
-.photoBtn img {
+.profilePhotoBtn img {
   cursor: pointer;
 }
