@@ -6,9 +6,7 @@ import EditProfileInfo from "./ProfileInfoSections/EditProfileInfo";
 import { Modal, Button } from "react-bootstrap";
 
 const UserInfo = (props) => {
-  const { id, auth } = props;
-  const isOwner = id === auth.uid ? true : false;
-
+  const { id } = props;
   const [isEditing, setIsEditing] = React.useState(false);
   const [editButtonOpacity, setEditButtonOpacity] = React.useState("1");
   const [successModalShow, setSuccessModalShow] = React.useState(false);
@@ -36,14 +34,6 @@ const UserInfo = (props) => {
       setSuccessModalShow(true);
     }
   };
-
-  const ownerDisplay = isEditing ? (
-    <EditProfileInfo handleEditingStatus={handleEditingStatus} id={id} />
-  ) : (
-    <ShowProfileInfo id={id} />
-  );
-
-  const adminDisplay = <ShowProfileInfo id={id} />;
 
   const SuccessModal = (props) => {
     return (
@@ -75,8 +65,11 @@ const UserInfo = (props) => {
       <div className="userInfoTitle">
         <h5>Personal Info:</h5> {editButton()}
       </div>
-      {isOwner ? ownerDisplay : adminDisplay}
-
+      {isEditing ? (
+        <EditProfileInfo handleEditingStatus={handleEditingStatus} id={id} />
+      ) : (
+        <ShowProfileInfo id={id} />
+      )}
       <SuccessModal
         show={successModalShow}
         onHide={() => setSuccessModalShow(false)}
