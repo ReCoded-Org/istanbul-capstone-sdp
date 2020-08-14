@@ -48,7 +48,7 @@ const Header = (props) => {
             />
             {/* Check for the owner to allow profile photo changing */}
             {isOwner && (
-              <div class="photoBtn">
+              <div class="profilePhotoBtn">
                 <label for="fileInput">
                   <img src={profilePhotoButton} alt="Profile changing button" />
                 </label>
