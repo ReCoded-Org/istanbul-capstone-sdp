@@ -62,7 +62,7 @@ const Profile = (props) => {
             pageName={"profile"}
             isOwner={id === auth.uid && true}
             extraComponents={extraComponents()}
-            userID={auth.uid}
+            userId={auth.uid}
             updateProfilePhoto={props.updateProfilePhoto}
           />
           <div className="shadow-lg pt-3 profileContainer">
@@ -123,8 +123,8 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    updateProfilePhoto: (image, userID) =>
-      dispatch(updateProfilePhoto(image, userID)),
+    updateProfilePhoto: (image, userId) =>
+      dispatch(updateProfilePhoto(image, userId)),
   };
 };
 
