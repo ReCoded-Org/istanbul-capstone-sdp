@@ -7,26 +7,27 @@ const Header = (props) => {
   const {
     headerBackground,
     profilePhoto,
-    pageName /* A string that represents the page name where's the header invoked */,
+    /* A string that represents the page name where's the header invoked */
+    pageName,
     isOwner,
     extraComponents,
-    userID,
+    userId,
   } = props;
   const [image, setImage] = React.useState(null);
   const [uploadBtnVisibility, setUploadBtnVisibility] = React.useState(
     "hidden"
   );
-  const [hasUploadSucceed, setHasUploadSucceed] = React.useState(false);
+  const [hasUploadSucceeded, setHasUploadSucceeded] = React.useState(false);
 
   const handlePhotoInputChange = (e) => {
     if (e.target.files[0]) {
-      setHasUploadSucceed(true);
+      setHasUploadSucceeded(true);
       setImage(e.target.files[0]);
     }
   };
   const handlePhotoUpload = () => {
     setUploadBtnVisibility("hidden");
-    props.updateProfilePhoto(image, userID);
+    props.updateProfilePhoto(image, userId);
   };
 
   return (
@@ -65,7 +66,7 @@ const Header = (props) => {
                     variant="success"
                     size="sm"
                     className="mr-1"
-                    disabled={!hasUploadSucceed}
+                    disabled={!hasUploadSucceeded}
                     onClick={handlePhotoUpload}
                   >
                     Upload
