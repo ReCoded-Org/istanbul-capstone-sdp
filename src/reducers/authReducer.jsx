@@ -8,7 +8,7 @@ const authReducer = (state = initState, action) => {
     case "LOGIN_ERROR":
       return {
         ...state,
-        authError: "Log in failed!",
+        authError: "Log in failed..!",
         errMessage: action.err.message,
         errKey: "login",
       };
@@ -27,7 +27,7 @@ const authReducer = (state = initState, action) => {
     case "SIGN_UP_ERROR":
       return {
         ...state,
-        authError: "Sign up failed!",
+        authError: "Sign up failed..!",
         errMessage: action.err.message,
         errKey: "signup",
       };
@@ -39,7 +39,7 @@ const authReducer = (state = initState, action) => {
     case "FACEBOOK_AUTH_ERROR":
       return {
         ...state,
-        authError: "Facebook authentication failed!",
+        authError: "Facebook authentication failed..!",
         errMessage: action.err.message,
         errKey: "facebook",
       };
@@ -51,9 +51,93 @@ const authReducer = (state = initState, action) => {
     case "GOOGLE_AUTH_ERROR":
       return {
         ...state,
-        authError: "Google authentication failed!",
+        authError: "Google authentication failed..!",
         errMessage: action.err.message,
         errKey: "google",
+      };
+    case "UPDATE_SUCCESS":
+      return {
+        ...state,
+        authError: null,
+      };
+    case "UPDATE_ERROR":
+      return {
+        ...state,
+        authError: "User's info update failed!",
+        errMessage: action.err.message,
+        errKey: "update",
+      };
+    case "PROFILE_AUTH_DELETE_SUCCESS":
+      return {
+        ...state,
+        authError: null,
+      };
+    case "PROFILE_AUTH_DELETE_ERROR":
+      return {
+        ...state,
+        authError: "Account auth deletion failed!",
+        errMessage: action.err.message,
+        errKey: "accountAuthDelete",
+      };
+    case "PROFILE_DATA_DELETE_SUCCESS":
+      return {
+        ...state,
+        authError: null,
+      };
+    case "PROFILE_DATA_DELETE_ERROR":
+      return {
+        ...state,
+        authError: "Account data deletion failed!",
+        errMessage: action.err.message,
+        errKey: "accountDataDelete",
+      };
+    case "UPDATE_EMAIL_SUCCESS":
+      return {
+        ...state,
+        authError: null,
+      };
+    case "UPDATE_EMAIL_ERROR":
+      return {
+        ...state,
+        authError: "Email update failed!",
+        errMessage: action.err.message,
+        errKey: "updateEmail",
+      };
+    case "UPDATE_PASSWORD_SUCCESS":
+      return {
+        ...state,
+        authError: null,
+      };
+    case "UPDATE_PASSWORD_ERROR":
+      return {
+        ...state,
+        authError: "Password update failed!",
+        errMessage: action.err.message,
+        errKey: "updatePassword",
+      };
+    case "SEND_RESET_PASSWORD_EMAIL_SUCCESS":
+      return {
+        ...state,
+        authError: null,
+      };
+    case "SEND_RESET_PASSWORD_EMAIL_ERROR":
+      return {
+        ...state,
+        authError: "Sending reset password email failed!",
+        errMessage: action.err.message,
+        errKey: "resetPassword",
+      };
+    case "PHOTO_UPLOAD_SUCCESS":
+      return {
+        ...state,
+        authError: null,
+      };
+    case "PHOTO_UPLOAD_ERROR":
+      return {
+        ...state,
+        authError: "Profile photo upload failed!",
+        errMessage: action.err.message,
+        errKey: "photoUpload",
       };
     default:
       return state;

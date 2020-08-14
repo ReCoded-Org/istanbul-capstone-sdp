@@ -1,6 +1,6 @@
 const addToFirebaseDB = (
   firestore,
-  userID,
+  userId,
   firstName,
   lastName,
   fullName,
@@ -8,7 +8,7 @@ const addToFirebaseDB = (
   email,
   provider
 ) => {
-  const db = firestore.collection("profiles").doc(userID);
+  const db = firestore.collection("profiles").doc(userId);
   db.get().then((doc) => {
     if (!doc.exists) {
       return db.set({
@@ -18,7 +18,7 @@ const addToFirebaseDB = (
         imageURL,
         email,
         provider,
-        userType: "normal",
+        userType: "Subscriber",
       });
     }
   });
@@ -133,6 +133,137 @@ export const googleAuth = () => {
       })
       .catch((err) => {
         dispatch({ type: "GOOGLE_AUTH_ERROR", err });
+      });
+  };
+};
+
+export const updateProfile = (profileInfo) => {
+  return (dispatch, getState, { getFirebase, getFirestore }) => {
+    const firestore = getFirestore();
+    firestore
+      .collection("profiles")
+      .doc(profileInfo.userId)
+      .update(profileInfo)
+      .then(() => {
+        dispatch({ type: "UPDATE_SUCCESS" });
+      })
+      .catch((err) => {
+        dispatch({ type: "UPDATE_ERROR", err });
+      });
+  };
+};
+
+export const deleteProfileAuth = () => {
+  return (dispatch, getState, { getFirebase, getFirestore }) => {
+    const firebase = getFirebase();
+    const user = firebase.auth().currentUser;
+    user
+      .delete()
+      .then(() => {
+        dispatch({ type: "PROFILE_AUTH_DELETE_SUCCESS" });
+      })
+      .catch((err) => {
+        dispatch({ type: "PROFILE_AUTH_DELETE_ERROR", err });
+      });
+  };
+};
+
+export const deleteProfileData = (userId) => {
+  return (dispatch, getState, { getFirebase, getFirestore }) => {
+    const firestore = getFirestore();
+    firestore
+      .collection("profiles")
+      .doc(userId)
+      .delete()
+      .then(() => {
+        dispatch({ type: "PROFILE_DATA_DELETE_SUCCESS" });
+      })
+      .catch((err) => {
+        dispatch({ type: "PROFILE_DATA_DELETE_ERROR", err });
+      });
+  };
+};
+
+export const updatePasswordAndEmail = (data) => {
+  return (dispatch, getState, { getFirebase, getFirestore }) => {
+    const firestore = getFirestore();
+    const firebase = getFirebase();
+    firebase
+      .auth()
+      .signInWithEmailAndPassword(data.currentEmail, data.currentPassword)
+      .then(function (userCredential) {
+        const user = userCredential.user;
+        if (data.key === "updateEmail") {
+          user.updateEmail(data.newEmail);
+        } else {
+          user.updatePassword(data.newPassword);
+        }
+      })
+      .then(function () {
+        if (data.key === "updateEmail") {
+          return firestore
+            .collection("profiles")
+            .doc(data.userId)
+            .update({ email: data.newEmail });
+        }
+      })
+      .then(() => {
+        if (data.key === "updateEmail") {
+          dispatch({ type: "UPDATE_EMAIL_SUCCESS" });
+        } else {
+          dispatch({ type: "UPDATE_PASSWORD_SUCCESS" });
+        }
+      })
+      .catch((err) => {
+        if (data.key === "updateEmail") {
+          dispatch({ type: "UPDATE_EMAIL_ERROR", err });
+        } else {
+          dispatch({ type: "UPDATE_PASSWORD_ERROR", err });
+        }
+      });
+  };
+};
+
+export const resetPassword = (email) => {
+  return (dispatch, getState, { getFirebase, getFirestore }) => {
+    const firebase = getFirebase();
+    firebase
+      .auth()
+      .sendPasswordResetEmail(email)
+      .then(() => {
+        dispatch({ type: "SEND_RESET_PASSWORD_EMAIL_SUCCESS" });
+      })
+      .catch((err) => {
+        dispatch({ type: "SEND_RESET_PASSWORD_EMAIL_ERROR", err });
+      });
+  };
+};
+
+export const updateProfilePhoto = (image, userId) => {
+  return (dispatch, getState, { getFirebase, getFirestore }) => {
+    const firestore = getFirestore();
+    const storage = getFirebase().storage().ref();
+    const metadata = {
+      contentType: "image/jpeg",
+    };
+    storage
+      .child(`images/${userId}/profilephoto`)
+      .put(image, metadata)
+      .then((uploadTaskResposive) =>
+        uploadTaskResposive.ref
+          .getDownloadURL()
+          .then((uploadedPhotoURL) =>
+            firestore
+              .collection("profiles")
+              .doc(userId)
+              .update({ imageURL: uploadedPhotoURL })
+          )
+      )
+      .then(() => {
+        dispatch({ type: "PHOTO_UPLOAD_SUCCESS" });
+      })
+      .catch((err) => {
+        dispatch({ type: "PHOTO_UPLOAD_ERROR", err });
       });
   };
 };
