@@ -9,8 +9,9 @@ const SignedInLinks = (props) => {
   const { t } = useTranslation();
   const { auth } = props;
   return (
-    <div className="link signedInLinks">
-      <Link to={"/" + auth.uid + "/profile"}>{t("signedIn.0")}</Link>
+    <div className="d-flex flex-column link signedInLinks">
+      <Link to={"/" + auth.uid + "/profile"}>Profile</Link>
+      <hr />
       <Link to="/" onClick={props.signOut}>
         {t("signedIn.1")}
       </Link>

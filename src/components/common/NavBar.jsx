@@ -3,6 +3,7 @@ import { Nav, Navbar } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import LangDropdown from "./LangDropdown";
+import LoggingDropdownMenu from "../../containers/auth/LoggingDropdownMenu";
 
 export const NavBar = () => {
   const { t } = useTranslation();
@@ -60,6 +61,9 @@ export const NavBar = () => {
             />
           </div>
         </Link>
+
+        <LoggingDropdownMenu />
+
         <>
           <LangDropdown />
         </>
