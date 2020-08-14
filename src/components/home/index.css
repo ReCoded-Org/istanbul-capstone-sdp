@@ -38,7 +38,6 @@
 .weCare {
   color: black;
   margin-left: 12%;
-  
 }
 
 .pinkButtonWithWhiteText {
@@ -132,10 +131,9 @@
   float: right;
   mix-blend-mode: multiply;
   width: 150%;
-  height:50%;
+  height: 50%;
   margin-top: 20%;
-  margin-left: 50%
-  
+  margin-left: 50%;
 }
 
 .assessment {
@@ -170,7 +168,4 @@
 .assessment img {
   float: right;
   margin-top: 143px;
-  
 }
-
-

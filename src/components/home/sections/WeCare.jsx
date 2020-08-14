@@ -22,13 +22,21 @@ const WeCare = () => {
 
       <div>
         <Link to="/contact">
-          <Button className="pinkButtonWithWhiteText" variant="primary" size="lg">
+          <Button
+            className="pinkButtonWithWhiteText"
+            variant="primary"
+            size="lg"
+          >
             {t("weCare.reachUsButton")}
           </Button>
         </Link>
         <br />
         <Link to="/psychoAssess">
-          <Button className="blueButtonWithWhiteText" size="lg" variant="primary">
+          <Button
+            className="blueButtonWithWhiteText"
+            size="lg"
+            variant="primary"
+          >
             {t("weCare.assessmentButton")}
           </Button>
         </Link>
