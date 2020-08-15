@@ -2,7 +2,11 @@ import React from "react";
 import { connect } from "react-redux";
 import "./AccountSettingsSections.css";
 import { Button, Modal, Form } from "react-bootstrap";
-import { deleteProfileAuth, deleteProfileData, deleteProfilePhotoOnStorage } from "../../../../../actions/authActions";
+import {
+  deleteProfileAuth,
+  deleteProfileData,
+  deleteProfilePhotoOnStorage,
+} from "../../../../../actions/authActions";
 
 const DeleteAccount = (props) => {
   const [confirmModalShow, setConfirmModalShow] = React.useState(false);
