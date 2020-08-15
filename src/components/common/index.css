@@ -6,23 +6,9 @@
 }
 
 .footer {
-  padding: 4rem 0;
+  padding: 5rem 0;
   background: #014992;
   color: white;
-  height: 500px;
-}
-
-.rr {
-  display: inline;
-}
-
-.mm {
-  float: right;
-}
-
-.yy {
-  display: flex;
-  flex-flow: column;
 }
 
 .footer a {
@@ -37,21 +23,7 @@
 }
 
 .footer h3 {
-  margin-left: 25%;
-  letter-spacing: 1.9px;
-}
-
-@media only screen and (max-width: 991px) {
-  .footer h3 {
-    font-size: 19.5px;
-    letter-spacing: 2px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .footer h3 {
-    font-size: 13.5px;
-  }
+  text-align: center;
 }
 
 .footer h4 {
@@ -60,7 +32,7 @@
 }
 
 .footer form {
-  margin: 0 auto 3rem auto;
+  margin: 0 auto 4rem auto;
   width: 50%;
 }
 
@@ -68,7 +40,7 @@
   border-radius: 0 !important;
 }
 
-.form-button {
+form button {
   background: #6bb2ff !important;
   border-radius: 0 !important;
 }
@@ -96,9 +68,6 @@
   color: #fff;
 }
 
-.socialCircle {
-}
-
 .socialCircle a {
   background-color: #f9f9f9;
   margin: 0 2% 0 2%;
@@ -111,14 +80,6 @@
 
 .socialCircle i {
   color: #595959;
-}
-
-.flex-column {
-  margin: 0 34%;
-}
-
-.orgAddress {
-  margin: 0 14%;
 }
 
 .navBar {
