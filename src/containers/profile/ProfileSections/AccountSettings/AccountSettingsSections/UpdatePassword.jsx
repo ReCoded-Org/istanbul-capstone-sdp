@@ -13,34 +13,33 @@ const UpdatePassword = (props) => {
     passwordUpdate: {
       label: "Updating your password",
       successMessage: "Your password has been updated successfully",
+      updateKey: "updatePassword",
     },
     passwordReset: {
       label: "Recovering your password",
       successMessage:
         "A reset password email has been sent successfully, you can check your mailbox to set a new password",
+      updateKey: "resetPassword",
     },
   };
 
   const [newPassword, setNewPassword] = React.useState("");
   const [passwordRepeat, setPasswordRepeat] = React.useState("");
   const [confirmModalShow, setConfirmModalShow] = React.useState(false);
-  const [successModalShow, setSuccessModalShow] = React.useState(false);
-  const [successKeys, setSuccessKeys] = React.useState("");
+  const [updateSuccessModalShow, setUpdateSuccessModalShow] = React.useState(
+    false
+  );
+  const [resetSuccessModalShow, setResetSuccessModalShow] = React.useState(
+    false
+  );
   const [doesPasswordMatch, setDoesPasswordMatch] = React.useState(true);
   const [doesPasswordValid, setDoesPasswordValid] = React.useState(true);
 
-  const udpatePassword = (password) => {
-    const data = {
-      currentEmail: auth.email,
-      currentPassword: password,
-      newPassword,
-      userID: auth.uid,
-      key: "updatePassword",
-    };
+  const checkPassword = () => {
     if (newPassword === passwordRepeat && newPassword.length > 5) {
       setDoesPasswordMatch(true);
       setDoesPasswordValid(true);
-      props.updatePasswordAndEmail(data);
+      return true;
     } else {
       if (newPassword !== passwordRepeat) {
         setDoesPasswordMatch(false);
@@ -49,6 +48,18 @@ const UpdatePassword = (props) => {
         setDoesPasswordValid(false);
       }
     }
+    return false;
+  };
+
+  const updatePassword = (password) => {
+    const data = {
+      currentEmail: auth.email,
+      currentPassword: password,
+      newPassword,
+      userId: auth.uid,
+      key: "updatePassword",
+    };
+    props.updatePasswordAndEmail(data);
   };
 
   const ConfirmModal = (props) => {
@@ -57,11 +68,11 @@ const UpdatePassword = (props) => {
       <Modal
         {...props}
         size="md"
-        aria-labelledby="contained-modal-title-vcenter"
+        aria-labelledby="contained-modal-title-vcenter updatePassword"
         centered
       >
         <Modal.Header closeButton>
-          <Modal.Title id="contained-modal-title-vcenter">
+          <Modal.Title id="contained-modal-title-vcenter updatePassword">
             Updating your password
           </Modal.Title>
         </Modal.Header>
@@ -83,12 +94,8 @@ const UpdatePassword = (props) => {
             variant="primary"
             onClick={() => {
               props.onHide();
-              udpatePassword(currentPassword);
-              setSuccessKeys({
-                operation: operations.passwordUpdate.label,
-                msg: operations.passwordUpdate.successMessage,
-              });
-              setSuccessModalShow(true);
+              updatePassword(currentPassword);
+              setUpdateSuccessModalShow(true);
             }}
           >
             Update Password
@@ -103,16 +110,25 @@ const UpdatePassword = (props) => {
       <Modal
         {...props}
         size="md"
-        aria-labelledby="contained-modal-title-vcenter"
+        aria-labelledby={`contained-modal-title-vcenter ${props.operation.label}`}
         centered
       >
         <Modal.Header closeButton>
-          <Modal.Title id="contained-modal-title-vcenter">
-            {successKeys.operation}
+          <Modal.Title
+            id={`contained-modal-title-vcenter ${props.operation.label}`}
+          >
+            {props.operation.label}
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <p>{successKeys.msg}</p>
+          {authError && errKey === props.operation.updateKey ? (
+            <div className="errMsgContainer">
+              <b>{authError}</b>
+              <div className="errMsg">{errMessage}</div>
+            </div>
+          ) : (
+            <p>{props.operation.successMessage}</p>
+          )}
         </Modal.Body>
         <Modal.Footer>
           <Button variant="success" onClick={props.onHide}>
@@ -179,11 +195,9 @@ const UpdatePassword = (props) => {
           <b
             onClick={() => {
               props.resetPassword(auth.email);
-              setSuccessKeys({
-                operation: operations.passwordReset.label,
-                msg: operations.passwordReset.successMessage,
-              });
-              setSuccessModalShow(true);
+              if (errKey !== "updatePassword") {
+                setResetSuccessModalShow(true);
+              }
             }}
           >
             Click here
@@ -192,7 +206,14 @@ const UpdatePassword = (props) => {
         </p>
       </div>
 
-      <Button variant="primary" onClick={() => setConfirmModalShow(true)}>
+      <Button
+        variant="primary"
+        onClick={() => {
+          if (checkPassword()) {
+            setConfirmModalShow(true);
+          }
+        }}
+      >
         Update Password
       </Button>
 
@@ -202,8 +223,15 @@ const UpdatePassword = (props) => {
       />
 
       <SuccessModal
-        show={successModalShow}
-        onHide={() => setSuccessModalShow(false)}
+        show={updateSuccessModalShow}
+        onHide={() => setUpdateSuccessModalShow(false)}
+        operation={operations.passwordUpdate}
+      />
+
+      <SuccessModal
+        show={resetSuccessModalShow}
+        onHide={() => setResetSuccessModalShow(false)}
+        operation={operations.passwordReset}
       />
     </div>
   );

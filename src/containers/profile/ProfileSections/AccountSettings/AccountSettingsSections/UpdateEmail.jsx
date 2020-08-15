@@ -12,13 +12,14 @@ const UpdateEmail = (props) => {
   const [emailRepeat, setEmailRepeat] = React.useState("");
   const [confirmModalShow, setConfirmModalShow] = React.useState(false);
   const [doesEmailMatch, setDoesEmailMatch] = React.useState(true);
+  const [successModalShow, setSuccessModalShow] = React.useState(false);
 
-  const handleUdpateEmail = (password) => {
+  const updateEmail = (password) => {
     const data = {
       currentEmail: auth.email,
       currentPassword: password,
       newEmail,
-      userID: auth.uid,
+      userId: auth.uid,
       key: "updateEmail",
     };
     if (newEmail === emailRepeat) {
@@ -62,10 +63,43 @@ const UpdateEmail = (props) => {
             variant="primary"
             onClick={() => {
               props.onHide();
-              handleUdpateEmail(password);
+              updateEmail(password);
+              setSuccessModalShow(true);
             }}
           >
             Update Email
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    );
+  };
+
+  const SuccessModal = (props) => {
+    return (
+      <Modal
+        {...props}
+        size="md"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+            Updating your email
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          {authError && errKey === "updateEmail" ? (
+            <div className="errMsgContainer">
+              <b>{authError}</b>
+              <div className="errMsg">{errMessage}</div>
+            </div>
+          ) : (
+            <p>Your email has been updated successfully</p>
+          )}
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="success" onClick={props.onHide}>
+            Done
           </Button>
         </Modal.Footer>
       </Modal>
@@ -125,6 +159,11 @@ const UpdateEmail = (props) => {
       <ConfirmModal
         show={confirmModalShow}
         onHide={() => setConfirmModalShow(false)}
+      />
+
+      <SuccessModal
+        show={successModalShow}
+        onHide={() => setSuccessModalShow(false)}
       />
     </div>
   );

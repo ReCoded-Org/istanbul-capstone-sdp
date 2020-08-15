@@ -2,8 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import "./AccountSettingsSections.css";
 import { Button, Modal, Form } from "react-bootstrap";
-import { deleteProfileAuth } from "../../../../../actions/authActions";
-import { deleteProfileData } from "../../../../../actions/authActions";
+import { deleteProfileAuth, deleteProfileData, deleteProfilePhotoOnStorage } from "../../../../../actions/authActions";
 
 const DeleteAccount = (props) => {
   const [confirmModalShow, setConfirmModalShow] = React.useState(false);
@@ -12,6 +11,7 @@ const DeleteAccount = (props) => {
   const handleAccountDeletion = () => {
     props.deleteProfileAuth();
     props.deleteProfileData(id);
+    props.deleteProfilePhotoOnStorage(id);
   };
 
   const ConfirmModal = (props) => {
@@ -90,6 +90,8 @@ const mapDispatchToProps = (dispatch) => {
   return {
     deleteProfileAuth: () => dispatch(deleteProfileAuth()),
     deleteProfileData: (userID) => dispatch(deleteProfileData(userID)),
+    deleteProfilePhotoOnStorage: (userID) =>
+      dispatch(deleteProfilePhotoOnStorage(userID)),
   };
 };
 
