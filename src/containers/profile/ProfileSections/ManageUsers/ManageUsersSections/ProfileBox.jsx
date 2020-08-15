@@ -12,6 +12,34 @@ const ProfileBox = (props) => {
   const { profile, auth } = props;
   const photoSrc = profile.imageURL ? profile.imageURL : anonymousImage;
 
+  const handleBlockAndActivateButton = () => {
+    if (!profile.isBlocked) {
+      return (
+        <Button
+          variant="danger"
+          className="w-75"
+          onClick={() =>
+            props.updateProfile({ userId: profile.id, isBlocked: true })
+          }
+        >
+          Block
+        </Button>
+      );
+    } else {
+      return (
+        <Button
+          variant="primary"
+          className="w-75"
+          onClick={() =>
+            props.updateProfile({ userId: profile.id, isBlocked: false })
+          }
+        >
+          Activate
+        </Button>
+      );
+    }
+  };
+
   if (!auth.uid) {
     return <Redirect to="/login" />;
   }
@@ -48,27 +76,7 @@ const ProfileBox = (props) => {
           xs={4}
           className="d-flex flex-column pt-2 pb-2 justify-content-around"
         >
-          {!profile.isBlocked ? (
-            <Button
-              variant="danger"
-              className="w-75"
-              onClick={() =>
-                props.updateProfile({ userId: profile.id, isBlocked: true })
-              }
-            >
-              Block
-            </Button>
-          ) : (
-            <Button
-              variant="primary"
-              className="w-75"
-              onClick={() =>
-                props.updateProfile({ userId: profile.id, isBlocked: false })
-              }
-            >
-              Activate
-            </Button>
-          )}
+          {handleBlockAndActivateButton()}
           <Dropdown>
             <Dropdown.Toggle
               variant="info"
@@ -80,7 +88,7 @@ const ProfileBox = (props) => {
             <Dropdown.Menu>
               <Dropdown.Item
                 onClick={() =>
-                  props.updateProfile({ userId: profile.id, userType: "Admin" })
+                  props.updateProfile({ userId: profile.id, userType: "ADMIN" })
                 }
               >
                 Admin
@@ -89,7 +97,7 @@ const ProfileBox = (props) => {
                 onClick={() =>
                   props.updateProfile({
                     userId: profile.id,
-                    userType: "Author",
+                    userType: "AUTHOR",
                   })
                 }
               >
@@ -99,7 +107,7 @@ const ProfileBox = (props) => {
                 onClick={() =>
                   props.updateProfile({
                     userId: profile.id,
-                    userType: "Subscriber",
+                    userType: "SUBSCRIBER",
                   })
                 }
               >
