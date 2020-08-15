@@ -301,4 +301,8 @@
   .socialMedia img {
     width: 2.4rem;
   }
+
+  .wholeCarousel {
+    display: none;
+  }
 }
