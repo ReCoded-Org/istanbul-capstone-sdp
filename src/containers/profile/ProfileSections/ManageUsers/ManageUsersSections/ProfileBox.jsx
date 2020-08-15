@@ -10,10 +10,10 @@ import anonymousImage from "../../../../../images/anonymousImage.png";
 
 const ProfileBox = (props) => {
   const { profile, auth } = props;
-  const photoSRC = profile.imageURL ? profile.imageURL : anonymousImage;
+  const photoSrc = profile.imageURL ? profile.imageURL : anonymousImage;
 
   if (!auth.uid) {
-    return <Redirect to="/log-in" />;
+    return <Redirect to="/login" />;
   }
 
   return (
@@ -24,7 +24,7 @@ const ProfileBox = (props) => {
             <ListGroup defaultActiveKey="none">
               <ListGroup.Item action className="d-flex">
                 <Image
-                  src={photoSRC}
+                  src={photoSrc}
                   alt="Profile"
                   roundedCircle
                   width="100"
