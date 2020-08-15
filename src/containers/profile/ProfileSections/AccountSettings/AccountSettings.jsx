@@ -12,6 +12,7 @@ const AccountSettings = (props) => {
   return (
     <div className="accountSettings">
       <ProfileInfo id={id} auth={auth} />
+      {/* Protecting user privacy even from admins */}
       {auth.uid === id && (
         <>
           {auth.providerData[0].providerId === "password" && (
