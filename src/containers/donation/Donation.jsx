@@ -10,7 +10,7 @@ export const Donation = () => {
       <Header />
 
       <Container className="w-75">
-        <Row className="title">
+        <Row className="donationPageTitle">
           <Col xs={12} md={12} lg={12}>
             <h1>Make A Difference, Be A Part Of Our Community</h1>
           </Col>
@@ -178,7 +178,7 @@ export const Donation = () => {
             <section className="helpParagraph">
               <h3>How can you help us?</h3>
               <article>
-                Close to 800 000 people die due to suicide every year, which is
+                Close to 800,000 people die due to suicide every year, which is
                 one person every 40 seconds. Suicide is a global phenomenon and
                 occurs throughout the lifespan. Effective and evidence-based
                 interventions can be implemented at population, sub-population
@@ -187,7 +187,7 @@ export const Donation = () => {
                 there may have been more than 20 others attempting suicide.
                 Suicide occurs throughout the lifespan and is the second leading
                 cause of death among 15-29 year olds globally. Suicide is a
-                global phenomenon . Suicide accounted for 1.4% of all deaths
+                global phenomenon. Suicide accounted for 1.4% of all deaths
                 worldwide, making it the 18th leading cause of death in 2016. To
                 help change this, we need your support.
                 <br />
