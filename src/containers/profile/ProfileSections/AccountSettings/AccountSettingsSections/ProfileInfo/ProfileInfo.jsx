@@ -1,4 +1,5 @@
 import React from "react";
+import { connect } from "react-redux";
 import "./ProfileInfo.css";
 import editButtonIcon from "../../../../../../images/editButton.png";
 import ShowProfileInfo from "./ProfileInfoSections/ShowProfileInfo";
@@ -6,7 +7,7 @@ import EditProfileInfo from "./ProfileInfoSections/EditProfileInfo";
 import { Modal, Button } from "react-bootstrap";
 
 const UserInfo = (props) => {
-  const { id } = props;
+  const { id, authError, errMessage, errKey } = props;
   const [isEditing, setIsEditing] = React.useState(false);
   const [editButtonOpacity, setEditButtonOpacity] = React.useState("1");
   const [successModalShow, setSuccessModalShow] = React.useState(false);
@@ -49,7 +50,14 @@ const UserInfo = (props) => {
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <p>Your personal info have been updated successfully</p>
+          {authError && errKey === "updateInfo" ? (
+            <div className="errMsgContainer">
+              <b>{authError}</b>
+              <div className="errMsg">{errMessage}</div>
+            </div>
+          ) : (
+            <p>Your personal info have been updated successfully</p>
+          )}
         </Modal.Body>
         <Modal.Footer>
           <Button variant="success" onClick={props.onHide}>
@@ -63,7 +71,7 @@ const UserInfo = (props) => {
   return (
     <div>
       <div className="userInfoTitle">
-        <h5>Personal Info:</h5> {editButton()}
+        <h4 className="editingTitle">Personal Info</h4> {editButton()}
       </div>
       {isEditing ? (
         <EditProfileInfo handleEditingStatus={handleEditingStatus} id={id} />
@@ -78,4 +86,12 @@ const UserInfo = (props) => {
   );
 };
 
-export default UserInfo;
+const mapStateToProps = (state) => {
+  return {
+    authError: state.auth.authError,
+    errMessage: state.auth.errMessage,
+    errKey: state.auth.errKey,
+  };
+};
+
+export default connect(mapStateToProps)(UserInfo);

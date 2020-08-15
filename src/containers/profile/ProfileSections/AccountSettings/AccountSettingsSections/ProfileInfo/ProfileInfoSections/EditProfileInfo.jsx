@@ -29,9 +29,6 @@ const EditProfileInfo = (props) => {
   const [newLastName, setNewLastName] = React.useState(
     lastName ? lastName : ""
   );
-  const [newFullName, setNewFullName] = React.useState(
-    fullName ? fullName : ""
-  );
   const [newCity, setNewCity] = React.useState(city ? city : "");
   const [newCountry, setNewCountry] = React.useState(country ? country : "");
   const [newJobTitle, setNewJobTitle] = React.useState(
@@ -45,13 +42,14 @@ const EditProfileInfo = (props) => {
   }
 
   const setFullName = () => {
-    if (newFirstName && newLastName) {
-      setNewFullName(newFirstName + " " + newLastName);
-    } else if (!newFirstName && newLastName) {
-      setNewFullName(newLastName);
-    } else if (newFirstName && !newLastName) {
-      setNewFullName(newLastName);
+    const fullNameParts = [];
+    if (newFirstName) {
+      fullNameParts.push(newFirstName);
     }
+    if (newLastName) {
+      fullNameParts.push(newLastName);
+    }
+    return fullNameParts.join(" ");
   };
 
   const handleSubmit = (e) => {
@@ -61,7 +59,7 @@ const EditProfileInfo = (props) => {
     const changes = {
       firstName: newFirstName,
       lastName: newLastName,
-      fullName: newFullName,
+      fullName: newFirstName + " " + newLastName,
       city: newCity,
       country: newCountry,
       jobTitle: newJobTitle,
@@ -83,7 +81,6 @@ const EditProfileInfo = (props) => {
               className="w-75"
               onInput={(e) => {
                 setNewFirstName(e.target.value);
-                setFullName();
               }}
             />
           </Form.Group>
@@ -95,7 +92,6 @@ const EditProfileInfo = (props) => {
               className="w-75"
               onInput={(e) => {
                 setNewLastName(e.target.value);
-                setFullName();
               }}
             />
           </Form.Group>
@@ -116,7 +112,9 @@ const EditProfileInfo = (props) => {
                 </span>
               </OverlayTrigger>
             </p>
-            <p className="w-75 m-0 p-1 displayName">{newFullName}</p>
+            <p className="w-75 m-0 p-1 displayName">
+              {newFirstName + " " + newLastName}
+            </p>
           </Col>
           <Col></Col>
         </Form.Row>
@@ -208,7 +206,7 @@ const EditProfileInfo = (props) => {
       </Form>
     );
   } else {
-    return <h4 className="container">loading profile...</h4>;
+    return <h4 className="container">Loading profile...</h4>;
   }
 };
 

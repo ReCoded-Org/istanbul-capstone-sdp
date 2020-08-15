@@ -81,7 +81,7 @@ const ShowProfileInfo = (props) => {
       </div>
     );
   } else {
-    return <h4 className="container">loading profile...</h4>;
+    return <h4 className="container">Loading profile...</h4>;
   }
 };
 
