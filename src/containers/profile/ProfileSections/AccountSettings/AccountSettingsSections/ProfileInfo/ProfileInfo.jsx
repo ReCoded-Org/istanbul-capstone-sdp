@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import "./ProfileInfo.css";
-import editButtonIcon from "../../../../../../images/editButton.png";
+import profileInfoEditButtonIcon from "../../../../../../images/editButton.png";
 import ShowProfileInfo from "./ProfileInfoSections/ShowProfileInfo";
 import EditProfileInfo from "./ProfileInfoSections/EditProfileInfo";
 import { Modal, Button } from "react-bootstrap";
@@ -9,20 +9,20 @@ import { Modal, Button } from "react-bootstrap";
 const UserInfo = (props) => {
   const { id, authError, errMessage, errKey } = props;
   const [isEditing, setIsEditing] = React.useState(false);
-  const [editButtonOpacity, setEditButtonOpacity] = React.useState("1");
+  const [profileInfoEditButtonOpacity, setProfileInfoEditButtonOpacity] = React.useState("1");
   const [successModalShow, setSuccessModalShow] = React.useState(false);
 
-  const editButton = () => {
+  const profileInfoEditButton = () => {
     return (
       <img
         alt="Edit button"
-        src={editButtonIcon}
-        className="editButton"
+        src={profileInfoEditButtonIcon}
+        className="profileInfoEditButton"
         onClick={() => {
           setIsEditing(true);
-          setEditButtonOpacity("0.2");
+          setProfileInfoEditButtonOpacity("0.2");
         }}
-        style={{ opacity: editButtonOpacity }}
+        style={{ opacity: profileInfoEditButtonOpacity }}
       />
     );
   };
@@ -30,7 +30,7 @@ const UserInfo = (props) => {
   // Handle personal info editing
   const handleEditingStatus = (isEdited) => {
     setIsEditing(false);
-    setEditButtonOpacity("1");
+    setProfileInfoEditButtonOpacity("1");
     if (isEdited) {
       setSuccessModalShow(true);
     }
@@ -56,7 +56,7 @@ const UserInfo = (props) => {
               <div className="errMsg">{errMessage}</div>
             </div>
           ) : (
-            <p>Your personal info have been updated successfully</p>
+            <p>Your personal info has been updated successfully</p>
           )}
         </Modal.Body>
         <Modal.Footer>
@@ -71,7 +71,7 @@ const UserInfo = (props) => {
   return (
     <div>
       <div className="userInfoTitle">
-        <h4 className="editingTitle">Personal Info</h4> {editButton()}
+        <h4 className="editingTitle">Personal Info</h4> {profileInfoEditButton()}
       </div>
       {isEditing ? (
         <EditProfileInfo handleEditingStatus={handleEditingStatus} id={id} />

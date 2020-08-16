@@ -35,22 +35,12 @@ const EditProfileInfo = (props) => {
     jobTitle ? jobTitle : ""
   );
   const [newBrief, setNewBrief] = React.useState(brief ? brief : "");
+  const displayName = !newFirstName && !newLastName ? fullName : newFirstName +" "+newLastName
 
   // Protect the page from unauthorized access
   if (!auth.uid) {
     return <Redirect to="/login" />;
   }
-
-  const setFullName = () => {
-    const fullNameParts = [];
-    if (newFirstName) {
-      fullNameParts.push(newFirstName);
-    }
-    if (newLastName) {
-      fullNameParts.push(newLastName);
-    }
-    return fullNameParts.join(" ");
-  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -59,7 +49,7 @@ const EditProfileInfo = (props) => {
     const changes = {
       firstName: newFirstName,
       lastName: newLastName,
-      fullName: newFirstName + " " + newLastName,
+      fullName: displayName,
       city: newCity,
       country: newCountry,
       jobTitle: newJobTitle,
@@ -113,7 +103,7 @@ const EditProfileInfo = (props) => {
               </OverlayTrigger>
             </p>
             <p className="w-75 m-0 p-1 displayName">
-              {newFirstName + " " + newLastName}
+              {displayName}
             </p>
           </Col>
           <Col></Col>
