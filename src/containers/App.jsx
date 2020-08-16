@@ -26,7 +26,7 @@ function App() {
           <Route path="/psycho-assess" component={PsychoAssess} />
           <Route path="/donation" component={Donation} />
           <Route exact path="/blogs" component={Blogs} />
-          <Route path="/signinup" component={SignInUp} />
+          <Route path="/login" component={SignInUp} />
           <Route path="/blogs/:blogid" component={SingleBlogPage} />
           <Route path="/:id/blogs/:blogid" component={SingleBlogPage} />
           <Route path="/:id/profile" component={Profile} />

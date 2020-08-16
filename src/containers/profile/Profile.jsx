@@ -15,33 +15,38 @@ import { updateProfilePhoto } from "../../actions/authActions";
 
 const Profile = (props) => {
   const { profile, auth, id, currentUserType } = props;
+  const ADMIN_ROLE = "ADMIN";
+  const AUTHOR_ROLE = "AUTHOR";
 
   const extraComponents = () => {
     // Add available address details
-    let address = "";
-    if (profile.city && !profile.country) {
-      address = profile.city;
-    } else if (!profile.city && profile.country) {
-      address = profile.country;
-    } else {
-      address = `${profile.city}, ${profile.country}`;
-    }
+    const setAddress = () => {
+      const addressParts = [];
+      if (profile.city) {
+        addressParts.push(profile.city);
+      }
+      if (profile.country) {
+        addressParts.push(profile.country);
+      }
+      return addressParts.join(", ");
+    };
+
     const addressContainer = (
       <div style={{ fontSize: "1.25em" }}>
         <b>From </b>
-        <span>{address}</span>
+        <span>{setAddress()}</span>
       </div>
     );
 
     return (
       <div className="extraComponents">
         <h1>
-          {profile.displayName ? profile.displayName : profile.fullName}
+          {profile.fullName}
           {profile.jobTitle && (
             <span className="jobTitle">({profile.jobTitle})</span>
           )}
         </h1>
-        {(profile.city || profile.country) && addressContainer}
+        {setAddress().length > 0 && addressContainer}
         {profile.brief && <p className="profileBrief">{profile.brief}</p>}
       </div>
     );
@@ -53,7 +58,7 @@ const Profile = (props) => {
   }
 
   if (profile) {
-    if (!profile.isBlocked || currentUserType === "Admin") {
+    if (!profile.isBlocked || currentUserType === ADMIN_ROLE) {
       const profileImage = profile.imageURL ? profile.imageURL : anonymousImage;
       return (
         <div className="d-flex justify-content-center position-relative">
@@ -81,7 +86,7 @@ const Profile = (props) => {
                 </Tab>
               )}
 
-              {currentUserType === "Admin" && (
+              {currentUserType === ADMIN_ROLE && (
                 <Tab
                   eventKey="manageUsers"
                   title={<h4>Manage Users</h4>}
@@ -90,8 +95,8 @@ const Profile = (props) => {
                   <ManageUsers />
                 </Tab>
               )}
-              {(profile.userType === "Author" ||
-                currentUserType === "Admin") && (
+              {(currentUserType === AUTHOR_ROLE ||
+                currentUserType === ADMIN_ROLE) && (
                 <Tab
                   eventKey="manageBlogs"
                   title={<h4>Manage Blogs</h4>}
@@ -107,11 +112,11 @@ const Profile = (props) => {
     } else {
       return (
         <Container className="mt-5">
-          <h5>
+          <h4>
             Your account has been blocked for violating our terms. Learn how you
             may be able to restore your account.{" "}
-            <Link to="accountrestore">Learn more</Link>
-          </h5>
+            <Link to="/accountrestore">Learn more</Link>
+          </h4>
         </Container>
       );
     }
@@ -128,9 +133,19 @@ const mapStateToProps = (state, ownProps) => {
   const id = ownProps.match.params.id;
   const profiles = state.firestore.data.profiles;
   const profile = profiles ? profiles[id] : null;
-  const currentUserType = profiles
-    ? profiles[state.firebase.auth.uid].userType
-    : null;
+  // Set current user type
+  const currentUserType = (() => {
+    if (profiles) {
+      if (profiles[state.firebase.auth.uid]) {
+        return profiles[state.firebase.auth.uid].userType;
+      } else {
+        return null;
+      }
+    } else {
+      return null;
+    }
+  })();
+
   return {
     profile: profile,
     auth: state.firebase.auth,
