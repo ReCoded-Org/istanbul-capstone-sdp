@@ -18,6 +18,8 @@ const RelatedCards = (props) => {
             </Card.Text>
             <a
               href="http://teenmentalhealth.org/mental-disorders/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="readMoreCardBtn"
             >
               Read more >>
@@ -34,6 +36,8 @@ const RelatedCards = (props) => {
             </Card.Text>
             <a
               href="https://www.nimh.nih.gov/health/topics/depression/index.shtml"
+              target="_blank"
+              rel="noopener noreferrer"
               className="readMoreCardBtn"
             >
               Read more >>
@@ -41,7 +45,7 @@ const RelatedCards = (props) => {
           </Card.Body>
         </Card>
 
-        <Card className="relatedCard">
+        <Card className="relatedCard relatedCardResponsive">
           <Card.Body>
             <Card.Img className="cardLogo" src={logo3} />
             <Card.Text>
@@ -50,13 +54,15 @@ const RelatedCards = (props) => {
             </Card.Text>
             <a
               href="https://www.youtube.com/watch?v=bYGO43Ukqus"
+              target="_blank"
+              rel="noopener noreferrer"
               className="readMoreCardBtn"
             >
               Read more >>
             </a>
           </Card.Body>
         </Card>
-        <Card className="relatedCard">
+        <Card className="relatedCard relatedCardResponsive">
           <Card.Body>
             <Card.Img variant="top" className="cardLogo" src={logo4} />
             <Card.Text>
@@ -65,6 +71,8 @@ const RelatedCards = (props) => {
             </Card.Text>
             <a
               href="https://www.thehindu.com/opinion/open-page/living-is-the-solution-suicide-is-not/article29668400.ece"
+              target="_blank"
+              rel="noopener noreferrer"
               className="readMoreCardBtn"
             >
               Read more >>

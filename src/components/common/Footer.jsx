@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./index.css";
 import { Form, Container, Row, Col, Button, Nav } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -43,26 +44,26 @@ const Footer = () => {
           <Col md={3}>
             <h4>Follow Us</h4>
             <Nav className="socialCircle">
-              <Nav.Link href="#" className="iconLinkedin" title="Linkedin">
+              <Link href="#" className="iconLinkedin" title="Linkedin">
                 <i className="fa fa-linkedin"></i>
-              </Nav.Link>
-              <Nav.Link href="#" className="iconFacebook" title="Facebook">
+              </Link>
+              <Link href="#" className="iconFacebook" title="Facebook">
                 <i className="fa fa-facebook"></i>
-              </Nav.Link>
-              <Nav.Link href="#" className="iconTwitter" title="Twitter">
+              </Link>
+              <Link href="#" className="iconTwitter" title="Twitter">
                 <i className="fa fa-twitter"></i>
-              </Nav.Link>
+              </Link>
             </Nav>
           </Col>
           <Col md={3} sm={6}>
             <Nav className="flex-column">
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/contact">Contact Us</Nav.Link>
-              <Nav.Link href="/about">About</Nav.Link>
-              <Nav.Link href="/psycho-assess">Assessment</Nav.Link>
-              <Nav.Link href="/donation">Donation</Nav.Link>
-              <Nav.Link href="/blogs">Blog</Nav.Link>
-              <Nav.Link href="/login">Login</Nav.Link>
+              <Link href="/">Home</Link>
+              <Link href="/contact">Contact Us</Link>
+              <Link href="/about">About</Link>
+              <Link href="/assessment">Assessment</Link>
+              <Link href="/donation">Donation</Link>
+              <Link href="/blogs">Blog</Link>
+              <Link href="/login">Login</Link>
             </Nav>
           </Col>
         </Row>

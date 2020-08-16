@@ -32,7 +32,7 @@ export const NavBar = () => {
           </Nav.Item>
 
           <Nav.Item className="navSpaces">
-            <Link to="/psycho-assess" className="navLink">
+            <Link to="/assessment" className="navLink">
               Assessment
             </Link>
           </Nav.Item>
