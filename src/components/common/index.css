@@ -173,7 +173,7 @@ nav.navBar {
   left: auto;
   position: absolute;
   width: 100px;
-  margin: 0px;
+  margin: -15px;
   top: 100px;
   background-color: white;
   z-index: 9999;

@@ -40,7 +40,6 @@ export default function Questions() {
             type="radio"
             name={`question${questionCount}`}
             value="0"
-            defaultChecked={i === 0}
           />
           <label className="form-check-label" htmlFor="exampleRadios1">
             {t(`questions.${questionCount}.multiple.${i}`)}
