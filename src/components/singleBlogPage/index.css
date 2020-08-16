@@ -1,11 +1,26 @@
+
+.singleBlogPageHeader {
+  width:100%;
+  margin: 0 auto;
+}
+
+.singleBlogTopImages {
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+
 .articleHeader {
   display: flex;
-  z-index: 1;
+  z-index: 1;         
   width: 100%;
-  margin: -8.75rem auto 1.8rem;
+  justify-content: center;
+  margin: -13% auto 3%;
 }
 
 .authorImage {
+  justify-content: center;
   display: flex;
   width: 18%;
   z-index: 2;
@@ -13,6 +28,7 @@
 }
 
 .authorTitle {
+  display: flex;
   font-family: Roboto, Sans-serif;
   margin: 0 auto;
   text-align: center;

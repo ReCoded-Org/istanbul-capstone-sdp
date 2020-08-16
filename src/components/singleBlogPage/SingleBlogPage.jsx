@@ -92,7 +92,7 @@ export const SingleBlogPage = (props) => {
       <BlogHeader blogTest={blogTest} />
       <BlogContent blogTest={blogTest} />
       <Comments blogTest={blogTest} />
-      <Recommended />
+      {/* <Recommended /> */}
     </div>
   );
 };

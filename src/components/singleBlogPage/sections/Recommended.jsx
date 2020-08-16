@@ -5,7 +5,7 @@ export const Recommended = () => {
   return (
     <Container>
       <Row>
-        <Col xs={8} md={8} lg={4} className="recommendedPost">
+        <Col xs={12} md={12} lg={6} className="recommendedPost">
           <div>
             <img
               src="https://i.ibb.co/170vYHW/You-might-also-like-2.jpg"
@@ -20,7 +20,7 @@ export const Recommended = () => {
           </div>
         </Col>
 
-        <Col xs={8} md={8} lg={4} className="recommendedPost">
+        <Col xs={12} md={12} lg={6} className="recommendedPost">
           <div>
             <img
               src="https://i.ibb.co/nM3Zb3N/You-might-also-like-1.jpg"
