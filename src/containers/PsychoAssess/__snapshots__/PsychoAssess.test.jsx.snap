@@ -8,6 +8,11 @@ Object {
       <div
         class="container"
       >
+        <h1
+          class="assesmentTitle"
+        >
+          assessment.title
+        </h1>
         <div
           class="assessContainer col"
         >
@@ -41,7 +46,6 @@ Object {
                   class="form-check"
                 >
                   <input
-                    checked=""
                     class="form-check-input"
                     name="question0"
                     type="radio"
@@ -125,7 +129,6 @@ Object {
                   class="form-check"
                 >
                   <input
-                    checked=""
                     class="form-check-input"
                     name="question1"
                     type="radio"
@@ -209,7 +212,6 @@ Object {
                   class="form-check"
                 >
                   <input
-                    checked=""
                     class="form-check-input"
                     name="question2"
                     type="radio"
@@ -293,7 +295,6 @@ Object {
                   class="form-check"
                 >
                   <input
-                    checked=""
                     class="form-check-input"
                     name="question3"
                     type="radio"
@@ -377,7 +378,6 @@ Object {
                   class="form-check"
                 >
                   <input
-                    checked=""
                     class="form-check-input"
                     name="question4"
                     type="radio"
@@ -461,7 +461,6 @@ Object {
                   class="form-check"
                 >
                   <input
-                    checked=""
                     class="form-check-input"
                     name="question5"
                     type="radio"
@@ -545,7 +544,6 @@ Object {
                   class="form-check"
                 >
                   <input
-                    checked=""
                     class="form-check-input"
                     name="question6"
                     type="radio"
@@ -629,7 +627,6 @@ Object {
                   class="form-check"
                 >
                   <input
-                    checked=""
                     class="form-check-input"
                     name="question7"
                     type="radio"
@@ -713,7 +710,6 @@ Object {
                   class="form-check"
                 >
                   <input
-                    checked=""
                     class="form-check-input"
                     name="question8"
                     type="radio"
@@ -797,7 +793,6 @@ Object {
                   class="form-check"
                 >
                   <input
-                    checked=""
                     class="form-check-input"
                     name="question9"
                     type="radio"
@@ -881,7 +876,6 @@ Object {
                   class="form-check"
                 >
                   <input
-                    checked=""
                     class="form-check-input"
                     name="question10"
                     type="radio"
@@ -965,7 +959,6 @@ Object {
                   class="form-check"
                 >
                   <input
-                    checked=""
                     class="form-check-input"
                     name="question11"
                     type="radio"
@@ -1049,7 +1042,6 @@ Object {
                   class="form-check"
                 >
                   <input
-                    checked=""
                     class="form-check-input"
                     name="question12"
                     type="radio"
@@ -1146,6 +1138,11 @@ Object {
     <div
       class="container"
     >
+      <h1
+        class="assesmentTitle"
+      >
+        assessment.title
+      </h1>
       <div
         class="assessContainer col"
       >
@@ -1179,7 +1176,6 @@ Object {
                 class="form-check"
               >
                 <input
-                  checked=""
                   class="form-check-input"
                   name="question0"
                   type="radio"
@@ -1263,7 +1259,6 @@ Object {
                 class="form-check"
               >
                 <input
-                  checked=""
                   class="form-check-input"
                   name="question1"
                   type="radio"
@@ -1347,7 +1342,6 @@ Object {
                 class="form-check"
               >
                 <input
-                  checked=""
                   class="form-check-input"
                   name="question2"
                   type="radio"
@@ -1431,7 +1425,6 @@ Object {
                 class="form-check"
               >
                 <input
-                  checked=""
                   class="form-check-input"
                   name="question3"
                   type="radio"
@@ -1515,7 +1508,6 @@ Object {
                 class="form-check"
               >
                 <input
-                  checked=""
                   class="form-check-input"
                   name="question4"
                   type="radio"
@@ -1599,7 +1591,6 @@ Object {
                 class="form-check"
               >
                 <input
-                  checked=""
                   class="form-check-input"
                   name="question5"
                   type="radio"
@@ -1683,7 +1674,6 @@ Object {
                 class="form-check"
               >
                 <input
-                  checked=""
                   class="form-check-input"
                   name="question6"
                   type="radio"
@@ -1767,7 +1757,6 @@ Object {
                 class="form-check"
               >
                 <input
-                  checked=""
                   class="form-check-input"
                   name="question7"
                   type="radio"
@@ -1851,7 +1840,6 @@ Object {
                 class="form-check"
               >
                 <input
-                  checked=""
                   class="form-check-input"
                   name="question8"
                   type="radio"
@@ -1935,7 +1923,6 @@ Object {
                 class="form-check"
               >
                 <input
-                  checked=""
                   class="form-check-input"
                   name="question9"
                   type="radio"
@@ -2019,7 +2006,6 @@ Object {
                 class="form-check"
               >
                 <input
-                  checked=""
                   class="form-check-input"
                   name="question10"
                   type="radio"
@@ -2103,7 +2089,6 @@ Object {
                 class="form-check"
               >
                 <input
-                  checked=""
                   class="form-check-input"
                   name="question11"
                   type="radio"
@@ -2187,7 +2172,6 @@ Object {
                 class="form-check"
               >
                 <input
-                  checked=""
                   class="form-check-input"
                   name="question12"
                   type="radio"
