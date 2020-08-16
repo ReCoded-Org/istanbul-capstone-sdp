@@ -39,8 +39,6 @@ export const NavBar = () => {
           </div>
         </Link>
 
-        <div></div>
-
         <Nav
           className="collapse navbar-collapse justify-content-end navbarItems"
           style={{ left: navItemsPosition }}
@@ -96,7 +94,7 @@ export const NavBar = () => {
           </Nav.Item>
         </Nav>
 
-        <div className="">
+        <div>
           <img
             className="loginIcon"
             src="https://i.ibb.co/s5Xh2d2/Login-Signup-Icon.png"

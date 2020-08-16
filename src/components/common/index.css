@@ -112,9 +112,9 @@ form button {
 
 .suljakLogo {
   width: 7.8vw;
-  margin-left: 2.3vw;
-  z-index: 4 !important;
+  z-index: 2 !important;
   visibility: visible;
+  margin: 0.3vw 2.3vw;
 }
 
 .suljakHumburgerLogo {
@@ -157,15 +157,23 @@ form button {
   .animatedHumburgerIcon {
     display: flex;
     flex-flow: column;
-    width: 3vw;
-    margin: 10% auto 10% -290%;
+    width: 2.3vw;
+    /* margin: auto 0vw; */
+    position: relative;
+    top: 0;
+    right: 16.5vw;
+
+    /* position: relative;
+    top: 0;
+    left: 0;
+    width: 8vw; */
   }
 
   .animatedHumburgerIcon .line {
     width: 4vw;
     height: 0.35vw;
     background-color: #ecf0f1;
-    display: block;
+    /* display: block; */
     margin: 0.23vw auto;
     border-radius: 3px;
     transition: all 0.4s ease-in-out;
@@ -186,12 +194,23 @@ form button {
   }
 
   .suljakLogo {
-    display: flex;
+    /* display: flex; */
+    /* position: relative; */
+    /* width: 8vw; */
+    /* z-index: 4 !important; */
+    /* margin: auto 100%; */
+    /* padding-top: 8%; */
+
     position: relative;
-    width: 9vw;
-    z-index: 4 !important;
-    margin: auto 5% 0 100%;
-    padding-top: 8%;
+    top: 0;
+    left: 6vw;
+    width: 45%;
+    /* margin-bottom: 0;
+    margin-left: 0; */
+
+    /* display: flex; */
+    /* flex-flow: column; */
+    /* margin: 0; */
   }
 
   .suljakHumburgerLogo {
@@ -213,22 +232,33 @@ form button {
   }
 
   .loginIcon {
-    position: absolute;
-    top: 0;
+    position: relative;
+    top: 50%;
+    left: 63vw;
+    width: 2.4vw;
+    /* top: 0;
+    left: 0; */
+    /* top: 0;
     right: 0;
     width: 2.6vw;
-    margin: 1% 10%;
+    margin: 1% 10%; */
   }
 
   .languageImage {
-    position: relative !important;
-    /* top: 10%; */
-    /* right: -680%; */
-    /* left: 60%; */
+    position: relative;
+    top: 50%;
+    left: 63vw;
+    width: 4.8vw;
+    /* top: 0;
+    right: -680%;
+    right: 0;
+    width: 4.8vw;
+    background-color: black;
+    z-index: 10000000;
     width: 4.8vw;
     margin: 80% 50%;
     display: flex;
-    margin: auto 100%;
+    margin: auto 100%; */
   }
 
   .navbarItems {
@@ -255,14 +285,14 @@ form button {
   }
 }
 
-@media only screen and (max-width: 450px) {
-  .suljakLogo {
+@media only screen and (max-width: 650px) {
+  /* .suljakLogo {
     display: flex;
     width: 8vw;
     z-index: 4 !important;
     margin: auto 125%;
     padding-top: 18%;
-  }
+  } */
 }
 
 .langDropdown button {
