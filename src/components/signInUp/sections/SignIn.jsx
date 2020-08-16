@@ -1,10 +1,11 @@
 import React from "react";
-import "./index.css";
 import EmailPasswordSignIn from "../../../containers/auth/EmailPasswordSignIn";
 import FacebookAuth from "../../../containers/auth/FacebookAuth";
 import GoogleAuth from "../../../containers/auth/GoogleAuth";
 import { Row, Col } from "react-bootstrap";
+
 const SignIn = (props) => {
+
   return (
     <Row className="justify-content-md-center signinUpContainer">
       <Col className="d-flex mt-5 mb-5 shadow-lg rounded p-0 " lg="7" sm="12">
@@ -22,7 +23,7 @@ const SignIn = (props) => {
           </h6>
         </Col>
         <Col lg="5" sm="5" className="rightSection">
-          <p>need help?</p>
+          <p>Need help?</p>
           <h1>
             Welcome
             <br />
@@ -33,4 +34,5 @@ const SignIn = (props) => {
     </Row>
   );
 };
+
 export default SignIn;

@@ -3,18 +3,24 @@ import "./index.css";
 import SignIn from "./sections/SignIn";
 import SignUp from "./sections/SignUp";
 import { useState } from "react";
+
+const SIGNING_IN_MODE = "SIGNING_IN";
+const SIGNING_UP_MODE = "SIGNING_UP";
+
 const SignInUp = () => {
-  const [logging, setLogging] = useState("signing-in");
+  const [logging, setLogging] = useState(SIGNING_IN_MODE);
+
   const handleLoggingSwitch = () => {
-    if (logging === "signing-in") {
-      setLogging("signing-up");
+    if (logging === SIGNING_IN_MODE) {
+      setLogging(SIGNING_UP_MODE);
     } else {
-      setLogging("signing-in");
+      setLogging(SIGNING_IN_MODE);
     }
   };
+
   return (
     <div>
-      {logging === "signing-in" ? (
+      {logging === "SIGNING_IN" ? (
         <SignIn handleLoggingSwitch={handleLoggingSwitch} />
       ) : (
         <SignUp handleLoggingSwitch={handleLoggingSwitch} />
@@ -22,4 +28,5 @@ const SignInUp = () => {
     </div>
   );
 };
+
 export default SignInUp;

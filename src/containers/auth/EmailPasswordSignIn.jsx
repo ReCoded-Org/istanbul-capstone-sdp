@@ -1,17 +1,122 @@
 import React from "react";
-import { Form, Button, Col, Container } from "react-bootstrap";
+import { Form, Button, Col, Container, Modal } from "react-bootstrap";
 import { Redirect } from "react-router-dom";
 import { connect } from "react-redux";
-import { signIn } from "../../actions/authActions";
+import { signIn, resetPassword } from "../../actions/authActions";
+
 
 const EmailPasswordSignIn = (props) => {
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
+  const [confirmModalShow, setConfirmModalShow] = React.useState(false);
+  const [resetSuccessModalShow, setResetSuccessModalShow] = React.useState(
+    false
+  );
+
+  const validateEmail = (email) => {
+    var reEmail = /^(?:[\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+\.)*[\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+@(?:(?:(?:[a-zA-Z0-9](?:[a-zA-Z0-9\-](?!\.)){0,61}[a-zA-Z0-9]?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9\-](?!$)){0,61}[a-zA-Z0-9]?)|(?:\[(?:(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\.){3}(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\]))$/;
+  if(!email.match(reEmail)) {
+    return false;
+  }
+  return true;
+  }
+
   // Sign in to an existing account with "Email & Password" method
   const handleSubmit = (e) => {
     e.preventDefault();
     props.signIn({ email, password });
   };
+
+  const ConfirmModal = (props) => {
+    const [recoverEmail, setRecoverEmail] = React.useState("");
+    const [doesEmailValid, setDoesEmailValid] = React.useState(true);
+    return (
+      <Modal
+        {...props}
+        size="md"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+            Resetting your password
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <h6>Enter your email to send you a password reset email</h6>
+          <Form.Control
+            type="text"
+            placeholder="Email"
+            onInput={(e) => {
+              setRecoverEmail(e.target.value);
+              setDoesEmailValid(true);
+            }}
+          />
+          <Container>
+          {/* Show error message when email validation fails */}
+          {!doesEmailValid && (
+            <div className="errMsgContainer">
+              <div className="errMsg">your email address must follow the format <b>example@gmail.com</b></div>
+            </div>
+          )}
+        </Container>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="danger" onClick={props.onHide}>
+            Cancel
+          </Button>
+          <Button
+            variant="primary"
+            onClick={() => {
+              setDoesEmailValid(validateEmail(recoverEmail));
+              if (validateEmail(recoverEmail)) {
+                props.onHide();
+                props.resetPassword(recoverEmail);
+                setResetSuccessModalShow(true);
+              }
+            }}
+          >
+            Reset Password
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    );
+  };
+
+  const SuccessModal = (props) => {
+    return (
+      <Modal
+        {...props}
+        size="md"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title
+            id="contained-modal-title-vcenter"
+          >
+            Resetting your password
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          {authError && errKey === "resetPassword" ? (
+            <div className="errMsgContainer">
+              <b>{authError}</b>
+              <div className="errMsg">{errMessage}</div>
+            </div>
+          ) : (
+            <p>A reset password email has been sent successfully, you can check your mailbox to set a new password</p>
+          )}
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="success" onClick={props.onHide}>
+            Done
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    );
+  };
+
   // Redirect to home page after it's logged in
   const { auth, authError, errMessage, errKey } = props;
   if (auth.uid) {
@@ -38,9 +143,9 @@ const EmailPasswordSignIn = (props) => {
             }}
           />
         </Form.Group>
-        <a className="forgetPassword" href="#">
-          Forget Your Password?
-        </a>
+        <div className="forgetPassword" onClick={() => setConfirmModalShow(true)}>
+          Forgot Your Password?
+        </div>
         <Button variant="primary" type="submit" onClick={handleSubmit}>
           Login
         </Button>
@@ -54,6 +159,16 @@ const EmailPasswordSignIn = (props) => {
           )}
         </Container>
       </Form>
+
+      <ConfirmModal
+        show={confirmModalShow}
+        onHide={() => setConfirmModalShow(false)}
+        resetPassword = {props.resetPassword}
+      />
+      <SuccessModal
+              show={resetSuccessModalShow}
+              onHide={() => setResetSuccessModalShow(false)}
+            />
     </Container>
   );
 };
@@ -70,6 +185,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     signIn: (creds) => dispatch(signIn(creds)),
+    resetPassword: (recoverEmail) => dispatch(resetPassword(recoverEmail)),
   };
 };
 
