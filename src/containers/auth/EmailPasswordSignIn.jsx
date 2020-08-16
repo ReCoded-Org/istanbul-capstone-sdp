@@ -4,7 +4,6 @@ import { Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 import { signIn, resetPassword } from "../../actions/authActions";
 
-
 const EmailPasswordSignIn = (props) => {
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
@@ -15,11 +14,11 @@ const EmailPasswordSignIn = (props) => {
 
   const validateEmail = (email) => {
     var reEmail = /^(?:[\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+\.)*[\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+@(?:(?:(?:[a-zA-Z0-9](?:[a-zA-Z0-9\-](?!\.)){0,61}[a-zA-Z0-9]?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9\-](?!$)){0,61}[a-zA-Z0-9]?)|(?:\[(?:(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\.){3}(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\]))$/;
-  if(!email.match(reEmail)) {
-    return false;
-  }
-  return true;
-  }
+    if (!email.match(reEmail)) {
+      return false;
+    }
+    return true;
+  };
 
   // Sign in to an existing account with "Email & Password" method
   const handleSubmit = (e) => {
@@ -53,13 +52,16 @@ const EmailPasswordSignIn = (props) => {
             }}
           />
           <Container>
-          {/* Show error message when email validation fails */}
-          {!doesEmailValid && (
-            <div className="errMsgContainer">
-              <div className="errMsg">your email address must follow the format <b>example@gmail.com</b></div>
-            </div>
-          )}
-        </Container>
+            {/* Show error message when email validation fails */}
+            {!doesEmailValid && (
+              <div className="errMsgContainer">
+                <div className="errMsg">
+                  your email address must follow the format{" "}
+                  <b>example@gmail.com</b>
+                </div>
+              </div>
+            )}
+          </Container>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="danger" onClick={props.onHide}>
@@ -92,9 +94,7 @@ const EmailPasswordSignIn = (props) => {
         centered
       >
         <Modal.Header closeButton>
-          <Modal.Title
-            id="contained-modal-title-vcenter"
-          >
+          <Modal.Title id="contained-modal-title-vcenter">
             Resetting your password
           </Modal.Title>
         </Modal.Header>
@@ -105,7 +105,10 @@ const EmailPasswordSignIn = (props) => {
               <div className="errMsg">{errMessage}</div>
             </div>
           ) : (
-            <p>A reset password email has been sent successfully, you can check your mailbox to set a new password</p>
+            <p>
+              A reset password email has been sent successfully, you can check
+              your mailbox to set a new password
+            </p>
           )}
         </Modal.Body>
         <Modal.Footer>
@@ -143,7 +146,10 @@ const EmailPasswordSignIn = (props) => {
             }}
           />
         </Form.Group>
-        <div className="forgetPassword" onClick={() => setConfirmModalShow(true)}>
+        <div
+          className="forgetPassword"
+          onClick={() => setConfirmModalShow(true)}
+        >
           Forgot Your Password?
         </div>
         <Button variant="primary" type="submit" onClick={handleSubmit}>
@@ -163,12 +169,12 @@ const EmailPasswordSignIn = (props) => {
       <ConfirmModal
         show={confirmModalShow}
         onHide={() => setConfirmModalShow(false)}
-        resetPassword = {props.resetPassword}
+        resetPassword={props.resetPassword}
       />
       <SuccessModal
-              show={resetSuccessModalShow}
-              onHide={() => setResetSuccessModalShow(false)}
-            />
+        show={resetSuccessModalShow}
+        onHide={() => setResetSuccessModalShow(false)}
+      />
     </Container>
   );
 };

@@ -5,7 +5,6 @@ import GoogleAuth from "../../../containers/auth/GoogleAuth";
 import { Row, Col } from "react-bootstrap";
 
 const SignIn = (props) => {
-
   return (
     <Row className="justify-content-md-center signinUpContainer">
       <Col className="d-flex mt-5 mb-5 shadow-lg rounded p-0 " lg="7" sm="12">
