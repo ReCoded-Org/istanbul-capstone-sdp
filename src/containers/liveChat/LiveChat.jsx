@@ -6,7 +6,7 @@ const THEME = {
   background: "#f5f8fb",
   fontFamily: "Helvetica Neue",
   headerBgColor: "#539be5",
-  headerFontColor: "#fff",
+  headerFontColor: "#fff"
   headerFontSize: "15px",
   botBubbleColor: "#539be5",
   botFontColor: "#fff",
