@@ -11,7 +11,7 @@ import { Donation } from "../containers/donation/Donation";
 import { NoMatch } from "../components/noMatch/NoMatch";
 import { NavBar } from "../components/common/NavBar";
 import { SingleBlogPage } from "../components/singleBlogPage/SingleBlogPage";
-import Profile from "./profilep/Profile";
+import Profile from "./profile/Profile";
 
 function App() {
   return (
