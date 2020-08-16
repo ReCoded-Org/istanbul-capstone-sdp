@@ -6,7 +6,7 @@ import About from "../components/about/About";
 import { Contact } from "../components/contact/Contact";
 import { Blogs } from "../components/blogs/Blogs";
 import { PsychoAssess } from "../../src/containers/PsychoAssess/PsychoAssess";
-import SignInUp from "../components/SignInUp/SignInUp";
+import SignInUp from "../components/signInUp/SignInUp";
 import { Donation } from "../containers/donation/Donation";
 import { NoMatch } from "../components/noMatch/NoMatch";
 import { NavBar } from "../components/common/NavBar";
