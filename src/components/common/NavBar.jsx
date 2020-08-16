@@ -16,17 +16,9 @@ export const NavBar = () => {
   };
 
   return (
-    <div className="three">
+    <div>
       <Navbar className="navBar">
         <Link to="/">
-          <Image
-            width="50"
-            className="humButton"
-            src="https://i.ibb.co/0tZpqgT/kisspng-computer-icons-hamburger-button-menu-new-menu-5b34724c3cb0f7-1188475115301637882486.png"
-            alt=""
-            onClick={() => handleHumburger()}
-          />
-
           <Navbar.Brand>
             <img
               className="suljakLogo"
@@ -34,47 +26,72 @@ export const NavBar = () => {
               alt="Suljak Logo"
             />
           </Navbar.Brand>
-
-          {/* <Navbar.Brand>
-            <img
-              className="suljakBigLogo"
-              src="https://i.ibb.co/bgTdQ3G/logo-responsive.png"
-              alt="Suljak Logo"
-            />
-  </Navbar.Brand> */}
         </Link>
+
+        <Link to="/">
+          <div
+            className="animatedHumburgerIcon"
+            onClick={() => handleHumburger()}
+          >
+            <span className="line"></span>
+            <span className="line"></span>
+            <span className="line"></span>
+          </div>
+        </Link>
+
+        <div></div>
 
         <Nav
           className="collapse navbar-collapse justify-content-end navbarItems"
           style={{ left: navItemsPosition }}
         >
-          <Nav.Item className="navMargins">
+          <Nav.Item
+            className="animatedHumburger"
+            onClick={() => handleHumburger()}
+          >
+            <span className="line"></span>
+            <span className="line"></span>
+            <span className="line"></span>
+          </Nav.Item>
+
+          <Nav.Item className="navItemsMargins">
             <Link to="/contact" className="navLink">
               Contact Us
             </Link>
           </Nav.Item>
 
-          <Nav.Item className="navMargins">
+          <Nav.Item className="navItemsMargins">
             <Link to="/about" className="navLink">
               About
             </Link>
           </Nav.Item>
 
-          <Nav.Item className="navMargins">
+          <Nav.Item className="navItemsMargins">
             <Link to="/psycho-assess" className="navLink">
               Assessment
             </Link>
           </Nav.Item>
 
-          <Nav.Item className="navMargins">
+          <Nav.Item className="navItemsMargins">
             <Link to="/donation" className="navLink">
               Donate
             </Link>
           </Nav.Item>
 
-          <Nav.Item className="navMargins">
+          <Nav.Item className="navItemsMargins samah">
             <Link to="/blogs" className="navLink">
               Blog
+            </Link>
+          </Nav.Item>
+
+          <Nav.Item className="navItemsMargins">
+            <Link to="/">
+              <img
+                width="150"
+                className="suljakHumburgerLogo"
+                src="https://i.ibb.co/bgTdQ3G/logo-responsive.png"
+                alt="Suljak Logo"
+              />
             </Link>
           </Nav.Item>
         </Nav>
