@@ -1,75 +1,76 @@
-.secondaryTitle,
-.introParagraph,
-.donateParagraph,
-.helpParagraph,
-.countNumbers,
-.darkGreyColumn,
-.lightGreyColumn {
-  font-family: Roboto, Sans-serif;
-}
-
-.title,
-.donateParagraph h3,
-.helpParagraph h3 {
-  font-family: "Noto Sans", Sans-serif;
-}
-
-.secondaryTitle,
-.introParagraph,
-.donateParagraph,
-.helpParagraph {
-  color: #4e4e4e;
-  text-align: justify;
-  font-size: 1.125rem;
-  line-height: 1.5rem;
-  font-weight: 400;
-}
-
-.header {
-  padding-top: 1.8rem;
-  margin-bottom: 7rem;
-}
-
-.title {
-  font-size: 3rem;
+.donationPageTitle h1 {
+  font-size: 330%;
   font-weight: bold;
   line-height: 60px;
   color: #3a3a3a;
 }
 
-.title h1 {
-  font-size: 3.3rem;
-}
-
-.secondaryTitle {
-  font-size: 1.5rem;
-  margin: 3rem 0 0.5rem;
-  line-height: 2rem;
-  font-weight: 500;
-}
-
-.donateParagraph {
-  margin-bottom: 6rem;
-  margin-top: 4rem;
-}
-
-.donateParagraph h3 {
-  font-weight: bold;
-  margin-bottom: 0.6rem;
-}
-
 .helpParagraph {
+  font-family: Roboto, Sans-serif;
+  color: #4e4e4e;
+  text-align: justify;
+  font-size: 112%;
+  line-height: 1.5rem;
+  font-weight: 400;
   margin-top: 6rem;
 }
 
 .helpParagraph h3 {
+  font-family: "Noto Sans", Sans-serif;
   font-weight: bold;
   margin-bottom: 0.7rem;
 }
 
+.introParagraph {
+  font-family: Roboto, Sans-serif;
+  color: #4e4e4e;
+  text-align: justify;
+  font-size: 112%;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+.donationHeader {
+  margin-bottom: 7rem;
+  width: 100%;
+}
+
+.secondaryTitle {
+  font-family: Roboto, Sans-serif;
+  font-size: 130%;
+  margin: 2rem 0 0.5rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+  color: #4e4e4e;
+  text-align: justify;
+}
+
+.mailingPargraph {
+  padding-top: 1rem;
+  color: #2369c5;
+  font-weight: 500;
+}
+
+.donateParagraph {
+  font-family: Roboto, Sans-serif;
+  margin-bottom: 6rem;
+  margin-top: 4rem;
+  color: #4e4e4e;
+  text-align: justify;
+  font-size: 112%;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+.donateParagraph h3 {
+  font-family: "Noto Sans", Sans-serif;
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+}
+
 .wholeCarousel {
   margin: 6rem auto;
-  width: 70%;
+  width: 80%;
 }
 
 .carousel {
@@ -90,73 +91,87 @@
   margin-bottom: 10%;
 }
 
-.tableSection {
+.mainTable {
   display: flex;
-  padding: 1.2rem 1.5rem 2.2rem 1.5rem;
+}
+
+.leftTableSection,
+.rightTableSection {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.5rem 1.5rem 2.5rem 1.5rem;
   text-align: center;
   background-color: #135ba5;
 }
 
-@media only screen and (max-width: 800px) {
-  .tableSection {
-    display: flex;
-    width: 60%;
-    padding: 1.2rem 1.5rem 2.2rem 1.5rem;
-    text-align: center;
-    background-color: #135ba5;
-  }
+.tableSection {
+  display: inline;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .tableBlueSection {
   background-color: #135ba5;
-  height: 6.5rem;
+  height: 6.2rem;
   margin: 0 auto;
-  padding: 1rem 0;
+  padding: 0.8rem 0;
 }
 
-.activityType {
-  font-size: 21px;
+.leftActivityType,
+.rightActivityType {
+  font-size: 50%;
   color: #dfdfdf;
+  display: inline-block;
 }
 
-.countNumbers {
-  font-size: 2.8rem;
+.leftCountNumbers,
+.rightCountNumbers {
+  font-size: 280%;
   color: white;
   padding: 0.5rem 0 0 0;
   display: block;
   line-height: 2.8rem;
 }
 
+.darkGreySection,
+.lightGreySection {
+  display: inline-block;
+  text-align: center;
+  width: 25%;
+  padding: 2rem 0 1rem;
+}
+
 .darkGreySection {
   background-color: #c4c4c4;
-  width: 25%;
-  height: 20rem;
-  padding: 2.3rem 0 2.3rem;
 }
 
 .lightGreySection {
   background-color: #f0f0f0;
-  width: 25%;
-  height: 20rem;
-  padding-top: 4%;
-}
-
-.darkGreyColumn,
-.lightGreyColumn {
-  padding: 1.25rem 1.25rem;
-  font-size: 0.9rem;
-}
-
-.darkGreyColumn {
-  color: white;
 }
 
 .lightGreyColumn {
+  font-family: Roboto, Sans-serif;
+  margin-top: 10px;
+  padding: 1rem 1rem 0.8rem;
+  font-size: 100%;
   color: #a8a8a8;
 }
 
+.darkGreyColumn {
+  font-family: Roboto, Sans-serif;
+  color: white;
+  margin-top: 10px;
+  padding: 1rem 1rem 0.8rem;
+  font-size: 100%;
+}
+
+.tableSymbol {
+  width: 23%;
+}
+
 .socialMedia {
-  width: 100%;
+  width: 50%;
   margin: 0 auto;
   text-align: center;
 }
@@ -164,4 +179,130 @@
 .socialMedia img {
   padding: 0 1.25rem;
   margin: 3.2rem auto 7.5rem;
+}
+
+@media only screen and (max-width: 1100px) {
+  .mainTable {
+    display: inline;
+  }
+
+  .leftTableSection,
+  .rightTableSection {
+    padding: 0.5rem 1rem 3rem 1rem;
+  }
+
+  .donationHeader {
+    margin-bottom: 3.5rem;
+  }
+
+  .donationPageTitle h1 {
+    font-size: 300%;
+  }
+
+  .introParagraph,
+  .donateParagraph,
+  .helpParagraph {
+    font-size: 100%;
+  }
+
+  .wholeCarousel {
+    margin: 3.6rem auto;
+    width: 100%;
+  }
+
+  .lightGreySection,
+  .darkGreySection {
+    width: 50%;
+    height: 40%;
+    padding: 6.5% 2.5%;
+  }
+
+  .tableSymbol {
+    margin-top: -20px;
+    width: 18%;
+  }
+
+  .socialMedia img {
+    width: 5.1rem;
+    padding: 0 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .donationPageTitle h1 {
+    font-size: 250%;
+    line-height: 50px;
+  }
+
+  .tableBlueSection {
+    height: 3.5rem;
+  }
+
+  .leftCountNumbers,
+  .rightCountNumbers {
+    font-size: 200%;
+    padding: 0.3rem 0 0 0;
+    line-height: 1.6rem;
+  }
+
+  .darkGreyColumn,
+  .lightGreyColumn {
+    margin-top: 0.6rem;
+    padding: 0.7rem 0.5rem;
+    font-size: 80%;
+    line-height: 1.2rem;
+  }
+
+  .tableSymbol {
+    margin-top: -10px;
+    width: 30%;
+  }
+
+  .socialMedia img {
+    width: 3rem;
+    padding: 0 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .donationPageTitle h1 {
+    font-size: 200%;
+    line-height: 40px;
+  }
+
+  .wholeCarousel {
+    display: block;
+  }
+
+  .darkGreySection,
+  .lightGreySection {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .darkGreyColumn,
+  .lightGreyColumn {
+    margin-top: 0;
+    padding: 0.5rem 1rem;
+  }
+
+  .leftCountNumbers,
+  .rightCountNumbers {
+    font-size: 160%;
+    padding: 0.2rem 0 0 0;
+  }
+
+  .tableSymbol {
+    margin-top: 15px;
+    width: 20%;
+  }
+
+  .socialMedia img {
+    width: 2.4rem;
+  }
+
+  .wholeCarousel {
+    display: none;
+  }
 }
