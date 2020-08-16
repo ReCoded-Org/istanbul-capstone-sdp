@@ -57,9 +57,11 @@ const Footer = () => {
           <Col md={3} sm={6}>
             <Nav className="flex-column">
               <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/blog">Blog</Nav.Link>
-              <Nav.Link href="/about">About</Nav.Link>
               <Nav.Link href="/contact">Contact Us</Nav.Link>
+              <Nav.Link href="/about">About</Nav.Link>
+              <Nav.Link href="/psycho-assess">Assessment</Nav.Link>
+              <Nav.Link href="/donation">Donation</Nav.Link>
+              <Nav.Link href="/blogs">Blog</Nav.Link>
               <Nav.Link href="/login">Login</Nav.Link>
             </Nav>
           </Col>
