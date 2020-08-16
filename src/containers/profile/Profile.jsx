@@ -6,17 +6,18 @@ import { Link, Redirect } from "react-router-dom";
 import { Tabs, Tab, Container } from "react-bootstrap";
 import anonymousImage from "../../images/anonymousImage.png";
 import profileHeaderBackground from "../../images/profileHeaderBackground.png";
-import Header from "../components/common/Header";
+import Header from "../../components/common/Header";
 import "./Profile.css";
 import AccountSettings from "./ProfileSections/AccountSettings/AccountSettings";
 import ManageUsers from "./ProfileSections/ManageUsers/ManageUsers";
 import ManageBlogs from "./ProfileSections/ManageBlogs/ManageBlogs";
 import { updateProfilePhoto } from "../../actions/authActions";
 
+const ADMIN_ROLE = "ADMIN";
+const AUTHOR_ROLE = "AUTHOR";
+
 const Profile = (props) => {
   const { profile, auth, id, currentUserType } = props;
-  const ADMIN_ROLE = "ADMIN";
-  const AUTHOR_ROLE = "AUTHOR";
 
   const extraComponents = () => {
     // Add available address details
