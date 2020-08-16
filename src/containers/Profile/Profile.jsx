@@ -6,7 +6,7 @@ import { Link, Redirect } from "react-router-dom";
 import { Tabs, Tab, Container } from "react-bootstrap";
 import anonymousImage from "../../images/anonymousImage.png";
 import profileHeaderBackground from "../../images/profileHeaderBackground.png";
-import Header from "../common/Header";
+import Header from "../components/common/Header";
 import "./Profile.css";
 import AccountSettings from "./ProfileSections/AccountSettings/AccountSettings";
 import ManageUsers from "./ProfileSections/ManageUsers/ManageUsers";
