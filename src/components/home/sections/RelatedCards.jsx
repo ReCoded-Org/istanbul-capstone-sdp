@@ -16,7 +16,10 @@ const RelatedCards = (props) => {
               This card has supporting text below as a natural lead-in to
               additional content.
             </Card.Text>
-            <a href="#!" className="readMoreCardBtn">
+            <a
+              href="http://teenmentalhealth.org/mental-disorders/"
+              className="readMoreCardBtn"
+            >
               Read more >>
             </a>
           </Card.Body>
@@ -29,7 +32,10 @@ const RelatedCards = (props) => {
               This card has supporting text below as a natural lead-in to
               additional content.
             </Card.Text>
-            <a href="#!" className="readMoreCardBtn">
+            <a
+              href="https://www.nimh.nih.gov/health/topics/depression/index.shtml"
+              className="readMoreCardBtn"
+            >
               Read more >>
             </a>
           </Card.Body>
@@ -42,7 +48,10 @@ const RelatedCards = (props) => {
               This card has supporting text below as a natural lead-in to
               additional content.
             </Card.Text>
-            <a href="#!" className="readMoreCardBtn">
+            <a
+              href="https://www.youtube.com/watch?v=bYGO43Ukqus"
+              className="readMoreCardBtn"
+            >
               Read more >>
             </a>
           </Card.Body>
@@ -54,7 +63,10 @@ const RelatedCards = (props) => {
               This card has supporting text below as a natural lead-in to
               additional content.
             </Card.Text>
-            <a href="#!" className="readMoreCardBtn">
+            <a
+              href="https://www.thehindu.com/opinion/open-page/living-is-the-solution-suicide-is-not/article29668400.ece"
+              className="readMoreCardBtn"
+            >
               Read more >>
             </a>
           </Card.Body>
