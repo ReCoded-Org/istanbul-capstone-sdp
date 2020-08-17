@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import LangDropdown from "./LangDropdown";
 
 export const NavBar = () => {
-  const [isHamburgerShown, setIsHamburgerShown] = React.useState("-100%");
+  const [movingSideMenu, setMovingSideMenu] = React.useState(false);
 
   const handlehamburger = () => {
     if (isHamburgerShown === "-100%") {
@@ -42,8 +42,9 @@ export const NavBar = () => {
         </Nav.Item>
 
         <Nav
-          className="collapse navbar-collapse justify-content-end navbarItems"
-          style={{ left: isHamburgerShown }}
+          className={`collapse navbar-collapse justify-content-end navbarItems
+           ${movingSideMenu || ""}`}
+          { /*style={{ left: isHamburgerShown }} */}
         >
           <Nav.Item className="navItemsMargins">
             <Link to="/" className="navLink">
