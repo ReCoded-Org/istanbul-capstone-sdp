@@ -29,7 +29,8 @@ const EditProfileInfo = (props) => {
   const [newCountry, setNewCountry] = React.useState(country);
   const [newJobTitle, setNewJobTitle] = React.useState(jobTitle);
   const [newBrief, setNewBrief] = React.useState(brief);
-  const displayName = !newFirstName && !newLastName ? fullName : newFirstName+" "+newLastName;
+  const displayName =
+    !newFirstName && !newLastName ? fullName : newFirstName + " " + newLastName;
 
   // Protect the page from unauthorized access
   if (!auth.uid) {
@@ -96,9 +97,7 @@ const EditProfileInfo = (props) => {
                 </span>
               </OverlayTrigger>
             </p>
-            <p className="w-75 m-0 p-1 displayName">
-              {displayName}
-            </p>
+            <p className="w-75 m-0 p-1 displayName">{displayName}</p>
           </Col>
           <Col></Col>
         </Form.Row>

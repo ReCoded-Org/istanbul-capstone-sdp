@@ -9,7 +9,10 @@ import { Modal, Button } from "react-bootstrap";
 const UserInfo = (props) => {
   const { id, authError, errMessage, errKey } = props;
   const [isEditing, setIsEditing] = React.useState(false);
-  const [profileInfoEditButtonOpacity, setProfileInfoEditButtonOpacity] = React.useState("");
+  const [
+    profileInfoEditButtonOpacity,
+    setProfileInfoEditButtonOpacity,
+  ] = React.useState("");
   const [successModalShow, setSuccessModalShow] = React.useState(false);
 
   const profileInfoEditButton = () => {
@@ -70,10 +73,14 @@ const UserInfo = (props) => {
   return (
     <div>
       <div className="userInfoTitle">
-        <h4 className="editingTitle">Personal Info</h4> {profileInfoEditButton()}
+        <h4 className="editingTitle">Personal Info</h4>{" "}
+        {profileInfoEditButton()}
       </div>
       {isEditing ? (
-        <EditProfileInfo handleEditingStatus={handleEditingStatus} userId={id} />
+        <EditProfileInfo
+          handleEditingStatus={handleEditingStatus}
+          userId={id}
+        />
       ) : (
         <ShowProfileInfo userId={id} />
       )}
