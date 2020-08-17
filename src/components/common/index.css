@@ -121,12 +121,12 @@ form button {
   margin: 0.3vw 2.3vw;
 }
 
-.humburgerIcon {
+.hamburgerIcon {
   width: 7.8vw;
   visibility: hidden;
 }
 
-.suljakHumburgerLogo {
+.suljakhamburgerLogo {
   display: none;
 }
 
@@ -183,7 +183,7 @@ form button {
     visibility: hidden;
   }
 
-  .humburgerIcon {
+  .hamburgerIcon {
     width: 3vw;
     margin: -1vw -9vw;
     visibility: visible;

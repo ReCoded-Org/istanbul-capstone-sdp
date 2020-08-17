@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 import LangDropdown from "./LangDropdown";
 
 export const NavBar = () => {
-  const [navItemsPosition, setNavItemsPosition] = React.useState("-100%");
+  const [isHamburgerShown, setIsHamburgerShown] = React.useState("-100%");
 
-  const handleHumburger = () => {
+  const handlehamburger = () => {
     if (navItemsPosition === "-100%") {
       setNavItemsPosition("0");
     } else {
@@ -33,10 +33,10 @@ export const NavBar = () => {
         <Nav.Item>
           <Link to="/">
             <img
-              onClick={() => handleHumburger()}
-              className="humburgerIcon"
+              onClick={() => handlehamburger()}
+              className="hamburgerIcon"
               src="https://i.ibb.co/PQgDXbj/LLogo-4.png"
-              alt="Humburger Icon"
+              alt="hamburger Icon"
             />
           </Link>
         </Nav.Item>

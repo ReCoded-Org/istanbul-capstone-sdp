@@ -9,7 +9,7 @@ function LangDropdown() {
 
   return (
     <Dropdown className="langDropdown">
-      <Dropdown.Toggle id="dropdown-basic" className="Language-icon">
+      <Dropdown.Toggle id="dropdownBasic" className="LanguageIcon">
         <img className="languageImage" alt="lang. selector" src={language} />
       </Dropdown.Toggle>
 
