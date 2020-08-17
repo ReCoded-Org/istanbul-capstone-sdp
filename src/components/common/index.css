@@ -142,6 +142,7 @@ form button {
 }
 
 @media only screen and (max-width: 1000px) {
+
   .navBar {
     display: flex !important;
     height: 5vw;
@@ -164,6 +165,7 @@ form button {
 }
 
 @media only screen and (max-width: 600px) {
+  
   .navBar .navLink {
     color: #fff !important;
     font-family: "Myriad Pro", sans-serif;
