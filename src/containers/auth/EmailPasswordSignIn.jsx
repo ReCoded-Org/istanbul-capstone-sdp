@@ -12,14 +12,6 @@ const EmailPasswordSignIn = (props) => {
     false
   );
 
-  const validateEmail = (email) => {
-    var reEmail = /^(?:[\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+\.)*[\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+@(?:(?:(?:[a-zA-Z0-9](?:[a-zA-Z0-9\-](?!\.)){0,61}[a-zA-Z0-9]?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9\-](?!$)){0,61}[a-zA-Z0-9]?)|(?:\[(?:(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\.){3}(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\]))$/;
-    if (!email.match(reEmail)) {
-      return false;
-    }
-    return true;
-  };
-
   // Sign in to an existing account with "Email & Password" method
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -28,7 +20,6 @@ const EmailPasswordSignIn = (props) => {
 
   const ConfirmModal = (props) => {
     const [recoverEmail, setRecoverEmail] = React.useState("");
-    const [doesEmailValid, setDoesEmailValid] = React.useState(true);
     return (
       <Modal
         {...props}
@@ -48,20 +39,8 @@ const EmailPasswordSignIn = (props) => {
             placeholder="Email"
             onInput={(e) => {
               setRecoverEmail(e.target.value);
-              setDoesEmailValid(true);
             }}
           />
-          <Container>
-            {/* Show error message when email validation fails */}
-            {!doesEmailValid && (
-              <div className="errMsgContainer">
-                <div className="errMsg">
-                  your email address must follow the format{" "}
-                  <b>example@gmail.com</b>
-                </div>
-              </div>
-            )}
-          </Container>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="danger" onClick={props.onHide}>
@@ -70,12 +49,9 @@ const EmailPasswordSignIn = (props) => {
           <Button
             variant="primary"
             onClick={() => {
-              setDoesEmailValid(validateEmail(recoverEmail));
-              if (validateEmail(recoverEmail)) {
-                props.onHide();
-                props.resetPassword(recoverEmail);
-                setResetSuccessModalShow(true);
-              }
+              props.onHide();
+              props.resetPassword(recoverEmail);
+              setResetSuccessModalShow(true);
             }}
           >
             Reset Password
