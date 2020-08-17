@@ -9,10 +9,7 @@ import { Modal, Button } from "react-bootstrap";
 const UserInfo = (props) => {
   const { id, authError, errMessage, errKey } = props;
   const [isEditing, setIsEditing] = React.useState(false);
-  const [
-    profileInfoEditButtonOpacity,
-    setProfileInfoEditButtonOpacity,
-  ] = React.useState("1");
+  const [profileInfoEditButtonOpacity, setProfileInfoEditButtonOpacity] = React.useState("");
   const [successModalShow, setSuccessModalShow] = React.useState(false);
 
   const profileInfoEditButton = () => {
@@ -20,12 +17,11 @@ const UserInfo = (props) => {
       <img
         alt="Edit button"
         src={profileInfoEditButtonIcon}
-        className="profileInfoEditButton"
+        className={`profileInfoEditButton ${profileInfoEditButtonOpacity}`}
         onClick={() => {
           setIsEditing(true);
-          setProfileInfoEditButtonOpacity("0.2");
+          setProfileInfoEditButtonOpacity("opacityLow");
         }}
-        style={{ opacity: profileInfoEditButtonOpacity }}
       />
     );
   };
@@ -33,7 +29,7 @@ const UserInfo = (props) => {
   // Handle personal info editing
   const handleEditingStatus = (isEdited) => {
     setIsEditing(false);
-    setProfileInfoEditButtonOpacity("1");
+    setProfileInfoEditButtonOpacity("");
     if (isEdited) {
       setSuccessModalShow(true);
     }
@@ -74,13 +70,12 @@ const UserInfo = (props) => {
   return (
     <div>
       <div className="userInfoTitle">
-        <h4 className="editingTitle">Personal Info</h4>{" "}
-        {profileInfoEditButton()}
+        <h4 className="editingTitle">Personal Info</h4> {profileInfoEditButton()}
       </div>
       {isEditing ? (
-        <EditProfileInfo handleEditingStatus={handleEditingStatus} id={id} />
+        <EditProfileInfo handleEditingStatus={handleEditingStatus} userId={id} />
       ) : (
-        <ShowProfileInfo id={id} />
+        <ShowProfileInfo userId={id} />
       )}
       <SuccessModal
         show={successModalShow}

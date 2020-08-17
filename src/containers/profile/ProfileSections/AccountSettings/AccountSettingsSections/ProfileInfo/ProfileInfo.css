@@ -14,3 +14,7 @@
 .userInfoTitle:hover {
   border-bottom: 1px solid black;
 }
+
+.opacityLow {
+  opacity: 0.2;
+}

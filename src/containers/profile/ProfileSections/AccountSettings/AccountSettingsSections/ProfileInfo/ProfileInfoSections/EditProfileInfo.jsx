@@ -10,33 +10,26 @@ import infoSign from "../../../../../../../images/infoSign.png";
 
 const EditProfileInfo = (props) => {
   const {
-    id,
+    userId,
     profile,
     auth,
-    firstName = profile.firstName,
-    lastName = profile.lastName,
+    firstName = profile.firstName || "",
+    lastName = profile.lastName || "",
     fullName = profile.fullName,
-    jobTitle = profile.jobTitle,
+    jobTitle = profile.jobTitle || "",
     userType = profile.userType,
-    city = profile.city,
-    country = profile.country,
-    brief = profile.brief,
+    city = profile.city || "",
+    country = profile.country || "",
+    brief = profile.brief || "",
   } = props;
 
-  const [newFirstName, setNewFirstName] = React.useState(
-    firstName ? firstName : ""
-  );
-  const [newLastName, setNewLastName] = React.useState(
-    lastName ? lastName : ""
-  );
-  const [newCity, setNewCity] = React.useState(city ? city : "");
-  const [newCountry, setNewCountry] = React.useState(country ? country : "");
-  const [newJobTitle, setNewJobTitle] = React.useState(
-    jobTitle ? jobTitle : ""
-  );
-  const [newBrief, setNewBrief] = React.useState(brief ? brief : "");
-  const displayName =
-    !newFirstName && !newLastName ? fullName : newFirstName + " " + newLastName;
+  const [newFirstName, setNewFirstName] = React.useState(firstName);
+  const [newLastName, setNewLastName] = React.useState(lastName);
+  const [newCity, setNewCity] = React.useState(city);
+  const [newCountry, setNewCountry] = React.useState(country);
+  const [newJobTitle, setNewJobTitle] = React.useState(jobTitle);
+  const [newBrief, setNewBrief] = React.useState(brief);
+  const displayName = !newFirstName && !newLastName ? fullName : newFirstName+" "+newLastName;
 
   // Protect the page from unauthorized access
   if (!auth.uid) {
@@ -57,7 +50,7 @@ const EditProfileInfo = (props) => {
       brief: newBrief,
     };
 
-    props.updateProfile({ userId: id, ...changes });
+    props.updateProfile({ userId, ...changes });
   };
 
   if (profile) {
@@ -103,7 +96,9 @@ const EditProfileInfo = (props) => {
                 </span>
               </OverlayTrigger>
             </p>
-            <p className="w-75 m-0 p-1 displayName">{displayName}</p>
+            <p className="w-75 m-0 p-1 displayName">
+              {displayName}
+            </p>
           </Col>
           <Col></Col>
         </Form.Row>
@@ -200,9 +195,9 @@ const EditProfileInfo = (props) => {
 };
 
 const mapStateToProps = (state, ownProps) => {
-  const { id } = ownProps;
+  const { userId } = ownProps;
   const profiles = state.firestore.data.profiles;
-  const profile = profiles ? profiles[id] : null;
+  const profile = profiles ? profiles[userId] : null;
   return {
     profile: profile,
     auth: state.firebase.auth,

@@ -11,13 +11,13 @@ const ShowProfileInfo = (props) => {
   const {
     profile,
     auth,
-    firstName = profile.firstName,
-    lastName = profile.lastName,
+    firstName = profile.firstName || "",
+    lastName = profile.lastName || "",
     fullName = profile.fullName,
-    jobTitle = profile.jobTitle,
+    jobTitle = profile.jobTitle || "",
     userType = profile.userType,
-    city = profile.city,
-    country = profile.country,
+    city = profile.city || "",
+    country = profile.country || "",
   } = props;
 
   // Protect the page from unauthorized access
@@ -86,9 +86,9 @@ const ShowProfileInfo = (props) => {
 };
 
 const mapStateToProps = (state, ownProps) => {
-  const { id } = ownProps;
+  const { userId } = ownProps;
   const profiles = state.firestore.data.profiles;
-  const profile = profiles ? profiles[id] : null;
+  const profile = profiles ? profiles[userId] : null;
   return {
     profile: profile,
     auth: state.firebase.auth,
