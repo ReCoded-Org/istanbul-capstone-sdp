@@ -1,20 +1,22 @@
 import React, { useState } from "react";
 import { Container, Col, Form, Button, Nav } from "react-bootstrap";
-
+import emailjs from "emailjs-com";
 const ContactUs = () => {
-  const initContactFormState = {
-    firstName: "",
-    lastName: "",
-    email: "",
-    message: "",
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "default_service",
+        "template_Uz0KFyDM",
+        e.target,
+        "user_31hCfU5FLOydTyY8iOnWx"
+      )
+      .then((result) => {
+        alert("Thank you, Your messeage have been sent");
+        document.forms["myForm"].reset();
+      });
   };
-  const [form, setForm] = useState(initContactFormState);
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // TODO (basil-kawak) : connect this to contact us
-    alert(`you have submited youe message ${form}`);
-    setForm(initContactFormState);
-  };
+
   return (
     <Container>
       <div className="contactCardContainer">
@@ -39,28 +41,16 @@ const ContactUs = () => {
         </div>
         <div className="formSide">
           <h3>Contact Us</h3>
-          <Form onSubmit={handleSubmit}>
+          <Form name="myForm" onSubmit={handleSubmit}>
             <Form.Row>
               <Form.Group as={Col} controlId="formGridEmail">
                 <Form.Label>Name</Form.Label>
-                <Form.Control
-                  onChange={(e) =>
-                    setForm({ ...form, firstName: e.target.value })
-                  }
-                  value={form.firstName}
-                  type="text"
-                />
+                <Form.Control type="text" name="user_name" />
               </Form.Group>
 
               <Form.Group as={Col} controlId="formGridPassword">
                 <Form.Label>Surname</Form.Label>
-                <Form.Control
-                  onChange={(e) =>
-                    setForm({ ...form, lastName: e.target.value })
-                  }
-                  value={form.lastName}
-                  type="text"
-                />
+                <Form.Control type="text" />
               </Form.Group>
             </Form.Row>
 
@@ -68,12 +58,7 @@ const ContactUs = () => {
               <Form.Label>
                 <span className="redStar">*</span> Email
               </Form.Label>
-              <Form.Control
-                onChange={(e) => setForm({ ...form, email: e.target.value })}
-                value={form.email}
-                type="email"
-                required
-              />
+              <Form.Control type="email" required name="user_email" />
               <Form.Text className="text-muted">
                 <span className="redStar">*</span> Indicates Required Fields
               </Form.Text>
@@ -83,17 +68,21 @@ const ContactUs = () => {
               <Form.Control
                 as="textarea"
                 rows="3"
-                onChange={(e) => setForm({ ...form, message: e.target.value })}
-                value={form.message}
                 placeholder="Write to us"
                 required
+                name="message"
               />
               <Form.Text className="text-muted">
                 Your privacy is protected
               </Form.Text>
             </Form.Group>
 
-            <Button className="float-right" variant="primary" type="submit">
+            <Button
+              className="float-right"
+              variant="primary"
+              type="submit"
+              value="Send"
+            >
               Submit
             </Button>
           </Form>
