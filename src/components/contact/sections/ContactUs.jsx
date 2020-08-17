@@ -71,7 +71,7 @@ const ContactUs = () => {
 
             <Form.Group controlId="formBasicEmail">
               <Form.Label>
-                <span className="redStar">*</span> 
+                <span className="redStar">*</span>
                 {t("contact.contactUs.form.3")}
               </Form.Label>
               <Form.Control
@@ -81,7 +81,7 @@ const ContactUs = () => {
                 required
               />
               <Form.Text className="text-muted">
-                <span className="redStar">*</span> 
+                <span className="redStar">*</span>
                 {t("contact.contactUs.form.4")}
               </Form.Text>
             </Form.Group>
