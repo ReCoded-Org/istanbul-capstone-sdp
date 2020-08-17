@@ -165,6 +165,7 @@ form button {
     width: 2.5vw;
     display: flex;
     flex-flow: column;
+    z-index: 10;
   }
 
   .animatedHumburgerIcon .line {
