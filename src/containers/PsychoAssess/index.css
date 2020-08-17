@@ -13,6 +13,11 @@
   font-weight: bold;
 }
 
+.assesmentTitle {
+  color: rgb(6, 90, 175);
+  font-weight: bold;
+}
+
 .questionAnswers label,
 .questionAnswers input {
   vertical-align: middle;
