@@ -18,26 +18,28 @@ export const NavBar = () => {
   return (
     <div>
       <Navbar className="navBar">
-        <Link to="/">
-          <Navbar.Brand>
-            <img
-              className="suljakLogo"
-              src="https://i.ibb.co/L9GcrMY/LLogo-2.png"
-              alt="Suljak Logo"
-            />
-          </Navbar.Brand>
-        </Link>
-
-        <Link to="/">
-          <div
+        <div>
+          <Nav.Item
             className="animatedHumburgerIcon"
             onClick={() => handleHumburger()}
           >
             <span className="line"></span>
             <span className="line"></span>
             <span className="line"></span>
-          </div>
-        </Link>
+          </Nav.Item>
+        </div>
+
+        <div>
+          <Nav.Item>
+            <Link to="/">
+              <img
+                className="suljakLogo"
+                src="https://i.ibb.co/L9GcrMY/LLogo-2.png"
+                alt="Suljak Logo"
+              />
+            </Link>
+          </Nav.Item>
+        </div>
 
         <Nav
           className="collapse navbar-collapse justify-content-end navbarItems"
