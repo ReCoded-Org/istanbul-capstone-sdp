@@ -27,3 +27,28 @@
   padding: 10px;
   padding-bottom: 20px;
 }
+
+@media screen and (max-width: 768px) {
+  .staffPic {
+    max-width: 100%;
+    width: 70.5vw;
+    height: 70.5vw;
+    height: auto;
+    border-radius: 5%;
+    display: block;
+    align-items: center;
+  }
+
+  .staffNameSpan,
+  .staffTitleSpan {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .staffPhotoContainer {
+    margin: 0 auto;
+    padding-top: 5%;
+    padding-bottom: 10%;
+  }
+}
