@@ -20,7 +20,7 @@ export const Donation = () => {
 
         <Row>
           <Col xs={12} sm={12} md={12} lg={12}>
-            <h2 className="secondaryTitle">We can all help prevent suicide.</h2>
+            <h2 className="secondaryTitle">{t("donation.secondaryHeader")}</h2>
 
             <article className="introParagraph">
               {t("donation.introParagraph.0")}
