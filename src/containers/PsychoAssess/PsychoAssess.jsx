@@ -8,11 +8,11 @@ import Footer from "../../components/common/Footer";
 export default function PsychoAssess() {
   return (
     <div>
-    <Header />
-    <Container>
-      <Questions />
-    </Container>
-    <Footer />
+      <Header />
+      <Container>
+        <Questions />
+      </Container>
+      <Footer />
     </div>
   );
 }

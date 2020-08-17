@@ -12,11 +12,11 @@ function About() {
     <>
       <div>
         <Header />
-          <Container>
-            <WhoAreWe />
-            <AboutParagraph />
-            <PeopleDisplay />
-          </Container>
+        <Container>
+          <WhoAreWe />
+          <AboutParagraph />
+          <PeopleDisplay />
+        </Container>
         <Footer />
       </div>
     </>
