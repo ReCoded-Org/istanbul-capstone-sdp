@@ -13,7 +13,7 @@ const ContactUs = () => {
       )
       .then((result) => {
         alert("Thank you, Your messeage have been sent");
-        document.forms["myForm"].reset();
+        document.forms["contactForm"].reset();
       });
   };
 
@@ -41,7 +41,7 @@ const ContactUs = () => {
         </div>
         <div className="formSide">
           <h3>Contact Us</h3>
-          <Form name="myForm" onSubmit={handleSubmit}>
+          <Form name="contactForm" onSubmit={handleSubmit}>
             <Form.Row>
               <Form.Group as={Col} controlId="formGridEmail">
                 <Form.Label>Name</Form.Label>
