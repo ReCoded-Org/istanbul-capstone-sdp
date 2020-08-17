@@ -40,8 +40,6 @@ export default function Questions() {
   };
 
   const showResults = (score) => {
-    //
-    console.log(score);
     if (score !== -15) {
       if (score >= 52) {
         return (
