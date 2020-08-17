@@ -16,7 +16,6 @@ export const Home = () => {
       <Header />
       <WeCare />
       <Stories />
-      <Assessment />
       <Survivor />
       <RelatedCards />
       <Assessment />
