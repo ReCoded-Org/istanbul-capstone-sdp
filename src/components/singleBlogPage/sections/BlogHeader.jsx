@@ -6,11 +6,11 @@ export const BlogHeader = (props) => {
 
   return (
     <Container className="w-100">
-      <Row  className="singleBlogTopImages">
+      <Row className="singleBlogTopImages">
         <Col xs={12} md={12} lg={12}>
           <img className="articleHeader" src={blogTest.blogHeader} alt="" />
           <img className="authorImage" src={blogTest.authorImage} alt="" />
-          <p className="authorTitle">{blogTest.authorName}</p>
+          <p>{blogTest.authorName}</p>
         </Col>
       </Row>
     </Container>

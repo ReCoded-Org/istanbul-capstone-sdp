@@ -4,6 +4,7 @@ import { BlogHeader } from "./sections/BlogHeader";
 import { BlogContent } from "./sections/BlogContent";
 import { Comments } from "./sections/Comments";
 import { Recommended } from "./sections/Recommended";
+import Footer from "../../components/common/Footer";
 
 export const SingleBlogPage = (props) => {
   //This data is for testing only until we set the backend for blogs
@@ -92,7 +93,8 @@ export const SingleBlogPage = (props) => {
       <BlogHeader blogTest={blogTest} />
       <BlogContent blogTest={blogTest} />
       <Comments blogTest={blogTest} />
-      {/* <Recommended /> */}
+      <Recommended />
+      <Footer />
     </div>
   );
 };
