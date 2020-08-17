@@ -6,6 +6,14 @@ import "../index.css";
 
 const OPTION_QUANTITY = 4;
 const QUESTION_QUANTITY = 13;
+const Scores = {
+  VERY_SEVERE: 52,
+  SEVERE: 25,
+  MODERATE: 18,
+  MILD: 13,
+  LIGHT: 7,
+  ANSWERS_MISSING: -15,
+};
 
 export default function Questions() {
   const [submitModalShow, setSubmitModalShow] = React.useState(false);
@@ -40,8 +48,8 @@ export default function Questions() {
   };
 
   const showResults = (score) => {
-    if (score !== -15) {
-      if (score >= 52) {
+    if (score !== Scores.ANSWERS_MISSING) {
+      if (score >= Scores.VERY_SEVERE) {
         return (
           <>
             <span className="resultCategory">
@@ -52,7 +60,7 @@ export default function Questions() {
             <h4>{t("assessment.verySevere.1")}</h4>
           </>
         );
-      } else if (score >= 25) {
+      } else if (score >= Scores.SEVERE) {
         return (
           <>
             <span className="resultCategory">{t("assessment.severe.2")}</span>
@@ -66,7 +74,7 @@ export default function Questions() {
             </Link>
           </>
         );
-      } else if (score >= 18) {
+      } else if (score >= Scores.MODERATE) {
         return (
           <>
             <span className="resultCategory">{t("assessment.moderate.2")}</span>
@@ -75,7 +83,7 @@ export default function Questions() {
             <p>{t("assessment.moderate.1")}</p>
           </>
         );
-      } else if (score >= 13) {
+      } else if (score >= Scores.MILD) {
         return (
           <>
             <span className="resultCategory">{t("assessment.mild.2")}</span>
@@ -84,7 +92,7 @@ export default function Questions() {
             <p>{t("assessment.mild.1")}</p>
           </>
         );
-      } else if (score >= 7) {
+      } else if (score >= Scores.LIGHT) {
         return (
           <>
             <span className="resultCategory">{t("assessment.light.2")}</span>
@@ -111,7 +119,7 @@ export default function Questions() {
     if (checkedRadioNumber === QUESTION_QUANTITY) {
       return userScore;
     }
-    return -15;
+    return Scores.ANSWERS_MISSING;
   };
 
   let questionCount = 0;
