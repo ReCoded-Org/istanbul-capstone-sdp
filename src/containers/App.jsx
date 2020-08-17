@@ -16,7 +16,6 @@ function App() {
   return (
     <React.Fragment>
       <Router>
-        learn react
         <NavBar />
         <Switch>
           <Route exact path="/" component={Home} />
