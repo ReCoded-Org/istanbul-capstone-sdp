@@ -16,127 +16,130 @@
   },
   "questions": [
     {
-      "title": "How do you sleep?",
+      "title": "Uykun nasıl?",
       "multiple": [
-        "I sleep less than 7-8 hours a night and I don't nap during the day.",
-        "I sleep no longer than 7-8 hours a night and I don't nap during the day",
-        "I sleep no longer than 12 hours in a 24-hour period including naps",
-        "I sleep longer than 12 hours in a 24-hour period including naps"
+        "7 saatten az uyuyorum ve gün içerisinde pek kestirmem.",
+        "7-8 saat uyurum ve gün içerisinde pek kestirmem.",
+        "Kestirmelerimle birlikte en fazla 12 saat uyurum.",
+        "12 saatten daha fazla uyuyorum."
       ]
     },
     {
-      "title": "How long does it usually take you to fall asleep?",
+      "title": "Uykuya dalman ne kadar vakit alır?",
       "multiple": [
-        "I never take longer than 30 minutes",
-        "I take at least 30 minutes, less than half of the time",
-        "I take at least 30 minutes, more than half of the time",
-        "I take more than 60 minutes, more than half of the time"
+        "Otuz dakikadan fazla sürmez.",
+        "En az otuz dakika.",
+        "En az bir saat.",
+        "Bir saatten daha fazla."
       ]
     },
     {
-      "title": "How has your appetite been?",
+      "title": "İştahın nasıl, bugünlerde iyi beslenir misin?",
       "multiple": [
-        "There is no change in my usual appetite",
-        "I occasionally eat more or less than usual",
-        "I eat much more or much less than usual",
-        "I rarely eat within a 24-hour period or I feel the need to overeat at every meal"
+        "İştahımda bir değişiklik yok.",
+        "Arada normalden az ya da çok yerim.",
+        "Eskiye göre çok fazla ya da çok az yiyiyorum.",
+        "Yirmi dört saat içerisinde pek yemek yemiyorum ya da her öğünümde aşırı yiyiyorum."
       ]
     },
     {
-      "title": "How is your ability to concentrate and make decisions?",
+      "title": "Konsantrasyon ve karar verme yetilerin nasıl?",
       "multiple": [
-        "There is no change in my ability to concentrate or make decisions",
-        "I occasionally feel indecisive or find my attention wandering",
-        "I struggle to focus my attention or make decisions most of the time",
-        "I cannot concentrate well enough to read and/or I can't even make minor decisions"
+        "Konsantrasyon ve karar verme yetilerimde bir değişiklik yok.",
+        "Arada kararsız olabiliyorum veya dikkatim dağılıyor.",
+        "Odaklanmakta veya karar vermekte zorlanıyorum",
+        "Bir şeyleri okuyabilecek kadar bile odaklanamıyorum, ufak kararlar bile alamıyorum."
       ]
     },
     {
-      "title": "How do you view yourself?",
+      "title": "Kendini nasıl görüyorsun?",
       "multiple": [
-        "I see myself as equally worthwhile and deserving as other people",
-        "I am more self-blaming than usual",
-        "I largely believe that I cause problems for others",
-        "I think almost constantly about major and minor defects in myself"
+        "Yaşamayı, hayatı diğer insanlar kadar hak ettiğimi düşünüyorum.",
+        "Eskisinden daha çok kendimi suçlarım.",
+        "Başkaları için sadece sorun oluşturduğumu düşünüyorum.",
+        "Sürekli kendimle ilgili küçük ya da büyük kusurları düşünüyorum."
       ]
     },
     {
-      "title": "Your death and/or suicide. Do you think of them?",
+      "title": "Ölümün veya intiharın, bunlar hakkında düşünüyor musun?",
       "multiple": [
-        "I do not",
-        "I feel that life is empty",
-        "I think of suicide or my death several times a week for several minutes",
-        "I have made specific plans for suicide or I have actually attempted to take my life"
+        "Hayır.",
+        "Hayatın boş olduğunu düşünüyorum.",
+        "Hafta içinde ölmek hakkında birkaç kez düşündüğüm oluyor",
+        "Ölümüm için planlar yaptım. Hatta birkaç kez intihara teşebbüste bulundum."
       ]
     },
     {
-      "title": "When doing your favourite hobbies and activities, do you enjoy them as much as you used to?",
+      "title": "Sevdiğin şeyleri yaparken eskisi kadar mutlu oluyor musun?",
       "multiple": [
-        "I enjoy them as much as I usually do",
-        "I try to enjoy them, but I don't as much as I used to",
-        "I enjoy them, if I'm drunk",
-        "I don't enjoy them at all"
+        "Her zamanki gibi, onları yapmaktan hoşlanıyorum.",
+        "Hoşlanmaya çalışıyorum ama beni eskisi kadar mutlu etmiyorlar.",
+        "Eğer sarhoşsam mutlu oluyorum.",
+        "Hayır, eskisi gibi değil."
       ]
     },
     {
-      "title": "Do you enjoy the company of others as much as usual?",
+      "title": "Birileriyle birlikte vakit geçirmekten hoşlanıyor musun?",
       "multiple": [
-        "I enjoy socialising as much as I usually do",
-        "I notice that I am less interested in socialising with other people",
-        "I find I have interest in being around only a select few people",
-        "I have virtually no interest in being around people"
+        "Her zamanki gibi, hoşlanıyorum.",
+        "İnsanlarla etkileşime girmekten eskisi kadar hoşlanmıyorum.",
+        "Çok az kişi ile  vakit geçirmekten hoşlanıyorum.",
+        "İnsanlarla vakit geçirmekten hoşlanmıyorum."
       ]
     },
     {
-      "title": "What do you think about sex?",
+      "title": "Birliktelik, romantik ilişkiler hakkında ne düşünüyorsun?",
       "multiple": [
-        "I enjoy it as much as I usually do",
-        "I enjoy it on occasion",
-        "I only do it when I'm in the mood, which is like once or twice a year",
-        "I am basically celibate"
+        "Görüştüğüm, hoşlandığım biri var.",
+        "Arada birileri ile görüşüyorum",
+        "Sene içerisinde bir ya da iki kez birliktelik yaşadım.",
+        "Düşünmüyorum."
       ]
     },
     {
-      "title": "How easily are you angered?",
+      "title": "Ne kadar çabuk sinirlenirsin?",
       "multiple": [
-        "Not easily, I am able to control my temper",
-        "Some things make me angry, but my temper is generally under control",
-        "I don't always show my anger, but if I do - watch out",
-        "I fly off the handle easily"
+        "Zor sinirlenirim.",
+        "Bazı şeyler beni sinirlendiriyor ama genelde kendimi kontrol edebiliyorum.",
+        "Sinirimi her zaman göstermem, ama gösterirsem, dikkat edin (:",
+        "Çok çabuk, herkese sinirlenirim."
       ]
     },
     {
-      "title": "When angry, do you ever say things you regret?",
+      "title": "Sinirliyken pişman olduğun şeyler söyler misin?",
       "multiple": [
-        "No, I don't say things I later regret when angry",
-        "On occasion, I say things I regret when angry, but I usually apologise immediately after",
-        "Yes, I often blurt out things I later regret",
-        "Yes, in fact, I get so angry I rarely remember what I've said"
+        "Hayır.",
+        "Bazen ama eğer pişman olursam sonrasında hemen özür dilerim.",
+        "Evet, arada pişman olacağım şeyler söyleyebiliyorum.",
+        "Evet, hatta o kadar sinirleniyorum ki neler söylediğimi hatırlamıyorum bile."
       ]
     },
     {
-      "title": "How often do you feel worried, anxious or stressed out?",
+      "title": "Kendini ne sıklıkla stresli ve/veya kaygılı hissediyorsun?",
       "multiple": [
-        "Not at all",
-        "1 or 2 times per week",
-        "3 or 4 times per week",
-        "Nearly every day"
+        "Pek hissetmem.",
+        "Haftada bir ya da iki kez.",
+        "Haftada üç ya da dört kez.",
+        "Neredeyse her gün."
       ]
     },
     {
-      "title": "How much do you drink?",
+      "title": "Ne kadar alkol tüketirsin?",
       "multiple": [
-        "I don't drink or have fewer than 1 or 2 drinks per night",
-        "3-4 drinks per night",
-        "5-6 drinks per night",
-        "6 or more drinks per night"
+        "Pek fazla alkol tüketmem.",
+        "Gecede üç-dört içki.",
+        "Gecede beş-altı içki.",
+        "Gecede altıdan fazla içki."
       ]
     }
   ],
   "assessExplanation": [
-    "This test is not a diagnosis, it simply helps you to understand the mental state that you are in. If you are feeling bad, just reach us out! We are here for you and believe me, this is not a lie and you will see when you talk to us.",
-    "If you are not logged in, please kindly enter your email before submitting your test."
+    "Bu test bir tanı değeri taşımaz, basitçe bulunduğunuz mental durumun değerlendirmesini yapmanızda yardımcı olan bir araçtır. Eğer iyi hissetmiyorsanız, lütfen bize ulaşın! Sizin için buradayız.",
+    "Giriş yapmadıysanız, testinizi bitirmeden önce e postanızı girdiğinize emin olun lütfen."
   ],
+  "assessment": {
+    "title": "Psikolojik Değerlendirme Testi"
+  },
   "lang": {
     "en": "İngilizce",
     "tr": "Türkçe",
