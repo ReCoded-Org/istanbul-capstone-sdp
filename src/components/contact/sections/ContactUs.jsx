@@ -42,30 +42,24 @@ const ContactUs = () => {
           <Form onSubmit={handleSubmit}>
             <Form.Row>
               <Form.Group as={Col} controlId="formGridEmail">
-                <Form.Label>
-                  <span className="redStar">*</span> Name
-                </Form.Label>
+                <Form.Label>Name</Form.Label>
                 <Form.Control
                   onChange={(e) =>
                     setForm({ ...form, firstName: e.target.value })
                   }
                   value={form.firstName}
                   type="text"
-                  required
                 />
               </Form.Group>
 
               <Form.Group as={Col} controlId="formGridPassword">
-                <Form.Label>
-                  <span className="redStar">*</span> Surname
-                </Form.Label>
+                <Form.Label>Surname</Form.Label>
                 <Form.Control
                   onChange={(e) =>
                     setForm({ ...form, lastName: e.target.value })
                   }
                   value={form.lastName}
                   type="text"
-                  required
                 />
               </Form.Group>
             </Form.Row>
