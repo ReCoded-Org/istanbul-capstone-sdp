@@ -8,10 +8,10 @@ export const NavBar = () => {
   const [isHamburgerShown, setIsHamburgerShown] = React.useState("-100%");
 
   const handlehamburger = () => {
-    if (navItemsPosition === "-100%") {
-      setNavItemsPosition("0");
+    if (isHamburgerShown === "-100%") {
+      setIsHamburgerShown("0");
     } else {
-      setNavItemsPosition("-100%");
+      setIsHamburgerShown("-100%");
     }
   };
 
@@ -43,7 +43,7 @@ export const NavBar = () => {
 
         <Nav
           className="collapse navbar-collapse justify-content-end navbarItems"
-          style={{ left: navItemsPosition }}
+          style={{ left: isHamburgerShown }}
         >
           <Nav.Item className="navItemsMargins">
             <Link to="/" className="navLink">
