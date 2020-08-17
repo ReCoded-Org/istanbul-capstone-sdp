@@ -36,7 +36,6 @@ export const NavBar = () => {
         <Nav
           className={`collapse navbar-collapse justify-content-end navbarItems
            ${!isMovingSideMenu ? "movingSideMenu" : ""}`}
-          
         >
           <Nav.Item className="navItemsMargins">
             <Link to="/" className="navLink">
