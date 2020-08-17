@@ -5,6 +5,7 @@ import { BlogContent } from "./sections/BlogContent";
 import { Comments } from "./sections/Comments";
 import { Recommended } from "./sections/Recommended";
 import Footer from "../common/Footer";
+import { connect } from "react-redux";
 
 export const SingleBlogPage = (props) => {
   //This data is for testing only until we set the backend for blogs
@@ -98,3 +99,13 @@ export const SingleBlogPage = (props) => {
     </div>
   );
 };
+
+const mapStateToProps = (state) => {
+  return {
+    blogError: state.blog.blogError,
+    blogErrKey: state.blog.blogErrKey,
+    blogErrMessage: state.blog.blogErrMessage,
+  };
+};
+
+export default connect(mapStateToProps)(SingleBlogPage);
