@@ -8,7 +8,7 @@ export const Header = () => {
       <Row>
         <img
           className="aboutPageHeader"
-          src={"https://i.ibb.co/hRfR5Mr/Donation-Header.png"}
+          src={"https://i.ibb.co/f170zGQ/About-Page3.png"}
           alt="About page header"
         />
       </Row>
