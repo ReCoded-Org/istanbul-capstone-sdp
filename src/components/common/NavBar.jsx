@@ -19,17 +19,6 @@ export const NavBar = () => {
     <div>
       <Navbar className="navBar">
         <div>
-          <Nav.Item
-            className="animatedHumburgerIcon"
-            onClick={() => handleHumburger()}
-          >
-            <span className="line"></span>
-            <span className="line"></span>
-            <span className="line"></span>
-          </Nav.Item>
-        </div>
-
-        <div>
           <Nav.Item>
             <Link to="/">
               <img
@@ -41,17 +30,25 @@ export const NavBar = () => {
           </Nav.Item>
         </div>
 
+        <Nav.Item>
+          <Link to="/">
+            <img
+              onClick={() => handleHumburger()}
+              className="humburgerIcon"
+              src="https://i.ibb.co/PQgDXbj/LLogo-4.png"
+              alt="Humburger Icon"
+            />
+          </Link>
+        </Nav.Item>
+
         <Nav
           className="collapse navbar-collapse justify-content-end navbarItems"
           style={{ left: navItemsPosition }}
         >
-          <Nav.Item
-            className="animatedHumburger"
-            onClick={() => handleHumburger()}
-          >
-            <span className="line"></span>
-            <span className="line"></span>
-            <span className="line"></span>
+          <Nav.Item className="navItemsMargins">
+            <Link to="/" className="navLink">
+              Home
+            </Link>
           </Nav.Item>
 
           <Nav.Item className="navItemsMargins">
@@ -78,20 +75,9 @@ export const NavBar = () => {
             </Link>
           </Nav.Item>
 
-          <Nav.Item className="navItemsMargins samah">
+          <Nav.Item className="navItemsMargins">
             <Link to="/blogs" className="navLink">
               Blog
-            </Link>
-          </Nav.Item>
-
-          <Nav.Item className="navItemsMargins">
-            <Link to="/">
-              <img
-                width="150"
-                className="suljakHumburgerLogo"
-                src="https://i.ibb.co/bgTdQ3G/logo-responsive.png"
-                alt="Suljak Logo"
-              />
             </Link>
           </Nav.Item>
         </Nav>
