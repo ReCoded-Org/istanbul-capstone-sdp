@@ -5,15 +5,7 @@ import { Link } from "react-router-dom";
 import LangDropdown from "./LangDropdown";
 
 export const NavBar = () => {
-  const [movingSideMenu, setMovingSideMenu] = React.useState(false);
-
-  const handlehamburger = () => {
-    if (isHamburgerShown === "-100%") {
-      setIsHamburgerShown("0");
-    } else {
-      setIsHamburgerShown("-100%");
-    }
-  };
+  const [isMovingSideMenu, setIsMovingSideMenu] = React.useState(false);
 
   return (
     <div>
@@ -33,7 +25,7 @@ export const NavBar = () => {
         <Nav.Item>
           <Link to="/">
             <img
-              onClick={() => handlehamburger()}
+              onClick={() => setIsMovingSideMenu(!isMovingSideMenu)}
               className="hamburgerIcon"
               src="https://i.ibb.co/PQgDXbj/LLogo-4.png"
               alt="hamburger Icon"
@@ -43,8 +35,8 @@ export const NavBar = () => {
 
         <Nav
           className={`collapse navbar-collapse justify-content-end navbarItems
-           ${movingSideMenu || ""}`}
-          { /*style={{ left: isHamburgerShown }} */}
+           ${!isMovingSideMenu ? "movingSideMenu" : ""}`}
+          
         >
           <Nav.Item className="navItemsMargins">
             <Link to="/" className="navLink">
