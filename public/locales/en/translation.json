@@ -1,4 +1,28 @@
 {
+  "contact": {
+    "contactUs":{
+      "message":["Follow Us",
+      "on social media"],
+      "form":["Contact Us",
+      "Name",
+      "Surname",
+      "Email",
+      "indicates required fields",
+      "Write to us",
+      "Your privacy is protected",
+      "Submit"]
+    },
+    "info": [
+      "CONTACTS:",
+      "43 Foundry Avenue, Basaksehir, istotc, Istanbul, Turkey",
+      "BUSINESS HOURS:",
+      "Our support hotline is available 24 hours a day: 11401",
+      "Monday-Friday: 5pm to 9pm",
+      "Saturday: 10am to 2pm",
+      "Sunday: Closed"
+    ],
+    "alertMessage": "You have submitted succesfully."
+  },
   "welcome": {
     "message": "Welcome to React"
   },

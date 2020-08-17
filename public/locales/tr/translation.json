@@ -1,4 +1,29 @@
 {
+  "contact": {
+    "contactUs": {
+      "message": ["Sosyal Medyada", "Bizi Takip Edin"],
+      "form": [
+        "İletişim",
+        "İsim",
+        "Soyisim",
+        "E-posta",
+        "doldurulması zorunlu yerler",
+        "Bize yazın",
+        "Gizliliğiniz güvende!",
+        "Gönder"
+      ]
+    },
+    "info": [
+      "İLETİŞİM:",
+      "43 Foundry Caddesi, Basaksehir, istotc, Istanbul, Türkiye",
+      "İŞ SAATLERİ:",
+      "Destek hattımız her gün her saat açık: 11401",
+      "Pazartesi-Cuma: 17.00-21.00",
+      "Cumartesi: 10.00-14.00",
+      "Pazar: Kapalı"
+    ],
+    "alertMessage": "Mesajınız gönderildi."
+  },
   "welcome": {
     "message": "React'e Hoş Geldin"
   },
