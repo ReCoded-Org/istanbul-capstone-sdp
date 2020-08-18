@@ -131,7 +131,6 @@ const Profile = (props) => {
 };
 
 const mapStateToProps = (state, ownProps) => {
-  console.log("ownProps:", ownProps);
   const id = ownProps.match.params.id;
   const profiles = state.firestore.data.profiles;
   const profile = profiles ? profiles[id] : null;

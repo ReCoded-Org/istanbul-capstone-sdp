@@ -12,49 +12,66 @@ const AUTHOR_ROLE = "AUTHOR";
 
 const ManageBlogs = (props) => {
   const { allBlogs, userId, currentUserBlogs, profile } = props;
-
   const [newBlog, setNewBlog] = React.useState(null);
 
   const closeBlogEditor = () => {
     setNewBlog(null);
   };
 
-  const displayedBlogs =
-    profile.userType === ADMIN_ROLE ? allBlogs : currentUserBlogs;
+  if (allBlogs) {
+    return (
+      <ListGroup defaultActiveKey="none">
+        {profile.userType === AUTHOR_ROLE && (
+          <Button
+            variant="success"
+            className="mb-5"
+            onClick={() =>
+              setNewBlog(
+                <BlogEditor
+                  closeBlogEditor={closeBlogEditor}
+                  profile={profile}
+                />
+              )
+            }
+          >
+            Add a new blog
+          </Button>
+        )}
 
-  return (
-    <ListGroup defaultActiveKey="none">
-      {profile.userType === AUTHOR_ROLE && (
-        <Button
-          variant="success"
-          className="mb-5"
-          onClick={() =>
-            setNewBlog(
-              <BlogEditor closeBlogEditor={closeBlogEditor} profile={profile} />
-            )
-          }
-        >
-          Add a new blog
-        </Button>
-      )}
+        {newBlog}
 
-      {newBlog}
+        {profile.userType === ADMIN_ROLE &&
+          !newBlog &&
+          currentUserBlogs.map((blog) => {
+            return (
+              <ListGroup.Item>
+                <BlogBox
+                  approveBlog={props.approveBlog}
+                  blog={blog}
+                  userType={profile.userType}
+                />
+              </ListGroup.Item>
+            );
+          })}
 
-      {displayedBlogs &&
-        !newBlog &&
-        displayedBlogs.map((blog) => {
-          return (
-            <ListGroup.Item>
-              <BlogBox
-                approveBlog={props.approveBlog}
-                blog={blog}
-                userType={profile.userType}
-              />
-            </ListGroup.Item>
-          );
-        })}
-    </ListGroup>
-  );
+        {profile.userType === AUTHOR_ROLE &&
+          !newBlog &&
+          allBlogs.map((blog) => {
+            return (
+              <ListGroup.Item>
+                <BlogBox
+                  approveBlog={props.approveBlog}
+                  blog={blog}
+                  userType={profile.userType}
+                />
+              </ListGroup.Item>
+            );
+          })}
+      </ListGroup>
+    );
+  } else {
+    return <h4>Loading...</h4>;
+  }
 };
 
 const mapStateToProps = (state, ownProps) => {

@@ -44,7 +44,7 @@ const BlogBox = (props) => {
       return (
         <>
           <Button
-            variant="success"
+            variant="info"
             className="w-75 mr-2"
             onClick={() =>
               // props.updateProfile({ userId: profile.id, isBlocked: false })
@@ -54,7 +54,7 @@ const BlogBox = (props) => {
             Edit
           </Button>
           <Button
-            variant="dancer"
+            variant="danger"
             className="w-75"
             onClick={() =>
               // props.updateProfile({ userId: profile.id, isBlocked: false })
@@ -74,7 +74,7 @@ const BlogBox = (props) => {
         <Col xs={5}>
           <Link to={"/profiles/" + blog.userId} key={blog.userId}>
             <ListGroup defaultActiveKey="none">
-              <ListGroup.Item action className="d-flex">
+              <ListGroup.Item action className="d-flex h-100">
                 <Image
                   src={photoSrc}
                   alt="Profile"
