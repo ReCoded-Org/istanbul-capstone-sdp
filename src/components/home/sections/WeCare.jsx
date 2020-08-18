@@ -14,30 +14,22 @@ const WeCare = () => {
           <p>
             <span className="firstWord"> {t("weCare.firstWord")} </span>
             {t("weCare.motivationalText")}
-            <span className="pinkText"> {t("weCare.pinkText")}</span>
+            <span className="blueText"> {t("weCare.pinkText")}</span>
             {t("weCare.supportiveText")}
-            <span className="pinkText">{t("weCare.pinkTextWord")}</span>.
+            <span className="blueText">{t("weCare.pinkTextWord")}</span>.
             {t("weCare.hopefulText")}
           </p>
           <br />
 
           <div>
             <Link to="/contact">
-              <Button
-                className="pinkButtonWithWhiteText"
-                // variant="primary"
-                // size="lg"
-              >
+              <Button className="pinkButtonWithWhiteText">
                 {t("weCare.reachUsButton")}
               </Button>
             </Link>
             <br />
             <Link to="/psychoAssess">
-              <Button
-                className="blueButtonWithWhiteText"
-                // size="lg"
-                // variant="primary"
-              >
+              <Button className="blueButtonWithWhiteText">
                 {t("weCare.assessmentButton")}
               </Button>
             </Link>
