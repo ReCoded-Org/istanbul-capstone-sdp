@@ -230,5 +230,42 @@
     "en": "İngilizce",
     "tr": "Türkçe",
     "ar": "Arapça"
+  },
+  "signIn": {
+    "login": "Giriş Yap",
+    "loginOr": " Veya bunları kullanarak giriş yap",
+    "noAccount": "Hesabın yok mu?",
+    "signUp": "Kayıt Ol",
+    "help": "Yardıma ihtiyacın var mı?",
+    "welcome": ["Tekrar", "hoş geldin!"]
+  },
+  "signInForm": {
+    "resetPassword": "Parolanızı Sıfırlayın",
+    "enterEmail": "Parola sıfırlama epostası için eposta adresinizi girin",
+    "cancel": "Vazgeç",
+    "resetButton": "Parolayı Sıfırla",
+    "resetPopup": "Parolanız Sıfırlanıyor",
+    "resetEmailSent": "Parola sıfırlama epostası başarı ile gönderildi, yenı bir parola oluşturmak için eposta kutunuza gidebilirsiniz.",
+    "success": "Başarılı.",
+    "formEmail": "Eposta",
+    "formPassword": "Parola",
+    "forgotPassword": "Parolanızı mı unuttunuz?",
+    "loginButton": "Giriş Yap"
+  },
+  "signUp": {
+    "signUp": "Kayıt ol",
+    "signUpOr": "Bunları kullanarak kayıt ol",
+    "alreadyMember": "Hala üye misin?",
+    "login": "Giriş Yap",
+    "help": "Yardıma ihtiyacın var mı?",
+    "welcome": ["Websitemize", "hoş", "geldin!"]
+  },
+  "signUpForm": {
+    "fName": "Ad",
+    "lName": "Soyad",
+    "email": "E-posta",
+    "password": "Parola",
+    "rePassword": "Lütfen parolanı tekrar gir.",
+    "passNotMatch": "Parolalar eşleşmiyor."
   }
 }

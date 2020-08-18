@@ -3,8 +3,10 @@ import { Form, Button, Col, Container } from "react-bootstrap";
 import { Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 import { signUp } from "../../actions/authActions";
+import { useTranslation } from "react-i18next";
 
 const EmailPasswordSignUp = (props) => {
+  const { t } = useTranslation();
   const [firstName, setFirstName] = React.useState("");
   const [lastName, setLastName] = React.useState("");
   const [email, setEmail] = React.useState("");
@@ -38,7 +40,7 @@ const EmailPasswordSignUp = (props) => {
       <Form>
         <Form.Row>
           <Form.Group as={Col} controlId="firstName">
-            <Form.Label>First Name</Form.Label>
+            <Form.Label>{t("signUpForm.fName")}</Form.Label>
             <Form.Control
               type="text"
               onInput={(e) => {
@@ -47,7 +49,7 @@ const EmailPasswordSignUp = (props) => {
             />
           </Form.Group>
           <Form.Group as={Col} controlId="lastName">
-            <Form.Label>Last Name</Form.Label>
+            <Form.Label>{t("signUpForm.lName")}</Form.Label>
             <Form.Control
               type="text"
               onInput={(e) => {
@@ -58,7 +60,7 @@ const EmailPasswordSignUp = (props) => {
         </Form.Row>
         <Form.Row>
           <Form.Group as={Col} controlId="email">
-            <Form.Label>Email</Form.Label>
+            <Form.Label>{t("signUpForm.email")}</Form.Label>
             <Form.Control
               type="text"
               onInput={(e) => {
@@ -67,7 +69,7 @@ const EmailPasswordSignUp = (props) => {
             />
           </Form.Group>
           <Form.Group as={Col} controlId="password">
-            <Form.Label>Password</Form.Label>
+            <Form.Label>{t("signUpForm.password")}</Form.Label>
             <Form.Control
               type="password"
               onInput={(e) => {
@@ -77,7 +79,7 @@ const EmailPasswordSignUp = (props) => {
             />
           </Form.Group>
           <Form.Group as={Col} controlId="passwordRepeat">
-            <Form.Label>Re-type password</Form.Label>
+            <Form.Label>{t("signUpForm.rePassword")}</Form.Label>
             <Form.Control
               type="password"
               onInput={(e) => {
@@ -87,11 +89,11 @@ const EmailPasswordSignUp = (props) => {
             />
           </Form.Group>
           {!doesPasswordMatch && (
-            <div className="passwordMatch">Your passwords must match</div>
+            <div className="passwordMatch">{t("signUpForm.passNotMatch")}</div>
           )}
         </Form.Row>
         <Button variant="primary" type="submit" onClick={handleSubmit}>
-          Sign Up
+          {t("signUpForm.signUpButton")}
         </Button>
         <Container>
           {/* Show error message when fails to sign up */}
