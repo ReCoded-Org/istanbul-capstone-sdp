@@ -1,9 +1,11 @@
 .link {
-  color: aliceblue;
+  font-size: larger;
+  font-weight: 500;
+  padding: 0;
 }
 
-.link:hover {
-  color: rgb(161, 161, 161);
+.linkItem:hover {
+  background-color: #034992;
 }
 
 .authIcon {
@@ -13,4 +15,11 @@
   padding: 2px;
   border-radius: 30%;
   margin-right: 30px;
+}
+
+.emailValid,
+.errMsgContainer {
+  font-weight: 500;
+  color: rgb(216, 67, 67);
+  margin-bottom: 15px;
 }
