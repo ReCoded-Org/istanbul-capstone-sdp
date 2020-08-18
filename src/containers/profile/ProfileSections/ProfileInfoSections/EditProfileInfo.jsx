@@ -3,10 +3,10 @@ import "./ProfileInfoSections.css";
 import { connect } from "react-redux";
 import { firestoreConnect } from "react-redux-firebase";
 import { compose } from "redux";
-import { updateProfile } from "../../../../../../../actions/authActions";
+import { updateProfile } from "../../../../actions/authActions";
 import { Redirect } from "react-router-dom";
 import { Form, Col, Button, OverlayTrigger, Tooltip } from "react-bootstrap";
-import infoSign from "../../../../../../../images/infoSign.png";
+import infoSign from "../../../../images/infoSign.png";
 
 const EditProfileInfo = (props) => {
   const {
