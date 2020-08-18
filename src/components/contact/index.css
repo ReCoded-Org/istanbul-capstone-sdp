@@ -37,6 +37,10 @@ p {
   margin: 10px !important;
 }
 
+.followUs a i {
+  margin: -1rem !important;
+}
+
 .formSide {
   width: 40%;
   margin: 5%;
