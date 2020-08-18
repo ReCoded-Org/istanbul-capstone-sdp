@@ -6,6 +6,7 @@ import BlogsDisplay from "./sections/BlogsDisplay";
 function Blogs() {
   return (
     <Container>
+      <Header />
       <BlogsDisplay />
     </Container>
   );
