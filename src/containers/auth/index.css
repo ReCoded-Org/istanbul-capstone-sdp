@@ -23,3 +23,7 @@
   color: rgb(216, 67, 67);
   margin-bottom: 15px;
 }
+
+.forgetPassword {
+  cursor: pointer;
+}

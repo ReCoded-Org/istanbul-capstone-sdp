@@ -5,8 +5,8 @@ import { Home } from "../components/home/Home";
 import PsychoAssess from "../../src/containers/PsychoAssess/PsychoAssess";
 import About from "../components/about/About";
 import { Contact } from "../components/contact/Contact";
-import Blogs from "../components/blogs/Blogs";
 import SignInUp from "../components/signInUp/SignInUp";
+import Blogs from "../components/blogs/Blogs";
 import { Donation } from "../containers/donation/Donation";
 import { NoMatch } from "../components/noMatch/NoMatch";
 import { NavBar } from "../components/common/NavBar";
@@ -22,7 +22,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route path="/contact" component={Contact} />
           <Route path="/about" component={About} />
-          <Route path="/psycho-assess" component={PsychoAssess} />
+          <Route path="/assessment" component={PsychoAssess} />
           <Route path="/donation" component={Donation} />
           <Route exact path="/blogs" component={Blogs} />
           <Route path="/login" component={SignInUp} />

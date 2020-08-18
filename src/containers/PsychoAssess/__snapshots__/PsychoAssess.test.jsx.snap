@@ -8,6 +8,11 @@ Object {
       <div
         class="container"
       >
+        <h1
+          class="assesmentTitle"
+        >
+          assessment.title
+        </h1>
         <div
           class="assessContainer col"
         >
@@ -41,8 +46,7 @@ Object {
                   class="form-check"
                 >
                   <input
-                    checked=""
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question0"
                     type="radio"
                     value="0"
@@ -58,10 +62,10 @@ Object {
                   class="form-check"
                 >
                   <input
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question0"
                     type="radio"
-                    value="0"
+                    value="1"
                   />
                   <label
                     class="form-check-label"
@@ -74,10 +78,10 @@ Object {
                   class="form-check"
                 >
                   <input
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question0"
                     type="radio"
-                    value="0"
+                    value="2"
                   />
                   <label
                     class="form-check-label"
@@ -90,10 +94,10 @@ Object {
                   class="form-check"
                 >
                   <input
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question0"
                     type="radio"
-                    value="0"
+                    value="3"
                   />
                   <label
                     class="form-check-label"
@@ -125,8 +129,7 @@ Object {
                   class="form-check"
                 >
                   <input
-                    checked=""
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question1"
                     type="radio"
                     value="0"
@@ -142,10 +145,10 @@ Object {
                   class="form-check"
                 >
                   <input
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question1"
                     type="radio"
-                    value="0"
+                    value="1"
                   />
                   <label
                     class="form-check-label"
@@ -158,10 +161,10 @@ Object {
                   class="form-check"
                 >
                   <input
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question1"
                     type="radio"
-                    value="0"
+                    value="2"
                   />
                   <label
                     class="form-check-label"
@@ -174,10 +177,10 @@ Object {
                   class="form-check"
                 >
                   <input
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question1"
                     type="radio"
-                    value="0"
+                    value="3"
                   />
                   <label
                     class="form-check-label"
@@ -209,8 +212,7 @@ Object {
                   class="form-check"
                 >
                   <input
-                    checked=""
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question2"
                     type="radio"
                     value="0"
@@ -226,10 +228,10 @@ Object {
                   class="form-check"
                 >
                   <input
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question2"
                     type="radio"
-                    value="0"
+                    value="1"
                   />
                   <label
                     class="form-check-label"
@@ -242,10 +244,10 @@ Object {
                   class="form-check"
                 >
                   <input
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question2"
                     type="radio"
-                    value="0"
+                    value="2"
                   />
                   <label
                     class="form-check-label"
@@ -258,10 +260,10 @@ Object {
                   class="form-check"
                 >
                   <input
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question2"
                     type="radio"
-                    value="0"
+                    value="3"
                   />
                   <label
                     class="form-check-label"
@@ -293,8 +295,7 @@ Object {
                   class="form-check"
                 >
                   <input
-                    checked=""
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question3"
                     type="radio"
                     value="0"
@@ -310,10 +311,10 @@ Object {
                   class="form-check"
                 >
                   <input
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question3"
                     type="radio"
-                    value="0"
+                    value="1"
                   />
                   <label
                     class="form-check-label"
@@ -326,10 +327,10 @@ Object {
                   class="form-check"
                 >
                   <input
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question3"
                     type="radio"
-                    value="0"
+                    value="2"
                   />
                   <label
                     class="form-check-label"
@@ -342,10 +343,10 @@ Object {
                   class="form-check"
                 >
                   <input
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question3"
                     type="radio"
-                    value="0"
+                    value="3"
                   />
                   <label
                     class="form-check-label"
@@ -377,8 +378,7 @@ Object {
                   class="form-check"
                 >
                   <input
-                    checked=""
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question4"
                     type="radio"
                     value="0"
@@ -394,10 +394,10 @@ Object {
                   class="form-check"
                 >
                   <input
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question4"
                     type="radio"
-                    value="0"
+                    value="1"
                   />
                   <label
                     class="form-check-label"
@@ -410,10 +410,10 @@ Object {
                   class="form-check"
                 >
                   <input
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question4"
                     type="radio"
-                    value="0"
+                    value="2"
                   />
                   <label
                     class="form-check-label"
@@ -426,10 +426,10 @@ Object {
                   class="form-check"
                 >
                   <input
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question4"
                     type="radio"
-                    value="0"
+                    value="3"
                   />
                   <label
                     class="form-check-label"
@@ -461,8 +461,7 @@ Object {
                   class="form-check"
                 >
                   <input
-                    checked=""
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question5"
                     type="radio"
                     value="0"
@@ -478,10 +477,10 @@ Object {
                   class="form-check"
                 >
                   <input
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question5"
                     type="radio"
-                    value="0"
+                    value="1"
                   />
                   <label
                     class="form-check-label"
@@ -494,10 +493,10 @@ Object {
                   class="form-check"
                 >
                   <input
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question5"
                     type="radio"
-                    value="0"
+                    value="2"
                   />
                   <label
                     class="form-check-label"
@@ -510,10 +509,10 @@ Object {
                   class="form-check"
                 >
                   <input
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question5"
                     type="radio"
-                    value="0"
+                    value="3"
                   />
                   <label
                     class="form-check-label"
@@ -545,8 +544,7 @@ Object {
                   class="form-check"
                 >
                   <input
-                    checked=""
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question6"
                     type="radio"
                     value="0"
@@ -562,10 +560,10 @@ Object {
                   class="form-check"
                 >
                   <input
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question6"
                     type="radio"
-                    value="0"
+                    value="1"
                   />
                   <label
                     class="form-check-label"
@@ -578,10 +576,10 @@ Object {
                   class="form-check"
                 >
                   <input
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question6"
                     type="radio"
-                    value="0"
+                    value="2"
                   />
                   <label
                     class="form-check-label"
@@ -594,10 +592,10 @@ Object {
                   class="form-check"
                 >
                   <input
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question6"
                     type="radio"
-                    value="0"
+                    value="3"
                   />
                   <label
                     class="form-check-label"
@@ -629,8 +627,7 @@ Object {
                   class="form-check"
                 >
                   <input
-                    checked=""
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question7"
                     type="radio"
                     value="0"
@@ -646,10 +643,10 @@ Object {
                   class="form-check"
                 >
                   <input
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question7"
                     type="radio"
-                    value="0"
+                    value="1"
                   />
                   <label
                     class="form-check-label"
@@ -662,10 +659,10 @@ Object {
                   class="form-check"
                 >
                   <input
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question7"
                     type="radio"
-                    value="0"
+                    value="2"
                   />
                   <label
                     class="form-check-label"
@@ -678,10 +675,10 @@ Object {
                   class="form-check"
                 >
                   <input
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question7"
                     type="radio"
-                    value="0"
+                    value="3"
                   />
                   <label
                     class="form-check-label"
@@ -713,8 +710,7 @@ Object {
                   class="form-check"
                 >
                   <input
-                    checked=""
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question8"
                     type="radio"
                     value="0"
@@ -730,10 +726,10 @@ Object {
                   class="form-check"
                 >
                   <input
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question8"
                     type="radio"
-                    value="0"
+                    value="1"
                   />
                   <label
                     class="form-check-label"
@@ -746,10 +742,10 @@ Object {
                   class="form-check"
                 >
                   <input
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question8"
                     type="radio"
-                    value="0"
+                    value="2"
                   />
                   <label
                     class="form-check-label"
@@ -762,10 +758,10 @@ Object {
                   class="form-check"
                 >
                   <input
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question8"
                     type="radio"
-                    value="0"
+                    value="3"
                   />
                   <label
                     class="form-check-label"
@@ -797,8 +793,7 @@ Object {
                   class="form-check"
                 >
                   <input
-                    checked=""
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question9"
                     type="radio"
                     value="0"
@@ -814,10 +809,10 @@ Object {
                   class="form-check"
                 >
                   <input
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question9"
                     type="radio"
-                    value="0"
+                    value="1"
                   />
                   <label
                     class="form-check-label"
@@ -830,10 +825,10 @@ Object {
                   class="form-check"
                 >
                   <input
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question9"
                     type="radio"
-                    value="0"
+                    value="2"
                   />
                   <label
                     class="form-check-label"
@@ -846,10 +841,10 @@ Object {
                   class="form-check"
                 >
                   <input
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question9"
                     type="radio"
-                    value="0"
+                    value="3"
                   />
                   <label
                     class="form-check-label"
@@ -881,8 +876,7 @@ Object {
                   class="form-check"
                 >
                   <input
-                    checked=""
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question10"
                     type="radio"
                     value="0"
@@ -898,10 +892,10 @@ Object {
                   class="form-check"
                 >
                   <input
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question10"
                     type="radio"
-                    value="0"
+                    value="1"
                   />
                   <label
                     class="form-check-label"
@@ -914,10 +908,10 @@ Object {
                   class="form-check"
                 >
                   <input
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question10"
                     type="radio"
-                    value="0"
+                    value="2"
                   />
                   <label
                     class="form-check-label"
@@ -930,10 +924,10 @@ Object {
                   class="form-check"
                 >
                   <input
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question10"
                     type="radio"
-                    value="0"
+                    value="3"
                   />
                   <label
                     class="form-check-label"
@@ -965,8 +959,7 @@ Object {
                   class="form-check"
                 >
                   <input
-                    checked=""
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question11"
                     type="radio"
                     value="0"
@@ -982,10 +975,10 @@ Object {
                   class="form-check"
                 >
                   <input
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question11"
                     type="radio"
-                    value="0"
+                    value="1"
                   />
                   <label
                     class="form-check-label"
@@ -998,10 +991,10 @@ Object {
                   class="form-check"
                 >
                   <input
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question11"
                     type="radio"
-                    value="0"
+                    value="2"
                   />
                   <label
                     class="form-check-label"
@@ -1014,10 +1007,10 @@ Object {
                   class="form-check"
                 >
                   <input
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question11"
                     type="radio"
-                    value="0"
+                    value="3"
                   />
                   <label
                     class="form-check-label"
@@ -1049,8 +1042,7 @@ Object {
                   class="form-check"
                 >
                   <input
-                    checked=""
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question12"
                     type="radio"
                     value="0"
@@ -1066,10 +1058,10 @@ Object {
                   class="form-check"
                 >
                   <input
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question12"
                     type="radio"
-                    value="0"
+                    value="1"
                   />
                   <label
                     class="form-check-label"
@@ -1082,10 +1074,10 @@ Object {
                   class="form-check"
                 >
                   <input
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question12"
                     type="radio"
-                    value="0"
+                    value="2"
                   />
                   <label
                     class="form-check-label"
@@ -1098,10 +1090,10 @@ Object {
                   class="form-check"
                 >
                   <input
-                    class="form-check-input"
+                    class="form-check-input testChoice"
                     name="question12"
                     type="radio"
-                    value="0"
+                    value="3"
                   />
                   <label
                     class="form-check-label"
@@ -1116,21 +1108,6 @@ Object {
           <div
             class="testSubmitButtonRow row"
           >
-            <label
-              class="form-label"
-            >
-              testSubmit.email
-            </label>
-            <input
-              class="form-control"
-              placeholder="Enter email"
-              type="email"
-            />
-            <small
-              class="text-muted form-text"
-            >
-              testSubmit.email
-            </small>
             <button
               class="testSubmitButton btn btn-primary"
               type="button"
@@ -1146,6 +1123,11 @@ Object {
     <div
       class="container"
     >
+      <h1
+        class="assesmentTitle"
+      >
+        assessment.title
+      </h1>
       <div
         class="assessContainer col"
       >
@@ -1179,8 +1161,7 @@ Object {
                 class="form-check"
               >
                 <input
-                  checked=""
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question0"
                   type="radio"
                   value="0"
@@ -1196,10 +1177,10 @@ Object {
                 class="form-check"
               >
                 <input
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question0"
                   type="radio"
-                  value="0"
+                  value="1"
                 />
                 <label
                   class="form-check-label"
@@ -1212,10 +1193,10 @@ Object {
                 class="form-check"
               >
                 <input
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question0"
                   type="radio"
-                  value="0"
+                  value="2"
                 />
                 <label
                   class="form-check-label"
@@ -1228,10 +1209,10 @@ Object {
                 class="form-check"
               >
                 <input
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question0"
                   type="radio"
-                  value="0"
+                  value="3"
                 />
                 <label
                   class="form-check-label"
@@ -1263,8 +1244,7 @@ Object {
                 class="form-check"
               >
                 <input
-                  checked=""
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question1"
                   type="radio"
                   value="0"
@@ -1280,10 +1260,10 @@ Object {
                 class="form-check"
               >
                 <input
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question1"
                   type="radio"
-                  value="0"
+                  value="1"
                 />
                 <label
                   class="form-check-label"
@@ -1296,10 +1276,10 @@ Object {
                 class="form-check"
               >
                 <input
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question1"
                   type="radio"
-                  value="0"
+                  value="2"
                 />
                 <label
                   class="form-check-label"
@@ -1312,10 +1292,10 @@ Object {
                 class="form-check"
               >
                 <input
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question1"
                   type="radio"
-                  value="0"
+                  value="3"
                 />
                 <label
                   class="form-check-label"
@@ -1347,8 +1327,7 @@ Object {
                 class="form-check"
               >
                 <input
-                  checked=""
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question2"
                   type="radio"
                   value="0"
@@ -1364,10 +1343,10 @@ Object {
                 class="form-check"
               >
                 <input
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question2"
                   type="radio"
-                  value="0"
+                  value="1"
                 />
                 <label
                   class="form-check-label"
@@ -1380,10 +1359,10 @@ Object {
                 class="form-check"
               >
                 <input
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question2"
                   type="radio"
-                  value="0"
+                  value="2"
                 />
                 <label
                   class="form-check-label"
@@ -1396,10 +1375,10 @@ Object {
                 class="form-check"
               >
                 <input
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question2"
                   type="radio"
-                  value="0"
+                  value="3"
                 />
                 <label
                   class="form-check-label"
@@ -1431,8 +1410,7 @@ Object {
                 class="form-check"
               >
                 <input
-                  checked=""
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question3"
                   type="radio"
                   value="0"
@@ -1448,10 +1426,10 @@ Object {
                 class="form-check"
               >
                 <input
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question3"
                   type="radio"
-                  value="0"
+                  value="1"
                 />
                 <label
                   class="form-check-label"
@@ -1464,10 +1442,10 @@ Object {
                 class="form-check"
               >
                 <input
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question3"
                   type="radio"
-                  value="0"
+                  value="2"
                 />
                 <label
                   class="form-check-label"
@@ -1480,10 +1458,10 @@ Object {
                 class="form-check"
               >
                 <input
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question3"
                   type="radio"
-                  value="0"
+                  value="3"
                 />
                 <label
                   class="form-check-label"
@@ -1515,8 +1493,7 @@ Object {
                 class="form-check"
               >
                 <input
-                  checked=""
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question4"
                   type="radio"
                   value="0"
@@ -1532,10 +1509,10 @@ Object {
                 class="form-check"
               >
                 <input
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question4"
                   type="radio"
-                  value="0"
+                  value="1"
                 />
                 <label
                   class="form-check-label"
@@ -1548,10 +1525,10 @@ Object {
                 class="form-check"
               >
                 <input
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question4"
                   type="radio"
-                  value="0"
+                  value="2"
                 />
                 <label
                   class="form-check-label"
@@ -1564,10 +1541,10 @@ Object {
                 class="form-check"
               >
                 <input
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question4"
                   type="radio"
-                  value="0"
+                  value="3"
                 />
                 <label
                   class="form-check-label"
@@ -1599,8 +1576,7 @@ Object {
                 class="form-check"
               >
                 <input
-                  checked=""
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question5"
                   type="radio"
                   value="0"
@@ -1616,10 +1592,10 @@ Object {
                 class="form-check"
               >
                 <input
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question5"
                   type="radio"
-                  value="0"
+                  value="1"
                 />
                 <label
                   class="form-check-label"
@@ -1632,10 +1608,10 @@ Object {
                 class="form-check"
               >
                 <input
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question5"
                   type="radio"
-                  value="0"
+                  value="2"
                 />
                 <label
                   class="form-check-label"
@@ -1648,10 +1624,10 @@ Object {
                 class="form-check"
               >
                 <input
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question5"
                   type="radio"
-                  value="0"
+                  value="3"
                 />
                 <label
                   class="form-check-label"
@@ -1683,8 +1659,7 @@ Object {
                 class="form-check"
               >
                 <input
-                  checked=""
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question6"
                   type="radio"
                   value="0"
@@ -1700,10 +1675,10 @@ Object {
                 class="form-check"
               >
                 <input
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question6"
                   type="radio"
-                  value="0"
+                  value="1"
                 />
                 <label
                   class="form-check-label"
@@ -1716,10 +1691,10 @@ Object {
                 class="form-check"
               >
                 <input
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question6"
                   type="radio"
-                  value="0"
+                  value="2"
                 />
                 <label
                   class="form-check-label"
@@ -1732,10 +1707,10 @@ Object {
                 class="form-check"
               >
                 <input
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question6"
                   type="radio"
-                  value="0"
+                  value="3"
                 />
                 <label
                   class="form-check-label"
@@ -1767,8 +1742,7 @@ Object {
                 class="form-check"
               >
                 <input
-                  checked=""
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question7"
                   type="radio"
                   value="0"
@@ -1784,10 +1758,10 @@ Object {
                 class="form-check"
               >
                 <input
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question7"
                   type="radio"
-                  value="0"
+                  value="1"
                 />
                 <label
                   class="form-check-label"
@@ -1800,10 +1774,10 @@ Object {
                 class="form-check"
               >
                 <input
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question7"
                   type="radio"
-                  value="0"
+                  value="2"
                 />
                 <label
                   class="form-check-label"
@@ -1816,10 +1790,10 @@ Object {
                 class="form-check"
               >
                 <input
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question7"
                   type="radio"
-                  value="0"
+                  value="3"
                 />
                 <label
                   class="form-check-label"
@@ -1851,8 +1825,7 @@ Object {
                 class="form-check"
               >
                 <input
-                  checked=""
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question8"
                   type="radio"
                   value="0"
@@ -1868,10 +1841,10 @@ Object {
                 class="form-check"
               >
                 <input
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question8"
                   type="radio"
-                  value="0"
+                  value="1"
                 />
                 <label
                   class="form-check-label"
@@ -1884,10 +1857,10 @@ Object {
                 class="form-check"
               >
                 <input
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question8"
                   type="radio"
-                  value="0"
+                  value="2"
                 />
                 <label
                   class="form-check-label"
@@ -1900,10 +1873,10 @@ Object {
                 class="form-check"
               >
                 <input
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question8"
                   type="radio"
-                  value="0"
+                  value="3"
                 />
                 <label
                   class="form-check-label"
@@ -1935,8 +1908,7 @@ Object {
                 class="form-check"
               >
                 <input
-                  checked=""
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question9"
                   type="radio"
                   value="0"
@@ -1952,10 +1924,10 @@ Object {
                 class="form-check"
               >
                 <input
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question9"
                   type="radio"
-                  value="0"
+                  value="1"
                 />
                 <label
                   class="form-check-label"
@@ -1968,10 +1940,10 @@ Object {
                 class="form-check"
               >
                 <input
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question9"
                   type="radio"
-                  value="0"
+                  value="2"
                 />
                 <label
                   class="form-check-label"
@@ -1984,10 +1956,10 @@ Object {
                 class="form-check"
               >
                 <input
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question9"
                   type="radio"
-                  value="0"
+                  value="3"
                 />
                 <label
                   class="form-check-label"
@@ -2019,8 +1991,7 @@ Object {
                 class="form-check"
               >
                 <input
-                  checked=""
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question10"
                   type="radio"
                   value="0"
@@ -2036,10 +2007,10 @@ Object {
                 class="form-check"
               >
                 <input
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question10"
                   type="radio"
-                  value="0"
+                  value="1"
                 />
                 <label
                   class="form-check-label"
@@ -2052,10 +2023,10 @@ Object {
                 class="form-check"
               >
                 <input
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question10"
                   type="radio"
-                  value="0"
+                  value="2"
                 />
                 <label
                   class="form-check-label"
@@ -2068,10 +2039,10 @@ Object {
                 class="form-check"
               >
                 <input
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question10"
                   type="radio"
-                  value="0"
+                  value="3"
                 />
                 <label
                   class="form-check-label"
@@ -2103,8 +2074,7 @@ Object {
                 class="form-check"
               >
                 <input
-                  checked=""
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question11"
                   type="radio"
                   value="0"
@@ -2120,10 +2090,10 @@ Object {
                 class="form-check"
               >
                 <input
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question11"
                   type="radio"
-                  value="0"
+                  value="1"
                 />
                 <label
                   class="form-check-label"
@@ -2136,10 +2106,10 @@ Object {
                 class="form-check"
               >
                 <input
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question11"
                   type="radio"
-                  value="0"
+                  value="2"
                 />
                 <label
                   class="form-check-label"
@@ -2152,10 +2122,10 @@ Object {
                 class="form-check"
               >
                 <input
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question11"
                   type="radio"
-                  value="0"
+                  value="3"
                 />
                 <label
                   class="form-check-label"
@@ -2187,8 +2157,7 @@ Object {
                 class="form-check"
               >
                 <input
-                  checked=""
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question12"
                   type="radio"
                   value="0"
@@ -2204,10 +2173,10 @@ Object {
                 class="form-check"
               >
                 <input
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question12"
                   type="radio"
-                  value="0"
+                  value="1"
                 />
                 <label
                   class="form-check-label"
@@ -2220,10 +2189,10 @@ Object {
                 class="form-check"
               >
                 <input
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question12"
                   type="radio"
-                  value="0"
+                  value="2"
                 />
                 <label
                   class="form-check-label"
@@ -2236,10 +2205,10 @@ Object {
                 class="form-check"
               >
                 <input
-                  class="form-check-input"
+                  class="form-check-input testChoice"
                   name="question12"
                   type="radio"
-                  value="0"
+                  value="3"
                 />
                 <label
                   class="form-check-label"
@@ -2254,21 +2223,6 @@ Object {
         <div
           class="testSubmitButtonRow row"
         >
-          <label
-            class="form-label"
-          >
-            testSubmit.email
-          </label>
-          <input
-            class="form-control"
-            placeholder="Enter email"
-            type="email"
-          />
-          <small
-            class="text-muted form-text"
-          >
-            testSubmit.email
-          </small>
           <button
             class="testSubmitButton btn btn-primary"
             type="button"

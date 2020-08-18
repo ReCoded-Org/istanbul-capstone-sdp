@@ -20,7 +20,7 @@ export const Comments = (props) => {
 
   const allComments = comments.map((item) => {
     return (
-      <div>
+      <div className="visitor">
         <img
           className="visitorImage"
           src="https://i.ibb.co/k0NNyLV/User-profile-image.png"
@@ -58,7 +58,7 @@ export const Comments = (props) => {
               placeholder="Write your comment"
               cols="80"
               rows="8"
-              className="col-lg-12 col-md-10 col-sm-10 infoFields"
+              className="col-lg-12 col-md-12 col-sm-12 infoFields"
               required
             ></textarea>
             <br />
@@ -67,7 +67,7 @@ export const Comments = (props) => {
               onChange={(e) => setForm({ ...form, name: e.target.value })}
               value={form.name}
               type="text"
-              className="col-lg-12 col-md-10 col-sm-10 infoFields"
+              className="col-lg-12 col-md-12 col-sm-12 infoFields"
               required
             />
             <br />
@@ -76,7 +76,7 @@ export const Comments = (props) => {
               onChange={(e) => setForm({ ...form, email: e.target.value })}
               value={form.email}
               type="email"
-              className="col-lg-12 col-md-10 col-sm-10 infoFields"
+              className="col-lg-12 col-md-12 col-sm-12 infoFields"
               required
             />
             <br />
@@ -86,7 +86,7 @@ export const Comments = (props) => {
               onChange={(e) => setForm({ ...form, website: e.target.value })}
               value={form.website}
               type="text"
-              className="col-lg-12 col-md-10 col-sm-10 infoFields"
+              className="col-lg-12 col-md-12 col-sm-12 infoFields"
             />
             <br />
             <Button className="commentButton" type="submit">

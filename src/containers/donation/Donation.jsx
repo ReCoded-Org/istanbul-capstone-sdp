@@ -2,57 +2,41 @@ import React from "react";
 import { Header } from "./sections/Header";
 import { Carousel, Container, Row, Col } from "react-bootstrap";
 import "./index.css";
+import { useTranslation } from "react-i18next";
+import Footer from "../../components/common/Footer";
 
 export const Donation = () => {
+  const { t } = useTranslation();
   return (
     <div>
       <Header />
 
       <Container className="w-75">
-        <Row className="title">
+        <Row className="donationPageTitle">
           <Col xs={12} md={12} lg={12}>
-            <h1>Support Suljak Suicide Prevention Organization</h1>
+            <h1>{t("donation.header")}</h1>
           </Col>
         </Row>
 
         <Row>
           <Col xs={12} sm={12} md={12} lg={12}>
-            <h2 className="secondaryTitle">
-              Together with your support and your help, we will be able to raise
-              awareness of suicide prevention to save lives
-            </h2>
+            <h2 className="secondaryTitle">{t("donation.secondaryHeader")}</h2>
 
             <article className="introParagraph">
-              Try and keep things in perspective. Let's be positive, help each
-              other out, and we will get through all of this. In this world,
-              there has never been a storm that lasted. This too, shall pass,
-              bla bla bla blaaaa bla. bla hall pass, bla blabladfnisbn
-              negativity yj.
+              {t("donation.introParagraph.0")}
               <br />
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-              ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-              accumsan lacus vel facilisis. There are many variations of
-              passages of Lorem Ipsum available, but the majority have suffered
-              alteration in some form, by injected humour, or randomised words
-              which don't look even slightly believable. If you are going to use
-              a passage of Lorem Ipsum, you need to be sure there isn't anything
-              embarrassing hidden in the middle of text.
+              {t("donation.introParagraph.1")}
             </article>
 
             <article className="donateParagraph">
-              <h3>How to donate</h3>
-              please write your check to Suljak Suicide Prevention Organization
-              and mail it to: 43 Foundry Avenue, Basaksehir Istotc, Istanbul,
-              Turkey.. For further questions, please contact the Development
-              team at development@suljak.org or call (+90) 533-382-094. You can
-              also transfere money to the listed account banks:
+              <h3>{t("donation.donateParagraph.0")}</h3>
+              {t("donation.donateParagraph.1")}
               <br />
-              Kvnrfgnjnrkkg
-              <br />
-              Dvfd harguirug uaguherig
-              <br />
-              Hnfdrhorkdentb grnunurh
+              <p className="mailingPargraph">
+                {t("donation.mailingParagraph.0")}
+                <br />
+                {t("donation.mailingParagraph.1")}
+              </p>
             </article>
           </Col>
         </Row>
@@ -60,51 +44,92 @@ export const Donation = () => {
         <Row>
           <Col xs={12} sm={12} md={12} lg={12}>
             <section>
+              <div className="mainTable">
+                <div className="leftTableSection">
+                  <div className="tableBlueSection">
+                    <p className="leftCountNumbers">
+                      5
+                      <br />
+                      <span className="leftActivityType">
+                        {t("donation.tableContent.statistics.0")}
+                      </span>
+                    </p>
+                  </div>
+
+                  <div className="tableBlueSection">
+                    <p className="leftCountNumbers">
+                      3.1M
+                      <br />
+                      <span className="leftActivityType">
+                        {t("donation.tableContent.statistics.1")}
+                      </span>
+                    </p>
+                  </div>
+
+                  <div className="tableBlueSection">
+                    <p className="leftCountNumbers">
+                      20K
+                      <br />
+                      <span className="leftActivityType">
+                        {t("donation.tableContent.statistics.2")}
+                      </span>
+                    </p>
+                  </div>
+                </div>
+
+                <div className="rightTableSection">
+                  <div className="tableBlueSection">
+                    <p className="rightCountNumbers">
+                      3000
+                      <br />
+                      <span className="rightActivityType">
+                        {t("donation.tableContent.statistics.3")}
+                      </span>
+                    </p>
+                  </div>
+
+                  <div className="tableBlueSection">
+                    <p className="rightCountNumbers">
+                      28
+                      <br />
+                      <span className="rightActivityType">
+                        {t("donation.tableContent.statistics.4")}
+                      </span>
+                    </p>
+                  </div>
+
+                  <div className="tableBlueSection">
+                    <p className="rightCountNumbers">
+                      220
+                      <br />
+                      <span className="rightActivityType">
+                        {t("donation.tableContent.statistics.5")}
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
               <div className="tableSection">
-                <div className="tableBlueSection">
-                  <p className="countNumbers">
-                    5<br />
-                    <span className="activityType">years</span>
+                <div className="darkGreySection">
+                  <img
+                    className="tableSymbol"
+                    src="https://i.ibb.co/0M25Rzj/tick-mark.png"
+                    alt="Trick mark icon"
+                  />
+                  <p className="darkGreyColumn">
+                    {t("donation.tableContent.greySection.tick")}
                   </p>
                 </div>
 
-                <div className="tableBlueSection">
-                  <p className="countNumbers">
-                    3.1M
-                    <br />
-                    <span className="activityType">dollars</span>
-                  </p>
-                </div>
-
-                <div className="tableBlueSection">
-                  <p className="countNumbers">
-                    20K
-                    <br />
-                    <span className="activityType">donors</span>
-                  </p>
-                </div>
-
-                <div className="tableBlueSection">
-                  <p className="countNumbers">
-                    3000
-                    <br />
-                    <span className="activityType">survivors</span>
-                  </p>
-                </div>
-
-                <div className="tableBlueSection">
-                  <p className="countNumbers">
-                    28
-                    <br />
-                    <span className="activityType">countries</span>
-                  </p>
-                </div>
-
-                <div className="tableBlueSection">
-                  <p className="countNumbers">
-                    220
-                    <br />
-                    <span className="activityType">employees</span>
+                <div className="lightGreySection">
+                  <img
+                    className="tableSymbol"
+                    src="https://i.ibb.co/LDKPgmn/gift-icon.png"
+                    alt="Gift icon"
+                  />
+                  <p className="lightGreyColumn">
+                    {t("donation.tableContent.greySection.gift")}
                   </p>
                 </div>
               </div>
@@ -112,53 +137,23 @@ export const Donation = () => {
               <div className="tableSection">
                 <div className="darkGreySection">
                   <img
-                    src="https://i.ibb.co/0M25Rzj/tick-mark.png"
-                    alt="Trick mark icon"
-                  />
-                  <p className="darkGreyColumn">
-                    LLorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Quis ipsum suspendisse ultrices gravida. Risus
-                    commodo viverra maecenas accumsan lacus vel facilisis.
-                  </p>
-                </div>
-
-                <div className="lightGreySection">
-                  <img
-                    src="https://i.ibb.co/LDKPgmn/gift-icon.png"
-                    alt="Gift icon"
-                  />
-                  <p className="lightGreyColumn">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Quis ipsum suspendisse ultrices gravida. Risus
-                    commodo viverra maecenas accumsan lacus vel facilisis.
-                  </p>
-                </div>
-
-                <div className="darkGreySection">
-                  <img
+                    className="tableSymbol"
                     src="https://i.ibb.co/85qjgNG/heart-icon.png"
                     alt="Heart icon"
                   />
                   <p className="darkGreyColumn">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Quis ipsum suspendisse ultrices gravida. Risus
-                    commodo viverra maecenas accumsan lacus vel facilisis.
+                    {t("donation.tableContent.greySection.love")}
                   </p>
                 </div>
 
                 <div className="lightGreySection">
                   <img
+                    className="tableSymbol"
                     src="https://i.ibb.co/34RCGp3/earth-icon.png"
                     alt="Earth icon"
                   />
                   <p className="lightGreyColumn">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Quis ipsum suspendisse ultrices gravida. Risus
-                    commodo viverra maecenas accumsan lacus vel facilisis.
+                    {t("donation.tableContent.greySection.earth")}
                   </p>
                 </div>
               </div>
@@ -169,20 +164,11 @@ export const Donation = () => {
         <Row>
           <Col xs={12} sm={12} md={12} lg={12}>
             <section className="helpParagraph">
-              <h3>How can you help us?</h3>
+              <h3>{t("donation.helpParagraph.0")}</h3>
               <article>
-                Approximately 11 people in Canada die by suicide every day.
-                That’s over 4,000 people a year, making suicide a leading cause
-                of death in Canada. We can help prevent suicide with the right
-                services. A donation to the Canada Suicide Prevention Service
-                allows us to connect individuals in distress and individuals
-                with suicidal thoughts with local Crisis Centres to receive
-                immediate support.
+                {t("donation.helpParagraph.1")}
                 <br />
-                Approximately 11 people iight services. A donation to the Canada
-                Suicide Prevention Service allows us to connect individuals in
-                distress and individuals with suicidal thoughts with local
-                Crisis Centres to receive immediate support.
+                {t("donation.helpParagraph.2")}
               </article>
             </section>
           </Col>
@@ -195,7 +181,7 @@ export const Donation = () => {
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
-                    src="https://i.ibb.co/4p24Dd4/Quotes2-in-Donation-Page.png"
+                    src="https://i.ibb.co/xs5rwZj/survivor2.png"
                     alt="First slide"
                   />
                 </Carousel.Item>
@@ -203,7 +189,7 @@ export const Donation = () => {
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
-                    src="https://i.ibb.co/4p24Dd4/Quotes2-in-Donation-Page.png"
+                    src="https://i.ibb.co/n85FZdS/survivor3.png"
                     alt="second slide"
                   />
                 </Carousel.Item>
@@ -211,7 +197,7 @@ export const Donation = () => {
                 <Carousel.Item>
                   <img
                     className="d-block w-100 quotes"
-                    src="https://i.ibb.co/4p24Dd4/Quotes2-in-Donation-Page.png"
+                    src="https://i.ibb.co/bRXGS5T/survivor1.png"
                     alt="Third slide"
                   />
                 </Carousel.Item>
@@ -221,21 +207,15 @@ export const Donation = () => {
         </Row>
 
         <Row>
-          <section>
-            <article className="introParagraph">
-              Approximately 11 people in Canada die by suicide every day. That’s
-              over 4,000 people a year, making suicide a leading cause of death
-              in Canada. We can help prevent suicide with the right services. A
-              donation to the Canada Suicide Prevention Service allows us to
-              connect individuals in distress and individuals with suicidal
-              thoughts with local Crisis Centres to receive immediate support.
-              <br />
-              Approximately 11 people iight services. A donation to the Canada
-              Suicide Prevention Service allows us to connect individuals in
-              distress and individuals with suicidal thoughts with local Crisis
-              Centres to receive immediate support.
-            </article>
-          </section>
+          <Col xs={12} sm={12} md={12} lg={12}>
+            <section>
+              <article className="introParagraph">
+                {t("donation.endingParagraph.0")}
+                <br />
+                {t("donation.endingParagraph.1")}
+              </article>
+            </section>
+          </Col>
         </Row>
 
         <Row>
@@ -263,6 +243,8 @@ export const Donation = () => {
           </div>
         </Row>
       </Container>
+
+      <Footer />
     </div>
   );
 };
