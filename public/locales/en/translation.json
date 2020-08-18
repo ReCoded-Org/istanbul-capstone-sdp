@@ -1,4 +1,31 @@
 {
+  "contact": {
+    "contactUs": {
+      "message": ["Follow Us", "on social media"],
+      "form": {
+        "title": "Contact Us",
+        "nameField": "Name",
+        "surnameField": "Surname",
+        "emailField": "Email",
+        "requiredMessage": "indicates required fields",
+        "callForReachingOut": "Write to us",
+        "privacyMessage": "Your privacy is protected",
+        "submitButton": "Submit"
+      }
+    },
+    "info": {
+      "contactTitle": "CONTACTS:",
+      "address": "43 Foundry Avenue, Basaksehir, istotc, Istanbul, Turkey",
+      "businessHoursTitle": "BUSINESS HOURS:",
+      "hotlineText": "Our support hotline is available 24 hours a day: 11401",
+      "workingHours": [
+        "Monday-Friday: 5pm to 9pm",
+        "Saturday: 10am to 2pm",
+        "Sunday: Closed"
+      ]
+    },
+    "alertMessage": "You have submitted succesfully."
+  },
   "donation": {
     "secondaryHeader":"We can all help prevent suicide",
     "header": "Make A Difference, Be A Part Of Our Community",
