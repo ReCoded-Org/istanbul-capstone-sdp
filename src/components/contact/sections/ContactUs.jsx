@@ -1,7 +1,10 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Container, Col, Form, Button, Nav } from "react-bootstrap";
 
 const ContactUs = () => {
+  const { t } = useTranslation();
+
   const initContactFormState = {
     firstName: "",
     lastName: "",
@@ -12,7 +15,7 @@ const ContactUs = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     // TODO (basil-kawak) : connect this to contact us
-    alert(`you have submited youe message ${form}`);
+    alert(`${t("contact.alertMessage")} ${form}`);
     setForm(initContactFormState);
   };
   return (
@@ -20,8 +23,8 @@ const ContactUs = () => {
       <div className="contactCardContainer">
         <div className="followSide">
           <div className="followUs">
-            <h2>Follow Us</h2>
-            <h3>on social media</h3>
+            <h2>{t("contact.contactUs.message.0")}</h2>
+            <h3>{t("contact.contactUs.message.1")}</h3>
             <Col>
               <Nav className="socialCircle d-inline-flex p-2" md={3}>
                 <Nav.Link href="#" className="iconLinkedin" title="Linkedin">
@@ -38,13 +41,11 @@ const ContactUs = () => {
           </div>
         </div>
         <div className="formSide">
-          <h3>Contact Us</h3>
+          <h3>{t("contact.contactUs.form.title")}</h3>
           <Form onSubmit={handleSubmit}>
             <Form.Row>
               <Form.Group as={Col} controlId="formGridEmail">
-                <Form.Label>
-                  <span className="redStar">*</span> Name
-                </Form.Label>
+                <Form.Label>{t("contact.contactUs.form.nameField")}</Form.Label>
                 <Form.Control
                   onChange={(e) =>
                     setForm({ ...form, firstName: e.target.value })
@@ -57,7 +58,7 @@ const ContactUs = () => {
 
               <Form.Group as={Col} controlId="formGridPassword">
                 <Form.Label>
-                  <span className="redStar">*</span> Surname
+                  {t("contact.contactUs.form.surnameField")}
                 </Form.Label>
                 <Form.Control
                   onChange={(e) =>
@@ -72,7 +73,8 @@ const ContactUs = () => {
 
             <Form.Group controlId="formBasicEmail">
               <Form.Label>
-                <span className="redStar">*</span> Email
+                <span className="redStar">*</span>
+                {t("contact.contactUs.form.emailField")}
               </Form.Label>
               <Form.Control
                 onChange={(e) => setForm({ ...form, email: e.target.value })}
@@ -81,7 +83,8 @@ const ContactUs = () => {
                 required
               />
               <Form.Text className="text-muted">
-                <span className="redStar">*</span> Indicates Required Fields
+                <span className="redStar">*</span>
+                {t("contact.contactUs.form.requiredMessage")}
               </Form.Text>
             </Form.Group>
 
@@ -91,16 +94,16 @@ const ContactUs = () => {
                 rows="3"
                 onChange={(e) => setForm({ ...form, message: e.target.value })}
                 value={form.message}
-                placeholder="Write to us"
+                placeholder={t("contact.contactUs.form.callForReachingOut")}
                 required
               />
               <Form.Text className="text-muted">
-                Your privacy is protected
+                {t("contact.contactUs.form.privacyMessage")}
               </Form.Text>
             </Form.Group>
 
             <Button className="float-right" variant="primary" type="submit">
-              Submit
+              {t("contact.contactUs.form.submitButton")}
             </Button>
           </Form>
         </div>

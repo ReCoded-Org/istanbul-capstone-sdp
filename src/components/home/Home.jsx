@@ -7,6 +7,7 @@ import Assessment from "./sections/Assessment";
 import "./index.css";
 import RelatedCards from "./sections/RelatedCards";
 import LiveChat from "../../containers/liveChat/LiveChat";
+import Footer from "../common/Footer";
 
 export const Home = () => {
   return (
@@ -17,6 +18,7 @@ export const Home = () => {
       <Stories />
       <Assessment />
       <RelatedCards />
+      <Footer />
     </div>
   );
 };

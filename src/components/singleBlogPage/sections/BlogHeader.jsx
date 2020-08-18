@@ -5,8 +5,8 @@ export const BlogHeader = (props) => {
   const { blog } = props;
 
   return (
-    <Container>
-      <Row>
+    <Container className="w-100">
+      <Row className="singleBlogTopImages">
         <Col xs={12} md={12} lg={12}>
           <Image className="blogHeader" src={blog.imageURL} alt="Blog header" />
           <Image
