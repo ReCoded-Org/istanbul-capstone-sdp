@@ -155,7 +155,7 @@
   },
   "assessmentHomepage": {
     "heading": "Psychological Assessment",
-    "assessmentDetails": "For helping to determine whether you or someone you know has symptoms commonly associated with suicide or mental disorder, please fill out the following questionnaire truthfully. The results will only be helpful if you answer in an honest and complete manner. Please note: Our Assessment quiz is not meant to diagnose, but rather to help you understand whether a certain mental health issue may be of concern to you. It’s sort of like asking for a second opinion from an objective friend (as long as you’ve been truthful in your answers).",
+    "assessmentDetails": "For helping to determine whether you or someone you know has symptoms commonly associated with suicide or mental disorder, please fill out the following questionnaire truthfully. The results will only be helpful if you answer in an honest and complete manner.",
     "assessmentButton": "Start Here",
     "imageAlt": "an image about assessment"
   },
