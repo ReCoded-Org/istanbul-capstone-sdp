@@ -1,9 +1,6 @@
 .homePageHeader {
   width: 100%;
   text-align: center;
-  z-index: -1;
-  position: relative;
-  display: inline-block;
 }
 
 .homePageHeader .homePageHeaderTitle {
@@ -73,79 +70,57 @@
   color: #ed2a7a;
 }
 
+
 .weCare {
   color: black;
-  margin-left: 12%;
+  margin: 11% auto 3%;
 }
 
 .pinkButtonWithWhiteText {
-  color: white;
-  border: none;
-  background-color: #ed2a7a !important;
-  border-radius: 10px;
-  border: none !important;
-  display: block;
-  font-size: 16px;
-  padding: 12px 28px;
   margin: 1.5% 0;
+  background-color: #ed2a7a !important;
+  border-radius: 10px !important;
+  border: none !important;
+  height: 2.3rem;
+  width: 8rem;
 }
 
 .blueButtonWithWhiteText {
-  color: white;
-  border: none;
-  background-color: rgb(59, 175, 241);
-  border-radius: 10px;
-  font-size: 16px;
-  padding: 12px 28px;
+  background-color: #6bb2ff !important;
+  border-radius: 10px !important;
+  border: none !important;
+  height: 2.3rem;
+  width: 17rem;
   margin-bottom: 11%;
 }
 
 .weCare h1 {
-  font-family: "Noto Sans";
-  font-size: 46px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 62px;
-  line-height: 73px;
-  text-align: justify;
+  text-transform: uppercase;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 3.5rem;
   color: #161b50;
+  margin-bottom: 3.5%;
 }
 
 .weCare p {
-  width: 100%;
+  font-family: roboto, sans-serif;
   text-align: justify;
-  color: #242424;
-  font-family: "Roboto";
-  font-weight: 300;
-  font-size: 24px;
-  padding-right: 70px;
+  font-size: 1.125rem;
+  margin-bottom: 1.5%;
+  font-weight: 400;
+  color: #686868;
 }
 
-.firstWord {
-  font-size: 36px;
+.blueText {
+  color: #125ead;
 }
 
-.pinkText {
-  color: deeppink;
-}
 
 .stories {
-  display: flex;
-  padding-bottom: 10%;
   background-color: #f5f9fd;
-  height: 45rem;
+  height: 34rem;
   padding: 6% 12.4%;
-  margin: 0 auto 8%;
-}
-
-.stories p {
-  color: #242424;
-  font-family: "Roboto";
-  font-size: 22px;
-  font-weight: 300;
-  text-align: justify;
-  width: 80%;
-  margin-top: 2rem;
+  margin: 0 auto 3%;
 }
 
 .stories h1 {
@@ -155,55 +130,80 @@
   line-height: 60px;
 }
 
-.stories .readMore {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 26px;
+.stories p {
+  font-size: 1.125rem;
+  font-family: Roboto, sans-serif;
+  color: #686868;
   text-align: justify;
-  color: #ed2a7a;
-}
-
-.stories img {
-  float: right;
-  mix-blend-mode: multiply;
-  width: 150%;
-  height: 50%;
-  margin-top: 20%;
-  margin-left: 50%;
-}
-
-.assessment {
-  display: flex;
-  margin-left: 12%;
-  height: 34rem;
-  padding: 0 12.4%;
-  margin: 0 auto 8%;
-  margin-bottom: 12%;
-}
-
-.assessment h1 {
-  font-family: "Noto Sans";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 56px;
-  text-align: justify;
-  color: #161b50;
-}
-
-.assessment p {
-  color: #242424;
-  font-family: "Roboto";
-  font-size: 22px;
-  font-weight: 300;
-  text-align: justify;
-  width: 75%;
+  width: 90%;
   margin-top: 2rem;
 }
 
-.assessment img {
-  float: right;
-  margin-top: 143px;
+.stories .readMore {
+  font-size: 20px;
+  color: #ed2a7a;
+}
+
+.stories a:hover {
+  text-decoration: none;
+}
+
+.halfFullImage {
+  width: 100%;
+}
+
+.assessment {
+  height: 34rem;
+  padding: 7% 15%;
+  margin: 2rem auto 8%;
+}
+
+.assessment h1 {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 3.2rem;
+  color: #161b50;
+  line-height: 60px;
+  margin-top: 2rem;
+}
+
+.assessment p {
+  font-size: 1.125rem;
+  font-family: Roboto, sans-serif;
+  color: #686868;
+  text-align: justify;
+  width: 90%;
+  margin-top: 2rem;
+}
+
+.rediectLink {
+  margin: 1.5% 0;
+  background-color: #ed2a7a !important;
+  border-radius: 10px !important;
+  border: none !important;
+  height: 2.3rem;
+  width: 8rem;
+}
+
+.wholeCarousel {
+  height: 20rem;
+  margin: 1.5rem auto 6.5rem !important;
+  width: 100%;
+}
+
+.carousel {
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0px 0px 0px 0px #9797974d !important;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23454545' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+  margin-right: 90% !important;
+  margin-bottom: 20% !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23454545' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+  margin-left: 90% !important;
+  margin-bottom: 20% !important;
 }
