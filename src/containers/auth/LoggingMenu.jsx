@@ -21,7 +21,7 @@ const LoggingDropdownMenu = (props) => {
 
   const avatar = (
     <Image
-      src="https://i.ibb.co/s5Xh2d2/Login-Signup-Icon.png"
+      src={profile.imageURL || "https://i.ibb.co/s5Xh2d2/Login-Signup-Icon.png"}
       width="40"
       roundedCircle
     />
@@ -33,7 +33,7 @@ const LoggingDropdownMenu = (props) => {
     <SignedOutLinks />
   );
   return (
-    <Dropdown className="langDropdown">
+    <Dropdown className="langDropdown loggingLinks">
       <Dropdown.Toggle id="dropdown-basic" className="langDropdown">
         {avatar}
       </Dropdown.Toggle>
