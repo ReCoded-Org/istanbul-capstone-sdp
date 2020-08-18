@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import "./index.css";
+import { useTranslation } from "react-i18next";
 import { Form, Container, Row, Col, Button, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { addNewsletter } from "../../actions/authActions";
 
 const Footer = (props) => {
+  const { t } = useTranslation();
   const [email, setEmail] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -15,7 +17,7 @@ const Footer = (props) => {
   return (
     <div className="footer">
       <Container>
-        <h3>SUBSCRIBE TO STAY UP TO DATE</h3>
+        <h3>{t("footer.header")}</h3>
         <Form onSubmit={handleSubmit}>
           <Form.Row className="align-items-center">
             <Col>
@@ -23,12 +25,12 @@ const Footer = (props) => {
                 onChange={(e) => setEmail(e.target.value)}
                 value={email}
                 className="formControl"
-                placeholder="Your email address"
+                placeholder={t("footer.placeholder")}
                 type="email"
               />
             </Col>
             <Col xs="auto">
-              <Button type="submit">Submit</Button>
+              <Button type="submit">{t("footer.submit")}</Button>
             </Col>
           </Form.Row>
         </Form>
@@ -37,13 +39,15 @@ const Footer = (props) => {
             <p>
               (+90) 533-382-094 <br />
               suljak@suljak.com <br />
-              43 Foundry Avenue, Basaksehir,
-              <br /> Istotc, Istanbul, Turkey. <br />
-              © 2020 Suljak Suicide Prevention Organization <br />
+              {t("footer.address.0")}
+              <br />
+              {t("footer.address.1")}
+              <br />
+              {t("footer.copyright")} <br />
             </p>
           </Col>
           <Col md={3} sm={6}>
-            <h4>Follow Us</h4>
+            <h4>{t("footer.follow")}</h4>
             <Nav className="socialCircle">
               <a
                 href="https://5f3a88bbe029db000752d32c--istanbul-capstone-sdp.netlify.app/contact"
@@ -76,13 +80,13 @@ const Footer = (props) => {
           </Col>
           <Col className="footerNavs" md={3} sm={6}>
             <Nav className="flex-column">
-              <Link to="/">Home</Link>
-              <Link to="/contact">Contact Us</Link>
-              <Link to="/about">About</Link>
-              <Link to="/assessment">Assessment</Link>
-              <Link to="/donation">Donation</Link>
-              <Link to="/blogs">Blog</Link>
-              <Link to="/login">Login</Link>
+              <Link to="/">{t("footer.home")}</Link>
+              <Link to="/contact">{t("footer.contact")}</Link>
+              <Link to="/about">{t("footer.about")}</Link>
+              <Link to="/assessment">{t("footer.assess")}</Link>
+              <Link to="/donation">{t("footer.donate")}</Link>
+              <Link to="/blogs">{t("footer.blogs")}</Link>
+              <Link to="/login">{t("footer.login")}</Link>
             </Nav>
           </Col>
         </Row>

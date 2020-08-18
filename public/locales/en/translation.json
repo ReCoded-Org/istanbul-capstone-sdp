@@ -1,4 +1,19 @@
 {
+  "footer": {
+    "header": "SUBSCRIBE TO STAY UP TO DATE",
+    "placeholder": "Your email address",
+    "submit": "SUBMIT",
+    "address": ["43 Foundry Avenue, Basaksehir,", "Istotc, Istanbul, Turkey."],
+    "copyright": "© 2020 Suljak Suicide Prevention Organization",
+    "follow": "Follow Us",
+    "home": "Home",
+    "contact": "Contact Us",
+    "about": "About",
+    "assess": "Assessment",
+    "donate": "Donation",
+    "blogs": "Blog",
+    "login": "Login"
+  },
   "navbar": {
     "contact": "Contact Us",
     "about": "About",
@@ -304,5 +319,42 @@
     "en": "English",
     "tr": "Turkish",
     "ar": "Arabic"
+  },
+  "signIn": {
+    "login": "Login",
+    "loginOr": " or login using",
+    "noAccount": " Don't have an account?",
+    "signUp": "signUp",
+    "help": "need help?",
+    "welcome": ["Welcome", "back!"]
+  },
+  "signInForm": {
+    "resetPassword": "Reset Password",
+    "enterEmail": "Enter your email to send you a password reset email",
+    "cancel": "Cancel",
+    "resetButton": "Reset Password",
+    "resetPopup": "Resetting your password",
+    "resetEmailSent": "A reset password email has been sent successfully, you can check your mailbox to set a new password",
+    "success": "Done.",
+    "formEmail": "Email",
+    "formPassword": "Password",
+    "forgotPassword": "Forgot Your Password?",
+    "loginButton": "Login"
+  },
+  "signUp": {
+    "signUp": "Sign Up",
+    "signUpOr": " Or sign up using",
+    "alreadyMember": "Already a member?",
+    "login": "Login",
+    "help": "Need help?",
+    "welcome": ["Welcome", " to our ", "website."]
+  },
+  "signUpForm": {
+    "fName": "First Name",
+    "lName": "Last Name",
+    "email": "Email",
+    "password": "Password",
+    "rePassword": "Enter your password again",
+    "passNotMatch": "Password doesn't match"
   }
 }
