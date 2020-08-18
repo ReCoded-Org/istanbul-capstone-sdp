@@ -2,6 +2,24 @@
   "welcome": {
     "message": "React'e Hoş Geldin"
   },
+  "aboutPart": {
+    "bigText": "SULJAK,",
+    "purpose": " insanlara mutluluk getirmeyi temel hedef haline getirmiş bir organizasyon. Bizler, bireylere mental ya da gündelik hayatlarında yaşadıkları sorunlar hakkında konuşabilecek biri olarak buradayız. 2012'de kurucularımız tarafından kurulduk. Kar amacı gütmeyen bir kuruluş olduğumuz için, giderlerimizin tamamı bağışçılarımız tarafından karşılanıyor. Belki sen de onlardan birisin!",
+    "goals": " Bizler, daha güçlü biri olman için, daha iyi bir hayata sahip olabilmen için buradayız.",
+    "noAdsPolicy": " Websitemiz hiçbir şirket için hizmet etmemekte. Bunu şu yüzden belirtiyoruz, sitemizde reklam veya sponsorlu içerik bulunmamakta. Böylece sizlere güzel bir içerik oluşturuyoruz."
+  },
+  "managerAssistant": {
+    "name": "Nasser Ahmed",
+    "title": "Müdür Yardımcısı"
+  },
+  "generalManager": {
+    "name": "Jawdat Yildiz",
+    "title": "Müdür"
+  },
+  "psychotherapist": {
+    "name": "Turgut Bamsi",
+    "title": "Psikoterapist"
+  },
   "React": {
     "1": "React"
   },
