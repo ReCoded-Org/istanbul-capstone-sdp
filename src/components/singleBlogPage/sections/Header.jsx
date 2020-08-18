@@ -4,7 +4,7 @@ export const Header = () => {
   return (
     <div>
       <img
-        className="header"
+        className="singleBlogPageHeader"
         src={"https://i.ibb.co/fpDKTmw/Single-Blog-Page.jpg"}
         alt=""
       />

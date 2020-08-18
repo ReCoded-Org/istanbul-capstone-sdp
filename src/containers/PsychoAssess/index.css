@@ -41,6 +41,22 @@
   margin: 0 auto;
 }
 
+.testContactButton {
+  background-color: #1b96cf !important;
+  border: #161b50 !important;
+  margin: 0 auto;
+}
+
+.resultCategory {
+  color: gray;
+}
+
+.testDoneButton {
+  background-color: #1b96cf !important;
+  border: #161b50 !important;
+  margin: 0 auto;
+}
+
 .testSubmitButtonRow {
   display: flex;
   justify-content: center;
