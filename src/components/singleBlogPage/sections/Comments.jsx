@@ -1,8 +1,11 @@
 import React, { useState } from "react";
+import { connect } from "react-redux";
+import { firestoreConnect } from "react-redux-firebase";
+import { compose } from "redux";
 import "../index.css";
-import { Row, Col, Container, Button } from "react-bootstrap";
+import { Row, Col, Container, Button, Image } from "react-bootstrap";
 
-export const Comments = (props) => {
+const Comments = (props) => {
   const { blog, auth, profile } = props;
 
   const [comment, setComment] = useState("");
@@ -21,17 +24,19 @@ export const Comments = (props) => {
   };
 
   let allComments = [];
-  if (blog.comments.length > 0) {
+  if (blog) {
     allComments = blog.comments.map((item) => {
 
     const profilePhoto = profile.imageURL || "https://i.ibb.co/k0NNyLV/User-profile-image.png";
 
       return (
         <div>
-          <img
+          <Image
             className="visitorImage"
             src={profilePhoto}
             alt="Visitor profile"
+            width="60"
+            thumbnail
           />
           <div className="displayedComment">
             <p className="visitorName">
@@ -45,6 +50,7 @@ export const Comments = (props) => {
 
   }
 
+  if (profile) {
   return (
     <Container className="w-100">
       <Row>
@@ -74,5 +80,24 @@ export const Comments = (props) => {
       </Row>
     </Container>
   );
+  } else {
+    return <Container><h4>Loading...</h4></Container>
+  }
 };
+
+const mapStateToProps = (state, ownProps) => {
+  const auth =state.firebase.auth;
+  const profiles = state.firestore.data.profiles;
+  const profile = profiles ? profiles[auth.uid] : null;
+
+  return {
+    profile,
+    auth,
+  };
+};
+
+export default compose(
+  connect(mapStateToProps),
+  firestoreConnect([{ collection: "profiles" }])
+)(Comments);
 

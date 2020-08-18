@@ -5,7 +5,7 @@ import { compose } from "redux";
 import { Header } from "./sections/Header";
 import { BlogHeader } from "./sections/BlogHeader";
 import { BlogContent } from "./sections/BlogContent";
-import { Comments } from "./sections/Comments";
+import Comments from "./sections/Comments";
 import { Recommended } from "./sections/Recommended";
 import Footer from "../common/Footer";
 import { addComment } from "../../actions/blogActions"
@@ -19,7 +19,7 @@ const SingleBlogPage = (props) => {
         <Header />
         <BlogHeader blog={blog} />
         <BlogContent blog={blog} />
-        <Comments addComment={props.addComment} auth={auth} blog={blog} profile={profile} />
+        <Comments addComment={props.addComment} blog={blog} />
         <Recommended />
         <Footer />
       </div>

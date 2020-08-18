@@ -23,6 +23,7 @@ const LoggingDropdownMenu = (props) => {
     <Image
       src={profile.imageURL || "https://i.ibb.co/s5Xh2d2/Login-Signup-Icon.png"}
       width="40"
+      height="40"
       roundedCircle
     />
   );
