@@ -16,7 +16,12 @@ const RelatedCards = (props) => {
               This card has supporting text below as a natural lead-in to
               additional content.
             </Card.Text>
-            <a href="#!" className="readMoreCardBtn">
+            <a
+              href="http://teenmentalhealth.org/mental-disorders/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="readMoreCardBtn"
+            >
               Read more >>
             </a>
           </Card.Body>
@@ -29,32 +34,47 @@ const RelatedCards = (props) => {
               This card has supporting text below as a natural lead-in to
               additional content.
             </Card.Text>
-            <a href="#!" className="readMoreCardBtn">
+            <a
+              href="https://www.nimh.nih.gov/health/topics/depression/index.shtml"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="readMoreCardBtn"
+            >
               Read more >>
             </a>
           </Card.Body>
         </Card>
 
-        <Card className="relatedCard">
+        <Card className="relatedCard relatedCardResponsive">
           <Card.Body>
             <Card.Img className="cardLogo" src={logo3} />
             <Card.Text>
               This card has supporting text below as a natural lead-in to
               additional content.
             </Card.Text>
-            <a href="#!" className="readMoreCardBtn">
+            <a
+              href="https://www.youtube.com/watch?v=bYGO43Ukqus"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="readMoreCardBtn"
+            >
               Read more >>
             </a>
           </Card.Body>
         </Card>
-        <Card className="relatedCard">
+        <Card className="relatedCard relatedCardResponsive">
           <Card.Body>
             <Card.Img variant="top" className="cardLogo" src={logo4} />
             <Card.Text>
               This card has supporting text below as a natural lead-in to
               additional content.
             </Card.Text>
-            <a href="#!" className="readMoreCardBtn">
+            <a
+              href="https://www.thehindu.com/opinion/open-page/living-is-the-solution-suicide-is-not/article29668400.ece"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="readMoreCardBtn"
+            >
               Read more >>
             </a>
           </Card.Body>
