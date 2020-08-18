@@ -63,8 +63,8 @@ export const NavBar = () => {
             </Link>
           </Nav.Item>
 
-          <Nav.Item className="navItemsMargins">
-            <Link to="/psycho-assess" className="navLink">
+          <Nav.Item className="navSpaces">
+            <Link to="/assessment" className="navLink">
               Assessment
             </Link>
           </Nav.Item>

@@ -19,6 +19,12 @@
   font-weight: bold;
 }
 
+.assesmentTitle {
+  color: rgb(6, 90, 175);
+  padding: 11px 4px;
+  font-weight: bold;
+}
+
 .questionAnswers label,
 .questionAnswers input {
   vertical-align: middle;
