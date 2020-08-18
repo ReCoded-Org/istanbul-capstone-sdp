@@ -3,39 +3,47 @@ import "../index.css";
 import { Row, Col, Container, Button } from "react-bootstrap";
 
 export const Comments = (props) => {
-  const { comments } = props.blogTest;
-  const commentState = {
-    comment: "",
-    name: "",
-    email: "",
-    website: "",
-  };
+  const { blog, auth, profile } = props;
 
-  const [form, setForm] = useState(commentState);
+  const [comment, setComment] = useState("");
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert(`your message have been submitted ${form}`);
-    setForm(commentState);
+
+    const commentData = {
+      userId: auth.uid,
+      date: new Date().toLocaleString(),
+      dispayName: profile.fullName || "",
+      comment,
+    }
+    props.addComment(blog.blogId, commentData);
+    setComment("");
   };
 
-  const allComments = comments.map((item) => {
-    return (
-      <div>
-        <img
-          className="visitorImage"
-          src="https://i.ibb.co/k0NNyLV/User-profile-image.png"
-          alt="Visitor profile"
-        />
-        <div className="displayedComment">
-          <p className="visitorName">
-            {" "}
-            {item.person}{" "}
-            <span className="visitorComment"> {item.comment} </span>
-          </p>
+  let allComments = [];
+  if (blog.comments.length > 0) {
+    allComments = blog.comments.map((item) => {
+
+    const profilePhoto = profile.imageURL || "https://i.ibb.co/k0NNyLV/User-profile-image.png";
+
+      return (
+        <div>
+          <img
+            className="visitorImage"
+            src={profilePhoto}
+            alt="Visitor profile"
+          />
+          <div className="displayedComment">
+            <p className="visitorName">
+              <p>{item.dispayName}</p>
+              <p className="visitorComment">{item.comment}</p>
+            </p>
+          </div>
         </div>
-      </div>
-    );
-  });
+      );
+    });
+
+  }
 
   return (
     <Container className="w-100">
@@ -46,51 +54,20 @@ export const Comments = (props) => {
           <section className="">{allComments}</section>
 
           <form className="replyFields" onSubmit={handleSubmit}>
-            <h5>Leave a Reply</h5>
-            <p>
-              Your email address will not be published. Required fields are
-              marked *
-            </p>
-            Comment* <br />
+            <h5>Leave a comment</h5>
+            <h6>
+              Only users can post a comment
+            </h6>
             <textarea
-              onChange={(e) => setForm({ ...form, comment: e.target.value })}
-              value={form.comment}
+              onChange={(e) => setComment(e.target.value)}
+              value={comment}
               placeholder="Write your comment"
               cols="80"
-              rows="8"
+              rows="2"
               className="col-lg-12 col-md-10 col-sm-10 infoFields"
-              required
             ></textarea>
-            <br />
-            Name* <br />
-            <input
-              onChange={(e) => setForm({ ...form, name: e.target.value })}
-              value={form.name}
-              type="text"
-              className="col-lg-12 col-md-10 col-sm-10 infoFields"
-              required
-            />
-            <br />
-            Email* <br />
-            <input
-              onChange={(e) => setForm({ ...form, email: e.target.value })}
-              value={form.email}
-              type="email"
-              className="col-lg-12 col-md-10 col-sm-10 infoFields"
-              required
-            />
-            <br />
-            Website
-            <br />
-            <input
-              onChange={(e) => setForm({ ...form, website: e.target.value })}
-              value={form.website}
-              type="text"
-              className="col-lg-12 col-md-10 col-sm-10 infoFields"
-            />
-            <br />
-            <Button className="commentButton" type="submit">
-              Post Comment
+            <Button className="w-25 commentButton" type="submit" disabled={!auth || profile.isBlocked}>
+              Post
             </Button>
           </form>
         </Col>
@@ -98,3 +75,4 @@ export const Comments = (props) => {
     </Container>
   );
 };
+

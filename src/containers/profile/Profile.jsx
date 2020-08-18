@@ -103,7 +103,7 @@ const Profile = (props) => {
                   title={<h4>Manage Blogs</h4>}
                   className="m-4"
                 >
-                  <ManageBlogs />
+                  <ManageBlogs profile={profile} />
                 </Tab>
               )}
             </Tabs>
@@ -131,6 +131,7 @@ const Profile = (props) => {
 };
 
 const mapStateToProps = (state, ownProps) => {
+  console.log("ownProps:", ownProps);
   const id = ownProps.match.params.id;
   const profiles = state.firestore.data.profiles;
   const profile = profiles ? profiles[id] : null;
