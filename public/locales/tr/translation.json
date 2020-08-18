@@ -1,4 +1,11 @@
 {
+  "navbar": {
+    "contact": "İletişim",
+    "about": "Hakkımızda",
+    "assess": "Test",
+    "donate": "Bağış",
+    "blogs": "Blog"
+  },
   "contact": {
     "contactUs": {
       "message": ["Sosyal Medyada", "Bizi Takip Edin"],
@@ -27,7 +34,7 @@
     "alertMessage": "Mesajınız gönderildi."
   },
   "donation": {
-    "secondaryHeader":"İntiharı hepimiz önleyebiliriz",
+    "secondaryHeader": "İntiharı hepimiz önleyebiliriz",
     "header": "Bir fark yaratın, topluluğumuzun bir parçası olun",
     "introParagraph": [
       "Canlı Destek, sıkıntı içindeki insanlara 7/24 ücretsiz ve gizli destek, siz ve sevdikleriniz için intiharı önleme ve krizlere müdahale etme ile ilgili kaynaklar, ve profesyoneller için en iyi uygulamalar sunar.",
