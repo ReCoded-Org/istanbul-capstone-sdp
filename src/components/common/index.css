@@ -1,10 +1,5 @@
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
 
-.navBar {
-  width: 100%;
-  height: 60px;
-}
-
 .footer {
   padding: 5rem 0;
   background: #014992;
@@ -101,30 +96,25 @@ form button {
 }
 
 .navBar {
+  display: flex !important;
+  height: 4.4vw;
   width: 100%;
-  height: 60px;
   background: linear-gradient(
     90deg,
     rgba(0, 72, 145, 1) 0%,
     rgba(38, 120, 204, 1) 100%
   ) !important;
-  overflow: auto;
   box-shadow: 0 0px 5px rgba(151, 153, 182, 0.034),
     0 5px 13px rgba(127, 124, 161, 0.048),
     0 12.5px 10px rgba(101, 92, 156, 0.06), 0 8px 12px rgba(59, 49, 92, 0.072),
     0 30px 22px rgba(40, 17, 126, 0.086), 0 100px 80px rgba(92, 78, 129, 0.12);
 }
 
-nav.navBar {
-  overflow: hidden;
-}
-
 .navBar .navLink {
   color: #fff !important;
-  float: right;
   font-family: "Myriad Pro", sans-serif;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 1.25vw;
   letter-spacing: 2px;
   text-decoration: none;
   text-transform: uppercase;
@@ -132,49 +122,147 @@ nav.navBar {
 
 .navBar .navLink:hover {
   color: #b0faff !important;
-  font-family: "Myriad Pro", sans-serif;
-  font-weight: 400;
-  font-size: 17px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
 }
 
-.navSpaces {
-  margin-right: 1.25rem;
+.navItemsMargins {
+  margin-right: 1.5vw;
 }
 
-.brandSpaces {
-  width: 80%;
-  margin-left: 50%;
+.navbarItems {
+  margin: 0 1.6vw;
 }
 
-.loginSpaces {
-  width: 60%;
-  margin-left: 0.6rem;
-  display: inline-block;
+.suljakLogo {
+  width: 7.8vw;
+  z-index: 2 !important;
+  visibility: visible;
+  margin: 0.3vw 2.3vw;
 }
 
-.langSpaces {
-  width: 65%;
-  margin-top: -9px;
-  margin-left: 10px;
-  display: inline-block;
+.hamburgerIcon {
+  width: 7.8vw;
+  visibility: hidden;
 }
 
-.rightMargin {
-  margin-right: 2.5rem;
+.suljakhamburgerLogo {
+  display: none;
 }
 
-.navbar {
-  overflow: hidden;
+.loginIcon {
+  margin: 5% 0 20% -43%;
+  width: 1.9vw;
 }
 
-.langPic {
-  width: 60px;
+.languageImage {
+  width: 3.9vw;
+  margin: auto 2% auto 1%;
+  padding: 9%;
 }
 
-.header {
-  margin-top: 0px;
+@media only screen and (max-width: 1000px) {
+  .navBar {
+    display: flex !important;
+    height: 5vw;
+  }
+
+  .navBar .navLink {
+    font-size: 1.6vw;
+  }
+
+  .loginIcon {
+    margin: 5% 0 20% -43%;
+    width: 1.9vw;
+  }
+
+  .languageImage {
+    width: 3.9vw;
+    margin: auto 2% auto 1%;
+    padding: 9%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navBar {
+    display: flex !important;
+    height: 6vw;
+  }
+
+  .suljakLogo {
+    visibility: hidden;
+  }
+
+  .hamburgerIcon {
+    width: 3vw;
+    margin: -1vw -9vw;
+    visibility: visible;
+    z-index: 15;
+    position: fixed;
+  }
+
+  .navBar .navLink {
+    visibility: visible;
+  }
+
+  .navbar-collapse {
+    margin-bottom: 20% !important;
+  }
+
+  .navBar .navLink {
+    font-size: 15px;
+    float: left;
+    margin: 15px;
+  }
+
+  .navbarItems {
+    flex-flow: column !important;
+    position: fixed !important;
+    padding: 50px 2% 1%;
+    background-color: #2778cc;
+    top: 0;
+    margin: -17px !important;
+    z-index: 2;
+    height: 115%;
+    transition: all 0.4s ease-in-out;
+    flex-direction: column-reverse !important;
+    justify-content: space-around !important;
+  }
+
+  .nav .navbarItems {
+    margin: -17px;
+  }
+
+  .navItemsMargins {
+    margin: 0 5px 0 20px;
+    width: 200px;
+    border-bottom: 1px solid #fbccd5;
+  }
+
+  .navLink {
+    margin: 20px;
+  }
+
+  .loginIcon {
+    position: relative;
+    left: 71vw;
+    margin: 5% 0 20% -43%;
+    width: 2.5vw;
+  }
+
+  .languageImage {
+    position: relative;
+    left: 68vw;
+    width: 5.1vw;
+    margin: auto 2% auto 45%;
+    padding: 8%;
+  }
+
+  .navbarItems {
+    margin: 0;
+  }
+
+  .movingSideMenu {
+    left: -100%;
+  }
 }
 
 .langDropdown button {
