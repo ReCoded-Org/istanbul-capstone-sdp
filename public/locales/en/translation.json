@@ -26,6 +26,47 @@
     },
     "alertMessage": "You have submitted succesfully."
   },
+  "donation": {
+    "secondaryHeader":"We can all help prevent suicide",
+    "header": "Make A Difference, Be A Part Of Our Community",
+    "introParagraph": [
+      "Live Support provides 24/7, free and confidential support for people in distress, prevention and crisis resources for you or your loved ones, and best practices for professionals. And we are constantly expanding our work because it is literally a matter of life or death for countless people.",
+      "You can help keep us growing as a free, non-profit website that doesn’t run ads, we rely on support from our readers. If you believe in Suljak’s mission, please consider donating. "
+    ],
+    "donateParagraph": [
+      "How to donate",
+      " Suicide and mental health conditions affect millions. Together, we can bring these issues out of the Darkness and create awareness about mental health. Suljak provides the opportunity for also companies to take an active role in suicide prevention. please send us your email. Your generosity helps us strengthen our growing infrastructure, support Lifeline callers, and change the conversation around suicide prevention."
+    ],
+    "helpParagraph": [
+      "How can you help us?",
+      "Close to 800,000 people die due to suicide every year, which is one person every 40 seconds. Suicide is a global phenomenon and occurs throughout the lifespan. Effective and evidence-based interventions can be implemented at population, sub-population and individual levels to prevent suicide and suicide attempts. There are indications that for each adult who died by suicide there may have been more than 20 others attempting suicide. Suicide occurs throughout the lifespan and is the second leading cause of death among 15-29 year olds globally. Suicide is a global phenomenon. Suicide accounted for 1.4% of all deaths worldwide, making it the 18th leading cause of death in 2016. To help change this, we need your support.",
+      "In much of the world, suicide is stigmatized and condemned for religious or cultural reasons. In some countries, suicidal behavior is a criminal offence punishable by law. Suicide is therefore often a secretive act surrounded by taboo, and may be unrecognized, misclassified or deliberately hidden in official records of death.[5] — World Health Organization (2002) To change this, you can also do something."
+    ],
+    "mailingParagraph": [
+      "Due to the situation around COVID-19, we are requesting you provide email addresses for all donation communications including notification letters, if possible.",
+      "mailto:donation@suljak.com"
+    ],
+    "endingParagraph": [
+      "Since the foundation of Suljak, we have raise more than blabla $ for suicide prevention. Every dollar you donate, goes directly to support our programs and services for survivors. Suljak help thousands of survivors and we depend on the generosity of supporters like you!",
+      "Approximately 11 people iight services. A donation to the Canada Suicide Prevention Service allows us to connect individuals in distress and individuals with suicidal thoughts with local Crisis Centres to receive immediate support."
+    ],
+    "tableContent": {
+      "greySection": {
+        "love": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
+        "gift": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. ",
+        "tick": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. ",
+        "earth": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis."
+      },
+      "statistics": [
+        "years",
+        "dollars",
+        "donors",
+        "survivors",
+        "countries",
+        "employees"
+      ]
+    }
+  },
   "welcome": {
     "message": "Welcome to React"
   },

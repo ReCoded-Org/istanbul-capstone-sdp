@@ -8,9 +8,11 @@ export default function PersonDisplay(props) {
     <Col xs={12} md={6} lg={4} className="staffPhotoContainer">
       <img className="staffPic" alt="Staff Member" src={props.photo} />
       <br />
-      <span>{t(props.translationKey + ".name")}</span>
+      <span className="staffNameSpan">{t(props.translationKey + ".name")}</span>
       <br />
-      <span>{t(props.translationKey + ".title")}</span>
+      <span className="staffTitleSpan">
+        {t(props.translationKey + ".title")}
+      </span>
     </Col>
   );
 }
