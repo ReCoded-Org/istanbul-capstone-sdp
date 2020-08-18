@@ -1,4 +1,10 @@
 {
+  "homepage":{
+    "header":{
+      "title":"İyi Misin?",
+      "text":["Senin için","buradayız."]
+    }
+  },
   "navbar": {
     "contact": "İletişim",
     "about": "Hakkımızda",

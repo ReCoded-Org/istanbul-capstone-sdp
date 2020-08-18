@@ -1,4 +1,10 @@
 {
+  "homepage": {
+    "header": {
+      "title": "Are you okay?",
+      "text": ["We are here to help", "and support you."]
+    }
+  },
   "navbar": {
     "contact": "Contact Us",
     "about": "About",
@@ -325,9 +331,6 @@
     "formPassword": "Password",
     "forgotPassword": "Forgot Your Password?",
     "loginButton": "Login"
-
-
-
   },
   "signUp": {
     "signUp": "Sign Up",
@@ -345,8 +348,4 @@
     "rePassword": "Enter your password again",
     "passNotMatch": "Password doesn't match"
   }
-
-
-  
-
 }
