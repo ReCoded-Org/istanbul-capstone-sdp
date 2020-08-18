@@ -3,36 +3,20 @@ import "../index.css";
 import { Row, Col, Container } from "react-bootstrap";
 
 export const BlogContent = (props) => {
-  const { blogTest } = props;
+  const { blog } = props;
+
+  const createMarkup = () => {
+    return { __html: blog.content };
+  };
 
   return (
     <div>
       <Container className="w-100">
         <Row>
           <Col xs={10} md={10} lg={10} className="article">
-            <h1>{blogTest.blogTitle}</h1>
-            <p className="publishingDate">
-              Last updated on {blogTest.publishingDate}
-            </p>
-            <article>
-              {blogTest.blogContent1}
-              <img
-                className="articleWrappedImage"
-                src={blogTest.wrappedImage}
-                alt=""
-              />
-            </article>
-
-            <article>{blogTest.blogContent2}</article>
-            <br />
-
-            <article>
-              <h3>{blogTest.subTitle}</h3>
-              {blogTest.blogContent3}
-            </article>
-            <br />
-
-            <article>{blogTest.blogContent4}</article>
+            <h1>{blog.title}</h1>
+            <p className="publishingDate">Last updated on {blog.date}</p>
+            <div dangerouslySetInnerHTML={createMarkup()}></div>
           </Col>
         </Row>
       </Container>

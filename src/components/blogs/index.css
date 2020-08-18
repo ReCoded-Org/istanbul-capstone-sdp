@@ -37,3 +37,9 @@
 .blogPhotoTextContent a:hover {
   text-decoration: none !important;
 }
+
+.blogContentDisplay {
+  display: inline-block;
+  overflow: hidden;
+  max-height: 170px;
+}

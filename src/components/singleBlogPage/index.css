@@ -1,13 +1,15 @@
-.articleHeader {
+.blogHeader {
   display: flex;
   z-index: 1;
-  width: 100%;
+  width: 1050px;
+  height: 580px;
   margin: -8.75rem auto 1.8rem;
 }
 
 .authorImage {
   display: flex;
-  width: 18%;
+  width: 211px;
+  height: 211px;
   z-index: 2;
   margin: -7rem auto 1rem;
 }
@@ -69,6 +71,7 @@
 .displayedComment {
   line-height: 20px;
   margin-left: 1rem;
+  margin-top: 12px;
 }
 
 .visitorName {
@@ -124,4 +127,8 @@
 .postInfo p {
   font-family: Roboto, Sans-serif;
   margin-top: 1rem;
+}
+
+.commentedPerson {
+  color: #054f99;
 }
