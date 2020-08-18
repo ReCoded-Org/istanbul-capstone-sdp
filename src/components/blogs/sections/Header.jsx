@@ -7,9 +7,9 @@ export const Header = () => {
     <Container fluid>
       <Row>
         <img
-          className="contactUsHeader"
-          src={"https://i.ibb.co/xqC3sjG/contact-page.png"}
-          alt="Contact us page header"
+          className="blogsPageHeader"
+          src={"https://i.ibb.co/JpN8KLK/blogs-page.png"}
+          alt="Blog page header"
         />
       </Row>
     </Container>

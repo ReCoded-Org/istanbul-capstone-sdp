@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
 import { Image } from "react-bootstrap";
-import header from "./images/contact-us-header.png";
+import header from "./images/contact-page.png";
 import Info from "./sections/Info";
 import ContactUs from "./sections/ContactUs";
 import Footer from "../common/Footer";
