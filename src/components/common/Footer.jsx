@@ -47,6 +47,7 @@ const Footer = (props) => {
             <Nav className="socialCircle">
               <a
                 href="https://5f3a88bbe029db000752d32c--istanbul-capstone-sdp.netlify.app/contact"
+                rel="noopener noreferrer"
                 target="_blank"
                 className="iconLinkedin"
                 title="Linkedin"
@@ -55,6 +56,7 @@ const Footer = (props) => {
               </a>
               <a
                 href="https://www.facebook.com/"
+                rel="noopener noreferrer"
                 target="_blank"
                 className="iconFacebook"
                 title="Facebook"
@@ -63,6 +65,7 @@ const Footer = (props) => {
               </a>
               <a
                 href="https://twitter.com/"
+                rel="noopener noreferrer"
                 target="_blank"
                 className="iconTwitter"
                 title="Twitter"
