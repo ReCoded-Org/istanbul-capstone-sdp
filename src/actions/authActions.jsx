@@ -24,6 +24,8 @@ import {
   PHOTO_UPLOAD_ERROR,
   DELETE_STORAGE_SUCCESS,
   DELETE_STORAGE_ERROR,
+  ADD_NEWSLETTER_SUCCESS,
+  ADD_NEWSLETTER_ERROR,
 } from "./actionTypes";
 
 const addToFirebaseDB = (firestore, data) => {
@@ -291,6 +293,22 @@ export const deleteProfilePhotoOnStorage = (userId) => {
       })
       .catch((err) => {
         dispatch({ type: DELETE_STORAGE_ERROR, err });
+      });
+  };
+};
+
+export const addNewsletter = (email) => {
+  return (dispatch, getState, { getFirebase, getFirestore }) => {
+    const firestore = getFirestore();
+    firestore
+      .collection("newsLetterSubscribers")
+      .doc(email)
+      .set({ email })
+      .then(() => {
+        dispatch({ type: ADD_NEWSLETTER_SUCCESS });
+      })
+      .catch((err) => {
+        dispatch({ type: ADD_NEWSLETTER_ERROR, err });
       });
   };
 };
