@@ -62,7 +62,7 @@ const Footer = (props) => {
                 <i className="fa fa-facebook"></i>
               </a>
               <a
-                href="https://twitter.com/home"
+                href="https://twitter.com/"
                 target="_blank"
                 className="iconTwitter"
                 title="Twitter"
