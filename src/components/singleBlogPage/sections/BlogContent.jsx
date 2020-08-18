@@ -9,7 +9,7 @@ export const BlogContent = (props) => {
     <div>
       <Container className="w-100">
         <Row>
-          <Col xs={10} md={10} lg={10} className="article">
+          <Col xs={10} md={10} lg={10} xl={10} className="article">
             <h1>{blogTest.blogTitle}</h1>
             <p className="publishingDate">
               Last updated on {blogTest.publishingDate}
@@ -21,6 +21,7 @@ export const BlogContent = (props) => {
                 src={blogTest.wrappedImage}
                 alt=""
               />
+              <div className="clearFloat"></div>
             </article>
 
             <article>{blogTest.blogContent2}</article>
