@@ -261,12 +261,37 @@
     "If you are not logged in, please kindly enter your email before submitting your test."
   ],
   "assessment": {
-    "title": "Psychological Assessment"
-  },
-  "testSubmit": {
-    "message": "Successfully submitted your test. Your results will be sent to your email!",
-    "email": "Email Address",
-    "emailMessage": "We'll never share your email with anyone else."
+    "title": "Psychological Assessment",
+    "closeButton": "Done",
+    "results": "Results",
+    "answerMissing": "You should answer everything to see your results.",
+    "submitSuccess": "Succesfully completed your test!",
+    "contactButton": "Contact Us",
+    "verySevere": [
+      "Would you like to talk to us?",
+      "It seems like you are in need of talking, not very well. You have a high level of depression which can be considered critical. We think you should reach out to someone you trust, you love. If there is no one like that, we can be them. Just know that you are a valuable human being. You are not alone",
+      "Very Severe"
+    ],
+    "severe": [
+      "Would you like to talk to us?",
+      "You have a decent level of depression, it might be affecting your life in a bad way and we don't want that. Reach us out and we will help. Let's solve all the problems together. You are not alone.",
+      "Severe"
+    ],
+    "moderate": [
+      "Would you like to talk to us?",
+      "It seems like you are not really in need of talking. Your depression is acceptable but still if you want to get better still we are here to talk.",
+      "Moderate"
+    ],
+    "mild": [
+      "You are in a good condition.",
+      "Your situation is acceptable, but if you wanna talk to someone about anything, contact us!",
+      "Mild"
+    ],
+    "light": [
+      "You are in a good mood.",
+      "You are not depressed or it does not affect you. But still, if you feel alone, wanna share something with someone, we are here for you.",
+      "Light"
+    ]
   },
   "lang": {
     "en": "English",
