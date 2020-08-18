@@ -76,6 +76,7 @@
 
 .visitorName {
   font-weight: 500;
+  line-height: 80%;
 }
 
 .visitorComment {
@@ -85,7 +86,7 @@
 
 .visitorImage {
   display: inline;
-  margin: 0 0 1.7rem 0;
+  margin-top: -50px;
 }
 
 .replyFields {
@@ -131,4 +132,25 @@
 
 .commentedPerson {
   color: #054f99;
+}
+
+.commentDate {
+  color: #55595d;
+  font-size: 0.65em;
+}
+
+.displayedComment {
+  margin-top: 30px;
+}
+
+.addingCommentSection {
+  margin-top: -30px;
+  margin-bottom: 30px;
+}
+
+.commentDeleteBtn {
+  width: 55px;
+  height: 25px;
+  padding: 0 !important;
+  font-size: 13px !important;
 }

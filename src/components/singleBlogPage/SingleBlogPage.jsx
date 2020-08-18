@@ -8,7 +8,7 @@ import { BlogContent } from "./sections/BlogContent";
 import Comments from "./sections/Comments";
 import { Recommended } from "./sections/Recommended";
 import Footer from "../common/Footer";
-import { addComment } from "../../actions/blogActions";
+import { addComment, deleteComment } from "../../actions/blogActions";
 
 const SingleBlogPage = (props) => {
   const { blog, blogId, auth, profile } = props;
@@ -48,6 +48,7 @@ const mapDispatchToProps = (dispatch) => {
   return {
     addComment: (blogId, commentData) =>
       dispatch(addComment(blogId, commentData)),
+    deleteComment: (blogId, userId) => dispatch(deleteComment(blogId, userId)),
   };
 };
 

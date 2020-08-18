@@ -30,20 +30,32 @@ const Comments = (props) => {
         profile.imageURL || "https://i.ibb.co/k0NNyLV/User-profile-image.png";
 
       return (
-        <div>
+        <div className="border-bottom">
           <Image
             className="visitorImage"
             src={profilePhoto}
             alt="Visitor profile"
-            width="60"
+            width="70"
+            height="70"
             thumbnail
           />
           <div className="displayedComment">
             <p className="visitorName">
-              <p className="commentedPerson">{item.dispayName}</p>
-              <p className="visitorComment">{item.comment}</p>
+              <h6 className="commentedPerson">{item.dispayName}</h6>
+              <p className="ml-3 visitorComment">{item.comment}</p>
+              <p className="ml-3 commentDate">{item.date}</p>
             </p>
           </div>
+          {auth.uid === item.userId && (
+            <Button
+              variant="danger"
+              size="sm"
+              className="ml-3 commentDeleteBtn"
+              onClick={() => props.deleteComment(blogId, item.userId)}
+            >
+              Remove
+            </Button>
+          )}
         </div>
       );
     });
@@ -51,7 +63,7 @@ const Comments = (props) => {
 
   if (profile) {
     return (
-      <Container className="w-100">
+      <Container className="w-100 addingCommentSection">
         <Row>
           <Col xs={10} md={10} lg={10} className="commentSection">
             <p className="commentsTitle">Comments</p>
@@ -67,7 +79,8 @@ const Comments = (props) => {
                 placeholder="Write your comment"
                 cols="80"
                 rows="2"
-                className="col-lg-12 col-md-10 col-sm-10 infoFields"
+                className="col-lg-12 col-md-10 col-sm-10 infoFields mb-0"
+                maxlength="75"
               ></textarea>
               <Button
                 className="w-25 commentButton"
