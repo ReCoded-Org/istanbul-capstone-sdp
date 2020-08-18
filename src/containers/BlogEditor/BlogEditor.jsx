@@ -39,16 +39,13 @@ const BlogEditor = (props) => {
   };
 
   const handleSubmit = () => {
-    const DATE = new Date();
     const data = {
-      blogId: auth.uid + title.split(" ").join(""),
+      blogId: new Date().getTime() + title.split(" ").join(""),
       userId: auth.uid,
       author: profile.fullName,
       authorProfileImage: profile.imageURL,
       authorJobTitle: profile.jobTitle,
-      date: `${DATE.getDate()} / ${
-        DATE.getMonth() + 1
-      } / ${DATE.getFullYear()}`,
+      date: new Date().toDateString(),
       title,
       content,
       approvement: false,

@@ -5,6 +5,8 @@ import {
   ADD_COMMENT_ERROR,
   BLOG_APPROVEMENT_SUCCESS,
   BLOG_APPROVEMENT_ERROR,
+  DELETE_BLOG_SUCCESS,
+  DELETE_BLOG_ERROR,
 } from "./actionTypes";
 
 export const addBlog = (blogHeaderImage, data) => {
@@ -17,7 +19,7 @@ export const addBlog = (blogHeaderImage, data) => {
     };
     storage
       .child(
-        `users/${data.userId}/images/blogs/${data.blogId}/${blogHeaderImage.name}`
+        `users/${data.userId}/images/blogs/${data.blogId}/blogHeaderImage`
       )
       .put(blogHeaderImage, metadata)
       .then((uploadTaskResposive) =>
@@ -66,6 +68,21 @@ export const approveBlog = (blogData) => {
       })
       .catch((err) => {
         dispatch({ type: BLOG_APPROVEMENT_ERROR, err });
+      });
+  };
+};
+
+export const deleteBlog = (userId) => {
+  return (dispatch, getState, { getFirebase, getFirestore }) => {
+    const storageRef = getFirebase().storage().ref();
+    storageRef
+      .child(`users/${userId}/images/profilephoto`)
+      .delete()
+      .then(() => {
+        dispatch({ type: DELETE_BLOG_SUCCESS });
+      })
+      .catch((err) => {
+        dispatch({ type: DELETE_BLOG_ERROR, err });
       });
   };
 };
