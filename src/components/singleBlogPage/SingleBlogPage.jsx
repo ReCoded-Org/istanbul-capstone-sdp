@@ -19,7 +19,11 @@ const SingleBlogPage = (props) => {
         <Header />
         <BlogHeader blog={blog} />
         <BlogContent blog={blog} />
-        <Comments addComment={props.addComment} deleteComment={props.deleteComment} blog={blog} />
+        <Comments
+          addComment={props.addComment}
+          deleteComment={props.deleteComment}
+          blog={blog}
+        />
         <Recommended />
         <Footer />
       </div>
