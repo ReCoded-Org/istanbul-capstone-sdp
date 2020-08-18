@@ -2,7 +2,7 @@
   width: 20px;
 }
 
-.infoContainer > * {
+.infoContainer p {
   font-size: 0.8em;
   margin-bottom: 20px;
   color: rgb(102, 102, 102);
