@@ -19,6 +19,12 @@
   font-weight: bold;
 }
 
+.assesmentTitle {
+  color: rgb(6, 90, 175);
+  padding: 11px 4px;
+  font-weight: bold;
+}
+
 .questionAnswers label,
 .questionAnswers input {
   vertical-align: middle;
@@ -31,6 +37,22 @@
 
 .testSubmitButton {
   background-color: #121968 !important;
+  border: #161b50 !important;
+  margin: 0 auto;
+}
+
+.testContactButton {
+  background-color: #1b96cf !important;
+  border: #161b50 !important;
+  margin: 0 auto;
+}
+
+.resultCategory {
+  color: gray;
+}
+
+.testDoneButton {
+  background-color: #1b96cf !important;
   border: #161b50 !important;
   margin: 0 auto;
 }
