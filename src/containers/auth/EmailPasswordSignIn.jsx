@@ -1,10 +1,12 @@
 import React from "react";
 import { Form, Button, Col, Container, Modal } from "react-bootstrap";
 import { Redirect } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { connect } from "react-redux";
 import { signIn, resetPassword } from "../../actions/authActions";
 
 const EmailPasswordSignIn = (props) => {
+  const { t } = useTranslation();
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
   const [confirmModalShow, setConfirmModalShow] = React.useState(false);
@@ -29,11 +31,11 @@ const EmailPasswordSignIn = (props) => {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            Resetting your password
+            {t("signInForm.resetPassword")}
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <h6>Enter your email to send you a password reset email</h6>
+          <h6>{t("signInForm.enterEmail")}</h6>
           <Form.Control
             type="text"
             placeholder="Email"
@@ -44,7 +46,7 @@ const EmailPasswordSignIn = (props) => {
         </Modal.Body>
         <Modal.Footer>
           <Button variant="danger" onClick={props.onHide}>
-            Cancel
+            {t("signInForm.cancel")}
           </Button>
           <Button
             variant="primary"
@@ -54,7 +56,7 @@ const EmailPasswordSignIn = (props) => {
               setResetSuccessModalShow(true);
             }}
           >
-            Reset Password
+            {t("signInForm.resetButton")}
           </Button>
         </Modal.Footer>
       </Modal>
@@ -71,7 +73,7 @@ const EmailPasswordSignIn = (props) => {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            Resetting your password
+            {t("signInForm.resetPopup")}
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -81,15 +83,12 @@ const EmailPasswordSignIn = (props) => {
               <div className="errMsg">{errMessage}</div>
             </div>
           ) : (
-            <p>
-              A reset password email has been sent successfully, you can check
-              your mailbox to set a new password
-            </p>
+            <p>{t("signInForm.resetEmailSent")}</p>
           )}
         </Modal.Body>
         <Modal.Footer>
           <Button variant="success" onClick={props.onHide}>
-            Done
+            {t("signInForm.success")}
           </Button>
         </Modal.Footer>
       </Modal>
@@ -105,7 +104,7 @@ const EmailPasswordSignIn = (props) => {
     <Container>
       <Form>
         <Form.Group as={Col} controlId="email">
-          <Form.Label>Email</Form.Label>
+          <Form.Label>{t("signInForm.formEmail")}</Form.Label>
           <Form.Control
             type="text"
             onInput={(e) => {
@@ -114,7 +113,7 @@ const EmailPasswordSignIn = (props) => {
           />
         </Form.Group>
         <Form.Group as={Col} controlId="password">
-          <Form.Label>Password</Form.Label>
+          <Form.Label>{t("signInForm.formPassword")} </Form.Label>
           <Form.Control
             type="password"
             onInput={(e) => {
@@ -126,10 +125,10 @@ const EmailPasswordSignIn = (props) => {
           className="forgetPassword"
           onClick={() => setConfirmModalShow(true)}
         >
-          Forgot Your Password?
+          {t("signInForm.forgotPassword")}
         </div>
         <Button variant="primary" type="submit" onClick={handleSubmit}>
-          Login
+          {t("signInForm.loginButton")}
         </Button>
         <Container>
           {/* Show error message when fails to sign in */}

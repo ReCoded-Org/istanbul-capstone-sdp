@@ -3,30 +3,33 @@ import EmailPasswordSignIn from "../../../containers/auth/EmailPasswordSignIn";
 import FacebookAuth from "../../../containers/auth/FacebookAuth";
 import GoogleAuth from "../../../containers/auth/GoogleAuth";
 import { Row, Col } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 
 const SignIn = (props) => {
+  const { t } = useTranslation();
   return (
     <Row className="justify-content-md-center signinUpContainer">
       <Col className="d-flex mt-5 mb-5 shadow-lg rounded p-0 " lg="7" sm="12">
         <Col lg="7" sm="7" className="leftSection">
-          <h2>login</h2>
+          <h2>{t("signIn.login")}</h2>
           <EmailPasswordSignIn />
           <Row className="m-2 ">
-            <h5>Or Login using </h5>
+            <h5>{t("signIn.loginOr")}</h5>
             <FacebookAuth />
             <GoogleAuth />
           </Row>
           <h6>
-            Don't have an account?
-            <span onClick={props.handleLoggingSwitch}>Sign up</span>
+            {t("signIn.noAccount")}
+            <span onClick={props.handleLoggingSwitch}></span>
+            {t("signIn.signUp")}
           </h6>
         </Col>
         <Col lg="5" sm="5" className="rightSection">
-          <p>Need help?</p>
+          <p>{t("signIn.help")}</p>
           <h1>
-            Welcome
+            {t("signIn.welcome.0")}
             <br />
-            Back.
+            {t("signIn.welcome.1")}
           </h1>
         </Col>
       </Col>
