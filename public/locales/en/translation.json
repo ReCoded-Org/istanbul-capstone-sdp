@@ -7,6 +7,8 @@
     "blogs": "Blogs"
   },
   "contact": {
+    "closeButton": "Done",
+    "alertThanks": "Thank You",
     "contactUs": {
       "message": ["Follow Us", "on social media"],
       "form": {
