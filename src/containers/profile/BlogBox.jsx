@@ -1,12 +1,10 @@
 import React from "react";
-import { Link, Redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-import { firestoreConnect } from "react-redux-firebase";
-import { compose } from "redux";
-import { updateProfile } from "../../../../actions/authActions";
-import { Dropdown, Button, Row, Col, ListGroup, Image } from "react-bootstrap";
+import { updateProfile } from "../../actions/authActions";
+import { Button, Row, Col, ListGroup, Image } from "react-bootstrap";
 import "./BlogBox.css";
-import anonymousImage from "../../../../images/anonymousImage.png";
+import anonymousImage from "../../images/anonymousImage.png";
 
 const ADMIN_ROLE = "ADMIN";
 

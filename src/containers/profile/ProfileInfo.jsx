@@ -1,9 +1,9 @@
 import React from "react";
 import { connect } from "react-redux";
 import "./ProfileInfo.css";
-import profileInfoEditButtonIcon from "../../../../../../images/editButton.png";
-import ShowProfileInfo from "./ProfileInfoSections/ShowProfileInfo";
-import EditProfileInfo from "./ProfileInfoSections/EditProfileInfo";
+import profileInfoEditButtonIcon from "../../images/editButton.png";
+import ShowProfileInfo from "./ShowProfileInfo";
+import EditProfileInfo from "./EditProfileInfo";
 import { Modal, Button } from "react-bootstrap";
 
 const UserInfo = (props) => {

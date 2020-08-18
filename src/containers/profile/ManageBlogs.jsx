@@ -3,9 +3,9 @@ import { compose } from "redux";
 import { connect } from "react-redux";
 import { firestoreConnect } from "react-redux-firebase";
 import { Button, ListGroup } from "react-bootstrap";
-import BlogEditor from "../../../../containers/BlogEditor/BlogEditor";
+import BlogEditor from "../BlogEditor/BlogEditor";
 import BlogBox from "./BlogBox";
-import { approveBlog } from "../../../../actions/blogActions";
+import { approveBlog } from "../../actions/blogActions";
 
 const ADMIN_ROLE = "ADMIN";
 const AUTHOR_ROLE = "AUTHOR";

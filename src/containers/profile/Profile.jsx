@@ -8,9 +8,9 @@ import anonymousImage from "../../images/anonymousImage.png";
 import profileHeaderBackground from "../../images/profileHeaderBackground.png";
 import Header from "../../components/common/Header";
 import "./Profile.css";
-import AccountSettings from "./ProfileSections/AccountSettings/AccountSettings";
-import ManageUsers from "./ProfileSections/ManageUsers/ManageUsers";
-import ManageBlogs from "./ProfileSections/ManageBlogs/ManageBlogs";
+import AccountSettings from "./AccountSettings";
+import ManageUsers from "./ManageUsers";
+import ManageBlogs from "./ManageBlogs";
 import { updateProfilePhoto } from "../../actions/authActions";
 
 const ADMIN_ROLE = "ADMIN";
