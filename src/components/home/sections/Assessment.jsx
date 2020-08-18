@@ -12,7 +12,7 @@ const Assessment = () => {
         <p>{t("assessmentHomepage.assessmentDetails")}</p>
         <br />
         <div>
-          <Link to="psychoAssess">
+          <Link to="/assessment">
             <Button
               className="blueButtonWithWhiteText"
               size="lg"

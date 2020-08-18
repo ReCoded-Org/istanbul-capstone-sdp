@@ -24,6 +24,8 @@ import {
   PHOTO_UPLOAD_ERROR,
   DELETE_STORAGE_SUCCESS,
   DELETE_STORAGE_ERROR,
+  ADD_NEWSLETTER_SUCCESS,
+  ADD_NEWSLETTER_ERROR,
 } from "../actions/actionTypes";
 
 const initState = {
@@ -178,6 +180,18 @@ const authReducer = (state = initState, action) => {
         authError: "Profile storage deletion failed",
         errMessage: action.err.message,
         errKey: "deleteStorage",
+      };
+    case ADD_NEWSLETTER_SUCCESS:
+      return {
+        ...state,
+        authError: null,
+      };
+    case ADD_NEWSLETTER_ERROR:
+      return {
+        ...state,
+        authError: "Adding to newsletter failed",
+        errMessage: action.err.message,
+        errKey: "addNewsletter",
       };
     default:
       return state;

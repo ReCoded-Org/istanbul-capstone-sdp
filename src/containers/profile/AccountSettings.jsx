@@ -1,10 +1,10 @@
 import React from "react";
 import "./AccountSettings.css";
 import { connect } from "react-redux";
-import ProfileInfo from "./AccountSettingsSections/ProfileInfo/ProfileInfo";
-import UpdateEmail from "./AccountSettingsSections/UpdateEmail";
-import UpdatePassword from "./AccountSettingsSections/UpdatePassword";
-import DeleteAccount from "./AccountSettingsSections/DeleteAccount";
+import ProfileInfo from "./ProfileInfo";
+import UpdateEmail from "./UpdateEmail";
+import UpdatePassword from "./UpdatePassword";
+import DeleteAccount from "./DeleteAccount";
 
 const AccountSettings = (props) => {
   const { id, auth } = props;

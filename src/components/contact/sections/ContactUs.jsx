@@ -1,9 +1,11 @@
 import React from "react";
 import { Container, Col, Form, Button, Nav, Modal } from "react-bootstrap";
 import emailjs from "emailjs-com";
+import { useTranslation } from "react-i18next";
 
 const ContactUs = () => {
   const [successModalShow, setSuccessModalShow] = React.useState(false);
+  const { t } = useTranslation();
   const SuccessModal = (props) => {
     return (
       <Modal
@@ -14,15 +16,15 @@ const ContactUs = () => {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            Thank You
+            {t("contact.alertThanks")}
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <p>Your messeage have been sent</p>
+          <p>{t("contact.alertMessage")}</p>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="success" onClick={props.onHide}>
-            Done
+            {t("contact.closeButton")}
           </Button>
         </Modal.Footer>
       </Modal>
@@ -49,8 +51,8 @@ const ContactUs = () => {
       <div className="contactCardContainer">
         <div className="followSide">
           <div className="followUs">
-            <h2>Follow Us</h2>
-            <h3>on social media</h3>
+            <h2>{t("contact.contactUs.message.0")}</h2>
+            <h3>{t("contact.contactUs.message.1")}</h3>
             <Col>
               <Nav className="socialCircle d-inline-flex p-2" md={3}>
                 <Nav.Link href="#" className="iconLinkedin" title="Linkedin">
@@ -67,27 +69,31 @@ const ContactUs = () => {
           </div>
         </div>
         <div className="formSide">
-          <h3>Contact Us</h3>
+          <h3>{t("contact.contactUs.form.title")}</h3>
           <Form name="contactForm" onSubmit={handleSubmit}>
             <Form.Row>
               <Form.Group as={Col} controlId="formGridEmail">
-                <Form.Label>Name</Form.Label>
+                <Form.Label>{t("contact.contactUs.form.nameField")}</Form.Label>
                 <Form.Control type="text" name="user_name" />
               </Form.Group>
 
               <Form.Group as={Col} controlId="formGridPassword">
-                <Form.Label>Surname</Form.Label>
+                <Form.Label>
+                  {t("contact.contactUs.form.surnameField")}
+                </Form.Label>
                 <Form.Control type="text" />
               </Form.Group>
             </Form.Row>
 
             <Form.Group controlId="formBasicEmail">
               <Form.Label>
-                <span className="redStar">*</span> Email
+                <span className="redStar">*</span>
+                {t("contact.contactUs.form.emailField")}
               </Form.Label>
               <Form.Control type="email" required name="user_email" />
               <Form.Text className="text-muted">
-                <span className="redStar">*</span> Indicates Required Fields
+                <span className="redStar">*</span>
+                {t("contact.contactUs.form.requiredMessage")}
               </Form.Text>
             </Form.Group>
 
@@ -95,14 +101,15 @@ const ContactUs = () => {
               <Form.Control
                 as="textarea"
                 rows="3"
-                placeholder="Write to us"
+                placeholder={t("contact.contactUs.form.callForReachingOut")}
                 required
                 name="message"
               />
               <Form.Text className="text-muted">
-                Your privacy is protected
+                {t("contact.contactUs.form.privacyMessage")}
               </Form.Text>
             </Form.Group>
+
             <SuccessModal
               show={successModalShow}
               onHide={() => setSuccessModalShow(false)}
@@ -113,7 +120,7 @@ const ContactUs = () => {
               type="submit"
               value="Send"
             >
-              Submit
+              {t("contact.contactUs.form.submitButton")}
             </Button>
           </Form>
         </div>

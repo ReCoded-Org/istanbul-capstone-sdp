@@ -1,6 +1,99 @@
 {
+  "navbar": {
+    "contact": "İletişim",
+    "about": "Hakkımızda",
+    "assess": "Test",
+    "donate": "Bağış",
+    "blogs": "Blog"
+  },
+  "contact": {
+    "contactUs": {
+      "message": ["Sosyal Medyada", "Bizi Takip Edin"],
+      "form": {
+        "title": "İletişim",
+        "nameField": "İsim",
+        "surnameField": "Soyisim",
+        "emailField": "E-posta",
+        "requiredMessage": "doldurulması zorunlu yerler",
+        "callForReachingOut": "Bize yazın",
+        "privacyMessage": "Gizliliğiniz güvende!",
+        "submitButton": "Gönder"
+      }
+    },
+    "info": {
+      "contactTitle": "İLETİŞİM:",
+      "address": "43 Foundry Caddesi, Basaksehir, istotc, Istanbul, Türkiye",
+      "businessHoursTitle": "İŞ SAATLERİ:",
+      "hotlineText": "Destek hattımız her gün her saat açık: 11401",
+      "workingHours": [
+        "Pazartesi-Cuma: 17.00-21.00",
+        "Cumartesi: 10.00-14.00",
+        "Pazar: Kapalı"
+      ]
+    },
+    "alertMessage": "Mesajınız gönderildi."
+  },
+  "donation": {
+    "secondaryHeader": "İntiharı hepimiz önleyebiliriz",
+    "header": "Bir fark yaratın, topluluğumuzun bir parçası olun",
+    "introParagraph": [
+      "Canlı Destek, sıkıntı içindeki insanlara 7/24 ücretsiz ve gizli destek, siz ve sevdikleriniz için intiharı önleme ve krizlere müdahale etme ile ilgili kaynaklar, ve profesyoneller için en iyi uygulamalar sunar.",
+      "Büyümemize yardımcı olabilirsiniz. Ücretsiz, sponsor destegi almayan ve kar amacı gütmeyen bir web sitesi olarak, siz okuyucularımızin desteklerize bağlıyız. Suljakın misyonuna inanıyorsanız, lutfen bağışta bulunmayı düşününüz."
+    ],
+    "donateParagraph": [
+      "Nasıl bağışta bulunabilirsiniz?",
+      " Ruh Sağlığı durumları ve intihar milyonları etkilemekte. Birlikte, bu konuları karanlıktan aydınlığa çıkarabiliriz ve ruh sağlığı ile ilgili farkındalık yaratabiliriz.Suljak, şirketlere de intiharı önlemede aktif bir rol alma şansı sunmaktadır. Lütfen bize eposta adresinizi gönderin. Sizin cömertliğiniz, büyüyen altyapımızı güçlendirmemize, canlı destek hattını arayanlara destek olmamıza, ve intiharı önleme ile ilgili konuşmaları, başka bir boyuta taşımamıza yardımcı olmaktadır."
+    ],
+    "helpParagraph": [
+      "Nasıl yardımcı olabilirsiniz? ",
+      "Her yıl sekiz yüz bine yakın insan, yani her 40 saniyede bir kişi, intihardan dolayı yaşamını kaybetmektedir. İntihar, küresel bir olaydır ve hayatın akışında meydana gelebilmektedir. İntihar ve intihar girişimini önlemek için etkili ve kanıta dayalı önlemler tüm nüfusa, alt popülasyonlara ve bireysel seviyelere indirilebilir. Intihardan dolayı hayatını kaybeden her bir yetişkinin yanı sıra, 20'den fazlasının da teşebbüs ediyor olabileceğine dair göstergeler bulunmaktadır.",
+      "Dünyanın büyük bir kısmında intihar, dini ve kültürel sebeplerden dolayı küçük düşürülmekte ve kınanmaktadır. Bazı ülkelerde, intihara eğilimli davranışlar, yasalar tarafından ceza gerektiren suç olarak görülmektedir. Bu nedenle intihar tabulastırılmış gizli bir eylem olmakta ve farkedilmeyip yanlış değerlendirilmekte veya resmi ölü kayıtlarından kasıtlı olarak gizlenmektedir. -Dünya Sağlık Örgütü (2002). Bunu değiştirmek için, sen de birseyler yapabilirsin."
+    ],
+    "mailingParagraph": [
+      "Covid-19 ile ilgili süreçten dolayı, bağış ile ilgili iletişime geçmek ve duyurulardan haberdar olmak için, mümkünse bize e-posta adresinizi iletin.",
+      "mailto:donation@suljak.com"
+    ],
+    "endingParagraph": [
+      "Suljak, kuruluşundan bu yana intiharı önlemek için, blabla dolardan fazla bağıs toplamıstır. Bağışladığınız her bir dolar, doğrudan hayatta kalanlar için olan program ve hizmetlerimize destek için kullanılmaktadır. Suljak, binlerce mücadeleciye destek olmakta ve biz de bunun için sizin gibi destekçilere ihtiyac duymaktayız!",
+      "Günde yaklaşık 11 kişi hizmetlerimize ulaşmaktadır. Kanada İntiharı önleme hizmeti tehlike altında olan ve intihara eğilim gösteren bireyleri en kısa surede destek alabimleri için Yerel Kriz Merkezi'mize ulaştırmaktadır."
+    ],
+    "tableContent": {
+      "greySection": {
+        "love": "Suljak, kriz altındakilere, bu mücadeleyi kazananlara, ve yakınlarını kaybetmiş olan bireylere destek sağlayarak, beş yıldır faaliyetlerini sürdürmektedir.",
+        "gift": "Şu ana kadar, siz cömert okuyucularımız sayesinde, blabla dolardan fazla bağış toplanmıştır. Size, kar amacı gütmeyen bir organizasyon olduğumuzu ve ihtiyacı olanlara ışık olabilmeye devam edebilmek için, yüzde yüz sizin bağışlarınıza bağlı olduğumuzu hatırlatmak isteriz. ",
+        "tick": "20 binden fazla kişi bizlere ulaşmış, canlı destek hizmetimizden faydalanmış, bağışta bukunmuş ve faaliyetlerimizde gönüllü olmuştur. Hepinize teşekkür etmek isteriz. Ister bağış ister gönüllülükle olsun, sizlerin destegiyle hergün biraz daha büyümeye devam edeceğiz. ",
+        "earth": "beş binden fazla gönüllü ile, 28 ülkede faaliyet göstermekteyiz. Gönüllü olarak bir etkinliğimizde yer almak, veya bulunduğunuz bölgede bağış kampanyası düzenlemek isterseniz, lutfen email adresinizi göndererek bize ulaşın."
+      },
+      "statistics": [
+        "Yıl",
+        "Dolar",
+        "Donör",
+        "Hayatta Kalanlar",
+        "Ülke",
+        "Çalışan"
+      ]
+    }
+  },
   "welcome": {
     "message": "React'e Hoş Geldin"
+  },
+  "aboutPart": {
+    "bigText": "SULJAK,",
+    "purpose": " insanlara mutluluk getirmeyi temel hedef haline getirmiş bir organizasyon. Bizler, bireylere mental ya da gündelik hayatlarında yaşadıkları sorunlar hakkında konuşabilecek biri olarak buradayız. 2012'de kurucularımız tarafından kurulduk. Kar amacı gütmeyen bir kuruluş olduğumuz için, giderlerimizin tamamı bağışçılarımız tarafından karşılanıyor. Belki sen de onlardan birisin!",
+    "goals": " Bizler, daha güçlü biri olman için, daha iyi bir hayata sahip olabilmen için buradayız.",
+    "noAdsPolicy": " Websitemiz hiçbir şirket için hizmet etmemekte. Bunu şu yüzden belirtiyoruz, sitemizde reklam veya sponsorlu içerik bulunmamakta. Böylece sizlere güzel bir içerik oluşturuyoruz."
+  },
+  "managerAssistant": {
+    "name": "Nasser Ahmed",
+    "title": "Müdür Yardımcısı"
+  },
+  "generalManager": {
+    "name": "Jawdat Yildiz",
+    "title": "Müdür"
+  },
+  "psychotherapist": {
+    "name": "Turgut Bamsi",
+    "title": "Psikoterapist"
   },
   "React": {
     "1": "React"

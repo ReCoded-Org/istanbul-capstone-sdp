@@ -6,7 +6,7 @@ import {
   deleteProfileAuth,
   deleteProfileData,
   deleteProfilePhotoOnStorage,
-} from "../../../../../actions/authActions";
+} from "../../actions/authActions";
 
 const DeleteAccount = (props) => {
   const [confirmModalShow, setConfirmModalShow] = React.useState(false);

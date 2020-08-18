@@ -2,10 +2,19 @@ import React from "react";
 
 export const Header = () => {
   return (
-    <div>
+    <div className="homePageHeader">
+      <div className="homePageHeaderTitle">
+        <h2>Feeling Suicidal?</h2>
+        <h3>
+          We’re Here To Help And
+          <br />
+          Support You
+        </h3>
+      </div>
+
       <img
-        className="homePageHeader"
-        src={"https://i.ibb.co/86fYzkM/HP1.png"}
+        className="homePageHeaderImage"
+        src={"https://i.ibb.co/wcgjfCY/HP2.png"}
         alt="Home Page Header"
       />
     </div>
