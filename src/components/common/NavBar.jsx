@@ -1,85 +1,80 @@
 import React from "react";
-import { Nav, Navbar, Button, Image } from "react-bootstrap";
+import { Nav, Navbar } from "react-bootstrap";
 import "./index.css";
 import { Link } from "react-router-dom";
 import LangDropdown from "./LangDropdown";
 
 export const NavBar = () => {
-  const [navItemsPosition, setNavItemsPosition] = React.useState("-100%");
-
-  const handleHumburger = () => {
-    if (navItemsPosition === "-100%") {
-      setNavItemsPosition("0");
-    } else {
-      setNavItemsPosition("-100%");
-    }
-  };
+  const [isMovingSideMenu, setIsMovingSideMenu] = React.useState(false);
 
   return (
-    <div className="three">
+    <div>
       <Navbar className="navBar">
-        <Link to="/">
-          <Image
-            width="50"
-            className="humButton"
-            src="https://i.ibb.co/0tZpqgT/kisspng-computer-icons-hamburger-button-menu-new-menu-5b34724c3cb0f7-1188475115301637882486.png"
-            alt=""
-            onClick={() => handleHumburger()}
-          />
+        <div>
+          <Nav.Item>
+            <Link to="/">
+              <img
+                className="suljakLogo"
+                src="https://i.ibb.co/L9GcrMY/LLogo-2.png"
+                alt="Suljak Logo"
+              />
+            </Link>
+          </Nav.Item>
+        </div>
 
-          <Navbar.Brand>
+        <Nav.Item>
+          <Link to="/">
             <img
-              className="suljakLogo"
-              src="https://i.ibb.co/L9GcrMY/LLogo-2.png"
-              alt="Suljak Logo"
+              onClick={() => setIsMovingSideMenu(!isMovingSideMenu)}
+              className="hamburgerIcon"
+              src="https://i.ibb.co/PQgDXbj/LLogo-4.png"
+              alt="hamburger Icon"
             />
-          </Navbar.Brand>
-
-          {/* <Navbar.Brand>
-            <img
-              className="suljakBigLogo"
-              src="https://i.ibb.co/bgTdQ3G/logo-responsive.png"
-              alt="Suljak Logo"
-            />
-  </Navbar.Brand> */}
-        </Link>
+          </Link>
+        </Nav.Item>
 
         <Nav
-          className="collapse navbar-collapse justify-content-end navbarItems"
-          style={{ left: navItemsPosition }}
+          className={`collapse navbar-collapse justify-content-end navbarItems
+           ${!isMovingSideMenu ? "movingSideMenu" : ""}`}
         >
-          <Nav.Item className="navMargins">
+          <Nav.Item className="navItemsMargins">
+            <Link to="/" className="navLink">
+              Home
+            </Link>
+          </Nav.Item>
+
+          <Nav.Item className="navItemsMargins">
             <Link to="/contact" className="navLink">
               Contact Us
             </Link>
           </Nav.Item>
 
-          <Nav.Item className="navMargins">
+          <Nav.Item className="navItemsMargins">
             <Link to="/about" className="navLink">
               About
             </Link>
           </Nav.Item>
 
-          <Nav.Item className="navMargins">
-            <Link to="/psycho-assess" className="navLink">
+          <Nav.Item className="navItemsMargins">
+            <Link to="/assessment" className="navLink">
               Assessment
             </Link>
           </Nav.Item>
 
-          <Nav.Item className="navMargins">
+          <Nav.Item className="navItemsMargins">
             <Link to="/donation" className="navLink">
               Donate
             </Link>
           </Nav.Item>
 
-          <Nav.Item className="navMargins">
+          <Nav.Item className="navItemsMargins">
             <Link to="/blogs" className="navLink">
               Blog
             </Link>
           </Nav.Item>
         </Nav>
 
-        <div className="">
+        <div>
           <img
             className="loginIcon"
             src="https://i.ibb.co/s5Xh2d2/Login-Signup-Icon.png"

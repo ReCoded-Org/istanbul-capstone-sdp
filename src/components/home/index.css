@@ -3,6 +3,37 @@
   text-align: center;
   z-index: -1;
   position: relative;
+  display: inline-block;
+}
+
+.homePageHeader .homePageHeaderTitle {
+  position: absolute;
+  z-index: 13;
+  margin: 0 auto;
+  left: 4%;
+  top: 13%;
+}
+
+.homePageHeaderImage {
+  width: 100%;
+}
+
+.homePageHeaderTitle {
+  font-family: "Myriad Pro", sans-serif;
+  text-align: left;
+}
+
+.homePageHeaderTitle h2 {
+  color: white;
+  letter-spacing: 0.8px;
+  font-size: 3.3vw;
+  margin-bottom: 0;
+}
+
+.homePageHeaderTitle h3 {
+  color: #b0faff;
+  letter-spacing: 1.3px;
+  font-size: 2.2vw;
 }
 
 .relatedCardsContainer {

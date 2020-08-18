@@ -1,4 +1,72 @@
 {
+  "contact": {
+    "contactUs": {
+      "message": ["Follow Us", "on social media"],
+      "form": {
+        "title": "Contact Us",
+        "nameField": "Name",
+        "surnameField": "Surname",
+        "emailField": "Email",
+        "requiredMessage": "indicates required fields",
+        "callForReachingOut": "Write to us",
+        "privacyMessage": "Your privacy is protected",
+        "submitButton": "Submit"
+      }
+    },
+    "info": {
+      "contactTitle": "CONTACTS:",
+      "address": "43 Foundry Avenue, Basaksehir, istotc, Istanbul, Turkey",
+      "businessHoursTitle": "BUSINESS HOURS:",
+      "hotlineText": "Our support hotline is available 24 hours a day: 11401",
+      "workingHours": [
+        "Monday-Friday: 5pm to 9pm",
+        "Saturday: 10am to 2pm",
+        "Sunday: Closed"
+      ]
+    },
+    "alertMessage": "You have submitted succesfully."
+  },
+  "donation": {
+    "secondaryHeader":"We can all help prevent suicide",
+    "header": "Make A Difference, Be A Part Of Our Community",
+    "introParagraph": [
+      "Live Support provides 24/7, free and confidential support for people in distress, prevention and crisis resources for you or your loved ones, and best practices for professionals. And we are constantly expanding our work because it is literally a matter of life or death for countless people.",
+      "You can help keep us growing as a free, non-profit website that doesn’t run ads, we rely on support from our readers. If you believe in Suljak’s mission, please consider donating. "
+    ],
+    "donateParagraph": [
+      "How to donate",
+      " Suicide and mental health conditions affect millions. Together, we can bring these issues out of the Darkness and create awareness about mental health. Suljak provides the opportunity for also companies to take an active role in suicide prevention. please send us your email. Your generosity helps us strengthen our growing infrastructure, support Lifeline callers, and change the conversation around suicide prevention."
+    ],
+    "helpParagraph": [
+      "How can you help us?",
+      "Close to 800,000 people die due to suicide every year, which is one person every 40 seconds. Suicide is a global phenomenon and occurs throughout the lifespan. Effective and evidence-based interventions can be implemented at population, sub-population and individual levels to prevent suicide and suicide attempts. There are indications that for each adult who died by suicide there may have been more than 20 others attempting suicide. Suicide occurs throughout the lifespan and is the second leading cause of death among 15-29 year olds globally. Suicide is a global phenomenon. Suicide accounted for 1.4% of all deaths worldwide, making it the 18th leading cause of death in 2016. To help change this, we need your support.",
+      "In much of the world, suicide is stigmatized and condemned for religious or cultural reasons. In some countries, suicidal behavior is a criminal offence punishable by law. Suicide is therefore often a secretive act surrounded by taboo, and may be unrecognized, misclassified or deliberately hidden in official records of death.[5] — World Health Organization (2002) To change this, you can also do something."
+    ],
+    "mailingParagraph": [
+      "Due to the situation around COVID-19, we are requesting you provide email addresses for all donation communications including notification letters, if possible.",
+      "mailto:donation@suljak.com"
+    ],
+    "endingParagraph": [
+      "Since the foundation of Suljak, we have raise more than blabla $ for suicide prevention. Every dollar you donate, goes directly to support our programs and services for survivors. Suljak help thousands of survivors and we depend on the generosity of supporters like you!",
+      "Approximately 11 people iight services. A donation to the Canada Suicide Prevention Service allows us to connect individuals in distress and individuals with suicidal thoughts with local Crisis Centres to receive immediate support."
+    ],
+    "tableContent": {
+      "greySection": {
+        "love": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
+        "gift": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. ",
+        "tick": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. ",
+        "earth": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis."
+      },
+      "statistics": [
+        "years",
+        "dollars",
+        "donors",
+        "survivors",
+        "countries",
+        "employees"
+      ]
+    }
+  },
   "welcome": {
     "message": "Welcome to React"
   },
@@ -44,30 +112,30 @@
     "name": "Turgut Bamsi",
     "title": "Psychotherapist"
   },
-  "weCare":{
-    "heading":"WE CARE AND CONCERN ABOUT YOU",
-    "firstWord":"Lets",
-    "motivationalText":"try and keep things in perspective. Let's be",
-    "pinkText":"positive",
-    "supportiveText":", help each other out and we will get through all of this. In this world there has never been a storm that lasted. This too, shall pass. Human Spirit is An Amazing thing, keep it pumped up with adequate ",
-    "pinkTextWord":"positivity",
-    "hopefulText":" and share positive energies. Replace thoughts of worry with thoughts of hope, faith and victory. Once you choose hope, anything is possible. Ending your life is not the answer, getting help is the answer. If you have thoughts of ending your life, or are a survivor, you will find help, hope, comfort, understanding, support, love, and extensive resources here. Our strength comes from our act to care with our hearts and the belief that every life matters. We care and concern about you. " ,
-    "reachUsButton":"TALK TO US",
-    "assessmentButton":"If you are not sure, take the test"
+  "weCare": {
+    "heading": "WE CARE AND CONCERN ABOUT YOU",
+    "firstWord": "Lets",
+    "motivationalText": "try and keep things in perspective. Let's be",
+    "pinkText": "positive",
+    "supportiveText": ", help each other out and we will get through all of this. In this world there has never been a storm that lasted. This too, shall pass. Human Spirit is An Amazing thing, keep it pumped up with adequate ",
+    "pinkTextWord": "positivity",
+    "hopefulText": " and share positive energies. Replace thoughts of worry with thoughts of hope, faith and victory. Once you choose hope, anything is possible. Ending your life is not the answer, getting help is the answer. If you have thoughts of ending your life, or are a survivor, you will find help, hope, comfort, understanding, support, love, and extensive resources here. Our strength comes from our act to care with our hearts and the belief that every life matters. We care and concern about you. ",
+    "reachUsButton": "TALK TO US",
+    "assessmentButton": "If you are not sure, take the test"
   },
-  "stories":{
-      "heading":"STORIES ABOUT HOPE",
-      "shareYourStory":"We understand that every struggle is different. Experience the stories of people like you, and how they overcame crisis to find hope and recovery or please let us hear your healing journey, share it with others, be a hope. You will never know to whom you will be the light for. ",
-      "quote":"Some days you will be the light for others and some days you will need some light from them. As long as there is light, there is hope and there is a way.",
-      "quoteOwner":" <Jennifer Gayle> ",
-      "readMore":"read more >>",
-      "imageAlt":"image about hope"
+  "stories": {
+    "heading": "STORIES ABOUT HOPE",
+    "shareYourStory": "We understand that every struggle is different. Experience the stories of people like you, and how they overcame crisis to find hope and recovery or please let us hear your healing journey, share it with others, be a hope. You will never know to whom you will be the light for. ",
+    "quote": "Some days you will be the light for others and some days you will need some light from them. As long as there is light, there is hope and there is a way.",
+    "quoteOwner": " <Jennifer Gayle> ",
+    "readMore": "read more >>",
+    "imageAlt": "image about hope"
   },
-  "assessment":{
-      "heading":"Psychological Assessment",
-      "assessmentDetails":"For helping to determine whether you or someone you know has symptoms commonly associated with suicide or mental disorder, please fill out the following questionnaire truthfully. The results will only be helpful if you answer in an honest and complete manner. Please note: Our Assessment quiz is not meant to diagnose, but rather to help you understand whether a certain mental health issue may be of concern to you. It’s sort of like asking for a second opinion from an objective friend (as long as you’ve been truthful in your answers).",
-      "assessmentButton":"Start Here",
-      "imageAlt":"an image about assessment"
+  "assessmentHomepage": {
+    "heading": "Psychological Assessment",
+    "assessmentDetails": "For helping to determine whether you or someone you know has symptoms commonly associated with suicide or mental disorder, please fill out the following questionnaire truthfully. The results will only be helpful if you answer in an honest and complete manner. Please note: Our Assessment quiz is not meant to diagnose, but rather to help you understand whether a certain mental health issue may be of concern to you. It’s sort of like asking for a second opinion from an objective friend (as long as you’ve been truthful in your answers).",
+    "assessmentButton": "Start Here",
+    "imageAlt": "an image about assessment"
   },
   "questions": [
     {

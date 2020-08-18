@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import lang from "../images/language.png";
+import language from "../images/language.png";
 import "./index.css";
 import { Dropdown } from "react-bootstrap";
 
@@ -9,8 +9,8 @@ function LangDropdown() {
 
   return (
     <Dropdown className="langDropdown">
-      <Dropdown.Toggle id="dropdown-basic" className="langDropdown">
-        <img className="languageImage" alt="lang. selector" src={lang} />
+      <Dropdown.Toggle id="dropdownBasic" className="languageIcon">
+        <img className="languageImage" alt="lang. selector" src={language} />
       </Dropdown.Toggle>
 
       <Dropdown.Menu>
