@@ -1,7 +1,39 @@
-.header {
+.homePageHeader {
   width: 100%;
   text-align: center;
-  margin-top: -32px;
+  z-index: -1;
+  position: relative;
+  display: inline-block;
+}
+
+.homePageHeader .homePageHeaderTitle {
+  position: absolute;
+  z-index: 13;
+  margin: 0 auto;
+  left: 4%;
+  top: 13%;
+}
+
+.homePageHeaderImage {
+  width: 100%;
+}
+
+.homePageHeaderTitle {
+  font-family: "Myriad Pro", sans-serif;
+  text-align: left;
+}
+
+.homePageHeaderTitle h2 {
+  color: white;
+  letter-spacing: 0.8px;
+  font-size: 3.3vw;
+  margin-bottom: 0;
+}
+
+.homePageHeaderTitle h3 {
+  color: #b0faff;
+  letter-spacing: 1.3px;
+  font-size: 2.2vw;
 }
 
 .relatedCardsContainer {
@@ -14,6 +46,12 @@
   cursor: pointer;
   color: gray;
   box-shadow: 1px 1px 30px 1px #999;
+}
+
+@media only screen and (max-width: 768px) {
+  .relatedCardResponsive {
+    display: none !important;
+  }
 }
 
 .relatedCard:hover {
@@ -33,4 +71,139 @@
   line-height: 15px;
   text-align: justify;
   color: #ed2a7a;
+}
+
+.weCare {
+  color: black;
+  margin-left: 12%;
+}
+
+.pinkButtonWithWhiteText {
+  color: white;
+  border: none;
+  background-color: #ed2a7a !important;
+  border-radius: 10px;
+  border: none !important;
+  display: block;
+  font-size: 16px;
+  padding: 12px 28px;
+  margin: 1.5% 0;
+}
+
+.blueButtonWithWhiteText {
+  color: white;
+  border: none;
+  background-color: rgb(59, 175, 241);
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 12px 28px;
+  margin-bottom: 11%;
+}
+
+.weCare h1 {
+  font-family: "Noto Sans";
+  font-size: 46px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 62px;
+  line-height: 73px;
+  text-align: justify;
+  color: #161b50;
+}
+
+.weCare p {
+  width: 100%;
+  text-align: justify;
+  color: #242424;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 24px;
+  padding-right: 70px;
+}
+
+.firstWord {
+  font-size: 36px;
+}
+
+.pinkText {
+  color: deeppink;
+}
+
+.stories {
+  display: flex;
+  padding-bottom: 10%;
+  background-color: #f5f9fd;
+  height: 45rem;
+  padding: 6% 12.4%;
+  margin: 0 auto 8%;
+}
+
+.stories p {
+  color: #242424;
+  font-family: "Roboto";
+  font-size: 22px;
+  font-weight: 300;
+  text-align: justify;
+  width: 80%;
+  margin-top: 2rem;
+}
+
+.stories h1 {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 3.2rem;
+  color: #161b50;
+  line-height: 60px;
+}
+
+.stories .readMore {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: justify;
+  color: #ed2a7a;
+}
+
+.stories img {
+  float: right;
+  mix-blend-mode: multiply;
+  width: 150%;
+  height: 50%;
+  margin-top: 20%;
+  margin-left: 50%;
+}
+
+.assessment {
+  display: flex;
+  margin-left: 12%;
+  height: 34rem;
+  padding: 0 12.4%;
+  margin: 0 auto 8%;
+  margin-bottom: 12%;
+}
+
+.assessment h1 {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: justify;
+  color: #161b50;
+}
+
+.assessment p {
+  color: #242424;
+  font-family: "Roboto";
+  font-size: 22px;
+  font-weight: 300;
+  text-align: justify;
+  width: 75%;
+  margin-top: 2rem;
+}
+
+.assessment img {
+  float: right;
+  margin-top: 143px;
 }

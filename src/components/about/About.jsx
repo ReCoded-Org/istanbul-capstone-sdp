@@ -7,13 +7,11 @@ import PeopleDisplay from "./sections/PeopleDisplay";
 
 function About() {
   return (
-    <>
-      <Container>
-        <WhoAreWe />
-        <AboutParagraph />
-        <PeopleDisplay />
-      </Container>
-    </>
+    <Container>
+      <WhoAreWe />
+      <AboutParagraph />
+      <PeopleDisplay />
+    </Container>
   );
 }
 
