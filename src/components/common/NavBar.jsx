@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { Nav, Navbar } from "react-bootstrap";
 import "./index.css";
 import { Link } from "react-router-dom";
@@ -6,6 +7,7 @@ import LangDropdown from "./LangDropdown";
 
 export const NavBar = () => {
   const [isMovingSideMenu, setIsMovingSideMenu] = React.useState(false);
+  const { t } = useTranslation();
 
   return (
     <div>
@@ -38,38 +40,32 @@ export const NavBar = () => {
            ${!isMovingSideMenu ? "movingSideMenu" : ""}`}
         >
           <Nav.Item className="navItemsMargins">
-            <Link to="/" className="navLink">
-              Home
-            </Link>
-          </Nav.Item>
-
-          <Nav.Item className="navItemsMargins">
             <Link to="/contact" className="navLink">
-              Contact Us
+              {t("navbar.contact")}
             </Link>
           </Nav.Item>
 
           <Nav.Item className="navItemsMargins">
             <Link to="/about" className="navLink">
-              About
+              {t("navbar.about")}
             </Link>
           </Nav.Item>
 
           <Nav.Item className="navItemsMargins">
             <Link to="/assessment" className="navLink">
-              Assessment
+              {t("navbar.assess")}
             </Link>
           </Nav.Item>
 
           <Nav.Item className="navItemsMargins">
             <Link to="/donation" className="navLink">
-              Donate
+              {t("navbar.donate")}
             </Link>
           </Nav.Item>
 
           <Nav.Item className="navItemsMargins">
             <Link to="/blogs" className="navLink">
-              Blog
+              {t("navbar.blogs")}
             </Link>
           </Nav.Item>
         </Nav>
