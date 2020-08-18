@@ -28,7 +28,7 @@ const WeCare = () => {
               </Button>
             </Link>
             <br />
-            <Link to="/psychoAssess">
+            <Link to="/assessment">
               <Button className="blueButtonWithWhiteText">
                 {t("weCare.assessmentButton")}
               </Button>
