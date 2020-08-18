@@ -1,15 +1,8 @@
 import React from "react";
 import {
-  Container,
   Image,
-  Button,
   Dropdown,
-  Toggle,
-  Menu,
-  Item,
-  DropdownButton,
 } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import SignedInLinks from "./SignedInLinks";
 import SignedOutLinks from "./SignedOutLinks";
 import "./index.css";
