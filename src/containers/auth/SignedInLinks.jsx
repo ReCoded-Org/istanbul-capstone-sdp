@@ -8,7 +8,9 @@ const SignedInLinks = (props) => {
   const { auth } = props;
   return (
     <div className="link signedInLinks">
-      <Link to={"/" + auth.uid + "/profile"} className="linkItem">Profile</Link>
+      <Link to={"/" + auth.uid + "/profile"} className="linkItem">
+        Profile
+      </Link>
       <hr />
       <Link to="/" onClick={props.signOut} className="linkItem">
         Sign Out

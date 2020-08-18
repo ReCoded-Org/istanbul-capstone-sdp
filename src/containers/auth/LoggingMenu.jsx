@@ -1,8 +1,5 @@
 import React from "react";
-import {
-  Image,
-  Dropdown,
-} from "react-bootstrap";
+import { Image, Dropdown } from "react-bootstrap";
 import SignedInLinks from "./SignedInLinks";
 import SignedOutLinks from "./SignedOutLinks";
 import "./index.css";
