@@ -8,13 +8,11 @@ import anonymousImage from "../../images/anonymousImage.png";
 import profileHeaderBackground from "../../images/profileHeaderBackground.png";
 import Header from "../../components/common/Header";
 import "./Profile.css";
-import AccountSettings from "./ProfileSections/AccountSettings/AccountSettings";
-import ManageUsers from "./ProfileSections/ManageUsers/ManageUsers";
-import ManageBlogs from "./ProfileSections/ManageBlogs/ManageBlogs";
+import AccountSettings from "./AccountSettings";
+import ManageUsers from "./ManageUsers";
+import ManageBlogs from "./ManageBlogs";
 import { updateProfilePhoto } from "../../actions/authActions";
-
-const ADMIN_ROLE = "ADMIN";
-const AUTHOR_ROLE = "AUTHOR";
+import { ADMIN_ROLE, AUTHOR_ROLE } from "../../components/common/roleConstants";
 
 const Profile = (props) => {
   const { profile, auth, id, currentUserType } = props;
@@ -60,7 +58,7 @@ const Profile = (props) => {
 
   if (profile) {
     if (!profile.isBlocked || currentUserType === ADMIN_ROLE) {
-      const profileImage = profile.imageURL ? profile.imageURL : anonymousImage;
+      const profileImage = profile.imageURL || anonymousImage;
       return (
         <div className="d-flex justify-content-center position-relative">
           <Header

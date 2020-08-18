@@ -6,13 +6,13 @@ import "./index.css";
 import { connect } from "react-redux";
 
 const LoggingDropdownMenu = (props) => {
-  const [variant, setVariant] = React.useState("primary");
   const { auth, profile } = props;
 
   const avatar = (
     <Image
       src={profile.imageURL || "https://i.ibb.co/s5Xh2d2/Login-Signup-Icon.png"}
       width="40"
+      height="40"
       roundedCircle
     />
   );
