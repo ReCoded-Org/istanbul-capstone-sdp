@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import "./ProfileInfo.css";
-import profileInfoEditButtonIcon from "../../../../images/editButton.png";
+import profileInfoEditButtonIcon from "../../images/editButton.png";
 import ShowProfileInfo from "./ShowProfileInfo";
 import EditProfileInfo from "./EditProfileInfo";
 import { Modal, Button } from "react-bootstrap";

@@ -5,7 +5,7 @@ import { firestoreConnect } from "react-redux-firebase";
 import { compose } from "redux";
 import { Redirect } from "react-router-dom";
 import { Col, Row, OverlayTrigger, Tooltip } from "react-bootstrap";
-import infoSign from "../../../../images/infoSign.png";
+import infoSign from "../../images/infoSign.png";
 
 const ShowProfileInfo = (props) => {
   const {
