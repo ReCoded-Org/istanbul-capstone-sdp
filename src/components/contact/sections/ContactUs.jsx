@@ -1,23 +1,51 @@
-import React, { useState } from "react";
+import React from "react";
+import { Container, Col, Form, Button, Nav, Modal } from "react-bootstrap";
+import emailjs from "emailjs-com";
 import { useTranslation } from "react-i18next";
-import { Container, Col, Form, Button, Nav } from "react-bootstrap";
 
 const ContactUs = () => {
+  const [successModalShow, setSuccessModalShow] = React.useState(false);
   const { t } = useTranslation();
+  const SuccessModal = (props) => {
+    return (
+      <Modal
+        {...props}
+        size="md"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+            {t("contact.alertThanks")}
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <p>{t("contact.alertMessage")}</p>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="success" onClick={props.onHide}>
+            {t("contact.closeButton")}
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    );
+  };
 
-  const initContactFormState = {
-    firstName: "",
-    lastName: "",
-    email: "",
-    message: "",
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "default_service",
+        "template_Uz0KFyDM",
+        e.target,
+        "user_31hCfU5FLOydTyY8iOnWx"
+      )
+      .then((result) => {
+        setSuccessModalShow(true);
+        document.forms["contactForm"].reset();
+      });
   };
-  const [form, setForm] = useState(initContactFormState);
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // TODO (basil-kawak) : connect this to contact us
-    alert(`${t("contact.alertMessage")} ${form}`);
-    setForm(initContactFormState);
-  };
+
   return (
     <Container>
       <div className="contactCardContainer">
@@ -42,32 +70,18 @@ const ContactUs = () => {
         </div>
         <div className="formSide">
           <h3>{t("contact.contactUs.form.title")}</h3>
-          <Form onSubmit={handleSubmit}>
+          <Form name="contactForm" onSubmit={handleSubmit}>
             <Form.Row>
               <Form.Group as={Col} controlId="formGridEmail">
                 <Form.Label>{t("contact.contactUs.form.nameField")}</Form.Label>
-                <Form.Control
-                  onChange={(e) =>
-                    setForm({ ...form, firstName: e.target.value })
-                  }
-                  value={form.firstName}
-                  type="text"
-                  required
-                />
+                <Form.Control type="text" name="user_name" />
               </Form.Group>
 
               <Form.Group as={Col} controlId="formGridPassword">
                 <Form.Label>
                   {t("contact.contactUs.form.surnameField")}
                 </Form.Label>
-                <Form.Control
-                  onChange={(e) =>
-                    setForm({ ...form, lastName: e.target.value })
-                  }
-                  value={form.lastName}
-                  type="text"
-                  required
-                />
+                <Form.Control type="text" />
               </Form.Group>
             </Form.Row>
 
@@ -76,12 +90,7 @@ const ContactUs = () => {
                 <span className="redStar">*</span>
                 {t("contact.contactUs.form.emailField")}
               </Form.Label>
-              <Form.Control
-                onChange={(e) => setForm({ ...form, email: e.target.value })}
-                value={form.email}
-                type="email"
-                required
-              />
+              <Form.Control type="email" required name="user_email" />
               <Form.Text className="text-muted">
                 <span className="redStar">*</span>
                 {t("contact.contactUs.form.requiredMessage")}
@@ -92,17 +101,25 @@ const ContactUs = () => {
               <Form.Control
                 as="textarea"
                 rows="3"
-                onChange={(e) => setForm({ ...form, message: e.target.value })}
-                value={form.message}
                 placeholder={t("contact.contactUs.form.callForReachingOut")}
                 required
+                name="message"
               />
               <Form.Text className="text-muted">
                 {t("contact.contactUs.form.privacyMessage")}
               </Form.Text>
             </Form.Group>
 
-            <Button className="float-right" variant="primary" type="submit">
+            <SuccessModal
+              show={successModalShow}
+              onHide={() => setSuccessModalShow(false)}
+            />
+            <Button
+              className="float-right"
+              variant="primary"
+              type="submit"
+              value="Send"
+            >
               {t("contact.contactUs.form.submitButton")}
             </Button>
           </Form>

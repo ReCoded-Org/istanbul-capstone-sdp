@@ -25,6 +25,8 @@
     "blogs": "Blog"
   },
   "contact": {
+    "closeButton": "Tamam",
+    "alertThanks": "Teşekkür Ederiz",
     "contactUs": {
       "message": ["Sosyal Medyada", "Bizi Takip Edin"],
       "form": {

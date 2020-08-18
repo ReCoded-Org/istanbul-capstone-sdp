@@ -7,6 +7,8 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "bootstrap": "^4.5.2",
+    "emailjs": "^3.3.0",
+    "emailjs-com": "^2.6.3",
     "firebase": "^7.17.1",
     "i18next": "^19.6.3",
     "i18next-browser-languagedetector": "^5.0.1",
