@@ -1,4 +1,19 @@
 {
+  "footer": {
+    "header": "SUBSCRIBE TO STAY UP TO DATE",
+    "placeholder": "Your email address",
+    "submit": "SUBMIT",
+    "address": ["43 Foundry Avenue, Basaksehir,", "Istotc, Istanbul, Turkey."],
+    "copyright": "© 2020 Suljak Suicide Prevention Organization",
+    "follow": "Follow Us",
+    "home": "Home",
+    "contact": "Contact Us",
+    "about": "About",
+    "assess": "Assessment",
+    "donate": "Donation",
+    "blogs": "Blog",
+    "login": "Login"
+  },
   "navbar": {
     "contact": "Contact Us",
     "about": "About",
@@ -325,9 +340,6 @@
     "formPassword": "Password",
     "forgotPassword": "Forgot Your Password?",
     "loginButton": "Login"
-
-
-
   },
   "signUp": {
     "signUp": "Sign Up",
@@ -345,8 +357,4 @@
     "rePassword": "Enter your password again",
     "passNotMatch": "Password doesn't match"
   }
-
-
-  
-
 }
