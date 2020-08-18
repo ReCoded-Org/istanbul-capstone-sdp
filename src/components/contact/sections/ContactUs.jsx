@@ -41,11 +41,11 @@ const ContactUs = () => {
           </div>
         </div>
         <div className="formSide">
-          <h3>{t("contact.contactUs.form.0")}</h3>
+          <h3>{t("contact.contactUs.form.title")}</h3>
           <Form onSubmit={handleSubmit}>
             <Form.Row>
               <Form.Group as={Col} controlId="formGridEmail">
-                <Form.Label>{t("contact.contactUs.form.1")}</Form.Label>
+                <Form.Label>{t("contact.contactUs.form.nameField")}</Form.Label>
                 <Form.Control
                   onChange={(e) =>
                     setForm({ ...form, firstName: e.target.value })
@@ -57,7 +57,9 @@ const ContactUs = () => {
               </Form.Group>
 
               <Form.Group as={Col} controlId="formGridPassword">
-                <Form.Label>{t("contact.contactUs.form.2")}</Form.Label>
+                <Form.Label>
+                  {t("contact.contactUs.form.surnameField")}
+                </Form.Label>
                 <Form.Control
                   onChange={(e) =>
                     setForm({ ...form, lastName: e.target.value })
@@ -72,7 +74,7 @@ const ContactUs = () => {
             <Form.Group controlId="formBasicEmail">
               <Form.Label>
                 <span className="redStar">*</span>
-                {t("contact.contactUs.form.3")}
+                {t("contact.contactUs.form.emailField")}
               </Form.Label>
               <Form.Control
                 onChange={(e) => setForm({ ...form, email: e.target.value })}
@@ -82,7 +84,7 @@ const ContactUs = () => {
               />
               <Form.Text className="text-muted">
                 <span className="redStar">*</span>
-                {t("contact.contactUs.form.4")}
+                {t("contact.contactUs.form.requiredMessage")}
               </Form.Text>
             </Form.Group>
 
@@ -92,16 +94,16 @@ const ContactUs = () => {
                 rows="3"
                 onChange={(e) => setForm({ ...form, message: e.target.value })}
                 value={form.message}
-                placeholder={t("contact.contactUs.form.5")}
+                placeholder={t("contact.contactUs.form.callForReachingOut")}
                 required
               />
               <Form.Text className="text-muted">
-                {t("contact.contactUs.form.6")}
+                {t("contact.contactUs.form.privacyMessage")}
               </Form.Text>
             </Form.Group>
 
             <Button className="float-right" variant="primary" type="submit">
-              {t("contact.contactUs.form.7")}
+              {t("contact.contactUs.form.submitButton")}
             </Button>
           </Form>
         </div>

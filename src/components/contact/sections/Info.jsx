@@ -8,21 +8,21 @@ const Info = () => {
   return (
     <Container>
       <Col className="infoSection">
-        <Nav.Link href="#">{t("contact.info.0")}</Nav.Link>
+        <Nav.Link href="#">{t("contact.info.contactTitle")}</Nav.Link>
         <p>
           (+90) 533-382-094 <br />
           suljak@suljak.com <br />
-          {t("contact.info.1")}
+          {t("contact.info.address")}
         </p>
       </Col>
       <Col className="infoSection">
-        <Nav.Link href="#">{t("contact.info.2")}</Nav.Link>
+        <Nav.Link href="#">{t("contact.info.businessHoursTitle")}</Nav.Link>
         <p>
-          {t("contact.info.3")} <br />
-          {t("contact.info.4")}
+          {t("contact.info.hotlineText")} <br />
+          {t("contact.info.workingHours.0")}
           <br />
-          {t("contact.info.5")} <br />
-          {t("contact.info.6")}
+          {t("contact.info.workingHours.1")} <br />
+          {t("contact.info.workingHours2")}
         </p>
       </Col>
     </Container>

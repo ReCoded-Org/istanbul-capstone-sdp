@@ -2,26 +2,28 @@
   "contact": {
     "contactUs": {
       "message": ["Sosyal Medyada", "Bizi Takip Edin"],
-      "form": [
-        "İletişim",
-        "İsim",
-        "Soyisim",
-        "E-posta",
-        "doldurulması zorunlu yerler",
-        "Bize yazın",
-        "Gizliliğiniz güvende!",
-        "Gönder"
+      "form": {
+        "title": "İletişim",
+        "nameField": "İsim",
+        "surnameField": "Soyisim",
+        "emailField": "E-posta",
+        "requiredMessage": "doldurulması zorunlu yerler",
+        "callForReachingOut": "Bize yazın",
+        "privacyMessage": "Gizliliğiniz güvende!",
+        "submitButton": "Gönder"
+      }
+    },
+    "info": {
+      "contactTitle": "İLETİŞİM:",
+      "address": "43 Foundry Caddesi, Basaksehir, istotc, Istanbul, Türkiye",
+      "businessHoursTitle": "İŞ SAATLERİ:",
+      "hotlineText": "Destek hattımız her gün her saat açık: 11401",
+      "workingHours": [
+        "Pazartesi-Cuma: 17.00-21.00",
+        "Cumartesi: 10.00-14.00",
+        "Pazar: Kapalı"
       ]
     },
-    "info": [
-      "İLETİŞİM:",
-      "43 Foundry Caddesi, Basaksehir, istotc, Istanbul, Türkiye",
-      "İŞ SAATLERİ:",
-      "Destek hattımız her gün her saat açık: 11401",
-      "Pazartesi-Cuma: 17.00-21.00",
-      "Cumartesi: 10.00-14.00",
-      "Pazar: Kapalı"
-    ],
     "alertMessage": "Mesajınız gönderildi."
   },
   "welcome": {
