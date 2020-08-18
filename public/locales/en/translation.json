@@ -57,15 +57,13 @@
   },
   "stories":{
       "heading":"STORIES ABOUT HOPE",
-      "shareYourStory":"We understand that every struggle is different. Experience the stories of people like you, and how they overcame crisis to find hope and recovery or please let us hear your healing journey, share it with others, be a hope. You will never know to whom you will be the light for. ",
-      "quote":"Some days you will be the light for others and some days you will need some light from them. As long as there is light, there is hope and there is a way.",
-      "quoteOwner":" <Jennifer Gayle> ",
+      "shareYourStory":"We understand that every struggle is different. Experience the stories of people like you, and how they overcame crisis to find hope and recovery or please let us hear your healing journey, share it with others, be a hope. You will never know to whom you will be the light for... ",
       "readMore":"read more >>",
       "imageAlt":"image about hope"
   },
   "assessmentHomepage":{
       "heading":"Psychological Assessment",
-      "assessmentDetails":"For helping to determine whether you or someone you know has symptoms commonly associated with suicide or mental disorder, please fill out the following questionnaire truthfully. The results will only be helpful if you answer in an honest and complete manner. Please note: Our Assessment quiz is not meant to diagnose, but rather to help you understand whether a certain mental health issue may be of concern to you. It’s sort of like asking for a second opinion from an objective friend (as long as you’ve been truthful in your answers).",
+      "assessmentDetails":"For helping to determine whether you or someone you know has symptoms commonly associated with suicide or mental disorder, please fill out the following questionnaire truthfully..",
       "assessmentButton":"Start Here",
       "imageAlt":"an image about assessment"
   },

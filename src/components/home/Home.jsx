@@ -16,8 +16,8 @@ export const Home = () => {
       <Header />
       <WeCare />
       <Stories />
-      <Assessment />
       <RelatedCards />
+      <Assessment />
       <Footer />
     </div>
   );

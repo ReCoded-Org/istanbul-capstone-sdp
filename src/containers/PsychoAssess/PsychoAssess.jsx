@@ -10,13 +10,13 @@ export default function PsychoAssess() {
   const { t } = useTranslation();
 
   return (
-<div>
-  <Header />
-    <Container>
-      <h1 className="assesmentTitle">{t("assessment.title")}</h1>
-      <Questions />
-    </Container>
-  <Footer />
-</div>
+    <div>
+      <Header />
+      <Container>
+        <h1 className="assesmentTitle">{t("assessment.title")}</h1>
+        <Questions />
+      </Container>
+      <Footer />
+    </div>
   );
 }
