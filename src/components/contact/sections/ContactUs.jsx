@@ -1,7 +1,34 @@
 import React from "react";
-import { Container, Col, Form, Button, Nav } from "react-bootstrap";
+import { Container, Col, Form, Button, Nav, Modal } from "react-bootstrap";
 import emailjs from "emailjs-com";
+
 const ContactUs = () => {
+  const [successModalShow, setSuccessModalShow] = React.useState(false);
+  const SuccessModal = (props) => {
+    return (
+      <Modal
+        {...props}
+        size="md"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+            Thank You
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <p>Your messeage have been sent</p>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="success" onClick={props.onHide}>
+            Done
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    );
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     emailjs
@@ -12,7 +39,7 @@ const ContactUs = () => {
         "user_31hCfU5FLOydTyY8iOnWx"
       )
       .then((result) => {
-        alert("Thank you, Your messeage have been sent");
+        setSuccessModalShow(true);
         document.forms["contactForm"].reset();
       });
   };
@@ -76,7 +103,10 @@ const ContactUs = () => {
                 Your privacy is protected
               </Form.Text>
             </Form.Group>
-
+            <SuccessModal
+              show={successModalShow}
+              onHide={() => setSuccessModalShow(false)}
+            />
             <Button
               className="float-right"
               variant="primary"
