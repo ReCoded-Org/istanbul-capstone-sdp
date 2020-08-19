@@ -25,40 +25,48 @@ const Comments = (props) => {
 
   let allComments = [];
   if (blog) {
-    allComments = blog.comments.map((item) => {
-      const profilePhoto =
-        profile.imageURL || "https://i.ibb.co/k0NNyLV/User-profile-image.png";
+    allComments =
+      blog.comments &&
+      blog.comments.map((item) => {
+        const profilePhoto =
+          profile.imageURL || "https://i.ibb.co/k0NNyLV/User-profile-image.png";
 
-      return (
-        <div className="border-bottom">
-          <Image
-            className="visitorImage"
-            src={profilePhoto}
-            alt="Visitor profile"
-            width="70"
-            height="70"
-            thumbnail
-          />
-          <div className="displayedComment">
-            <p className="visitorName">
-              <h6 className="commentedPerson">{item.dispayName}</h6>
-              <p className="ml-3 visitorComment">{item.comment}</p>
-              <p className="ml-3 commentDate">{item.date}</p>
-            </p>
+        return (
+          <div className="border-bottom">
+            <Image
+              className="visitorImage"
+              src={profilePhoto}
+              alt="Visitor profile"
+              width="70"
+              height="70"
+              thumbnail
+            />
+            <div className="displayedComment">
+              <p className="visitorName">
+                <h6 className="commentedPerson">{item.dispayName}</h6>
+                <p className="ml-3 visitorComment">{item.comment}</p>
+                <p className="ml-3 commentDate">{item.date}</p>
+              </p>
+            </div>
+            {auth.uid === item.userId && (
+              <Button
+                variant="danger"
+                size="sm"
+                className="ml-3 commentDeleteBtn"
+                onClick={() => props.deleteComment(blogId, item.userId)}
+              >
+                Remove
+              </Button>
+            )}
           </div>
-          {auth.uid === item.userId && (
-            <Button
-              variant="danger"
-              size="sm"
-              className="ml-3 commentDeleteBtn"
-              onClick={() => props.deleteComment(blogId, item.userId)}
-            >
-              Remove
-            </Button>
-          )}
-        </div>
-      );
-    });
+        );
+      });
+  } else {
+    return (
+      <Container>
+        <h4>Loading...</h4>
+      </Container>
+    );
   }
 
   if (profile) {
