@@ -1,29 +1,31 @@
 import React from "react";
-import { Link, Redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-import { firestoreConnect } from "react-redux-firebase";
-import { compose } from "redux";
-import { updateProfile } from "../../../../actions/authActions";
-import { Dropdown, Button, Row, Col, ListGroup, Image } from "react-bootstrap";
+import { updateProfile } from "../../actions/authActions";
+import { Button, Row, Col, ListGroup, Image } from "react-bootstrap";
 import "./BlogBox.css";
-import anonymousImage from "../../../../images/anonymousImage.png";
-
-const ADMIN_ROLE = "ADMIN";
+import anonymousImage from "../../images/anonymousImage.png";
+import { ADMIN_ROLE } from "../../components/common/roleConstants";
 
 const BlogBox = (props) => {
   const { blog, userType } = props;
-
   const photoSrc = blog.authorProfileImage || anonymousImage;
+
+  // Delete a blog content from Firestore and also its related files from Storage
+  const handleBlogDeletion = () => {
+    props.deleteBlogFromStorage(blog);
+    props.deleteBlogFromDB(blog.blogId);
+  };
 
   const handleBlockAndActivateButton = () => {
     if (userType === ADMIN_ROLE) {
-      if (blog.approvement) {
+      if (blog.isApproved) {
         return (
           <Button
             variant="danger"
             className="w-75"
             onClick={() =>
-              props.approveBlog({ blogId: blog.blogId, approvement: false })
+              props.approveBlog({ blogId: blog.blogId, isApproved: false })
             }
           >
             Decline
@@ -35,7 +37,7 @@ const BlogBox = (props) => {
             variant="success"
             className="w-75"
             onClick={() =>
-              props.approveBlog({ blogId: blog.blogId, approvement: true })
+              props.approveBlog({ blogId: blog.blogId, isApproved: true })
             }
           >
             Approve
@@ -46,22 +48,9 @@ const BlogBox = (props) => {
       return (
         <>
           <Button
-            variant="success"
-            className="w-75 mr-2"
-            onClick={() =>
-              // props.updateProfile({ userId: profile.id, isBlocked: false })
-              {}
-            }
-          >
-            Edit
-          </Button>
-          <Button
-            variant="dancer"
+            variant="danger"
             className="w-75"
-            onClick={() =>
-              // props.updateProfile({ userId: profile.id, isBlocked: false })
-              {}
-            }
+            onClick={handleBlogDeletion}
           >
             Delete
           </Button>
@@ -76,7 +65,7 @@ const BlogBox = (props) => {
         <Col xs={5}>
           <Link to={"/profiles/" + blog.userId} key={blog.userId}>
             <ListGroup defaultActiveKey="none">
-              <ListGroup.Item action className="d-flex">
+              <ListGroup.Item action className="d-flex h-100">
                 <Image
                   src={photoSrc}
                   alt="Profile"

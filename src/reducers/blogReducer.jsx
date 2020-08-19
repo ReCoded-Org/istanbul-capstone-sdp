@@ -3,8 +3,14 @@ import {
   ADD_BLOG_ERROR,
   ADD_COMMENT_SUCCESS,
   ADD_COMMENT_ERROR,
-  BLOG_APPROVEMENT_SUCCESS,
-  BLOG_APPROVEMENT_ERROR,
+  DELETE_COMMENT_SUCCESS,
+  DELETE_COMMENT_ERROR,
+  BLOG_APPROVAL_SUCCESS,
+  BLOG_APPROVAL_ERROR,
+  DELETE_BLOG_FROM_STORAGE_SUCCESS,
+  DELETE_BLOG_FROM_STORAGE_ERROR,
+  DELETE_BLOG_FROM_DB_SUCCESS,
+  DELETE_BLOG_FROM_DB_ERROR,
 } from "../actions/actionTypes";
 
 const initState = {
@@ -38,17 +44,53 @@ const blogReducer = (state = initState, action) => {
         blogErrMessage: action.err.message,
         blogErrKey: "addComment",
       };
-    case BLOG_APPROVEMENT_SUCCESS:
+    case DELETE_COMMENT_SUCCESS:
       return {
         ...state,
         blogError: null,
       };
-    case BLOG_APPROVEMENT_ERROR:
+    case DELETE_COMMENT_ERROR:
       return {
         ...state,
-        blogError: "Blog approvement failed",
+        blogError: "Comment deletion failed",
         blogErrMessage: action.err.message,
-        blogErrKey: "blogApprovement",
+        blogErrKey: "deleteComment",
+      };
+    case BLOG_APPROVAL_SUCCESS:
+      return {
+        ...state,
+        blogError: null,
+      };
+    case BLOG_APPROVAL_ERROR:
+      return {
+        ...state,
+        blogError: "Blog approval failed",
+        blogErrMessage: action.err.message,
+        blogErrKey: "blogApproval",
+      };
+    case DELETE_BLOG_FROM_STORAGE_SUCCESS:
+      return {
+        ...state,
+        blogError: null,
+      };
+    case DELETE_BLOG_FROM_STORAGE_ERROR:
+      return {
+        ...state,
+        blogError: "Blog deletion from storage failed",
+        blogErrMessage: action.err.message,
+        blogErrKey: "deleteBlogFromStorage",
+      };
+    case DELETE_BLOG_FROM_DB_SUCCESS:
+      return {
+        ...state,
+        blogError: null,
+      };
+    case DELETE_BLOG_FROM_DB_ERROR:
+      return {
+        ...state,
+        blogError: "Blog deletion from firebase db failed",
+        blogErrMessage: action.err.message,
+        blogErrKey: "deleteBlogFromDB",
       };
     default:
       return state;

@@ -1,7 +1,9 @@
 import React from "react";
 import {
+  Form,
   Button,
   Container,
+  Col,
   Modal,
   Image,
   InputGroup,
@@ -37,15 +39,15 @@ const BlogEditor = (props) => {
 
   const handleSubmit = () => {
     const data = {
-      blogId: auth.uid + title.split(" ").join(""),
+      blogId: new Date().getTime() + title.split(" ").join(""),
       userId: auth.uid,
       author: profile.fullName,
       authorProfileImage: profile.imageURL,
       authorJobTitle: profile.jobTitle,
-      date: new Date().toLocaleString(),
+      date: new Date().toDateString(),
       title,
       content,
-      approvement: false,
+      isApproved: false,
       comments: [],
     };
 
@@ -98,7 +100,7 @@ const BlogEditor = (props) => {
       <Container>
         <div className="d-flex justify-content-center">
           <Image src={imgSrc} className="w-100" height="200" alt="" />
-          <div className="blogHeaderImage">
+          <div class="blogHeaderImage">
             <label for="blogHeaderImage">
               <img src={imageUploadButton} alt="Blog Header" />
             </label>
