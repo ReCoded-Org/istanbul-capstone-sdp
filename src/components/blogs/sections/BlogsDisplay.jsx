@@ -29,7 +29,9 @@ const mapStateToProps = (state, ownProps) => {
 
   if (blogs) {
     for (const blogId in blogs) {
-      allBlogs.push(blogs[blogId]);
+      if (blogs[blogId].isApproved) {
+        allBlogs.push(blogs[blogId]);
+      }
     }
   }
 
