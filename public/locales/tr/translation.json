@@ -18,6 +18,7 @@
     "login": "Giriş Yap"
   },
   "navbar": {
+    "home": "Ana Sayfa",
     "contact": "İletişim",
     "about": "Hakkımızda",
     "assess": "Test",
@@ -96,6 +97,9 @@
   },
   "welcome": {
     "message": "React'e Hoş Geldin"
+  },
+  "whoAreWe": {
+    "header": "Biz Kimiz?"
   },
   "aboutPart": {
     "bigText": "SULJAK,",

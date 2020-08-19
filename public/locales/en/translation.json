@@ -15,6 +15,7 @@
     "login": "Login"
   },
   "navbar": {
+    "home": "Home",
     "contact": "Contact Us",
     "about": "About",
     "assess": "Assessment",

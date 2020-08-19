@@ -41,6 +41,12 @@ export const NavBar = () => {
            ${!isMovingSideMenu ? "movingSideMenu" : ""}`}
         >
           <Nav.Item className="navItemsMargins">
+            <Link to="/" className="navLink">
+              {t("navbar.home")}
+            </Link>
+          </Nav.Item>
+
+          <Nav.Item className="navItemsMargins">
             <Link to="/contact" className="navLink">
               {t("navbar.contact")}
             </Link>

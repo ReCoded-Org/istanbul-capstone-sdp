@@ -126,11 +126,11 @@ form button {
 }
 
 .navItemsMargins {
-  margin-right: 1.5vw;
+  margin-right: 1.3vw;
 }
 
 .navbarItems {
-  margin: 0 1.6vw;
+  margin: 0 1.3vw;
 }
 
 .suljakLogo {
@@ -167,7 +167,7 @@ form button {
   }
 
   .navBar .navLink {
-    font-size: 1.6vw;
+    font-size: 1.4vw;
   }
 
   .loginIcon {
@@ -179,6 +179,9 @@ form button {
     width: 3.9vw;
     margin: auto 2% auto 1%;
     padding: 9%;
+  }
+  .navbarItems {
+    margin: 0 1.1vw;
   }
 }
 
