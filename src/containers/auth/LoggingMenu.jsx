@@ -4,19 +4,17 @@ import SignedInLinks from "./SignedInLinks";
 import SignedOutLinks from "./SignedOutLinks";
 import "./index.css";
 import { connect } from "react-redux";
-
 const LoggingDropdownMenu = (props) => {
   const { auth, profile } = props;
-
   const avatar = (
     <Image
       src={profile.imageURL || "https://i.ibb.co/s5Xh2d2/Login-Signup-Icon.png"}
-      width="40"
-      height="40"
+      className="loginIcon"
+      width="27"
+      height="27"
       roundedCircle
     />
   );
-
   const loggingLinks = auth.uid ? (
     <SignedInLinks auth={auth} profile={profile} />
   ) : (
@@ -33,12 +31,10 @@ const LoggingDropdownMenu = (props) => {
     </Dropdown>
   );
 };
-
 const mapStateToProps = (state) => {
   return {
     auth: state.firebase.auth,
     profile: state.firebase.profile,
   };
 };
-
 export default connect(mapStateToProps)(LoggingDropdownMenu);
