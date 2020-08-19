@@ -13,15 +13,12 @@ function LangDropdown() {
         <img className="languageImage" alt="lang. selector" src={language} />
       </Dropdown.Toggle>
 
-      <Dropdown.Menu>
+      <Dropdown.Menu className="langDropdown">
         <Dropdown.Item onClick={() => i18n.changeLanguage("en")}>
           {t("lang.en")}
         </Dropdown.Item>
         <Dropdown.Item onClick={() => i18n.changeLanguage("tr")}>
           {t("lang.tr")}
-        </Dropdown.Item>
-        <Dropdown.Item onClick={() => i18n.changeLanguage("ar")}>
-          {t("lang.ar")}
         </Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
