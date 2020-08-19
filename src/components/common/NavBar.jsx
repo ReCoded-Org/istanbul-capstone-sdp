@@ -5,6 +5,7 @@ import "./index.css";
 import { Link } from "react-router-dom";
 import LangDropdown from "./LangDropdown";
 import LoggingMenu from "../../containers/auth/LoggingMenu";
+
 export const NavBar = () => {
   const [isMovingSideMenu, setIsMovingSideMenu] = React.useState(false);
   const { t } = useTranslation();
