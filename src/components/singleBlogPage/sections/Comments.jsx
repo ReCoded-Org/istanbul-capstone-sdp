@@ -53,7 +53,7 @@ const Comments = (props) => {
                 variant="danger"
                 size="sm"
                 className="ml-3 commentDeleteBtn"
-                onClick={() => props.deleteComment(blogId, item.userId)}
+                // onClick={() => props.deleteComment(blogId, item.userId)}
               >
                 Remove
               </Button>
