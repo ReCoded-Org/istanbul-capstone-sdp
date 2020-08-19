@@ -1,9 +1,7 @@
 import React from "react";
 import {
-  Form,
   Button,
   Container,
-  Col,
   Modal,
   Image,
   InputGroup,
@@ -21,10 +19,10 @@ const BlogEditor = (props) => {
   const { blogError, blogErrKey, blogErrMessage, auth, profile } = props;
 
   const editor = React.useRef(null);
-  const [config, setConfig] = React.useState({
+  const config = {
     readonly: false,
     toolbar: true,
-  });
+  };
 
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");

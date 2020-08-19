@@ -11,8 +11,9 @@ import {
   deleteBlogFromDB,
 } from "../../actions/blogActions";
 import { ADMIN_ROLE, AUTHOR_ROLE } from "../../components/common/roleConstants";
+
 const ManageBlogs = (props) => {
-  const { allBlogs, userId, currentUserBlogs, profile } = props;
+  const { allBlogs, currentUserBlogs, profile } = props;
   const [newBlog, setNewBlog] = React.useState(null);
   const closeBlogEditor = () => {
     setNewBlog(null);
