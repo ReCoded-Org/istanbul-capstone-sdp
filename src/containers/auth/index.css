@@ -4,10 +4,6 @@
   padding: 0;
 }
 
-.linkItem:hover {
-  background-color: #034992;
-}
-
 .authIcon {
   width: 50px;
   cursor: pointer;
