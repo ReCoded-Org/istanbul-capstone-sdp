@@ -11,6 +11,7 @@ import { Donation } from "../containers/donation/Donation";
 import { NoMatch } from "../components/noMatch/NoMatch";
 import { NavBar } from "../components/common/NavBar";
 import { SingleBlogPage } from "../components/singleBlogPage/SingleBlogPage";
+import Profile from "./profile/Profile";
 
 function App() {
   return (
@@ -23,10 +24,12 @@ function App() {
           <Route path="/about" component={About} />
           <Route path="/assessment" component={PsychoAssess} />
           <Route path="/donation" component={Donation} />
-          <Route path="/blogs" component={Blogs} />
+          <Route exact path="/blogs" component={Blogs} />
           <Route path="/login" component={SignInUp} />
           <Route path="/blogs/:blogid" component={SingleBlogPage} />
           <Route path="/:id/blogs/:blogid" component={SingleBlogPage} />
+          <Route path="/:id/profile" component={Profile} />
+          <Route path="/profiles/:id" component={Profile} />
           <Route component={NoMatch} />
         </Switch>
       </Router>

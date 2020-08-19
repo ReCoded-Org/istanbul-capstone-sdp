@@ -4,6 +4,7 @@ import { Nav, Navbar } from "react-bootstrap";
 import "./index.css";
 import { Link } from "react-router-dom";
 import LangDropdown from "./LangDropdown";
+import LoggingMenu from "../../containers/auth/LoggingMenu";
 
 export const NavBar = () => {
   const [isMovingSideMenu, setIsMovingSideMenu] = React.useState(false);
@@ -71,12 +72,9 @@ export const NavBar = () => {
         </Nav>
 
         <div>
-          <img
-            className="loginIcon"
-            src="https://i.ibb.co/s5Xh2d2/Login-Signup-Icon.png"
-            alt="Login Icon"
-          />
+          <LoggingMenu />
         </div>
+
         <div>
           <LangDropdown />
         </div>
