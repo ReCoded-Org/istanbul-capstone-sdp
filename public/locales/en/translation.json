@@ -364,6 +364,7 @@
     "email": "Email",
     "password": "Password",
     "rePassword": "Enter your password again",
-    "passNotMatch": "Password doesn't match"
+    "passNotMatch": "Password doesn't match",
+    "signUpButton": "Submit"
   }
 }

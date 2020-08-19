@@ -20,7 +20,7 @@ const SignIn = (props) => {
           </Row>
           <h6 onClick={props.handleLoggingSwitch}>
             {t("signIn.noAccount")}
-            {t("signIn.signUp")}
+            <span className="ml-4">{t("signIn.signUp")}</span>
           </h6>
         </Col>
         <Col lg="5" sm="5" className="rightSection">
