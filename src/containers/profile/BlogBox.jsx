@@ -13,6 +13,11 @@ const BlogBox = (props) => {
 
   const photoSrc = blog.authorProfileImage || anonymousImage;
 
+  const handleBlogDeletion = () => {
+    props.deleteBlogFromStorage(blog);
+    props.deleteBlogFromDB(blog.blogId);
+  }
+
   const handleBlockAndActivateButton = () => {
     if (userType === ADMIN_ROLE) {
       if (blog.approvement) {
@@ -44,22 +49,9 @@ const BlogBox = (props) => {
       return (
         <>
           <Button
-            variant="info"
-            className="w-75 mr-2"
-            onClick={() =>
-              // props.updateProfile({ userId: profile.id, isBlocked: false })
-              {}
-            }
-          >
-            Edit
-          </Button>
-          <Button
             variant="danger"
             className="w-75"
-            onClick={() =>
-              // props.updateProfile({ userId: profile.id, isBlocked: false })
-              {}
-            }
+            onClick={handleBlogDeletion}
           >
             Delete
           </Button>

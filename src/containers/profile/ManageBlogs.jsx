@@ -5,7 +5,7 @@ import { firestoreConnect } from "react-redux-firebase";
 import { Button, ListGroup } from "react-bootstrap";
 import BlogEditor from "../BlogEditor/BlogEditor";
 import BlogBox from "./BlogBox";
-import { approveBlog } from "../../actions/blogActions";
+import { approveBlog, deleteBlogFromStorage, deleteBlogFromDB } from "../../actions/blogActions";
 
 const ADMIN_ROLE = "ADMIN";
 const AUTHOR_ROLE = "AUTHOR";
@@ -61,6 +61,8 @@ const ManageBlogs = (props) => {
               <ListGroup.Item>
                 <BlogBox
                   approveBlog={props.approveBlog}
+                  deleteBlogFromStorage={props.deleteBlogFromStorage}
+                  deleteBlogFromDB={props.deleteBlogFromDB}
                   blog={blog}
                   userType={profile.userType}
                 />
@@ -101,6 +103,8 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     approveBlog: (blogData) => dispatch(approveBlog(blogData)),
+    deleteBlogFromStorage: (blogData) => dispatch(deleteBlogFromStorage(blogData)),
+    deleteBlogFromDB: (blogId) => dispatch(deleteBlogFromDB(blogId)),
   };
 };
 

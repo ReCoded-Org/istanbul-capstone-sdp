@@ -8,7 +8,7 @@ import { BlogContent } from "./sections/BlogContent";
 import Comments from "./sections/Comments";
 import { Recommended } from "./sections/Recommended";
 import Footer from "../common/Footer";
-import { addComment } from "../../actions/blogActions"
+import { addComment, deleteComment } from "../../actions/blogActions";
 
 const SingleBlogPage = (props) => {
   const { blog, blogId, auth, profile } = props;
@@ -19,18 +19,19 @@ const SingleBlogPage = (props) => {
         <Header />
         <BlogHeader blog={blog} />
         <BlogContent blog={blog} />
-        <Comments addComment={props.addComment} blog={blog} />
+        <Comments
+          addComment={props.addComment}
+          deleteComment={props.deleteComment}
+          blog={blog}
+        />
         <Recommended />
         <Footer />
       </div>
     );
   } else {
-    return <h4>Loading...</h4>
+    return <h4>Loading...</h4>;
   }
-
-  
 };
-
 
 const mapStateToProps = (state, ownProps) => {
   const blogId = ownProps.match.params.blogid;
@@ -38,7 +39,7 @@ const mapStateToProps = (state, ownProps) => {
   const blog = blogs ? blogs[blogId] : null;
   const profiles = state.firestore.data.profiles;
   const profile = profiles ? profiles[state.firebase.auth.uid] : null;
-  
+
   return {
     blog,
     auth: state.firebase.auth,
@@ -51,6 +52,7 @@ const mapDispatchToProps = (dispatch) => {
   return {
     addComment: (blogId, commentData) =>
       dispatch(addComment(blogId, commentData)),
+    deleteComment: (blogId, userId) => dispatch(deleteComment(blogId, userId)),
   };
 };
 
