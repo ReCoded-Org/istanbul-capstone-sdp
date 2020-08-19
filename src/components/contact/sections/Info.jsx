@@ -22,7 +22,7 @@ const Info = () => {
           {t("contact.info.workingHours.0")}
           <br />
           {t("contact.info.workingHours.1")} <br />
-          {t("contact.info.workingHours2")}
+          {t("contact.info.workingHours.2")}
         </p>
       </Col>
     </Container>

@@ -4429,6 +4429,16 @@ elliptic@^6.0.0, elliptic@^6.5.2:
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.0"
 
+emailjs-com@^2.6.3:
+  version "2.6.3"
+  resolved "https://registry.yarnpkg.com/emailjs-com/-/emailjs-com-2.6.3.tgz#881269588aac453a6f44a84b814922d52b8ec202"
+  integrity sha512-hucvmelA6wUN1W7Lnw3yKXTWq3lNyVOBN306WcODPcfazuGWTot9/7aaiHQESBo9VrG1JgSk7La6fckq3eLvUg==
+
+emailjs@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/emailjs/-/emailjs-3.3.0.tgz#d6cef5a984fe0ef20bb95c18f0fda3d51c1ca286"
+  integrity sha512-O8fUbXhyzZEokeLq+mrefYaSdToLXlW3oQfCU+75kqkwL27W8Cb6PW/ipjF1ePapLNoAvWPvwInh/x7x4z/jKA==
+
 emoji-regex@^7.0.1, emoji-regex@^7.0.2:
   version "7.0.3"
   resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-7.0.3.tgz#933a04052860c85e83c122479c4748a8e4c72156"
@@ -9148,15 +9158,15 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
+prettier@2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.0.5.tgz#d6d56282455243f2f92cc1716692c08aa31522d4"
+  integrity sha512-7PtVymN48hGcO4fGjybyBSIWDsLU4H4XlvOHfq91pz9kkGlonzwTfYkaIEwiRg/dAJF9YlbsduBAgtYLi+8cFg==
+
 prettier@^1.16.4:
   version "1.19.1"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.19.1.tgz#f7d7f5ff8a9cd872a7be4ca142095956a60797cb"
   integrity sha512-s7PoyDv/II1ObgQunCbB9PdLmUcBZcnWOcxDh7O0N/UwDEsHyqkW+Qh28jW+mVuCdx7gLB0BotYI1Y6uI9iyew==
-
-prettier@^2.0.5:
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.0.5.tgz#d6d56282455243f2f92cc1716692c08aa31522d4"
-  integrity sha512-7PtVymN48hGcO4fGjybyBSIWDsLU4H4XlvOHfq91pz9kkGlonzwTfYkaIEwiRg/dAJF9YlbsduBAgtYLi+8cFg==
 
 pretty-bytes@^5.1.0:
   version "5.3.0"

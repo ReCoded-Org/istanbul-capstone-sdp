@@ -5,6 +5,24 @@
       "text":["Senin için","buradayız."]
     }
   },
+  "footer": {
+    "header": "GÜNCEL KALMAK İÇİN ABONE OLUN",
+    "placeholder": "E posta adresiniz",
+    "submit": "GÖNDER",
+    "address": [
+      "43 Foundry Caddesi, Basaksehir,",
+      "Istotc, Istanbul, Türkiye."
+    ],
+    "copyright": "© 2020 Suljak İntihar Önleme ve Öngörme Topluluğu",
+    "follow": "Bizi Takip Edin",
+    "home": "Ana Sayfa",
+    "contact": "İletişim",
+    "about": "Hakkımızda",
+    "assess": "Test",
+    "donate": "Bağış",
+    "blogs": "Blog",
+    "login": "Giriş Yap"
+  },
   "navbar": {
     "contact": "İletişim",
     "about": "Hakkımızda",
@@ -13,6 +31,8 @@
     "blogs": "Blog"
   },
   "contact": {
+    "closeButton": "Tamam",
+    "alertThanks": "Teşekkür Ederiz",
     "contactUs": {
       "message": ["Sosyal Medyada", "Bizi Takip Edin"],
       "form": {
