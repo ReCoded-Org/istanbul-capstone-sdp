@@ -58,40 +58,38 @@ const EmailPasswordSignUp = (props) => {
             />
           </Form.Group>
         </Form.Row>
-        <Form.Row>
-          <Form.Group as={Col} controlId="email">
-            <Form.Label>{t("signUpForm.email")}</Form.Label>
-            <Form.Control
-              type="text"
-              onInput={(e) => {
-                setEmail(e.target.value);
-              }}
-            />
-          </Form.Group>
-          <Form.Group as={Col} controlId="password">
-            <Form.Label>{t("signUpForm.password")}</Form.Label>
-            <Form.Control
-              type="password"
-              onInput={(e) => {
-                setPassword(e.target.value);
-                setDoesPasswordMatch(true);
-              }}
-            />
-          </Form.Group>
-          <Form.Group as={Col} controlId="passwordRepeat">
-            <Form.Label>{t("signUpForm.rePassword")}</Form.Label>
-            <Form.Control
-              type="password"
-              onInput={(e) => {
-                setPasswordRepeat(e.target.value);
-                setDoesPasswordMatch(true);
-              }}
-            />
-          </Form.Group>
-          {!doesPasswordMatch && (
-            <div className="passwordMatch">{t("signUpForm.passNotMatch")}</div>
-          )}
-        </Form.Row>
+        <Form.Group controlId="email">
+          <Form.Label>{t("signUpForm.email")}</Form.Label>
+          <Form.Control
+            type="text"
+            onInput={(e) => {
+              setEmail(e.target.value);
+            }}
+          />
+        </Form.Group>
+        <Form.Group controlId="password">
+          <Form.Label>{t("signUpForm.password")}</Form.Label>
+          <Form.Control
+            type="password"
+            onInput={(e) => {
+              setPassword(e.target.value);
+              setDoesPasswordMatch(true);
+            }}
+          />
+        </Form.Group>
+        <Form.Group controlId="passwordRepeat">
+          <Form.Label>{t("signUpForm.rePassword")}</Form.Label>
+          <Form.Control
+            type="password"
+            onInput={(e) => {
+              setPasswordRepeat(e.target.value);
+              setDoesPasswordMatch(true);
+            }}
+          />
+        </Form.Group>
+        {!doesPasswordMatch && (
+          <div className="passwordMatch">{t("signUpForm.passNotMatch")}</div>
+        )}
         <Button variant="primary" type="submit" onClick={handleSubmit}>
           {t("signUpForm.signUpButton")}
         </Button>
