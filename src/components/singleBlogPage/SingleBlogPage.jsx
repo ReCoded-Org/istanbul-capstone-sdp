@@ -11,7 +11,7 @@ import Footer from "../common/Footer";
 import { addComment, deleteComment } from "../../actions/blogActions";
 
 const SingleBlogPage = (props) => {
-  const { blog, blogId, auth, profile } = props;
+  const { blog } = props;
 
   if (blog) {
     return (

@@ -102,7 +102,6 @@ const Comments = (props) => {
 const mapStateToProps = (state, ownProps) => {
   const auth = state.firebase.auth;
   const profiles = state.firestore.data.profiles;
-  const blogs = state.firestore.data.blogs;
   const profile = profiles ? profiles[auth.uid] : null;
   return {
     profile,
