@@ -26,14 +26,12 @@ export const NavBar = () => {
         </div>
 
         <Nav.Item>
-          <Link to="/">
-            <img
-              onClick={() => setIsMovingSideMenu(!isMovingSideMenu)}
-              className="hamburgerIcon"
-              src="https://i.ibb.co/PQgDXbj/LLogo-4.png"
-              alt="hamburger Icon"
-            />
-          </Link>
+          <img
+            onClick={() => setIsMovingSideMenu(!isMovingSideMenu)}
+            className="hamburgerIcon"
+            src="https://i.ibb.co/PQgDXbj/LLogo-4.png"
+            alt="hamburger Icon"
+          />
         </Nav.Item>
 
         <Nav

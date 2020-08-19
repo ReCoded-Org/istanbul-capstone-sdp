@@ -52,7 +52,6 @@
 }
 
 .leftSection .form-label {
-  font-family: Aktiv Grotesk Corp;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -68,7 +67,6 @@
 
 .leftSection h5 {
   padding-top: 12px;
-  font-family: Aktiv Grotesk Corp;
   font-size: 18px;
   color: #6e6e6e;
 }
@@ -80,7 +78,6 @@
 }
 
 .leftSection h6 {
-  font-family: Aktiv Grotesk Corp;
   font-weight: 500;
   font-size: 20px;
   color: #6e6e6e;

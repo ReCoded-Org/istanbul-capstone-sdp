@@ -44,8 +44,6 @@
   text-decoration: none !important;
 }
 
-.blogContentDisplay {
-  display: inline-block;
+.blogContentDisplay p {
   overflow: hidden;
-  max-height: 170px;
 }

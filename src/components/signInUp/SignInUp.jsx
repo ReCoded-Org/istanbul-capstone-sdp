@@ -20,7 +20,7 @@ const SignInUp = () => {
 
   return (
     <div>
-      {logging === "SIGNING_IN" ? (
+      {logging === SIGNING_IN_MODE ? (
         <SignIn handleLoggingSwitch={handleLoggingSwitch} />
       ) : (
         <SignUp handleLoggingSwitch={handleLoggingSwitch} />

@@ -23,10 +23,9 @@ export default function BlogDisplay(props) {
           </Col>
           <Col xs={12} md={6} className="blogPhotoTextContent">
             <h4>{blog.title}</h4>
-            <div
-              dangerouslySetInnerHTML={createMarkup()}
-              className="blogContentDisplay"
-            ></div>
+            <div className="blogContentDisplay">
+              <div dangerouslySetInnerHTML={createMarkup()}></div>
+            </div>
           </Col>
         </Row>
       </Col>

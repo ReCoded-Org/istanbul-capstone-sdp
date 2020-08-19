@@ -138,7 +138,7 @@
     "title": "Psychotherapist"
   },
   "weCare": {
-    "heading": "WE CARE AND CONCERN ABOUT YOU",
+    "heading": "WE CARE ABOUT YOU",
     "firstWord": "Lets",
     "motivationalText": "try and keep things in perspective. Let's be",
     "pinkText": "positive",
@@ -327,7 +327,7 @@
     "login": "Login",
     "loginOr": " or login using",
     "noAccount": " Don't have an account?",
-    "signUp": "signUp",
+    "signUp": "Sign up",
     "help": "need help?",
     "welcome": ["Welcome", "back!"]
   },
@@ -353,11 +353,19 @@
     "welcome": ["Welcome", " to our ", "website."]
   },
   "signUpForm": {
+    "signUpButton": "Sign up",
     "fName": "First Name",
     "lName": "Last Name",
     "email": "Email",
     "password": "Password",
     "rePassword": "Enter your password again",
     "passNotMatch": "Password doesn't match"
+  },
+
+  "homepage": {
+    "header": {
+      "title": "Are you okay?",
+      "text": ["We are here to help", "and support you."]
+    }
   }
 }

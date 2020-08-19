@@ -1,14 +1,16 @@
 import React from "react";
-
+import { useTranslation } from "react-i18next";
 export const Header = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="homePageHeader">
       <div className="homePageHeaderTitle">
-        <h2>Feeling Suicidal?</h2>
+        <h2>{t("homepage.header.title")}</h2>
         <h3>
-          We’re Here To Help And
+          {t("homepage.header.text.0")}
           <br />
-          Support You
+          {t("homepage.header.text.1")}
         </h3>
       </div>
 

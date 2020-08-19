@@ -298,5 +298,11 @@
     "password": "Parola",
     "rePassword": "Lütfen parolanı tekrar gir.",
     "passNotMatch": "Parolalar eşleşmiyor."
+  },
+  "homepage": {
+    "header": {
+      "title": "İyi Misin?",
+      "text": ["Senin için", "buradayız."]
+    }
   }
 }
