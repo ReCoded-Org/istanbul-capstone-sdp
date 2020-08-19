@@ -1,4 +1,10 @@
 {
+  "homepage": {
+    "header": {
+      "title": "Are you okay?",
+      "text": ["We are here to help", "and support you."]
+    }
+  },
   "footer": {
     "header": "SUBSCRIBE TO STAY UP TO DATE",
     "placeholder": "Your email address",

@@ -1,4 +1,10 @@
 {
+  "homepage":{
+    "header":{
+      "title":"İyi Misin?",
+      "text":["Senin için","buradayız."]
+    }
+  },
   "footer": {
     "header": "GÜNCEL KALMAK İÇİN ABONE OLUN",
     "placeholder": "E posta adresiniz",
