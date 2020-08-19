@@ -10,7 +10,7 @@ import Blogs from "../components/blogs/Blogs";
 import { Donation } from "../containers/donation/Donation";
 import { NoMatch } from "../components/noMatch/NoMatch";
 import { NavBar } from "../components/common/NavBar";
-import { SingleBlogPage } from "../components/singleBlogPage/SingleBlogPage";
+import SingleBlogPage from "../components/singleBlogPage/SingleBlogPage";
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
           <Route path="/about" component={About} />
           <Route path="/assessment" component={PsychoAssess} />
           <Route path="/donation" component={Donation} />
-          <Route path="/blogs" component={Blogs} />
+          <Route exact path="/blogs" component={Blogs} />
           <Route path="/login" component={SignInUp} />
           <Route path="/blogs/:blogid" component={SingleBlogPage} />
           <Route path="/:id/blogs/:blogid" component={SingleBlogPage} />
