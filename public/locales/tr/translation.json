@@ -1,8 +1,8 @@
 {
-  "homepage":{
-    "header":{
-      "title":"İyi Misin?",
-      "text":["Senin için","buradayız."]
+  "homepage": {
+    "header": {
+      "title": "İyi Misin?",
+      "text": ["Senin için", "buradayız."]
     }
   },
   "footer": {
