@@ -1,13 +1,12 @@
 import React from "react";
 import { Carousel, Container, Row, Col } from "react-bootstrap";
 import "../index.css";
-
 export const Survivor = () => {
   return (
     <Container className="w-100">
       <Row>
         <Col xs={12} sm={12} md={12} lg={12}>
-          <div className="wholeCarousel">
+          <div className="homePagewholeCarousel">
             <Carousel>
               <Carousel.Item>
                 <img
@@ -16,7 +15,6 @@ export const Survivor = () => {
                   alt="First slide"
                 />
               </Carousel.Item>
-
               <Carousel.Item>
                 <img
                   className="d-block w-100"
@@ -24,7 +22,6 @@ export const Survivor = () => {
                   alt="second slide"
                 />
               </Carousel.Item>
-
               <Carousel.Item>
                 <img
                   className="d-block w-100 quotes"

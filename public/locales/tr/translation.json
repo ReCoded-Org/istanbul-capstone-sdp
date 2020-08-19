@@ -1,8 +1,8 @@
 {
-  "homepage":{
-    "header":{
-      "title":"İyi Misin?",
-      "text":["Senin için","buradayız."]
+  "homepage": {
+    "header": {
+      "title": "İyi Misin?",
+      "text": ["Senin için", "buradayız."]
     }
   },
   "footer": {
@@ -28,7 +28,8 @@
     "about": "Hakkımızda",
     "assess": "Test",
     "donate": "Bağış",
-    "blogs": "Blog"
+    "blogs": "Blog",
+    "home": "Ana Sayfa"
   },
   "contact": {
     "closeButton": "Tamam",

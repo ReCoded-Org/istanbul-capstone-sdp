@@ -1,9 +1,7 @@
 .link {
-  color: aliceblue;
-}
-
-.link:hover {
-  color: rgb(161, 161, 161);
+  font-size: larger;
+  font-weight: 500;
+  padding: 0;
 }
 
 .authIcon {
