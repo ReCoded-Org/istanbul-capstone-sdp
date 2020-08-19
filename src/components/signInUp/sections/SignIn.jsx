@@ -18,9 +18,8 @@ const SignIn = (props) => {
             <FacebookAuth />
             <GoogleAuth />
           </Row>
-          <h6>
+          <h6 onClick={props.handleLoggingSwitch}>
             {t("signIn.noAccount")}
-            <span onClick={props.handleLoggingSwitch}></span>
             {t("signIn.signUp")}
           </h6>
         </Col>
