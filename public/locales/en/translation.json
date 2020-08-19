@@ -1,4 +1,25 @@
 {
+  "homepage": {
+    "header": {
+      "title": "Are you okay?",
+      "text": ["We are here to help", "and support you."]
+    }
+  },
+  "footer": {
+    "header": "SUBSCRIBE TO STAY UP TO DATE",
+    "placeholder": "Your email address",
+    "submit": "SUBMIT",
+    "address": ["43 Foundry Avenue, Basaksehir,", "Istotc, Istanbul, Turkey."],
+    "copyright": "© 2020 Suljak Suicide Prevention Organization",
+    "follow": "Follow Us",
+    "home": "Home",
+    "contact": "Contact Us",
+    "about": "About",
+    "assess": "Assessment",
+    "donate": "Donation",
+    "blogs": "Blog",
+    "login": "Login"
+  },
   "navbar": {
     "contact": "Contact Us",
     "about": "About",
@@ -7,6 +28,8 @@
     "blogs": "Blogs"
   },
   "contact": {
+    "closeButton": "Done",
+    "alertThanks": "Thank You",
     "contactUs": {
       "message": ["Follow Us", "on social media"],
       "form": {
@@ -140,7 +163,7 @@
   },
   "assessmentHomepage": {
     "heading": "Psychological Assessment",
-    "assessmentDetails": "For helping to determine whether you or someone you know has symptoms commonly associated with suicide or mental disorder, please fill out the following questionnaire truthfully. The results will only be helpful if you answer in an honest and complete manner. Please note: Our Assessment quiz is not meant to diagnose, but rather to help you understand whether a certain mental health issue may be of concern to you. It’s sort of like asking for a second opinion from an objective friend (as long as you’ve been truthful in your answers).",
+    "assessmentDetails": "For helping to determine whether you or someone you know has symptoms commonly associated with suicide or mental disorder, please fill out the following questionnaire truthfully. The results will only be helpful if you answer in an honest and complete manner.",
     "assessmentButton": "Start Here",
     "imageAlt": "an image about assessment"
   },
@@ -304,5 +327,42 @@
     "en": "English",
     "tr": "Turkish",
     "ar": "Arabic"
+  },
+  "signIn": {
+    "login": "Login",
+    "loginOr": " or login using",
+    "noAccount": " Don't have an account?",
+    "signUp": "signUp",
+    "help": "need help?",
+    "welcome": ["Welcome", "back!"]
+  },
+  "signInForm": {
+    "resetPassword": "Reset Password",
+    "enterEmail": "Enter your email to send you a password reset email",
+    "cancel": "Cancel",
+    "resetButton": "Reset Password",
+    "resetPopup": "Resetting your password",
+    "resetEmailSent": "A reset password email has been sent successfully, you can check your mailbox to set a new password",
+    "success": "Done.",
+    "formEmail": "Email",
+    "formPassword": "Password",
+    "forgotPassword": "Forgot Your Password?",
+    "loginButton": "Login"
+  },
+  "signUp": {
+    "signUp": "Sign Up",
+    "signUpOr": " Or sign up using",
+    "alreadyMember": "Already a member?",
+    "login": "Login",
+    "help": "Need help?",
+    "welcome": ["Welcome", " to our ", "website."]
+  },
+  "signUpForm": {
+    "fName": "First Name",
+    "lName": "Last Name",
+    "email": "Email",
+    "password": "Password",
+    "rePassword": "Enter your password again",
+    "passNotMatch": "Password doesn't match"
   }
 }

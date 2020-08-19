@@ -1,100 +1,114 @@
 import React, { useState } from "react";
+import { connect } from "react-redux";
+import { firestoreConnect } from "react-redux-firebase";
+import { compose } from "redux";
 import "../index.css";
-import { Row, Col, Container, Button } from "react-bootstrap";
-
-export const Comments = (props) => {
-  const { comments } = props.blogTest;
-  const commentState = {
-    comment: "",
-    name: "",
-    email: "",
-    website: "",
-  };
-
-  const [form, setForm] = useState(commentState);
+import { Row, Col, Container, Button, Image } from "react-bootstrap";
+const Comments = (props) => {
+  const { blog, auth, profile } = props;
+  const [comment, setComment] = useState("");
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert(`your message have been submitted ${form}`);
-    setForm(commentState);
+    const commentData = {
+      userId: auth.uid,
+      date: new Date().toLocaleString(),
+      dispayName: profile.fullName || "",
+      profilePhoto: profile.imageURL,
+      comment,
+    };
+    props.addComment(blog.blogId, commentData);
+    setComment("");
   };
-
-  const allComments = comments.map((item) => {
+  let allComments = [];
+  if (blog) {
+    allComments =
+      blog.comments &&
+      blog.comments.map((item) => {
+        const profilePhoto =
+          item.profilePhoto ||
+          "https://i.ibb.co/k0NNyLV/User-profile-image.png";
+        return (
+          <div className="border-bottom">
+            <Image
+              className="visitorImage"
+              src={profilePhoto}
+              alt="Visitor profile"
+              width="70"
+              height="70"
+              thumbnail
+            />
+            <div className="displayedComment">
+              <p className="visitorName">
+                <h6 className="commentedPerson">{item.dispayName}</h6>
+                <p className="ml-3 visitorComment">{item.comment}</p>
+                <p className="ml-3 commentDate">{item.date}</p>
+              </p>
+            </div>
+            {auth.uid === item.userId && (
+              <Button
+                variant="danger"
+                size="sm"
+                className="ml-3 commentDeleteBtn"
+                onClick={() => props.deleteComment(blog.blogId, item)}
+              >
+                Remove
+              </Button>
+            )}
+          </div>
+        );
+      });
+  } else {
+    return <h4>Loading...</h4>;
+  }
+  if (profile) {
     return (
-      <div className="visitor">
-        <img
-          className="visitorImage"
-          src="https://i.ibb.co/k0NNyLV/User-profile-image.png"
-          alt="Visitor profile"
-        />
-        <div className="displayedComment">
-          <p className="visitorName">
-            {" "}
-            {item.person}{" "}
-            <span className="visitorComment"> {item.comment} </span>
-          </p>
-        </div>
-      </div>
+      <Container className="w-100 addingCommentSection">
+        <Row>
+          <Col xs={10} md={10} lg={10} className="commentSection">
+            <p className="commentsTitle">Comments</p>
+            <section className="">{allComments}</section>
+            <form className="replyFields" onSubmit={handleSubmit}>
+              <h5>Leave a comment</h5>
+              <h6>Only users can post a comment</h6>
+              <textarea
+                onChange={(e) => setComment(e.target.value)}
+                value={comment}
+                placeholder="Write your comment"
+                cols="80"
+                rows="2"
+                className="col-lg-12 col-md-10 col-sm-10 infoFields mb-0"
+                maxlength="50"
+              ></textarea>
+              <Button
+                className="w-25 commentButton"
+                type="submit"
+                disabled={!auth || profile.isBlocked}
+              >
+                Post
+              </Button>
+            </form>
+          </Col>
+        </Row>
+      </Container>
     );
-  });
-
-  return (
-    <Container className="w-100">
-      <Row>
-        <Col xs={10} md={10} lg={10} className="commentSection">
-          <p className="commentsTitle">Comments</p>
-
-          <section className="">{allComments}</section>
-
-          <form className="replyFields" onSubmit={handleSubmit}>
-            <h5>Leave a Reply</h5>
-            <p>
-              Your email address will not be published. Required fields are
-              marked *
-            </p>
-            Comment* <br />
-            <textarea
-              onChange={(e) => setForm({ ...form, comment: e.target.value })}
-              value={form.comment}
-              placeholder="Write your comment"
-              cols="80"
-              rows="8"
-              className="col-lg-12 col-md-12 col-sm-12 infoFields"
-              required
-            ></textarea>
-            <br />
-            Name* <br />
-            <input
-              onChange={(e) => setForm({ ...form, name: e.target.value })}
-              value={form.name}
-              type="text"
-              className="col-lg-12 col-md-12 col-sm-12 infoFields"
-              required
-            />
-            <br />
-            Email* <br />
-            <input
-              onChange={(e) => setForm({ ...form, email: e.target.value })}
-              value={form.email}
-              type="email"
-              className="col-lg-12 col-md-12 col-sm-12 infoFields"
-              required
-            />
-            <br />
-            Website
-            <br />
-            <input
-              onChange={(e) => setForm({ ...form, website: e.target.value })}
-              value={form.website}
-              type="text"
-              className="col-lg-12 col-md-12 col-sm-12 infoFields"
-            />
-            <br />
-            <Button className="commentButton" type="submit">
-              Post Comment
-            </Button>
-          </form>
-        </Col>
-      </Row>
-    </Container>
-  );
+  } else {
+    return (
+      <Container>
+        <h4>Loading...</h4>
+      </Container>
+    );
+  }
 };
+const mapStateToProps = (state, ownProps) => {
+  const auth = state.firebase.auth;
+  const profiles = state.firestore.data.profiles;
+  const profile = profiles ? profiles[auth.uid] : null;
+  return {
+    profile,
+    auth,
+  };
+};
+export default compose(
+  connect(mapStateToProps),
+  firestoreConnect([{ collection: "profiles" }])
+)(Comments);

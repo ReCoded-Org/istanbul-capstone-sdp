@@ -4,6 +4,7 @@
   padding: 5rem 0;
   background: #014992;
   color: white;
+  margin-top: 9rem;
 }
 
 .footer a {
@@ -279,7 +280,7 @@ form button {
   left: auto;
   position: absolute;
   width: 100px;
-  margin: -15px;
+  margin: -15px !important;
   top: 100px;
   background-color: white;
   z-index: 9999;

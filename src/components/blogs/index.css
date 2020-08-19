@@ -1,3 +1,9 @@
+.blogsPageHeader {
+  width: 100%;
+  margin-bottom: 6rem;
+  z-index: -1;
+}
+
 .blogPhotoContainer img {
   width: 80%;
   text-align: center;
@@ -36,4 +42,10 @@
 
 .blogPhotoTextContent a:hover {
   text-decoration: none !important;
+}
+
+.blogContentDisplay {
+  display: inline-block;
+  overflow: hidden;
+  max-height: 170px;
 }

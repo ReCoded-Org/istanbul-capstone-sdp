@@ -1,28 +1,15 @@
-.singleBlogPageHeader {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.singleBlogTopImages {
-  align-items: center;
-  justify-content: center;
-}
-
-.singleBlogTopImages .articleHeader {
-  display: block;
+.blogHeader {
+  display: flex;
   z-index: 1;
-  max-width: 100%;
-  height: auto;
-  align-items: center;
-  justify-content: center;
-  margin: -13% auto 3%;
-  padding: 0 2vw;
+  width: 1050px;
+  height: 580px;
+  margin: -8.75rem auto 1.8rem;
 }
 
-.singleBlogTopImages .authorImage {
-  justify-content: center;
-  display: block;
-  width: 18%;
+.authorImage {
+  display: flex;
+  width: 211px;
+  height: 211px;
   z-index: 2;
   margin: -10% auto 2%;
 }
@@ -99,10 +86,12 @@
 .displayedComment {
   line-height: 20px;
   margin-left: 1rem;
+  margin-top: 12px;
 }
 
 .visitorName {
   font-weight: 500;
+  line-height: 80%;
 }
 
 .visitorComment {
@@ -111,8 +100,8 @@
 }
 
 .visitorImage {
-  display: inline-block;
-  margin: 0 0 1.7rem 0;
+  display: inline;
+  margin-top: -50px;
 }
 
 .replyFields {
@@ -210,4 +199,29 @@
     margin: 0 auto;
     padding: 0 3vw;
   }
+}
+
+.commentedPerson {
+  color: #054f99;
+}
+
+.commentDate {
+  color: #55595d;
+  font-size: 0.65em;
+}
+
+.displayedComment {
+  margin-top: 30px;
+}
+
+.addingCommentSection {
+  margin-top: -30px;
+  margin-bottom: 30px;
+}
+
+.commentDeleteBtn {
+  width: 55px;
+  height: 25px;
+  padding: 0 !important;
+  font-size: 13px !important;
 }
