@@ -7,6 +7,8 @@ import Assessment from "./sections/Assessment";
 import "./index.css";
 import RelatedCards from "./sections/RelatedCards";
 import LiveChat from "../../containers/liveChat/LiveChat";
+import Footer from "../common/Footer";
+import { Survivor } from "./sections/Survivor";
 
 export const Home = () => {
   return (
@@ -15,8 +17,10 @@ export const Home = () => {
       <Header />
       <WeCare />
       <Stories />
-      <Assessment />
+      <Survivor />
       <RelatedCards />
+      <Assessment />
+      <Footer />
     </div>
   );
 };

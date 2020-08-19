@@ -2,6 +2,14 @@
   width: 100%;
 }
 
+h1 {
+  font-family: Noto Sans, sans-serif;
+}
+
+p {
+  font-family: Roboto, Sans-serif;
+}
+
 .contactCardContainer {
   margin: 162px auto 81px auto;
   display: flex;
@@ -19,7 +27,6 @@
 
 .followUs {
   text-transform: uppercase;
-  font-family: Aktiv Grotesk Corp;
   width: fit-content;
   margin: 50% auto;
   text-align: center;
@@ -28,6 +35,10 @@
 
 .followUs a {
   margin: 10px !important;
+}
+
+.followUs a i {
+  margin: -1rem !important;
 }
 
 .formSide {
@@ -52,13 +63,8 @@
 }
 
 .formSide button {
-  background: none !important;
-  color: rgb(29, 100, 174);
+  background: none;
   border: none;
-}
-
-.formSide button:hover {
-  color: blue !important;
 }
 
 .redStar {
@@ -72,7 +78,6 @@
 .infoSection a {
   padding: 0 0 10px 0 !important;
   font-size: 27px;
-  font-family: Myriad Pro;
   font-weight: 600;
   text-decoration-line: underline;
   color: #1860aa;
@@ -80,7 +85,6 @@
 
 .infoSection p {
   font-size: 24px;
-  font-family: Myriad Pro;
   line-height: 29px;
   text-align: justify;
   color: #3f3f3f;

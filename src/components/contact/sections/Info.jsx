@@ -1,24 +1,28 @@
 import React from "react";
 import { Container, Col, Nav } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 
 const Info = () => {
+  const { t } = useTranslation();
+
   return (
     <Container>
       <Col className="infoSection">
-        <Nav.Link href="#">CONTACTS:</Nav.Link>
+        <Nav.Link href="#">{t("contact.info.contactTitle")}</Nav.Link>
         <p>
           (+90) 533-382-094 <br />
           suljak@suljak.com <br />
-          43 Foundry Avenue, Basaksehir, istotc, Istanbul, Turkey
+          {t("contact.info.address")}
         </p>
       </Col>
       <Col className="infoSection">
-        <Nav.Link href="#">BUSINESS HOURS:</Nav.Link>
+        <Nav.Link href="#">{t("contact.info.businessHoursTitle")}</Nav.Link>
         <p>
-          Our support hotline is available 24 hours a day: 11401 <br />
-          Monday-Friday: 5pm to 9pm <br />
-          Saturday: 10am to 2pm <br />
-          Sunday: Closed
+          {t("contact.info.hotlineText")} <br />
+          {t("contact.info.workingHours.0")}
+          <br />
+          {t("contact.info.workingHours.1")} <br />
+          {t("contact.info.workingHours.2")}
         </p>
       </Col>
     </Container>

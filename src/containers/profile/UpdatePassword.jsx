@@ -4,7 +4,7 @@ import "./AccountSettingsSections.css";
 import {
   updatePasswordAndEmail,
   resetPassword,
-} from "../../../../../actions/authActions";
+} from "../../actions/authActions";
 import { Form, Container, Button, Col, Modal } from "react-bootstrap";
 
 const UpdatePassword = (props) => {

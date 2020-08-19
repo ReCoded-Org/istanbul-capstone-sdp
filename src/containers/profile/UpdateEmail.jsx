@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import "./AccountSettingsSections.css";
-import { updatePasswordAndEmail } from "../../../../../actions/authActions";
+import { updatePasswordAndEmail } from "../../actions/authActions";
 import { Form, Container, Button, Col, Modal } from "react-bootstrap";
 
 const UpdateEmail = (props) => {

@@ -1,29 +1,47 @@
-.articleHeader {
-  display: flex;
-  z-index: 1;
+.singleBlogPageHeader {
   width: 100%;
-  margin: -8.75rem auto 1.8rem;
+  margin: 0 auto;
 }
 
-.authorImage {
-  display: flex;
+.singleBlogTopImages {
+  align-items: center;
+  justify-content: center;
+}
+
+.singleBlogTopImages .articleHeader {
+  display: block;
+  z-index: 1;
+  max-width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  margin: -13% auto 3%;
+  padding: 0 2vw;
+}
+
+.singleBlogTopImages .authorImage {
+  justify-content: center;
+  display: block;
   width: 18%;
   z-index: 2;
-  margin: -7rem auto 1rem;
+  margin: -10% auto 2%;
 }
 
-.authorTitle {
+.singleBlogTopImages p {
+  display: flex;
+  justify-content: center;
   font-family: Roboto, Sans-serif;
   margin: 0 auto;
-  text-align: center;
   font-weight: bold;
   font-size: 20px;
   color: #55595d;
+  width: 70%;
+  padding-bottom: 2%;
 }
 
 .article {
   text-align: justify;
-  margin: 0 auto 12rem;
+  margin: 0 auto 8rem;
   font-size: 1.1rem;
   font-weight: 400;
   line-height: 2rem;
@@ -36,7 +54,7 @@
   color: #555658;
   text-align: center;
   margin: 2rem 0;
-  font-size: 3rem;
+  font-size: 300%;
   font-family: Noto Sans, sans-serif;
 }
 
@@ -52,9 +70,21 @@
   margin: 1.5rem 0 0.6rem 1.8rem;
 }
 
+.clearFloat {
+  clear: left;
+  overflow: hidden;
+}
+
 .commentSection {
   margin: 0 auto 2rem;
   line-height: 2rem;
+}
+
+.visitor {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 1.5rem;
 }
 
 .commentsTitle {
@@ -81,7 +111,7 @@
 }
 
 .visitorImage {
-  display: inline;
+  display: inline-block;
   margin: 0 0 1.7rem 0;
 }
 
@@ -97,6 +127,7 @@
 
 .infoFields {
   margin-bottom: 1rem;
+  width: 100%;
 }
 
 .commentButton {
@@ -106,7 +137,9 @@
 }
 
 .recommendedPost {
-  margin: 0 auto 50px;
+  display: flex;
+  flex-flow: row;
+  margin: 0 auto;
 }
 
 .recommendedPost h4 {
@@ -118,10 +151,63 @@
 
 .postInfo {
   display: flex;
-  margin-top: 1rem;
 }
 
 .postInfo p {
   font-family: Roboto, Sans-serif;
   margin-top: 1rem;
+  color: #afaeae;
+}
+
+.postInfo .recommendedPostAuthorName {
+  color: #fe305e;
+}
+
+@media only screen and (max-width: 800px) {
+  .singleBlogTopImages p {
+    font-size: 16px;
+  }
+
+  .article {
+    font-size: 1rem;
+  }
+
+  .article h1 {
+    font-size: 250%;
+  }
+
+  .articleWrappedImage {
+    float: right;
+    width: 60%;
+    margin: 1.5rem 0 0.6rem 1.8rem;
+  }
+
+  .replyFields {
+    margin: 5rem 0;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .singleBlogTopImages p {
+    font-size: 15px;
+  }
+
+  .article {
+    margin: 0 auto 6rem;
+  }
+
+  .article h1 {
+    font-size: 200%;
+  }
+
+  .articleWrappedImage {
+    float: right;
+    width: 100%;
+    margin: 1rem 0 1rem 0;
+  }
+
+  .recommendedPost {
+    margin: 0 auto;
+    padding: 0 3vw;
+  }
 }

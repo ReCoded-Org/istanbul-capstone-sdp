@@ -5,8 +5,8 @@ import { Home } from "../components/home/Home";
 import PsychoAssess from "../../src/containers/PsychoAssess/PsychoAssess";
 import About from "../components/about/About";
 import { Contact } from "../components/contact/Contact";
+import SignInUp from "../components/signInUp/SignInUp";
 import Blogs from "../components/blogs/Blogs";
-import { SignInUp } from "../components/signInUp/SignInUp";
 import { Donation } from "../containers/donation/Donation";
 import { NoMatch } from "../components/noMatch/NoMatch";
 import { NavBar } from "../components/common/NavBar";
@@ -16,7 +16,6 @@ function App() {
   return (
     <React.Fragment>
       <Router>
-        learn react
         <NavBar />
         <Switch>
           <Route exact path="/" component={Home} />
@@ -24,8 +23,8 @@ function App() {
           <Route path="/about" component={About} />
           <Route path="/assessment" component={PsychoAssess} />
           <Route path="/donation" component={Donation} />
-          <Route exact path="/blogs" component={Blogs} />
-          <Route path="/signinup" component={SignInUp} />
+          <Route path="/blogs" component={Blogs} />
+          <Route path="/login" component={SignInUp} />
           <Route path="/blogs/:blogid" component={SingleBlogPage} />
           <Route path="/:id/blogs/:blogid" component={SingleBlogPage} />
           <Route component={NoMatch} />
